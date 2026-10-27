@@ -1,0 +1,58 @@
+{
+  "kind": "east",
+  "width": 960,
+  "height": 540,
+  "model": "spherical-camera",
+  "parameters": [
+    1.9664573084078576,
+    0.05401360901218501,
+    -0.0029752249062996883,
+    -133.02253516249547,
+    -47.56788765321287,
+    500.62477229142723,
+    6.839012828623822
+  ],
+  "seed_controls": [
+    [
+      -53.07,
+      46.655,
+      744,
+      521
+    ],
+    [
+      -52.62,
+      47.52,
+      796,
+      350
+    ],
+    [
+      -53.08,
+      48.7,
+      666,
+      215
+    ],
+    [
+      -54.2,
+      46.82,
+      518,
+      448
+    ],
+    [
+      -55.98,
+      46.91,
+      48,
+      438
+    ],
+    [
+      -52.78,
+      47.81,
+      712,
+      265
+    ]
+  ],
+  "coast_distance_median_px": 3.34108567237854,
+  "coast_distance_p90_px": 11.689123725891116,
+  "reference": "Natural Earth 1:10m coastline",
+  "status": "approximate",
+  "seed_description": "Approximate cape locations on supplied reference image; automatic robust coastline fit. Not independently surveyed."
+}

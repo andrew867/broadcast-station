@@ -1,0 +1,22 @@
+services:
+  studio:
+    platform: linux/amd64
+    build: .
+    ports:
+      - "127.0.0.1:8765:8765"
+    environment:
+      STATION_OFFLINE: "1"
+      STATION_BRAND_FILE: /app/examples/branding.json
+      SKYCAM_PLAYOUT: "0"
+    volumes:
+      - station-demo:/app/data
+    restart: "no"
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    tmpfs: ["/tmp:rw,size=128m"]
+    logging:
+      driver: json-file
+      options: {max-size: 10m, max-file: "3"}
+volumes:
+  station-demo:

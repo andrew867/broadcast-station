@@ -1,0 +1,1 @@
+{"now": 1700000000, "aircraft": [{"hex": "abc123", "flight": "TEST123", "lat": 47.6, "lon": -52.7, "alt_geom": 10000, "seen_pos": 0, "gs": 200, "track": 90, "geom_rate": 0}]}

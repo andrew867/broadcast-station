@@ -1,0 +1,9 @@
+# Desktop output is explicit; the headless stack never mounts session sockets.
+services:
+  engine:
+    environment:
+      DISPLAY: "${DISPLAY:?A working X11 or Xwayland display is required}"
+      XAUTHORITY: /tmp/station.xauthority
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix:ro
+      - ${STATION_XAUTHORITY:?}:/tmp/station.xauthority:ro

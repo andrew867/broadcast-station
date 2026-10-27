@@ -1,0 +1,42 @@
+FROM python:3.13-slim@sha256:cf50a4f6ac4f026458b08d5222023d700ac806410dff5e9ca8728fa44f2b850f AS trust
+FROM ubuntu:24.04@sha256:68ee22004a9109b44973313b02ff7b1de250f1de0f5ecb628d73f579aaff33ac AS caspar-base
+COPY --from=trust /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/ca-certificates.crt
+COPY deploy/ubuntu.sources /etc/apt/sources.list.d/ubuntu.sources
+ENV DEBIAN_FRONTEND=noninteractive
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates curl fonts-dejavu-core fonts-liberation && rm -rf /var/lib/apt/lists/*
+WORKDIR /tmp/install
+RUN curl -fL -o cef.deb 'https://github.com/CasparCG/server/releases/download/v2.5.1-stable/casparcg-cef-142_142.0.17.g60aac24%2B2-noble1_amd64.deb' && echo '052cdd35dfdadc28aeee7deb34f3adabda87674269e2b84dcb44a40f0e9c3d52  cef.deb' | sha256sum -c - && curl -fL -o server.deb 'https://github.com/CasparCG/server/releases/download/v2.5.1-stable/casparcg-server-2.5_2.5.1.stable-noble1_amd64.deb' && echo 'bb0756fde874994b129f53b24cdd75bcc6fcc00c405f8126ec735194a10de8c7  server.deb' | sha256sum -c - && apt-get update && apt-get install -y ./cef.deb ./server.deb && rm -rf /tmp/install /var/lib/apt/lists/*
+WORKDIR /workspace
+ENV NVIDIA_VISIBLE_DEVICES=all NVIDIA_DRIVER_CAPABILITIES=all HOME=/tmp/caspar-home
+CMD ["/usr/bin/casparcg-server-2.5", "/workspace/casparcg.config"]
+
+FROM caspar-base AS build
+USER root
+RUN apt-get update && apt-get install -y --no-install-recommends build-essential cmake ninja-build git python3 pkg-config patch libavcodec-dev libavdevice-dev libavfilter-dev libavformat-dev libavutil-dev libboost-coroutine-dev libboost-date-time-dev libboost-dev libboost-filesystem-dev libboost-locale-dev libboost-log-dev libboost-regex-dev libboost-system-dev libboost-thread-dev libicu-dev libglew-dev libjpeg-dev libopenal-dev libsfml-dev libsimde-dev libswresample-dev libswscale-dev libtbb-dev libxrandr-dev libegl1-mesa-dev zlib1g-dev && rm -rf /var/lib/apt/lists/*
+WORKDIR /source
+RUN curl -fsSL https://codeload.github.com/CasparCG/server/tar.gz/refs/tags/v2.5.1-stable -o server.tar.gz && echo 'c2852873153569f5df3089dfc1aeb20e9ba62dae182436ad7691a79cce5baf78  server.tar.gz' | sha256sum -c - && tar -xzf server.tar.gz
+COPY deploy/engine/*.patch /source/
+RUN cd server-2.5.1-stable && patch -p1 < ../owned-readback.patch && patch -p1 < ../independent-audio.patch && patch -p1 < ../monitor-snapshot.patch && patch -p1 < ../ndi-bounded-output.patch && patch -p1 < ../ndi-independent-audio.patch && patch -p1 < ../ndi-program-scale.patch && patch -p1 < ../ndi-readback-release.patch && patch -p1 < ../delivered-video-counter.patch && patch -p1 < ../bounded-video-queue.patch && patch -p1 < ../bounded-graphics-cache.patch && patch -p1 < ../cef-fork-stack.patch && patch -p1 < ../ndi-library-lifetime.patch && patch -p1 < ../ndi-box-reduction.patch && patch -p1 < ../live-camera-latest.patch && patch -p1 < ../camera-keyframe-recovery.patch
+COPY deploy/engine/idle_cache.h /source/server-2.5.1-stable/src/accelerator/ogl/util/idle_cache.h
+RUN cd server-2.5.1-stable && patch -p1 < ../idle-graphics-cache.patch && patch -p1 < ../configured-camera-prefixes.patch
+COPY deploy/engine/test-camera-policy.cpp /source/test-camera-policy.cpp
+RUN g++ -std=c++17 -O2 -Iserver-2.5.1-stable/src/modules/ffmpeg/producer test-camera-policy.cpp -o /tmp/test-camera-policy && /tmp/test-camera-policy
+RUN cmake -GNinja -S server-2.5.1-stable/src -B build -DUSE_SYSTEM_CEF=OFF -DUSE_STATIC_BOOST=OFF -DCMAKE_BUILD_TYPE=Release -DDIAG_FONT_PATH=/usr/share/fonts/truetype/liberation/LiberationMono-Regular.ttf && cmake --build build --parallel 2
+COPY tools/retain_cef_materials.py /source/retain_cef_materials.py
+RUN python3 /source/retain_cef_materials.py /source /tmp/cef-materials /usr/lib/casparcg-cef-142/libcef.so
+RUN tar -czf /tmp/caspar-source.tar.gz server-2.5.1-stable *.patch
+COPY deploy/cef-mallinfo-compat.c deploy/nvdec-prefer.c deploy/uc-image-copy.c /source/helpers/
+RUN gcc -shared -fPIC -O2 /source/helpers/cef-mallinfo-compat.c -o /source/helpers/cef-mallinfo-compat.so && gcc -shared -fPIC -O2 /source/helpers/nvdec-prefer.c -ldl -o /source/helpers/nvdec-prefer.so && gcc -shared -fPIC -O3 /source/helpers/uc-image-copy.c -ldl -o /source/helpers/uc-image-copy.so
+FROM caspar-base
+COPY --from=build /tmp/cef-materials /usr/share/station/cef/
+COPY --from=build /tmp/caspar-source.tar.gz /usr/share/station/caspar-source.tar.gz
+COPY --from=build /source/helpers /usr/lib/station/
+COPY LICENSE /usr/lib/station/LICENSE-AGPL-3.0
+COPY deploy/engine/LICENSE-CasparCG /usr/share/station/LICENSE-CasparCG
+COPY LICENSING.md THIRD_PARTY_NOTICES.md /usr/share/station/
+COPY deploy/Dockerfile.caspar-readback deploy/ubuntu.sources /usr/share/station/build/
+ENV LD_PRELOAD=/usr/lib/station/cef-mallinfo-compat.so:/usr/lib/station/nvdec-prefer.so:/usr/lib/station/uc-image-copy.so MALLOC_ARENA_MAX=4 MALLOC_TRIM_THRESHOLD_=262144
+COPY --from=build /source/build/shell/casparcg /usr/bin/casparcg-server-2.5
+ENV LD_LIBRARY_PATH=/usr/lib/casparcg-cef-142
+RUN ldd /usr/bin/casparcg-server-2.5 > /tmp/skycam-link-check && ! grep -q 'not found' /tmp/skycam-link-check
+

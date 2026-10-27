@@ -1,0 +1,271 @@
+--- a/src/accelerator/ogl/util/device.cpp
++++ b/src/accelerator/ogl/util/device.cpp
+@@ -24,6 +24,8 @@
+ #include "context.h"
+ #include "shader.h"
+ #include "texture.h"
++#include "idle_cache.h"
++#include <tuple>
+ 
+ #include <common/array.h>
+ #include <common/assert.h>
+@@ -58,28 +60,11 @@
+ 
+ struct device::impl : public std::enable_shared_from_this<impl>
+ {
+-    using texture_queue_t = tbb::concurrent_bounded_queue<std::shared_ptr<texture>>;
+-    using buffer_queue_t  = tbb::concurrent_bounded_queue<std::shared_ptr<buffer>>;
+-
+     std::unique_ptr<device_context> context_;
+-
+-    std::array<std::array<tbb::concurrent_unordered_map<size_t, texture_queue_t>, 4>, 2> device_pools_;
+-    std::array<tbb::concurrent_unordered_map<size_t, buffer_queue_t>, 2>                 host_pools_;
+-
+-    // Retain a bounded reusable working set across all image sizes. Ticker
+-    // widths must not create an unlimited permanent GPU/host allocation cache.
+     static constexpr size_t cache_budget_ = 384ULL * 1024 * 1024;
+-    std::atomic<size_t> cached_device_bytes_{0};
+-    std::atomic<size_t> cached_host_bytes_{0};
+-
+-    static bool reserve_cache(std::atomic<size_t>& used, size_t bytes)
+-    {
+-        auto value = used.load();
+-        while (bytes <= cache_budget_ && value <= cache_budget_ - bytes) {
+-            if (used.compare_exchange_weak(value, value + bytes)) return true;
+-        }
+-        return false;
+-    }
++    using texture_key = std::tuple<int, int, int, int>;
++    idle_cache<texture_key, std::shared_ptr<texture>> device_cache_{cache_budget_};
++    idle_cache<std::pair<bool, int>, std::shared_ptr<buffer>> host_cache_{cache_budget_};
+ 
+     GLuint fbo_;
+ 
+@@ -162,12 +147,8 @@
+ 
+         context_->bind();
+ 
+-        for (auto& pool : host_pools_)
+-            pool.clear();
+-
+-        for (auto& pools : device_pools_)
+-            for (auto& pool : pools)
+-                pool.clear();
++        host_cache_.clear();
++        device_cache_.clear();
+ 
+         GL(glDeleteFramebuffers(1, &fbo_));
+     }
+@@ -220,15 +201,9 @@
+ 
+         auto depth_pool_index = depth == common::bit_depth::bit8 ? 0 : 1;
+ 
+-        // TODO (perf) Shared pool.
+-        auto pool = &device_pools_[depth_pool_index][stride - 1][(width << 16 & 0xFFFF0000) | (height & 0x0000FFFF)];
+-
+-        std::shared_ptr<texture> tex;
+-        if (!pool->try_pop(tex)) {
+-            tex = std::make_shared<texture>(width, height, stride, depth);
+-        } else {
+-            cached_device_bytes_.fetch_sub(tex->size());
+-        }
++        const texture_key key{depth_pool_index, width, height, stride};
++        auto tex = device_cache_.take(key);
++        if (!tex) tex = std::make_shared<texture>(width, height, stride, depth);
+         tex->set_depth(depth);
+ 
+         if (clear) {
+@@ -237,39 +212,26 @@
+ 
+         auto ptr = tex.get();
+         return std::shared_ptr<texture>(
+-            ptr, [tex = std::move(tex), pool, self = shared_from_this()](texture*) mutable {
+-                if (reserve_cache(self->cached_device_bytes_, tex->size())) {
+-                    pool->push(std::move(tex));
+-                } else {
+-                    // GL objects are destroyed only with the device context bound.
+-                    self->dispatch_async([tex = std::move(tex)]() mutable { tex.reset(); });
+-                }
++            ptr, [tex = std::move(tex), key, self = shared_from_this()](texture*) mutable {
++                const auto bytes = tex->size();
++                auto retired = self->device_cache_.put(key, std::move(tex), bytes);
++                if (!retired.empty())
++                    self->dispatch_async([retired = std::move(retired)]() mutable { retired.clear(); });
+             });
+     }
+ 
+     std::shared_ptr<buffer> create_buffer(int size, bool write)
+     {
+         CASPAR_VERIFY(size > 0);
+-
+-        // TODO (perf) Shared pool.
+-        auto pool = &host_pools_[static_cast<int>(write ? 1 : 0)][size];
+-
+-        std::shared_ptr<buffer> buf;
+-        if (!pool->try_pop(buf)) {
+-            // TODO (perf) Avoid blocking in create_array.
+-            dispatch_sync([&] { buf = std::make_shared<buffer>(size, write); });
+-        } else {
+-            cached_host_bytes_.fetch_sub(buf->size());
+-        }
+-
++        const auto key = std::make_pair(write, size);
++        auto buf = host_cache_.take(key);
++        if (!buf) dispatch_sync([&] { buf = std::make_shared<buffer>(size, write); });
+         auto ptr = buf.get();
+-        return std::shared_ptr<buffer>(ptr, [buf = std::move(buf), self = shared_from_this()](buffer*) mutable {
+-            auto pool = &self->host_pools_[static_cast<int>(buf->write() ? 1 : 0)][buf->size()];
+-            if (reserve_cache(self->cached_host_bytes_, buf->size())) {
+-                pool->push(std::move(buf));
+-            } else {
+-                self->dispatch_async([buf = std::move(buf)]() mutable { buf.reset(); });
+-            }
++        return std::shared_ptr<buffer>(ptr, [buf = std::move(buf), key, self = shared_from_this()](buffer*) mutable {
++            const auto bytes = buf->size();
++            auto retired = self->host_cache_.put(key, std::move(buf), bytes);
++            if (!retired.empty())
++                self->dispatch_async([retired = std::move(retired)]() mutable { retired.clear(); });
+         });
+     }
+ 
+@@ -372,37 +334,23 @@
+         size_t                       total_pooled_device_buffer_size  = 0;
+         size_t                       total_pooled_device_buffer_count = 0;
+ 
+-        for (size_t i = 0; i < device_pools_.size(); ++i) {
+-            auto& depth_pools = device_pools_.at(i);
+-            for (size_t j = 0; j < depth_pools.size(); ++j) {
+-                auto& pools      = depth_pools.at(j);
+-                bool  mipmapping = j > 3;
+-                auto  stride     = mipmapping ? j - 3 : j + 1;
+-
+-                for (auto& pool : pools) {
+-                    auto width  = pool.first >> 16;
+-                    auto height = pool.first & 0x0000FFFF;
+-                    auto size   = width * height * stride;
+-                    auto count  = pool.second.size();
+-
+-                    if (count == 0)
+-                        continue;
+-
+-                    boost::property_tree::wptree pool_info;
+-
+-                    pool_info.add(L"stride", stride);
+-                    pool_info.add(L"mipmapping", mipmapping);
+-                    pool_info.add(L"width", width);
+-                    pool_info.add(L"height", height);
+-                    pool_info.add(L"size", size);
+-                    pool_info.add(L"count", count);
+-
+-                    total_pooled_device_buffer_size += size * count;
+-                    total_pooled_device_buffer_count += count;
+-
+-                    pooled_device_buffers.add_child(L"device_buffer_pool", pool_info);
+-                }
+-            }
++        const auto device_status = device_cache_.status();
++        for (const auto& item : device_status.groups) {
++            const auto width = std::get<1>(item.first);
++            const auto height = std::get<2>(item.first);
++            const auto stride = std::get<3>(item.first);
++            const auto count = item.second.first;
++            const auto bytes = item.second.second;
++            boost::property_tree::wptree pool_info;
++            pool_info.add(L"stride", stride);
++            pool_info.add(L"mipmapping", false);
++            pool_info.add(L"width", width);
++            pool_info.add(L"height", height);
++            pool_info.add(L"size", bytes / count);
++            pool_info.add(L"count", count);
++            total_pooled_device_buffer_size += bytes;
++            total_pooled_device_buffer_count += count;
++            pooled_device_buffers.add_child(L"device_buffer_pool", pool_info);
+         }
+ 
+         info.add_child(L"gl.details.pooled_device_buffers", pooled_device_buffers);
+@@ -413,28 +361,18 @@
+         size_t                       total_read_count  = 0;
+         size_t                       total_write_count = 0;
+ 
+-        for (size_t i = 0; i < host_pools_.size(); ++i) {
+-            auto& pools    = host_pools_.at(i);
+-            auto  is_write = i == 1;
+-
+-            for (auto& pool : pools) {
+-                auto size  = pool.first;
+-                auto count = pool.second.size();
+-
+-                if (count == 0)
+-                    continue;
+-
+-                boost::property_tree::wptree pool_info;
+-
+-                pool_info.add(L"usage", is_write ? L"write_only" : L"read_only");
+-                pool_info.add(L"size", size);
+-                pool_info.add(L"count", count);
+-
+-                pooled_host_buffers.add_child(L"host_buffer_pool", pool_info);
+-
+-                (is_write ? total_write_count : total_read_count) += count;
+-                (is_write ? total_write_size : total_read_size) += size * count;
+-            }
++        const auto host_status = host_cache_.status();
++        for (const auto& item : host_status.groups) {
++            const auto is_write = item.first.first;
++            const auto size = item.first.second;
++            const auto count = item.second.first;
++            boost::property_tree::wptree pool_info;
++            pool_info.add(L"usage", is_write ? L"write_only" : L"read_only");
++            pool_info.add(L"size", size);
++            pool_info.add(L"count", count);
++            pooled_host_buffers.add_child(L"host_buffer_pool", pool_info);
++            (is_write ? total_write_count : total_read_count) += count;
++            (is_write ? total_write_size : total_read_size) += item.second.second;
+         }
+ 
+         info.add_child(L"gl.details.pooled_host_buffers", pooled_host_buffers);
+@@ -447,9 +385,12 @@
+         info.add(L"gl.summary.pooled_host_buffers.total_write_size", total_write_size);
+         info.add_child(L"gl.summary.all_host_buffers", buffer::info());
+         info.add(L"gl.summary.cache_budget_bytes", cache_budget_);
+-        info.add(L"gl.summary.cached_device_bytes", cached_device_bytes_.load());
+-        info.add(L"gl.summary.cached_host_bytes", cached_host_bytes_.load());
+-
++        info.add(L"gl.summary.cached_device_bytes", device_status.bytes);
++        info.add(L"gl.summary.cached_host_bytes", host_status.bytes);
++
++        info.add(L"gl.summary.cache_policy", L"oldest-idle-first");
++        info.add(L"gl.summary.device_evictions", device_status.evictions);
++        info.add(L"gl.summary.host_evictions", host_status.evictions);
+         return info;
+     }
+ 
+@@ -459,26 +400,8 @@
+             CASPAR_LOG(info) << " ogl: Running GC.";
+ 
+             try {
+-                for (auto& depth_pools : device_pools_) {
+-                    for (auto& pools : depth_pools) {
+-                        for (auto& pool : pools) {
+-                            std::shared_ptr<texture> item;
+-                            while (pool.second.try_pop(item)) {
+-                                cached_device_bytes_.fetch_sub(item->size());
+-                                item.reset();
+-                            }
+-                        }
+-                    }
+-                }
+-                for (auto& pools : host_pools_) {
+-                    for (auto& pool : pools) {
+-                        std::shared_ptr<buffer> item;
+-                        while (pool.second.try_pop(item)) {
+-                            cached_host_bytes_.fetch_sub(item->size());
+-                            item.reset();
+-                        }
+-                    }
+-                }
++                device_cache_.clear();
++                host_cache_.clear();
+             } catch (...) {
+                 CASPAR_LOG_CURRENT_EXCEPTION();
+             }

@@ -1,0 +1,16 @@
+'use strict';
+(()=>{
+const el=id=>document.getElementById(id);
+let revision=0,periods=[],choices=[];
+async function request(path,method='GET',body){const r=await fetch('/api/'+path,{method,headers:{'Content-Type':'application/json','X-Skycam-Edit':'1'},body:body===undefined?undefined:JSON.stringify(body)});const d=await r.json();if(!r.ok)throw Error(typeof d.detail==='string'?d.detail:JSON.stringify(d.detail));return d}
+function input(type,value,change){const n=document.createElement('input');n.type=type;n.value=value;n.oninput=()=>change(n.value);return n}
+function label(text,node){const l=document.createElement('label');l.append(document.createTextNode(text),node);return l}
+function render(){el('daypartRows').replaceChildren(...periods.map((p,i)=>{const row=document.createElement('div');row.className='rule';const select=document.createElement('select');select.append(new Option('Choose a saved loop',''));for(const c of choices)select.append(new Option(c.name,c.id));select.value=p.playlist_id;select.onchange=()=>p.playlist_id=select.value;const remove=document.createElement('button');remove.textContent='Remove period';remove.className='secondary';remove.onclick=()=>{periods.splice(i,1);render()};row.append(label('Name',input('text',p.name,v=>p.name=v)),label('Saved loop',select),label('From',input('time',p.start,v=>p.start=v)),label('Until',input('time',p.end,v=>p.end=v)),remove);return row}))}
+async function reload(){try{const [d,l]=await Promise.all([request('dayparts'),request('rundown-library')]);revision=d.revision;periods=structuredClone(d.config.periods);choices=l.items;el('daypartEnabled').checked=d.config.enabled;render();el('daypartStatus').textContent=d.error||(d.selected?'Selected now: '+d.selected:'Normal background loop selected')}catch(e){el('daypartStatus').textContent=e.message}}
+el('daypartAdd').onclick=()=>{if(periods.length>=8)return;periods.push({name:'New daypart',playlist_id:choices[0]?.id||'',start:'07:00',end:'12:00'});render()};
+el('daypartReload').onclick=reload;
+el('daypartSave').onclick=async()=>{try{const d=await request('dayparts','PUT',{expected_revision:revision,config:{enabled:el('daypartEnabled').checked,periods}});revision=d.revision;el('daypartStatus').textContent='Saved. Applies at the next background cue boundary; manual hold remains in control.'}catch(e){el('daypartStatus').textContent=e.message}};
+async function quietLoad(){try{const d=await request('music');el('quietEnabled').checked=d.quiet_enabled;el('quietStart').value=d.quiet_start;el('quietEnd').value=d.quiet_end;el('quietVolume').value=Math.round(d.quiet_volume*100);el('quietStatus').textContent=d.quiet_active?'Quiet hours active':'Quiet hours currently inactive'}catch(e){el('quietStatus').textContent=e.message}}
+el('quietSave').onclick=async()=>{try{const current=await request('music');const config={};for(const key of ['source','mood','seed','shuffle','enabled','volume'])config[key]=current[key];Object.assign(config,{quiet_enabled:el('quietEnabled').checked,quiet_start:el('quietStart').value,quiet_end:el('quietEnd').value,quiet_volume:Number(el('quietVolume').value)/100});const d=await request('music','PUT',config);el('quietStatus').textContent='Saved. Effective music level: '+Math.round(d.effective_volume*100)+'%.'}catch(e){el('quietStatus').textContent=e.message}};
+reload();quietLoad();
+})();

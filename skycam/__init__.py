@@ -1,0 +1,1 @@
+"""SkyCam local aircraft overlay."""

@@ -1,0 +1,16 @@
+# Optional local desktop sound through the logged-in user's PulseAudio interface.
+# PipeWire's pulse server exposes the same socket. No anonymous server is enabled.
+services:
+  engine:
+    environment:
+      PULSE_SERVER: unix:/tmp/station-pulse
+      PULSE_PROP: application.name=Station-Program
+      ALSOFT_DRIVERS: pulse
+    volumes:
+      # Do not let Docker create a directory where PipeWire must create its
+      # socket when the engine is attempted before desktop login at boot.
+      - type: bind
+        source: ${STATION_PULSE_SOCKET:?}
+        target: /tmp/station-pulse
+        bind:
+          create_host_path: false

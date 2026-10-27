@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "location": {
+    "name": "Local area",
+    "latitude": 0.0,
+    "longitude": 0.0,
+    "timezone": "UTC",
+    "clock_label": ""
+  },
+  "regional_preset": "none",
+  "inputs": {
+    "camera_base": "rtsp://192.0.2.10:8554",
+    "camera_shared_base": "rtsp://source-hub:8554",
+    "camera_rtmp_base": "rtmp://source-hub:1935",
+    "camera_hls_base": "http://source-hub:8888",
+    "adsb_url": "",
+    "metadata_url": ""
+  },
+  "output": {
+    "profile": "1080p3000",
+    "playout": false,
+    "amcp_host": "engine",
+    "amcp_port": 5250,
+    "studio_url": "http://studio:8765",
+    "publish": false,
+    "publish_url": "",
+    "encoder": "h264_nvenc",
+    "bitrate_kbps": 12000,
+    "hdmi": false,
+    "screen": 0,
+    "screen_rect": [
+      0,
+      0,
+      1920,
+      1080
+    ],
+    "audio_rate": 48000,
+    "desktop_audio": false
+  },
+  "storage": {
+    "cache_mib": 2048,
+    "history_days": 30,
+    "minimum_free_mib": 2048
+  },
+  "data_directory": "../data",
+  "music_directory": "../music",
+  "brand_file": "branding.json",
+  "secrets_directory": "../secrets",
+  "secrets": {},
+  "providers": {
+    "adsb": false,
+    "metadata": false,
+    "news": false,
+    "weather": false,
+    "flights": false,
+    "markets": false,
+    "marine": false,
+    "ais": false,
+    "tides": false,
+    "outages": false,
+    "power": false,
+    "power_reports": false,
+    "alerts": false,
+    "radar": false
+  }
+}

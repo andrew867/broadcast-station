@@ -1,0 +1,20 @@
+# Intel HD30 single-camera/map workload is qualified; see the release checklist.
+services:
+  engine:
+    devices: [/dev/dri:/dev/dri]
+    # Xwayland owns the display card. Its OpenGL clients need the render group,
+    # not a guessed card0 group (some hosts expose only card1).
+    group_add: ["${STATION_RENDER_GID:?}"]
+    environment:
+      EGL_PLATFORM: "${STATION_EGL_PLATFORM:-x11}"
+      LD_PRELOAD: /usr/lib/station/cef-mallinfo-compat.so:/usr/lib/station/uc-image-copy.so
+  source-health:
+    devices: [/dev/dri:/dev/dri]
+    group_add: ["${STATION_RENDER_GID:?}"]
+    environment:
+      STATION_HEALTH_VAAPI: /dev/dri/renderD128
+      # Older Intel/free media drivers may decode but lack VAAPI VPP scaling.
+      STATION_HEALTH_SCALE: software
+      # Every third decoded picture is sufficient for health; skip expensive
+      # downloads/resizing of the others without duplicating stale frames.
+      STATION_HEALTH_SAMPLE_STRIDE: "3"

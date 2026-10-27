@@ -1,0 +1,29 @@
+--- a/src/modules/ffmpeg/util/av_util.cpp
++++ b/src/modules/ffmpeg/util/av_util.cpp
+@@ -342,6 +342,26 @@
+             break;
+     }
+ 
++    // SkyCam: reference the existing readback buffer instead of copying 4K
++    // BGRA scanlines into a second allocation. The AVBuffer owns a const_frame
++    // reference, so its GPU readback mapping survives until FFmpeg releases it.
++    if (format == core::pixel_format::bgra && !is_16bit && planes.size() == 1 &&
++        planes[0].width == format_desc.width && planes[0].height == format_desc.height) {
++        auto owner = new core::const_frame(frame);
++        auto data = const_cast<std::uint8_t*>(owner->image_data(0).data());
++        av_frame->buf[0] = av_buffer_create(data, owner->image_data(0).size(),
++            [](void* opaque, std::uint8_t*) { delete static_cast<core::const_frame*>(opaque); },
++            owner, AV_BUFFER_FLAG_READONLY);
++        if (!av_frame->buf[0]) {
++            delete owner;
++            FF_RET(AVERROR(ENOMEM), "av_buffer_create");
++        }
++        av_frame->data[0] = data;
++        av_frame->linesize[0] = planes[0].linesize;
++        av_frame->extended_data = av_frame->data;
++        return av_frame;
++    }
++
+     FF(av_frame_get_buffer(av_frame.get(), is_16bit ? 64 : 32));
+ 
+     // TODO (perf) Avoid extra memcpy.

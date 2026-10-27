@@ -1,0 +1,1240 @@
+{
+  "note": "One-time sanitised seed; candidate edits continue independently. Source hashes identify private lineage without including original values.",
+  "files": [
+    {
+      "path": "skycam/aeroapi.py",
+      "source_sha256": "61b27872119c34f64175966e41e7ebfd82983172998d0233b0100c1b8a361d88",
+      "seed_sha256": "61b27872119c34f64175966e41e7ebfd82983172998d0233b0100c1b8a361d88"
+    },
+    {
+      "path": "skycam/aircraft_graphics.py",
+      "source_sha256": "c8bcdb2e8544b22c1b0c954397ac49d3e8e5da5a05ca6b5a61554dd61a414847",
+      "seed_sha256": "c8bcdb2e8544b22c1b0c954397ac49d3e8e5da5a05ca6b5a61554dd61a414847"
+    },
+    {
+      "path": "skycam/aircraft_metadata.py",
+      "source_sha256": "4a1663838186588e9dc326972a9a413acd75e6cd71b4f0ffb679354d84544fda",
+      "seed_sha256": "749f2c963bf0e308995fb1ac6fbb2097ae37ee06ea975415b739726ab15a7d93"
+    },
+    {
+      "path": "skycam/ais.py",
+      "source_sha256": "6ecd4822100022d4cd53567b6134a483e9e47e48aeaf2e2239032fd949a9ad37",
+      "seed_sha256": "6ecd4822100022d4cd53567b6134a483e9e47e48aeaf2e2239032fd949a9ad37"
+    },
+    {
+      "path": "skycam/alerts.py",
+      "source_sha256": "cf505c444bb24783e5c8c47df9da7ecf7294d2409f097c3336cb81ef38e8d4ed",
+      "seed_sha256": "cf505c444bb24783e5c8c47df9da7ecf7294d2409f097c3336cb81ef38e8d4ed"
+    },
+    {
+      "path": "skycam/alert_audio.py",
+      "source_sha256": "b233ed29179c9200e3bac4025fbd5d0183a0a2cf85615fe403266e661adc9d3e",
+      "seed_sha256": "b233ed29179c9200e3bac4025fbd5d0183a0a2cf85615fe403266e661adc9d3e"
+    },
+    {
+      "path": "skycam/alert_graphics.py",
+      "source_sha256": "84faf353f8dca1a5d4f6b51f829c090eb363bc9ab36978abb8cd659a8280bda6",
+      "seed_sha256": "84faf353f8dca1a5d4f6b51f829c090eb363bc9ab36978abb8cd659a8280bda6"
+    },
+    {
+      "path": "skycam/alert_presentation.py",
+      "source_sha256": "8afb2ebffd5d918f05fd962f60a421ea3d8667777b3d3b130cbfd79f75cf3565",
+      "seed_sha256": "8afb2ebffd5d918f05fd962f60a421ea3d8667777b3d3b130cbfd79f75cf3565"
+    },
+    {
+      "path": "skycam/alert_resources.py",
+      "source_sha256": "4225d49680ab781db75e52aadb8ff549b2364bf2e8ee69351b2c87362f80e3ba",
+      "seed_sha256": "4225d49680ab781db75e52aadb8ff549b2364bf2e8ee69351b2c87362f80e3ba"
+    },
+    {
+      "path": "skycam/alert_titles.py",
+      "source_sha256": "197f8e9733a02779cc27c5338f869962d093d60bd423f64f416d32ee345b84cd",
+      "seed_sha256": "197f8e9733a02779cc27c5338f869962d093d60bd423f64f416d32ee345b84cd"
+    },
+    {
+      "path": "skycam/alert_verification.py",
+      "source_sha256": "96874da842e8e2a0bc6db9bd1593af39fcbaa7116faafd461751ea93da219bfa",
+      "seed_sha256": "96874da842e8e2a0bc6db9bd1593af39fcbaa7116faafd461751ea93da219bfa"
+    },
+    {
+      "path": "skycam/app.py",
+      "source_sha256": "fbe3d908cbee4d5326fabfea10e5e3a6bc039ec65a380862d6886700ac536cd2",
+      "seed_sha256": "5fcf1d866a93916a7b74aba8767606fcb727925e9ae01ae6d3d9a66e8cf3b80b"
+    },
+    {
+      "path": "skycam/broadcast.py",
+      "source_sha256": "cbd6606628dd0549285e1210d6ff4de1d54190f56cba5ef309d7f57e6f37abbe",
+      "seed_sha256": "92c206c33f062714ca8369b0cbd46c49067a0ec9a3a29dcdacbb6487f3ae0d22"
+    },
+    {
+      "path": "skycam/calibration.py",
+      "source_sha256": "5d370515afb0cdbb4a750c6f6fd07ab0d7d42acfa9f10d7ce4b610f35251311b",
+      "seed_sha256": "5d370515afb0cdbb4a750c6f6fd07ab0d7d42acfa9f10d7ce4b610f35251311b"
+    },
+    {
+      "path": "skycam/camera_recovery.py",
+      "source_sha256": "565e092a840e8c2a30adb2495ad79fa58de4744b6b48171288d9b27594d132b7",
+      "seed_sha256": "565e092a840e8c2a30adb2495ad79fa58de4744b6b48171288d9b27594d132b7"
+    },
+    {
+      "path": "skycam/camera_tools.py",
+      "source_sha256": "28976323be90f3eeffcdb4d44eeb1ca7f3d8acd9ab8d38099d08c61e6679d03a",
+      "seed_sha256": "28976323be90f3eeffcdb4d44eeb1ca7f3d8acd9ab8d38099d08c61e6679d03a"
+    },
+    {
+      "path": "skycam/commercial.py",
+      "source_sha256": "e0a776ffac9b3c240682642fe512de875280d37a8906f2b04c2e4561d9403f22",
+      "seed_sha256": "e0a776ffac9b3c240682642fe512de875280d37a8906f2b04c2e4561d9403f22"
+    },
+    {
+      "path": "skycam/community_cards.py",
+      "source_sha256": "1d9244d9132c8baa1a78c53a639fcfca2e47615ebb05606cdb986add775903d6",
+      "seed_sha256": "c68780f3373e346a70767da9ba2e05eb7705268ea44a63389584a28ed4e4a178"
+    },
+    {
+      "path": "skycam/daylight.py",
+      "source_sha256": "5b2ea39072c31b5f66b6e2577d7cf12b5d8de78bc684caa537c13c1cdafaafd1",
+      "seed_sha256": "5b2ea39072c31b5f66b6e2577d7cf12b5d8de78bc684caa537c13c1cdafaafd1"
+    },
+    {
+      "path": "skycam/dayparts.py",
+      "source_sha256": "76cf884f3cb129c5c62e13204701c12c2507e31715adf0ea4c3b321bf51c9384",
+      "seed_sha256": "76cf884f3cb129c5c62e13204701c12c2507e31715adf0ea4c3b321bf51c9384"
+    },
+    {
+      "path": "skycam/feature_scenes.py",
+      "source_sha256": "fa8ca28389fb1257d9f78b08c6fb915fc97de1d91480d84d4798e6f897a5907e",
+      "seed_sha256": "fa8ca28389fb1257d9f78b08c6fb915fc97de1d91480d84d4798e6f897a5907e"
+    },
+    {
+      "path": "skycam/flights.py",
+      "source_sha256": "54f1aff55cbb468bdb1d9453c4b601266545b060bf83a054c07fdfb7525456bf",
+      "seed_sha256": "54f1aff55cbb468bdb1d9453c4b601266545b060bf83a054c07fdfb7525456bf"
+    },
+    {
+      "path": "skycam/flight_features.py",
+      "source_sha256": "3880334c881852d313cb9238057c23585f09740196e320f644fd5f116fd28e89",
+      "seed_sha256": "3880334c881852d313cb9238057c23585f09740196e320f644fd5f116fd28e89"
+    },
+    {
+      "path": "skycam/format_defaults.py",
+      "source_sha256": "590c3aad5038c0762c87a49cf95ef4fca3d788b329f99f376ba2584249ba8ba0",
+      "seed_sha256": "590c3aad5038c0762c87a49cf95ef4fca3d788b329f99f376ba2584249ba8ba0"
+    },
+    {
+      "path": "skycam/generative_music.py",
+      "source_sha256": "c20c64c433f0cd2ccf600a64e7e033d22dcf54619eed7e15bfe68254ea4c86a5",
+      "seed_sha256": "c20c64c433f0cd2ccf600a64e7e033d22dcf54619eed7e15bfe68254ea4c86a5"
+    },
+    {
+      "path": "skycam/geometry.py",
+      "source_sha256": "deaae05faba5514442db0544e4d75a4fbd241353e5e0a69b65ea76f488f25ed1",
+      "seed_sha256": "deaae05faba5514442db0544e4d75a4fbd241353e5e0a69b65ea76f488f25ed1"
+    },
+    {
+      "path": "skycam/graphics.py",
+      "source_sha256": "f968bbb1adffcfed2624b494f048219deffd9a59cb541075bc1c62ec86790409",
+      "seed_sha256": "f968bbb1adffcfed2624b494f048219deffd9a59cb541075bc1c62ec86790409"
+    },
+    {
+      "path": "skycam/image_cache.py",
+      "source_sha256": "1d4dcafccba3b3ae6157fdcf66e9fd6ba5d0e746c0861f412c10aba3538ce9f5",
+      "seed_sha256": "1d4dcafccba3b3ae6157fdcf66e9fd6ba5d0e746c0861f412c10aba3538ce9f5"
+    },
+    {
+      "path": "skycam/issuer_trust.py",
+      "source_sha256": "06ae1324c3a9a8b21a2d195e96fba4e6f9c85eba60ef3c67c28075a9a51b9bdf",
+      "seed_sha256": "06ae1324c3a9a8b21a2d195e96fba4e6f9c85eba60ef3c67c28075a9a51b9bdf"
+    },
+    {
+      "path": "skycam/language_policy.py",
+      "source_sha256": "10d3b803be1f91a57ad06849490b8a28bf508f1442278fc21f3eebd14e7d23a3",
+      "seed_sha256": "10d3b803be1f91a57ad06849490b8a28bf508f1442278fc21f3eebd14e7d23a3"
+    },
+    {
+      "path": "skycam/live_markets.py",
+      "source_sha256": "8f3407b5a208427a3fcc5fc288336e97290e1d77a3a47b7cf59e8258814c9aa2",
+      "seed_sha256": "8f3407b5a208427a3fcc5fc288336e97290e1d77a3a47b7cf59e8258814c9aa2"
+    },
+    {
+      "path": "skycam/lofi_music.py",
+      "source_sha256": "6e7554bb6de967ce01fc9f17958100e122c62301715251fea79e1790fb2bc584",
+      "seed_sha256": "6e7554bb6de967ce01fc9f17958100e122c62301715251fea79e1790fb2bc584"
+    },
+    {
+      "path": "skycam/map_renderer.py",
+      "source_sha256": "efbbfd9cda634a088733630cad8a544323bc097e3a13f47eecf5dc6df265a909",
+      "seed_sha256": "efbbfd9cda634a088733630cad8a544323bc097e3a13f47eecf5dc6df265a909"
+    },
+    {
+      "path": "skycam/map_scenes.py",
+      "source_sha256": "1b7136859f87c09fb8e9c3249bb5e0cc196e547c96fbcd1831a2e905099c966c",
+      "seed_sha256": "1b7136859f87c09fb8e9c3249bb5e0cc196e547c96fbcd1831a2e905099c966c"
+    },
+    {
+      "path": "skycam/map_theme.py",
+      "source_sha256": "14eb1aa8ec2cdf271f73e9a0f7cbbe05da1c895644aec1899250234655e333cf",
+      "seed_sha256": "14eb1aa8ec2cdf271f73e9a0f7cbbe05da1c895644aec1899250234655e333cf"
+    },
+    {
+      "path": "skycam/marine.py",
+      "source_sha256": "7be23a0090797d17c1421b70ef012f95294f196b570c1e401bf011a287373326",
+      "seed_sha256": "7be23a0090797d17c1421b70ef012f95294f196b570c1e401bf011a287373326"
+    },
+    {
+      "path": "skycam/markets.py",
+      "source_sha256": "ea662cd1b7d2bdda84efab36d67db7c2bb481229308888b3008803a98113760a",
+      "seed_sha256": "ea662cd1b7d2bdda84efab36d67db7c2bb481229308888b3008803a98113760a"
+    },
+    {
+      "path": "skycam/market_graphics.py",
+      "source_sha256": "ad74d224fc53eca06a4b360b1b5627a4d23626e57443b122c8140f17fe82b74f",
+      "seed_sha256": "ad74d224fc53eca06a4b360b1b5627a4d23626e57443b122c8140f17fe82b74f"
+    },
+    {
+      "path": "skycam/models.py",
+      "source_sha256": "f7faf884880f8c5651b52e41d10c475800e0c968c26e55d32ce6bf823caae144",
+      "seed_sha256": "f7faf884880f8c5651b52e41d10c475800e0c968c26e55d32ce6bf823caae144"
+    },
+    {
+      "path": "skycam/moon_card.py",
+      "source_sha256": "d1e14640b5d78cb171d4eaea90b29d202c8ae014011c3bf590078115eaaac530",
+      "seed_sha256": "d1e14640b5d78cb171d4eaea90b29d202c8ae014011c3bf590078115eaaac530"
+    },
+    {
+      "path": "skycam/music.py",
+      "source_sha256": "98932e06f20083ef70707345eda112f479ae60a510ea7ce8d605b374d317b77e",
+      "seed_sha256": "e19cd50aa4335f606e7077444627928ca0497b72c08c79082d272386efdb251b"
+    },
+    {
+      "path": "skycam/music_levels.py",
+      "source_sha256": "8f9ca7d94c4e8277bbe5912109950e941a947570fb1b3f0a7eea1dd7a5d6ee60",
+      "seed_sha256": "8f9ca7d94c4e8277bbe5912109950e941a947570fb1b3f0a7eea1dd7a5d6ee60"
+    },
+    {
+      "path": "skycam/music_status.py",
+      "source_sha256": "ca83bb74b2266e9f6d5a4334b6c3d9e26832243a080da788b6b55981ba482f7a",
+      "seed_sha256": "ca83bb74b2266e9f6d5a4334b6c3d9e26832243a080da788b6b55981ba482f7a"
+    },
+    {
+      "path": "skycam/music_worker.py",
+      "source_sha256": "84fcd9b7ba859f2e79dbf004f3821c30a0bdf8c632e31c07d27d81cacc759dab",
+      "seed_sha256": "84fcd9b7ba859f2e79dbf004f3821c30a0bdf8c632e31c07d27d81cacc759dab"
+    },
+    {
+      "path": "skycam/native_ticker.py",
+      "source_sha256": "a316d8aef9c16e3d64730a2fe554d3474b7a95a27108826a1fe715d5f3fd567d",
+      "seed_sha256": "a316d8aef9c16e3d64730a2fe554d3474b7a95a27108826a1fe715d5f3fd567d"
+    },
+    {
+      "path": "skycam/network_health.py",
+      "source_sha256": "e739bc4bdad4aa9e66ec899e7963b02bcac8425135ddc521d649acd17c2285a4",
+      "seed_sha256": "894de97053a98dfdcace16336eef9761c310d4342b0ae2c9e110f9c6f36b4666"
+    },
+    {
+      "path": "skycam/notices.py",
+      "source_sha256": "e6f594275fc73a965a9d6d03c56c3f305332769f7557d72ced8ed7ace6f13659",
+      "seed_sha256": "e6f594275fc73a965a9d6d03c56c3f305332769f7557d72ced8ed7ace6f13659"
+    },
+    {
+      "path": "skycam/outages.py",
+      "source_sha256": "f2a683adaaa40882da3b2792093115b8df3695d80f81c03f9743e70ffa0bfb8e",
+      "seed_sha256": "f2a683adaaa40882da3b2792093115b8df3695d80f81c03f9743e70ffa0bfb8e"
+    },
+    {
+      "path": "skycam/output_timing.py",
+      "source_sha256": "c727aa06dc5ca73e30d79af2936c24bf6e7d2894d24d5d493b9c798ec66877b7",
+      "seed_sha256": "c727aa06dc5ca73e30d79af2936c24bf6e7d2894d24d5d493b9c798ec66877b7"
+    },
+    {
+      "path": "skycam/performance.py",
+      "source_sha256": "48289190a34a7f140f2c3ff062be1d16fb5cf8599ba9883f7fd825f2ef022667",
+      "seed_sha256": "48289190a34a7f140f2c3ff062be1d16fb5cf8599ba9883f7fd825f2ef022667"
+    },
+    {
+      "path": "skycam/performance_history.py",
+      "source_sha256": "4a20e129e7ac621343f123045472c48f886781d4796ad25a4f5bb85ce92b7b10",
+      "seed_sha256": "4a20e129e7ac621343f123045472c48f886781d4796ad25a4f5bb85ce92b7b10"
+    },
+    {
+      "path": "skycam/picture_history.py",
+      "source_sha256": "33d9a8207ebf4dd1d9fa2ea184c91cc37789d1421bbdce5250362c8654b43305",
+      "seed_sha256": "33d9a8207ebf4dd1d9fa2ea184c91cc37789d1421bbdce5250362c8654b43305"
+    },
+    {
+      "path": "skycam/playout.py",
+      "source_sha256": "02d3a7c1ce900a9f9847ab58d351a3269dac54374c5a09221ed8484091068a3f",
+      "seed_sha256": "9562fe4d6b7953d569c7e9aba702fe4e194713d94b227befeb28be00b0653198"
+    },
+    {
+      "path": "skycam/program_clock.py",
+      "source_sha256": "cd16bad100f60a52b5f72356a7dc9863014cb96d268d9cb00eab41b846ac39c0",
+      "seed_sha256": "cd16bad100f60a52b5f72356a7dc9863014cb96d268d9cb00eab41b846ac39c0"
+    },
+    {
+      "path": "skycam/radar_renderer.py",
+      "source_sha256": "ba0d9e4d134976584ee1dc6cf7082e2747631626a6114e73e556b1d95aada6ae",
+      "seed_sha256": "ba0d9e4d134976584ee1dc6cf7082e2747631626a6114e73e556b1d95aada6ae"
+    },
+    {
+      "path": "skycam/readiness.py",
+      "source_sha256": "dfbc9485638a4912a2a0f3d323afb20e0b2d04a7820384abf95e4ddbf4bbe2b5",
+      "seed_sha256": "dfbc9485638a4912a2a0f3d323afb20e0b2d04a7820384abf95e4ddbf4bbe2b5"
+    },
+    {
+      "path": "skycam/rendered_preview.py",
+      "source_sha256": "9f6795c3053511c0d6fa429e0daade5859f9e3e9839fe407328b2ae977a2de8d",
+      "seed_sha256": "9f6795c3053511c0d6fa429e0daade5859f9e3e9839fe407328b2ae977a2de8d"
+    },
+    {
+      "path": "skycam/resource_budget.py",
+      "source_sha256": "ffe2c4627e0947d603bbafdd935daebb1c6b95599947289f0d99ca2b42cd7cbc",
+      "seed_sha256": "ffe2c4627e0947d603bbafdd935daebb1c6b95599947289f0d99ca2b42cd7cbc"
+    },
+    {
+      "path": "skycam/rundown.py",
+      "source_sha256": "307dd4fff923cff9f510285359d853b10425bc164f7133382e8dd811d271d37f",
+      "seed_sha256": "307dd4fff923cff9f510285359d853b10425bc164f7133382e8dd811d271d37f"
+    },
+    {
+      "path": "skycam/rundown_library.py",
+      "source_sha256": "74185fa831f323c3d5b60846bbf6d54715e1a70697f3858fe89baf18126783b1",
+      "seed_sha256": "74185fa831f323c3d5b60846bbf6d54715e1a70697f3858fe89baf18126783b1"
+    },
+    {
+      "path": "skycam/serve.py",
+      "source_sha256": "73b8e9d42e04ffaf63245c4c09461d4b48fcc648c6bbb6cb8ee4019ccb62822c",
+      "seed_sha256": "73b8e9d42e04ffaf63245c4c09461d4b48fcc648c6bbb6cb8ee4019ccb62822c"
+    },
+    {
+      "path": "skycam/sources.py",
+      "source_sha256": "a956e2cbff0ef89517d541afc071d063393894292118b56633f0719cd6ef9fc2",
+      "seed_sha256": "dd8aca7a4761a8eec09f46e8d53a04c83b738718e37e89f1f84df31b91b6097b"
+    },
+    {
+      "path": "skycam/source_routing.py",
+      "source_sha256": "dbf430f5cf032e95f37198b92172741ecf0a6d7d5254a17ec3beea192868ccb0",
+      "seed_sha256": "5a1fd5a94313602af3990aa447faaf2524bdf9abe16b12b431265bfbbbf8e002"
+    },
+    {
+      "path": "skycam/storage.py",
+      "source_sha256": "a064e982aa9c02a000b6750a716f5d625344876795568c3fccefa9264aa65653",
+      "seed_sha256": "a064e982aa9c02a000b6750a716f5d625344876795568c3fccefa9264aa65653"
+    },
+    {
+      "path": "skycam/strudel_music.py",
+      "source_sha256": "0fe77c85375685c3528b9e54f5b0563ea2478f0f542f412de1907a779725e9c9",
+      "seed_sha256": "0fe77c85375685c3528b9e54f5b0563ea2478f0f542f412de1907a779725e9c9"
+    },
+    {
+      "path": "skycam/study_radio.py",
+      "source_sha256": "ef3675904df456bc85e966951fb3097a09447f516dd3bf7066ade858347c1e88",
+      "seed_sha256": "ef3675904df456bc85e966951fb3097a09447f516dd3bf7066ade858347c1e88"
+    },
+    {
+      "path": "skycam/study_radio_config.py",
+      "source_sha256": "edc81fa13ea6bdb53643b4cbedacc7ba39482dcf4f5c5e60f080982a1298ae16",
+      "seed_sha256": "edc81fa13ea6bdb53643b4cbedacc7ba39482dcf4f5c5e60f080982a1298ae16"
+    },
+    {
+      "path": "skycam/study_songs.py",
+      "source_sha256": "c1f1bf36249c81f4aaaed21513f264948a871a316ad6d5e85c65c21e8243238b",
+      "seed_sha256": "c1f1bf36249c81f4aaaed21513f264948a871a316ad6d5e85c65c21e8243238b"
+    },
+    {
+      "path": "skycam/tides.py",
+      "source_sha256": "5f910564a8dfc5e79b116b6625727764ecd4b91ba766cb452654ca1059b7ad5c",
+      "seed_sha256": "5f910564a8dfc5e79b116b6625727764ecd4b91ba766cb452654ca1059b7ad5c"
+    },
+    {
+      "path": "skycam/tmx_markets.py",
+      "source_sha256": "040f0132947f87bfc7e362be6df30b9aace948d8eb0b9501d36c7de31cd9751b",
+      "seed_sha256": "040f0132947f87bfc7e362be6df30b9aace948d8eb0b9501d36c7de31cd9751b"
+    },
+    {
+      "path": "skycam/tracking.py",
+      "source_sha256": "536ae3761a60f2ad09cb8fb51343926ff21e207ef846da68ad76d760aebaf26e",
+      "seed_sha256": "536ae3761a60f2ad09cb8fb51343926ff21e207ef846da68ad76d760aebaf26e"
+    },
+    {
+      "path": "skycam/transport_health.py",
+      "source_sha256": "1ee2770d6507845f46c987f0438eec992fcaaa14c41e519f9be490f402f295f8",
+      "seed_sha256": "1ee2770d6507845f46c987f0438eec992fcaaa14c41e519f9be490f402f295f8"
+    },
+    {
+      "path": "skycam/weather.py",
+      "source_sha256": "17ad41583e536f91b8291717aabcdbed64303c1cacbb822a134bd031380e360f",
+      "seed_sha256": "17ad41583e536f91b8291717aabcdbed64303c1cacbb822a134bd031380e360f"
+    },
+    {
+      "path": "skycam/weather_renderer.py",
+      "source_sha256": "c014996c5628f9629b37f5072044a780d743388aec712512c9c599800631c049",
+      "seed_sha256": "c014996c5628f9629b37f5072044a780d743388aec712512c9c599800631c049"
+    },
+    {
+      "path": "skycam/__init__.py",
+      "source_sha256": "0e8a471bcbb315d97f08e1e4f2df271cd101c4fa7d26038bf787813d5377ca16",
+      "seed_sha256": "0e8a471bcbb315d97f08e1e4f2df271cd101c4fa7d26038bf787813d5377ca16"
+    },
+    {
+      "path": "skycam/assets/ATTENTION-SIGNAL.md",
+      "source_sha256": "ae3a1bb4149bc4defae92f11caddabf553ad689fb249b1f6845408a8c46657ed",
+      "seed_sha256": "ae3a1bb4149bc4defae92f11caddabf553ad689fb249b1f6845408a8c46657ed"
+    },
+    {
+      "path": "skycam/assets/attention.wav",
+      "source_sha256": "50e281808e9c81df675a1474561b2b71f1685d06725127e2e7cfe254adabc6ae",
+      "seed_sha256": "50e281808e9c81df675a1474561b2b71f1685d06725127e2e7cfe254adabc6ae"
+    },
+    {
+      "path": "skycam/assets/strudel-arrange.mjs",
+      "source_sha256": "15709ffd1eda4a44ae2c8c968f1b7b85a5505f6b1dca5be80abcbcc312c34937",
+      "seed_sha256": "15709ffd1eda4a44ae2c8c968f1b7b85a5505f6b1dca5be80abcbcc312c34937"
+    },
+    {
+      "path": "skycam/assets/study-radio-arrange.mjs",
+      "source_sha256": "8d13feb80c5b49360867d66697bb92d5e8af80650ac958f49e20d26a8073b729",
+      "seed_sha256": "8d13feb80c5b49360867d66697bb92d5e8af80650ac958f49e20d26a8073b729"
+    },
+    {
+      "path": "skycam/radar/east-reference.jpg",
+      "source_sha256": "4489d254c28fc598397aa49cda61f2d4fe88aa5e1f8c50212336f70f3f6a07c7",
+      "seed_sha256": "4489d254c28fc598397aa49cda61f2d4fe88aa5e1f8c50212336f70f3f6a07c7"
+    },
+    {
+      "path": "skycam/radar/east.json",
+      "source_sha256": "7aae1bffc22c7d61c6dadcb71acbf3b08d62597fbcca58441575b464f0333423",
+      "seed_sha256": "7aae1bffc22c7d61c6dadcb71acbf3b08d62597fbcca58441575b464f0333423"
+    },
+    {
+      "path": "skycam/radar/island-reference.jpg",
+      "source_sha256": "52710e5620ef728698b73a2622e264e101925b66e689bf6df5aa07042dae27cf",
+      "seed_sha256": "52710e5620ef728698b73a2622e264e101925b66e689bf6df5aa07042dae27cf"
+    },
+    {
+      "path": "skycam/radar/island.json",
+      "source_sha256": "2eab235e199b6752d251f1420cf641fb4bcf054b4c47ed67a387d7da300d9113",
+      "seed_sha256": "2eab235e199b6752d251f1420cf641fb4bcf054b4c47ed67a387d7da300d9113"
+    },
+    {
+      "path": "skycam/static/ais.html",
+      "source_sha256": "b6bfbb429e2cc2a31f1d9c3351e3af8ddc237f28ccd7c6dbc6b3547e8bf42ab3",
+      "seed_sha256": "b6bfbb429e2cc2a31f1d9c3351e3af8ddc237f28ccd7c6dbc6b3547e8bf42ab3"
+    },
+    {
+      "path": "skycam/static/ais.js",
+      "source_sha256": "74cf73683864d1e4bcd9f22ba1d97761eaa238588253294eaf6274d1b66a3ed7",
+      "seed_sha256": "74cf73683864d1e4bcd9f22ba1d97761eaa238588253294eaf6274d1b66a3ed7"
+    },
+    {
+      "path": "skycam/static/alerts.html",
+      "source_sha256": "a11691c8687e8642af812dae2d8138d39e03fbd4fa32c29f192c2b907be5c7c2",
+      "seed_sha256": "a11691c8687e8642af812dae2d8138d39e03fbd4fa32c29f192c2b907be5c7c2"
+    },
+    {
+      "path": "skycam/static/alerts.js",
+      "source_sha256": "6a6438436a45d0b0a68d7a5be62cf5f85b80fa9d6ef35a3d86b646f749ed5a60",
+      "seed_sha256": "6a6438436a45d0b0a68d7a5be62cf5f85b80fa9d6ef35a3d86b646f749ed5a60"
+    },
+    {
+      "path": "skycam/static/app.js",
+      "source_sha256": "e72126d3d6b119205bf633fce47860fc849524954ab20554068c551d40201506",
+      "seed_sha256": "e72126d3d6b119205bf633fce47860fc849524954ab20554068c551d40201506"
+    },
+    {
+      "path": "skycam/static/broadcast.css",
+      "source_sha256": "8256acef397b3ac6e1e2217cb22512ef2dd4f8df92e60e9567d84eb17092508e",
+      "seed_sha256": "8256acef397b3ac6e1e2217cb22512ef2dd4f8df92e60e9567d84eb17092508e"
+    },
+    {
+      "path": "skycam/static/broadcast.html",
+      "source_sha256": "d5aecefe6ed4ef9abf19d6e734b12ed429e9439891dd647b3ad76b52811fc1cf",
+      "seed_sha256": "d5aecefe6ed4ef9abf19d6e734b12ed429e9439891dd647b3ad76b52811fc1cf"
+    },
+    {
+      "path": "skycam/static/broadcast.js",
+      "source_sha256": "74ea7c7b4ceda9f18cd2d40b91d6055850b96568e79649be343d3f6bc4f79b67",
+      "seed_sha256": "74ea7c7b4ceda9f18cd2d40b91d6055850b96568e79649be343d3f6bc4f79b67"
+    },
+    {
+      "path": "skycam/static/cameras.html",
+      "source_sha256": "f44436f57f3a4066070cc10c647a7f935d1c20f3a665ad1f23f6b8395f2a403f",
+      "seed_sha256": "31aa27ce58d2d87830d0d0dda351f76b5acaca378aad1feebb467a17325d8649"
+    },
+    {
+      "path": "skycam/static/cameras.js",
+      "source_sha256": "458b19aa56878dbb77b4d5ef41d233e42110c05c493317279ea6dfdfe05559d4",
+      "seed_sha256": "458b19aa56878dbb77b4d5ef41d233e42110c05c493317279ea6dfdfe05559d4"
+    },
+    {
+      "path": "skycam/static/clock.html",
+      "source_sha256": "85a0dcf7cb8691d378a50bfbf3d28ba2502271db94c83e876182f746c4a6a2c1",
+      "seed_sha256": "85a0dcf7cb8691d378a50bfbf3d28ba2502271db94c83e876182f746c4a6a2c1"
+    },
+    {
+      "path": "skycam/static/clock.js",
+      "source_sha256": "bed81f5a65a9434a36561a893632915d7ade687cf7422e5c9ceab6413619a608",
+      "seed_sha256": "bed81f5a65a9434a36561a893632915d7ade687cf7422e5c9ceab6413619a608"
+    },
+    {
+      "path": "skycam/static/commercial.html",
+      "source_sha256": "41f4a27d4f61abf0d79be0159e006dc2edcb34d6c413a8916028804f3564be0e",
+      "seed_sha256": "41f4a27d4f61abf0d79be0159e006dc2edcb34d6c413a8916028804f3564be0e"
+    },
+    {
+      "path": "skycam/static/commercial.js",
+      "source_sha256": "8e33e6137a61bd4698eaf5467f8fcac966cfe96c0259e6f4ef7042c272502c22",
+      "seed_sha256": "8e33e6137a61bd4698eaf5467f8fcac966cfe96c0259e6f4ef7042c272502c22"
+    },
+    {
+      "path": "skycam/static/confidence.html",
+      "source_sha256": "d9dcdfab67428304074b7df71a731257e66adc561461d58c6dbfad1deee17bad",
+      "seed_sha256": "d9dcdfab67428304074b7df71a731257e66adc561461d58c6dbfad1deee17bad"
+    },
+    {
+      "path": "skycam/static/confidence.js",
+      "source_sha256": "86ad47dfb251a26ea2a4ffd3282a3c927f032b0b67345c0663b7bf320d3b7310",
+      "seed_sha256": "86ad47dfb251a26ea2a4ffd3282a3c927f032b0b67345c0663b7bf320d3b7310"
+    },
+    {
+      "path": "skycam/static/continuity.js",
+      "source_sha256": "dcd442b0d0435cc4762ae56e35bd3771db09e2f6d8dda562c3b01a247de44257",
+      "seed_sha256": "dcd442b0d0435cc4762ae56e35bd3771db09e2f6d8dda562c3b01a247de44257"
+    },
+    {
+      "path": "skycam/static/control-pages.css",
+      "source_sha256": "f283fa8bde14e7e1502f429d7af5db2de31581637a46b9d150e771f882f4500c",
+      "seed_sha256": "f283fa8bde14e7e1502f429d7af5db2de31581637a46b9d150e771f882f4500c"
+    },
+    {
+      "path": "skycam/static/dayparts.js",
+      "source_sha256": "9e38c667c03c1c4b0716985ad87ad907c8dd591614410ba0a80140609d91cfee",
+      "seed_sha256": "9e38c667c03c1c4b0716985ad87ad907c8dd591614410ba0a80140609d91cfee"
+    },
+    {
+      "path": "skycam/static/index.html",
+      "source_sha256": "b6e11a9a33dbdab2fe0183678b11b20d9b440028c93f8d5163d4eef8d0100c7d",
+      "seed_sha256": "b6e11a9a33dbdab2fe0183678b11b20d9b440028c93f8d5163d4eef8d0100c7d"
+    },
+    {
+      "path": "skycam/static/map-theme.js",
+      "source_sha256": "3ca14617bbc8d6c8b57a3ff71fa988d68bd30c9e9e0955c0b708bf99643f3b09",
+      "seed_sha256": "3ca14617bbc8d6c8b57a3ff71fa988d68bd30c9e9e0955c0b708bf99643f3b09"
+    },
+    {
+      "path": "skycam/static/map-view.html",
+      "source_sha256": "faf6ca73917c8b85f1041b2c775d1b16113478d9b345d354df955925671091b3",
+      "seed_sha256": "faf6ca73917c8b85f1041b2c775d1b16113478d9b345d354df955925671091b3"
+    },
+    {
+      "path": "skycam/static/notices.html",
+      "source_sha256": "6463ba490ec4ac34c7a0e25c2811fcef4f2c77648e70d6f5113c38a351608c80",
+      "seed_sha256": "6463ba490ec4ac34c7a0e25c2811fcef4f2c77648e70d6f5113c38a351608c80"
+    },
+    {
+      "path": "skycam/static/notices.js",
+      "source_sha256": "e5a2883032ad2299e44cf8981e022c9124646aa83ae7566c224749a17dd3e6ac",
+      "seed_sha256": "e5a2883032ad2299e44cf8981e022c9124646aa83ae7566c224749a17dd3e6ac"
+    },
+    {
+      "path": "skycam/static/outages.html",
+      "source_sha256": "8a75b3ba107699ac1f0d4ee252343132e7aa654205b6e3ab4182c93a7919a0ca",
+      "seed_sha256": "8a75b3ba107699ac1f0d4ee252343132e7aa654205b6e3ab4182c93a7919a0ca"
+    },
+    {
+      "path": "skycam/static/outages.js",
+      "source_sha256": "7dfc213050bd277d740b4f7acc124381cc62aea8b6b6ee944669d6bf48ff6149",
+      "seed_sha256": "7dfc213050bd277d740b4f7acc124381cc62aea8b6b6ee944669d6bf48ff6149"
+    },
+    {
+      "path": "skycam/static/overlay.html",
+      "source_sha256": "86eeab35651f7fe97cb705b4452e96972d664563b1d38abc9844305cf2364b58",
+      "seed_sha256": "86eeab35651f7fe97cb705b4452e96972d664563b1d38abc9844305cf2364b58"
+    },
+    {
+      "path": "skycam/static/performance.js",
+      "source_sha256": "4c78ab239c8a4bbf93c4013e2864a8975fd19000341f197d84f13496e1699254",
+      "seed_sha256": "4c78ab239c8a4bbf93c4013e2864a8975fd19000341f197d84f13496e1699254"
+    },
+    {
+      "path": "skycam/static/rendered-preview.js",
+      "source_sha256": "92c75326b17681c20682fd4fa0d4e00b9840a2c94ca9767586813e27091dd25b",
+      "seed_sha256": "92c75326b17681c20682fd4fa0d4e00b9840a2c94ca9767586813e27091dd25b"
+    },
+    {
+      "path": "skycam/static/rundown-library.js",
+      "source_sha256": "17c4339bd974f003a06129767bf4aab6074d731c7491e2981c9fe0fb527f2a68",
+      "seed_sha256": "17c4339bd974f003a06129767bf4aab6074d731c7491e2981c9fe0fb527f2a68"
+    },
+    {
+      "path": "skycam/static/rundown-presets.js",
+      "source_sha256": "67a383d235a4ccba167c8b8141cfb38498f4a8e2b1d76a0495c47c4d4f46c391",
+      "seed_sha256": "67a383d235a4ccba167c8b8141cfb38498f4a8e2b1d76a0495c47c4d4f46c391"
+    },
+    {
+      "path": "skycam/static/rundown-presets.json",
+      "source_sha256": "f25321f8eab36d67445f9ae632f6c74bc1670537f45f807e5e553e4831dfecb4",
+      "seed_sha256": "f25321f8eab36d67445f9ae632f6c74bc1670537f45f807e5e553e4831dfecb4"
+    },
+    {
+      "path": "skycam/static/rundown.js",
+      "source_sha256": "f1b72612dd3639929908d4507ec6a08009ccbd6ce5fa13f8416fa537ed1fbc70",
+      "seed_sha256": "f1b72612dd3639929908d4507ec6a08009ccbd6ce5fa13f8416fa537ed1fbc70"
+    },
+    {
+      "path": "skycam/static/scene.html",
+      "source_sha256": "18d92265a41f2372d2f9fb97e5fb478253c36597c151331a2b25b0c199d21c68",
+      "seed_sha256": "18d92265a41f2372d2f9fb97e5fb478253c36597c151331a2b25b0c199d21c68"
+    },
+    {
+      "path": "skycam/static/studio.html",
+      "source_sha256": "5b57375fa13f00bd1b3802b0b8f8473f55b8c393eefc921c9de4019938b65cb7",
+      "seed_sha256": "df74d63c7a34f1eb23fa86fd3156d57dc8c0e06307c1a7a11deb8be02f922a18"
+    },
+    {
+      "path": "skycam/static/studio.js",
+      "source_sha256": "88de6fe62cfe82797bcb7cbc5732bd9b165ce4482498c7fe6b9b2e01f80f4e83",
+      "seed_sha256": "88de6fe62cfe82797bcb7cbc5732bd9b165ce4482498c7fe6b9b2e01f80f4e83"
+    },
+    {
+      "path": "skycam/static/style.css",
+      "source_sha256": "f445115c91576424db9ccaf7c0d5b5267ba46e78484d8521178e0b36b57384d9",
+      "seed_sha256": "f445115c91576424db9ccaf7c0d5b5267ba46e78484d8521178e0b36b57384d9"
+    },
+    {
+      "path": "skycam/static/fonts/Barlow-OFL.txt",
+      "source_sha256": "186d750eb496a4c17a76385f82be6aea2ac1cf2de074a811d63786cf374ea73f",
+      "seed_sha256": "186d750eb496a4c17a76385f82be6aea2ac1cf2de074a811d63786cf374ea73f"
+    },
+    {
+      "path": "skycam/static/fonts/BarlowCondensed-Bold.ttf",
+      "source_sha256": "e476562ec9c1e16cf16475895b511f08c804f438cc9a9f80a44ea50a0eeb5b65",
+      "seed_sha256": "e476562ec9c1e16cf16475895b511f08c804f438cc9a9f80a44ea50a0eeb5b65"
+    },
+    {
+      "path": "skycam/static/fonts/BarlowCondensed-SemiBold.ttf",
+      "source_sha256": "7b619d14bc2327509a9ef32b0890f709626f7ecc9ff61191c2a4314c5499d2d9",
+      "seed_sha256": "7b619d14bc2327509a9ef32b0890f709626f7ecc9ff61191c2a4314c5499d2d9"
+    },
+    {
+      "path": "skycam/static/fonts/SourceSans3-OFL.txt",
+      "source_sha256": "09746787287a289323b0ec3cff4d1a4a801331b82b7207c1e186f5d26619a392",
+      "seed_sha256": "09746787287a289323b0ec3cff4d1a4a801331b82b7207c1e186f5d26619a392"
+    },
+    {
+      "path": "skycam/static/fonts/SourceSans3.ttf",
+      "source_sha256": "042fe2cc0b933e328410d7acbd0aa6a1873dca5aef81875f4bc214b08825c7b9",
+      "seed_sha256": "042fe2cc0b933e328410d7acbd0aa6a1873dca5aef81875f4bc214b08825c7b9"
+    },
+    {
+      "path": "skycam/static/vendor/LEAFLET-LICENSE.txt",
+      "source_sha256": "53e8dc25862014e4324741ca18fbe3611e11d42ef69f59f86ea8c5389647d4cb",
+      "seed_sha256": "53e8dc25862014e4324741ca18fbe3611e11d42ef69f59f86ea8c5389647d4cb"
+    },
+    {
+      "path": "skycam/static/vendor/leaflet.css",
+      "source_sha256": "a7837102824184820dfa198d1ebcd109ff6d0ff9a2672a074b9a1b4d147d04c6",
+      "seed_sha256": "a7837102824184820dfa198d1ebcd109ff6d0ff9a2672a074b9a1b4d147d04c6"
+    },
+    {
+      "path": "skycam/static/vendor/leaflet.js",
+      "source_sha256": "db49d009c841f5ca34a888c96511ae936fd9f5533e90d8b2c4d57596f4e5641a",
+      "seed_sha256": "db49d009c841f5ca34a888c96511ae936fd9f5533e90d8b2c4d57596f4e5641a"
+    },
+    {
+      "path": "skycam/assets/piano-kw/36.wav",
+      "source_sha256": "7395bb81d07a6b51c8863366eb743bbd6a480a1fb09573281f6317e361d00618",
+      "seed_sha256": "7395bb81d07a6b51c8863366eb743bbd6a480a1fb09573281f6317e361d00618"
+    },
+    {
+      "path": "skycam/assets/piano-kw/39.wav",
+      "source_sha256": "a46e2da1c4c7c003372cb3659c546bf9dfb09ead38e754321acb4a3a99b99b85",
+      "seed_sha256": "a46e2da1c4c7c003372cb3659c546bf9dfb09ead38e754321acb4a3a99b99b85"
+    },
+    {
+      "path": "skycam/assets/piano-kw/42.wav",
+      "source_sha256": "fe6826cb9d37cdd3997a3317d21faadedbeb16487d97bc9e9d170c3ae93f014f",
+      "seed_sha256": "fe6826cb9d37cdd3997a3317d21faadedbeb16487d97bc9e9d170c3ae93f014f"
+    },
+    {
+      "path": "skycam/assets/piano-kw/45.wav",
+      "source_sha256": "04beb68b69bf3da980fe8c1c9ab54358b925a9a48e207c33fc4a44cf84831bee",
+      "seed_sha256": "04beb68b69bf3da980fe8c1c9ab54358b925a9a48e207c33fc4a44cf84831bee"
+    },
+    {
+      "path": "skycam/assets/piano-kw/48.wav",
+      "source_sha256": "2aad7abad79aa5562248c4c9ae68bf0c996b6ef4d18138cfc36750cb26ae05e2",
+      "seed_sha256": "2aad7abad79aa5562248c4c9ae68bf0c996b6ef4d18138cfc36750cb26ae05e2"
+    },
+    {
+      "path": "skycam/assets/piano-kw/51.wav",
+      "source_sha256": "ec2a355be5cdccb02604744d94d214878a3e1ad9c501c42e0598ba3a6b3a4733",
+      "seed_sha256": "ec2a355be5cdccb02604744d94d214878a3e1ad9c501c42e0598ba3a6b3a4733"
+    },
+    {
+      "path": "skycam/assets/piano-kw/54.wav",
+      "source_sha256": "7d2a7b5234b29a7f84cc9c01da1596b0e8bcca29fa1404aede8ae056bbdd9c90",
+      "seed_sha256": "7d2a7b5234b29a7f84cc9c01da1596b0e8bcca29fa1404aede8ae056bbdd9c90"
+    },
+    {
+      "path": "skycam/assets/piano-kw/57.wav",
+      "source_sha256": "d6c171e98573ac11a704c63381c90ce1703c922a9e7a22a785c97e4ae91379cc",
+      "seed_sha256": "d6c171e98573ac11a704c63381c90ce1703c922a9e7a22a785c97e4ae91379cc"
+    },
+    {
+      "path": "skycam/assets/piano-kw/60.wav",
+      "source_sha256": "53d014ce1c2a4d75bb2b600f6035b9fdf054e15c46c528a2cbefde9b1fedf3f8",
+      "seed_sha256": "53d014ce1c2a4d75bb2b600f6035b9fdf054e15c46c528a2cbefde9b1fedf3f8"
+    },
+    {
+      "path": "skycam/assets/piano-kw/63.wav",
+      "source_sha256": "1f717143c8a32ac9da90f90995d597fbfb7d6c0cd1e3856eba86e33c59de5343",
+      "seed_sha256": "1f717143c8a32ac9da90f90995d597fbfb7d6c0cd1e3856eba86e33c59de5343"
+    },
+    {
+      "path": "skycam/assets/piano-kw/66.wav",
+      "source_sha256": "4231a1c699f39ffe603dc9f206967420c0d1f2ab6f88e0ab55472ee4fc1f3b9c",
+      "seed_sha256": "4231a1c699f39ffe603dc9f206967420c0d1f2ab6f88e0ab55472ee4fc1f3b9c"
+    },
+    {
+      "path": "skycam/assets/piano-kw/69.wav",
+      "source_sha256": "c44aa252f5c414577598f8a118bef1c3efdb9c47451d635382173b685d050f7d",
+      "seed_sha256": "c44aa252f5c414577598f8a118bef1c3efdb9c47451d635382173b685d050f7d"
+    },
+    {
+      "path": "skycam/assets/piano-kw/72.wav",
+      "source_sha256": "ee89230a3b57365ba3272eb8cc17b9b3239322e43f1d99af2572de587b6e4c1a",
+      "seed_sha256": "ee89230a3b57365ba3272eb8cc17b9b3239322e43f1d99af2572de587b6e4c1a"
+    },
+    {
+      "path": "skycam/assets/piano-kw/75.wav",
+      "source_sha256": "11a5f26fef4031f29639507dc88a883d4f0418cf35190cbfe86eefdca6f7c899",
+      "seed_sha256": "11a5f26fef4031f29639507dc88a883d4f0418cf35190cbfe86eefdca6f7c899"
+    },
+    {
+      "path": "skycam/assets/piano-kw/78.wav",
+      "source_sha256": "76c87b86211e647d2e9687290d1ccb137d88cb6d67310749950a88d862a9b6b2",
+      "seed_sha256": "76c87b86211e647d2e9687290d1ccb137d88cb6d67310749950a88d862a9b6b2"
+    },
+    {
+      "path": "skycam/assets/piano-kw/81.wav",
+      "source_sha256": "83524aea162e17f5ed3b0e072d3ca1d45ea71b8a6a2a01a9e10d7948c2c7b1d6",
+      "seed_sha256": "83524aea162e17f5ed3b0e072d3ca1d45ea71b8a6a2a01a9e10d7948c2c7b1d6"
+    },
+    {
+      "path": "skycam/assets/piano-kw/84.wav",
+      "source_sha256": "2ac6013ab5a8bf1b0c4048e17d139a7c50cb83058eefca1b6387307797a711a0",
+      "seed_sha256": "2ac6013ab5a8bf1b0c4048e17d139a7c50cb83058eefca1b6387307797a711a0"
+    },
+    {
+      "path": "skycam/assets/piano-kw/cc0.txt",
+      "source_sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+      "seed_sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499"
+    },
+    {
+      "path": "skycam/assets/piano-kw/manifest.json",
+      "source_sha256": "59d4f951dc9bbf7b52d386fefafdbf4c46f1906c66c04eeab74a0839c96a0353",
+      "seed_sha256": "59d4f951dc9bbf7b52d386fefafdbf4c46f1906c66c04eeab74a0839c96a0353"
+    },
+    {
+      "path": "skycam/assets/piano-kw/readme.txt",
+      "source_sha256": "a052efa44607e7f1f35e0959f8b837cfa1ebe204428f350073b5f80ffcf73190",
+      "seed_sha256": "a052efa44607e7f1f35e0959f8b837cfa1ebe204428f350073b5f80ffcf73190"
+    },
+    {
+      "path": "skycam/assets/strudel-source/arrange.mjs",
+      "source_sha256": "6eb03e6a0862999c8c486d8b684a4920b228997a1f41d1e523794a11e0873361",
+      "seed_sha256": "6eb03e6a0862999c8c486d8b684a4920b228997a1f41d1e523794a11e0873361"
+    },
+    {
+      "path": "skycam/assets/strudel-source/dependencies-source.tgz",
+      "source_sha256": "4b9947a128163cc002e2c05d677cd8e9f86c2bd47251bfc39ae79838fe09af56",
+      "seed_sha256": "4b9947a128163cc002e2c05d677cd8e9f86c2bd47251bfc39ae79838fe09af56"
+    },
+    {
+      "path": "skycam/assets/strudel-source/fraction-LICENSE",
+      "source_sha256": "ea6916b674c353de0e9b84b9c91e3b3f8c620a1000d6a65662961b8a67840f19",
+      "seed_sha256": "ea6916b674c353de0e9b84b9c91e3b3f8c620a1000d6a65662961b8a67840f19"
+    },
+    {
+      "path": "skycam/assets/strudel-source/kabelsalat-LICENSE",
+      "source_sha256": "4df3c306dddaaf4baffdff5ca820cc679ac8cd6dc263c6a74517783e42fa7a3b",
+      "seed_sha256": "4df3c306dddaaf4baffdff5ca820cc679ac8cd6dc263c6a74517783e42fa7a3b"
+    },
+    {
+      "path": "skycam/assets/strudel-source/LICENSE",
+      "source_sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+      "seed_sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+    },
+    {
+      "path": "skycam/assets/strudel-source/package-lock.json",
+      "source_sha256": "a04a778c314daf006988225618b52c2c73e235decbe966b95ee748b52d2eceab",
+      "seed_sha256": "a04a778c314daf006988225618b52c2c73e235decbe966b95ee748b52d2eceab"
+    },
+    {
+      "path": "skycam/assets/strudel-source/package.json",
+      "source_sha256": "40fc11f425bbb385d35ee2a3fca2388171046eae8769d5a66c8b28459f9e4912",
+      "seed_sha256": "40fc11f425bbb385d35ee2a3fca2388171046eae8769d5a66c8b28459f9e4912"
+    },
+    {
+      "path": "skycam/assets/strudel-source/README.txt",
+      "source_sha256": "388f5d878f4cc1b81302dff4a9ac84241715afad2c4cbf6968de64199f35128c",
+      "seed_sha256": "388f5d878f4cc1b81302dff4a9ac84241715afad2c4cbf6968de64199f35128c"
+    },
+    {
+      "path": "skycam/assets/strudel-source/strudel-core-LICENSE",
+      "source_sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+      "seed_sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+    },
+    {
+      "path": "tests/fixtures.py",
+      "source_sha256": "8aa440cf6584082016afb11d37b27535b1f03628c41519564ce270ea77c52601",
+      "seed_sha256": "8aa440cf6584082016afb11d37b27535b1f03628c41519564ce270ea77c52601"
+    },
+    {
+      "path": "tests/test_acceptance_boundaries.py",
+      "source_sha256": "7298c45e731076e23cacffb5bc7f8da2de9ea56b054e0862ca860381032d0367",
+      "seed_sha256": "7298c45e731076e23cacffb5bc7f8da2de9ea56b054e0862ca860381032d0367"
+    },
+    {
+      "path": "tests/test_ad_background.py",
+      "source_sha256": "591e41155b5f7d774af942c7f09ba7b8326e3d9cbba98caea345c83e014a5599",
+      "seed_sha256": "591e41155b5f7d774af942c7f09ba7b8326e3d9cbba98caea345c83e014a5599"
+    },
+    {
+      "path": "tests/test_aeroapi.py",
+      "source_sha256": "5e166b2ff5ce7d3fa1cf35d12e9f08aaeb6ec98b59f07cdad7d9d912cb5c01bb",
+      "seed_sha256": "5e166b2ff5ce7d3fa1cf35d12e9f08aaeb6ec98b59f07cdad7d9d912cb5c01bb"
+    },
+    {
+      "path": "tests/test_aircraft_metadata.py",
+      "source_sha256": "a31056f05423557dbfcee8fba8e9d523d4a86206d4710955217e6f829b5da29c",
+      "seed_sha256": "a31056f05423557dbfcee8fba8e9d523d4a86206d4710955217e6f829b5da29c"
+    },
+    {
+      "path": "tests/test_ais.py",
+      "source_sha256": "2c0c759e05ee37ff0919340b535bb58e83ac23bcbf4854be677456e2996108b6",
+      "seed_sha256": "2c0c759e05ee37ff0919340b535bb58e83ac23bcbf4854be677456e2996108b6"
+    },
+    {
+      "path": "tests/test_alerts.py",
+      "source_sha256": "bdf4810e2383ef7d8e051f04e79d8dd2cee7231d2d11d5defb5a7958fb75f4fb",
+      "seed_sha256": "bdf4810e2383ef7d8e051f04e79d8dd2cee7231d2d11d5defb5a7958fb75f4fb"
+    },
+    {
+      "path": "tests/test_alert_history_recovery.py",
+      "source_sha256": "9aceb3fe4994c3934651b4ddcc75c8f51a138ba2af31d2b21d691515acd8ee1e",
+      "seed_sha256": "9aceb3fe4994c3934651b4ddcc75c8f51a138ba2af31d2b21d691515acd8ee1e"
+    },
+    {
+      "path": "tests/test_alert_playout.py",
+      "source_sha256": "2b082d12195aeb3715fd47a27e6aa39e45e2c147cd431355594051f36d910571",
+      "seed_sha256": "2b082d12195aeb3715fd47a27e6aa39e45e2c147cd431355594051f36d910571"
+    },
+    {
+      "path": "tests/test_alert_resources.py",
+      "source_sha256": "4425501a4f33631ef698111946e9785da329ba069b8e040679d6790d2b95910d",
+      "seed_sha256": "4425501a4f33631ef698111946e9785da329ba069b8e040679d6790d2b95910d"
+    },
+    {
+      "path": "tests/test_alert_summary.py",
+      "source_sha256": "69de391de0179d52d33503e527cf83b743990ea5616ace8a83f501561c9f6fd5",
+      "seed_sha256": "69de391de0179d52d33503e527cf83b743990ea5616ace8a83f501561c9f6fd5"
+    },
+    {
+      "path": "tests/test_alert_titles.py",
+      "source_sha256": "7e3bec0080b270747dd3f3b92cf506c5ffde995339f5987a0ece4ff90b3c506f",
+      "seed_sha256": "7e3bec0080b270747dd3f3b92cf506c5ffde995339f5987a0ece4ff90b3c506f"
+    },
+    {
+      "path": "tests/test_broadcast.py",
+      "source_sha256": "8087f68384a20fcc780f67ea78320ea41e6f3d2791ee9f098d7144295814c313",
+      "seed_sha256": "8087f68384a20fcc780f67ea78320ea41e6f3d2791ee9f098d7144295814c313"
+    },
+    {
+      "path": "tests/test_camera_catalog.py",
+      "source_sha256": "b7bce77b7e5efc7647ea86e109cb299f64428a03ff84460908d750af1ebcdc33",
+      "seed_sha256": "b7bce77b7e5efc7647ea86e109cb299f64428a03ff84460908d750af1ebcdc33"
+    },
+    {
+      "path": "tests/test_community_cards.py",
+      "source_sha256": "5f7dc43c9bf3e9072d150baab1d4e7e9f394424e61c5b7eb02d685f339ced0dc",
+      "seed_sha256": "5f7dc43c9bf3e9072d150baab1d4e7e9f394424e61c5b7eb02d685f339ced0dc"
+    },
+    {
+      "path": "tests/test_continuity_report.py",
+      "source_sha256": "e4dbab0647fc2567a8f2519762f248d0d45c97636b92302c3b388824d61e9728",
+      "seed_sha256": "e4dbab0647fc2567a8f2519762f248d0d45c97636b92302c3b388824d61e9728"
+    },
+    {
+      "path": "tests/test_copy_cleanup.py",
+      "source_sha256": "758e088fd9b2781442a76af1b6a8985ec552183814dac36a1cda2870c67bd5ee",
+      "seed_sha256": "758e088fd9b2781442a76af1b6a8985ec552183814dac36a1cda2870c67bd5ee"
+    },
+    {
+      "path": "tests/test_dayparts.py",
+      "source_sha256": "2f4d88734581e79f95a25664728bca038fa9e9833eb981a4f5057f69d0f256ad",
+      "seed_sha256": "2f4d88734581e79f95a25664728bca038fa9e9833eb981a4f5057f69d0f256ad"
+    },
+    {
+      "path": "tests/test_delivered_picture.py",
+      "source_sha256": "772a4590954fc8addcbe1c5e8885cd7df3773c01b554e4c36ca49e755a5fb31e",
+      "seed_sha256": "772a4590954fc8addcbe1c5e8885cd7df3773c01b554e4c36ca49e755a5fb31e"
+    },
+    {
+      "path": "tests/test_f06_markets_sky.py",
+      "source_sha256": "2630a00780228e6dbc2c1b44272db7f44bf16504adbc64718b132a2bd6acff45",
+      "seed_sha256": "2630a00780228e6dbc2c1b44272db7f44bf16504adbc64718b132a2bd6acff45"
+    },
+    {
+      "path": "tests/test_features.py",
+      "source_sha256": "d2133ac2875f19e92e03e7d77ca2aefac2d4eb28be3cdeb62814e282b2282988",
+      "seed_sha256": "d2133ac2875f19e92e03e7d77ca2aefac2d4eb28be3cdeb62814e282b2282988"
+    },
+    {
+      "path": "tests/test_flights.py",
+      "source_sha256": "c95bbeefd23622221f460fd620b51b3b3fb7d71bf0e4e15f431de709fe479cab",
+      "seed_sha256": "c95bbeefd23622221f460fd620b51b3b3fb7d71bf0e4e15f431de709fe479cab"
+    },
+    {
+      "path": "tests/test_generative_music.py",
+      "source_sha256": "2ef54c21a3073da4ae88fdccda85deafd0994e89e018b728945c52979c0cfe0d",
+      "seed_sha256": "2ef54c21a3073da4ae88fdccda85deafd0994e89e018b728945c52979c0cfe0d"
+    },
+    {
+      "path": "tests/test_helicopter_polish.py",
+      "source_sha256": "8e86ce653e000f246f5fa98dae9f02e10435956e836abc57ed8dae02d9f76270",
+      "seed_sha256": "8e86ce653e000f246f5fa98dae9f02e10435956e836abc57ed8dae02d9f76270"
+    },
+    {
+      "path": "tests/test_image_cache.py",
+      "source_sha256": "3f3280e1a07d5b7d15ceceec60047b8d20d74f5592e50674a9517db60e2c20f9",
+      "seed_sha256": "3f3280e1a07d5b7d15ceceec60047b8d20d74f5592e50674a9517db60e2c20f9"
+    },
+    {
+      "path": "tests/test_issuer_policy.py",
+      "source_sha256": "b2849d0b563dcf2f555841cb71a72bfd9bc0d13c27cf2e7d7abdaca6c47789be",
+      "seed_sha256": "b2849d0b563dcf2f555841cb71a72bfd9bc0d13c27cf2e7d7abdaca6c47789be"
+    },
+    {
+      "path": "tests/test_issuer_trust.py",
+      "source_sha256": "a0a4cde412d680dc55b1a549b6b0ebec1693e84506ac3aaf0214cb15b6c46ebe",
+      "seed_sha256": "a0a4cde412d680dc55b1a549b6b0ebec1693e84506ac3aaf0214cb15b6c46ebe"
+    },
+    {
+      "path": "tests/test_language_policy.py",
+      "source_sha256": "253ee1f0353b3120e4f88c0d9e8db17c73ca57c9c4adf24e88d947c4f9086988",
+      "seed_sha256": "253ee1f0353b3120e4f88c0d9e8db17c73ca57c9c4adf24e88d947c4f9086988"
+    },
+    {
+      "path": "tests/test_map_theme.py",
+      "source_sha256": "199eb3422ed8ded4c451dd6dc26a49232c4aba4e10e95b76ffd9afd89cebe4cb",
+      "seed_sha256": "199eb3422ed8ded4c451dd6dc26a49232c4aba4e10e95b76ffd9afd89cebe4cb"
+    },
+    {
+      "path": "tests/test_moon_market_polish.py",
+      "source_sha256": "8af986667b8d299a6f6a576e9947977ad89734bb2cb93470b15ecda7aef05947",
+      "seed_sha256": "8af986667b8d299a6f6a576e9947977ad89734bb2cb93470b15ecda7aef05947"
+    },
+    {
+      "path": "tests/test_music_levels.py",
+      "source_sha256": "adc6af7356e6b2d34b0b48a56729de6bc1c7588f53ce4c6e018ad067cad43deb",
+      "seed_sha256": "adc6af7356e6b2d34b0b48a56729de6bc1c7588f53ce4c6e018ad067cad43deb"
+    },
+    {
+      "path": "tests/test_music_startup.py",
+      "source_sha256": "34a0e4ec08e2778542fe40b974005d0abd49032f94d47b4088d92865e425a939",
+      "seed_sha256": "34a0e4ec08e2778542fe40b974005d0abd49032f94d47b4088d92865e425a939"
+    },
+    {
+      "path": "tests/test_music_worker.py",
+      "source_sha256": "b705df4733f899633f716121e03f5d66cbac2765efb5f125b05b567dba124a44",
+      "seed_sha256": "b705df4733f899633f716121e03f5d66cbac2765efb5f125b05b567dba124a44"
+    },
+    {
+      "path": "tests/test_named_quads.py",
+      "source_sha256": "eb8bbd526302ca1b2341d0966bbb63e31d9392decee7b407c2953a600714107f",
+      "seed_sha256": "eb8bbd526302ca1b2341d0966bbb63e31d9392decee7b407c2953a600714107f"
+    },
+    {
+      "path": "tests/test_ndi_output.py",
+      "source_sha256": "d26768de77ea23377826025f248722adaa0b338c5832b5f248e3aa464c5a2642",
+      "seed_sha256": "d26768de77ea23377826025f248722adaa0b338c5832b5f248e3aa464c5a2642"
+    },
+    {
+      "path": "tests/test_network_health.py",
+      "source_sha256": "43e1bb1b8090d369ad139c203e4986b1c9bcb563e524c2a8ba76b871dfc98860",
+      "seed_sha256": "43e1bb1b8090d369ad139c203e4986b1c9bcb563e524c2a8ba76b871dfc98860"
+    },
+    {
+      "path": "tests/test_news_mix.py",
+      "source_sha256": "3d54f2f477314dcd20eaebd863724d86aaba596470c4e567c5401634e23f0a9a",
+      "seed_sha256": "3d54f2f477314dcd20eaebd863724d86aaba596470c4e567c5401634e23f0a9a"
+    },
+    {
+      "path": "tests/test_notices.py",
+      "source_sha256": "1bb58a63dbffc076232eb846e89087daba9b78bcdea75c608239f5179aaed0a3",
+      "seed_sha256": "1bb58a63dbffc076232eb846e89087daba9b78bcdea75c608239f5179aaed0a3"
+    },
+    {
+      "path": "tests/test_operator_responsiveness.py",
+      "source_sha256": "eb365c410ed2a28301c891a3b40a775f64f88a28c5e4e3d82565980d72a2c159",
+      "seed_sha256": "eb365c410ed2a28301c891a3b40a775f64f88a28c5e4e3d82565980d72a2c159"
+    },
+    {
+      "path": "tests/test_outages.py",
+      "source_sha256": "d83ace7837dfabfbb233a8f4b11358b633a07a407b6ac6bee8fd59ab97abb231",
+      "seed_sha256": "d83ace7837dfabfbb233a8f4b11358b633a07a407b6ac6bee8fd59ab97abb231"
+    },
+    {
+      "path": "tests/test_output_timing.py",
+      "source_sha256": "2e47d44ba5d284275d2d00ce461f06c01340fb39a371a9bc02054621631379d7",
+      "seed_sha256": "2e47d44ba5d284275d2d00ce461f06c01340fb39a371a9bc02054621631379d7"
+    },
+    {
+      "path": "tests/test_overnight_recovery.py",
+      "source_sha256": "a3d2e4c6a0d9d357e92a8793d78e23cb94d9e4a8d02d26b2046df442e1fe5437",
+      "seed_sha256": "a3d2e4c6a0d9d357e92a8793d78e23cb94d9e4a8d02d26b2046df442e1fe5437"
+    },
+    {
+      "path": "tests/test_packet_continuity.py",
+      "source_sha256": "54862477daae9b6cb81312ce077c9f1f46c637cf46335fe57fe891b0d115b9e9",
+      "seed_sha256": "54862477daae9b6cb81312ce077c9f1f46c637cf46335fe57fe891b0d115b9e9"
+    },
+    {
+      "path": "tests/test_performance.py",
+      "source_sha256": "1918be6810b61f9d4098d6dfe383801f80d6bbac14c12557df2593338a9c4026",
+      "seed_sha256": "1918be6810b61f9d4098d6dfe383801f80d6bbac14c12557df2593338a9c4026"
+    },
+    {
+      "path": "tests/test_performance_history.py",
+      "source_sha256": "8fe393bdab1e8d8422dc4ced44f32d11906c96e6fbd2f89d79100bba2e1308cf",
+      "seed_sha256": "8fe393bdab1e8d8422dc4ced44f32d11906c96e6fbd2f89d79100bba2e1308cf"
+    },
+    {
+      "path": "tests/test_priority_wave.py",
+      "source_sha256": "ab408e436e21b543bf246a9574a9d80b6da96577bc2d31a546540b979585b1db",
+      "seed_sha256": "ab408e436e21b543bf246a9574a9d80b6da96577bc2d31a546540b979585b1db"
+    },
+    {
+      "path": "tests/test_program_clock.py",
+      "source_sha256": "a43cd81113f75650a4cff7817d31644a6ed06cab7609ddcff7f555b8e6dd9f37",
+      "seed_sha256": "a43cd81113f75650a4cff7817d31644a6ed06cab7609ddcff7f555b8e6dd9f37"
+    },
+    {
+      "path": "tests/test_radar.py",
+      "source_sha256": "782ba53812d19784b5b1210c7520891fdf0c2b1c42c21226239023087f3268b7",
+      "seed_sha256": "782ba53812d19784b5b1210c7520891fdf0c2b1c42c21226239023087f3268b7"
+    },
+    {
+      "path": "tests/test_reliability.py",
+      "source_sha256": "3c2849b6bfc75e050335e2ba707ef0919cb5759e011524b51326995572c307cb",
+      "seed_sha256": "3c2849b6bfc75e050335e2ba707ef0919cb5759e011524b51326995572c307cb"
+    },
+    {
+      "path": "tests/test_rendered_preview.py",
+      "source_sha256": "ce837542df62a4539f40a071d2a35b8368482381783947fb31eba59b668c789e",
+      "seed_sha256": "ce837542df62a4539f40a071d2a35b8368482381783947fb31eba59b668c789e"
+    },
+    {
+      "path": "tests/test_restart_health.py",
+      "source_sha256": "70ae56d9c5d7e4aaa5f5beefa02faf0ce009d1d29e34f8bbee43eb3f6b93bfa3",
+      "seed_sha256": "70ae56d9c5d7e4aaa5f5beefa02faf0ce009d1d29e34f8bbee43eb3f6b93bfa3"
+    },
+    {
+      "path": "tests/test_rundown_library.py",
+      "source_sha256": "3d0e186a7a671ce171ff66fd5d86949c58151457c545d2145d895f8b55c7529d",
+      "seed_sha256": "3d0e186a7a671ce171ff66fd5d86949c58151457c545d2145d895f8b55c7529d"
+    },
+    {
+      "path": "tests/test_source_routing.py",
+      "source_sha256": "da0fb9807344d7274f58984d150ae745bfce07570c4f76a6d65d37a6c818ddfb",
+      "seed_sha256": "da0fb9807344d7274f58984d150ae745bfce07570c4f76a6d65d37a6c818ddfb"
+    },
+    {
+      "path": "tests/test_station_format.py",
+      "source_sha256": "1756785b6360dc315dc48fa3dc6bbbbe8ae5c9011ae6a22887b1d4fd43e089d0",
+      "seed_sha256": "1756785b6360dc315dc48fa3dc6bbbbe8ae5c9011ae6a22887b1d4fd43e089d0"
+    },
+    {
+      "path": "tests/test_stock_freshness.py",
+      "source_sha256": "8fe42222f39e48856c4dd259d5c01004ad59e6fa922a730836dc36fead1e31d9",
+      "seed_sha256": "8fe42222f39e48856c4dd259d5c01004ad59e6fa922a730836dc36fead1e31d9"
+    },
+    {
+      "path": "tests/test_strudel_music.py",
+      "source_sha256": "eac0190b7b49315b394a62476c109a3c952379245ef8c33ee5b1292df8fcb381",
+      "seed_sha256": "eac0190b7b49315b394a62476c109a3c952379245ef8c33ee5b1292df8fcb381"
+    },
+    {
+      "path": "tests/test_study_radio.py",
+      "source_sha256": "c5a99d5ac2ae7665f97ac2bb1931d9dbef70a3e532764970f7df4cd4583930e6",
+      "seed_sha256": "c5a99d5ac2ae7665f97ac2bb1931d9dbef70a3e532764970f7df4cd4583930e6"
+    },
+    {
+      "path": "tests/test_study_songs.py",
+      "source_sha256": "7d0b7a628c809d7de3dd331de182cecece8d17c87109d7e4193544dd44069ed2",
+      "seed_sha256": "7d0b7a628c809d7de3dd331de182cecece8d17c87109d7e4193544dd44069ed2"
+    },
+    {
+      "path": "tests/test_system.py",
+      "source_sha256": "1c18298d9eedfd2ea8e9886d02f7ef9e6b53800d8ca46b4a9de40ae3d79c5764",
+      "seed_sha256": "1c18298d9eedfd2ea8e9886d02f7ef9e6b53800d8ca46b4a9de40ae3d79c5764"
+    },
+    {
+      "path": "tests/test_tmx_markets.py",
+      "source_sha256": "52c9fd4dd60c0b4fdaded858d14b2603ad6c568ed4f74e6e4fd66475dd9a46c1",
+      "seed_sha256": "52c9fd4dd60c0b4fdaded858d14b2603ad6c568ed4f74e6e4fd66475dd9a46c1"
+    },
+    {
+      "path": "tests/test_transition_retirement.py",
+      "source_sha256": "a0607d031aad51dce4edccd2c7407beb332fdeee57508d237b9c6d4563019954",
+      "seed_sha256": "a0607d031aad51dce4edccd2c7407beb332fdeee57508d237b9c6d4563019954"
+    },
+    {
+      "path": "tests/test_transport_health.py",
+      "source_sha256": "b2e9e554928629035790c2b6801a23acf46ee5788cfaa4a76f0d5547e714d4b1",
+      "seed_sha256": "b2e9e554928629035790c2b6801a23acf46ee5788cfaa4a76f0d5547e714d4b1"
+    },
+    {
+      "path": "tests/test_unavailable_source_gate.py",
+      "source_sha256": "eebddf62c5f90a7c9354a0acc33007f60dc27a80a3b20dc27e152a73bb024e58",
+      "seed_sha256": "eebddf62c5f90a7c9354a0acc33007f60dc27a80a3b20dc27e152a73bb024e58"
+    },
+    {
+      "path": "tests/test_vessel_display.py",
+      "source_sha256": "75c3c5bfa947e3b0056fba31e264ec7cb8ad66a35c8bceac3af99b69f3e858b8",
+      "seed_sha256": "75c3c5bfa947e3b0056fba31e264ec7cb8ad66a35c8bceac3af99b69f3e858b8"
+    },
+    {
+      "path": "tests/test_watchdog.py",
+      "source_sha256": "c7eb57a5d1bd31588198861de5d78973d2735a73b2ba9eb15376a6c812efd241",
+      "seed_sha256": "c7eb57a5d1bd31588198861de5d78973d2735a73b2ba9eb15376a6c812efd241"
+    },
+    {
+      "path": "tests/test_weather.py",
+      "source_sha256": "8c733e6a25cfc5dd3cd2ae0cd4efadbdbda1ba6118b6ae8cbe517bc8caa000b2",
+      "seed_sha256": "8c733e6a25cfc5dd3cd2ae0cd4efadbdbda1ba6118b6ae8cbe517bc8caa000b2"
+    },
+    {
+      "path": "tests/test_youtube_relay.py",
+      "source_sha256": "060894fbe5b344c54763774d58239af8740d69e32a8cefcdbb3d69e4be1ed54c",
+      "seed_sha256": "060894fbe5b344c54763774d58239af8740d69e32a8cefcdbb3d69e4be1ed54c"
+    },
+    {
+      "path": "tests/__init__.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "deploy/engine/bounded-graphics-cache.patch",
+      "source_sha256": "085f3571e5e79b513c488011a7b1214f4f3cb01d81da33e827c376e289ec5390",
+      "seed_sha256": "085f3571e5e79b513c488011a7b1214f4f3cb01d81da33e827c376e289ec5390"
+    },
+    {
+      "path": "deploy/engine/bounded-video-queue.patch",
+      "source_sha256": "0bfae153ac853d7a5884a75357500a8a4996ba121aa6e2cf948ab9755e8c9b86",
+      "seed_sha256": "0bfae153ac853d7a5884a75357500a8a4996ba121aa6e2cf948ab9755e8c9b86"
+    },
+    {
+      "path": "deploy/engine/camera-keyframe-recovery.patch",
+      "source_sha256": "6efbe41e1126d94ad137b5444c39693c7e8f098605f44f1405c2752ff58580d8",
+      "seed_sha256": "88d93f921dd0f28784cb46b9606bbd447f42505095440b41c8ac0db4605dbdf3"
+    },
+    {
+      "path": "deploy/engine/cef-fork-stack.patch",
+      "source_sha256": "b74d21015fe48c75edf4ba612d7790e7509bfa010daffd7718f291b04855b82b",
+      "seed_sha256": "b74d21015fe48c75edf4ba612d7790e7509bfa010daffd7718f291b04855b82b"
+    },
+    {
+      "path": "deploy/engine/delivered-video-counter.patch",
+      "source_sha256": "a0fafcd771c79ddbdec5ddc76ce69765fc96056b66c1bae382af94e52b2fe820",
+      "seed_sha256": "a0fafcd771c79ddbdec5ddc76ce69765fc96056b66c1bae382af94e52b2fe820"
+    },
+    {
+      "path": "deploy/engine/idle-graphics-cache.patch",
+      "source_sha256": "6c95f858afaddb65622a27b1f89baf6a803c30ba8815b4f953a4d1b5c7256329",
+      "seed_sha256": "6c95f858afaddb65622a27b1f89baf6a803c30ba8815b4f953a4d1b5c7256329"
+    },
+    {
+      "path": "deploy/engine/idle_cache.h",
+      "source_sha256": "3f076f20abf0799c81f275e7dc3a48cbd9b9018bd4a42ac8ac32fe0896090be4",
+      "seed_sha256": "3f076f20abf0799c81f275e7dc3a48cbd9b9018bd4a42ac8ac32fe0896090be4"
+    },
+    {
+      "path": "deploy/engine/independent-audio.patch",
+      "source_sha256": "d186e47249656234dcd834141766a31b34d782161d3710b087c60882cefd3234",
+      "seed_sha256": "d186e47249656234dcd834141766a31b34d782161d3710b087c60882cefd3234"
+    },
+    {
+      "path": "deploy/engine/LICENSE-CasparCG",
+      "source_sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+      "seed_sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    {
+      "path": "deploy/engine/live-camera-latest.patch",
+      "source_sha256": "f17bdb35dd02339a9cfca6ed687c372126aeb89536016b2ca1c29ae718bde2d6",
+      "seed_sha256": "6084a5854be0a8bfa617e22ba75836aed02597da16daeea7fed0c6b2ba993e20"
+    },
+    {
+      "path": "deploy/engine/monitor-snapshot.patch",
+      "source_sha256": "9e33dcff981c549fb7aa29b74faaa6675180f88341fdb964f035f45ee4855830",
+      "seed_sha256": "9e33dcff981c549fb7aa29b74faaa6675180f88341fdb964f035f45ee4855830"
+    },
+    {
+      "path": "deploy/engine/ndi-bounded-output.patch",
+      "source_sha256": "7a4a149523094b85a8c7a6fad2e5e29408b0ae45a99919d61208a155e776ee8d",
+      "seed_sha256": "7a4a149523094b85a8c7a6fad2e5e29408b0ae45a99919d61208a155e776ee8d"
+    },
+    {
+      "path": "deploy/engine/ndi-box-reduction.patch",
+      "source_sha256": "fec82bbecb21057d6266d7b574d07e374021b3ec5da6e12458fbbb9b067ff785",
+      "seed_sha256": "fec82bbecb21057d6266d7b574d07e374021b3ec5da6e12458fbbb9b067ff785"
+    },
+    {
+      "path": "deploy/engine/ndi-independent-audio.patch",
+      "source_sha256": "157c49c888a4817d9d23ac736f9b7259ed78f9f36388de709dda5ab49a227790",
+      "seed_sha256": "157c49c888a4817d9d23ac736f9b7259ed78f9f36388de709dda5ab49a227790"
+    },
+    {
+      "path": "deploy/engine/ndi-library-lifetime.patch",
+      "source_sha256": "f447c803f1408e9fc5f9f7d4b201813ee5cb8fecd1da086940d8982911cc6f19",
+      "seed_sha256": "f447c803f1408e9fc5f9f7d4b201813ee5cb8fecd1da086940d8982911cc6f19"
+    },
+    {
+      "path": "deploy/engine/ndi-program-scale.patch",
+      "source_sha256": "a937c39ef8792bf7a00bab0309f8c48f678a2ece28fe1f95cd0de15662f4d014",
+      "seed_sha256": "a937c39ef8792bf7a00bab0309f8c48f678a2ece28fe1f95cd0de15662f4d014"
+    },
+    {
+      "path": "deploy/engine/ndi-readback-release.patch",
+      "source_sha256": "297caf4d4943971d2ee127fdacc7563dff31532f6eb29736dc5d8f66925f3f59",
+      "seed_sha256": "297caf4d4943971d2ee127fdacc7563dff31532f6eb29736dc5d8f66925f3f59"
+    },
+    {
+      "path": "deploy/engine/ndi_box3.h",
+      "source_sha256": "dca525bbf2ce8b130bb20a33b00ed9e6fc1e95553f6527d399debbb13b0b0f18",
+      "seed_sha256": "dca525bbf2ce8b130bb20a33b00ed9e6fc1e95553f6527d399debbb13b0b0f18"
+    },
+    {
+      "path": "deploy/engine/owned-readback.patch",
+      "source_sha256": "b6953d813b3986cfa9816f692b3668e4303ad00f3f09421a78b2930e710051a7",
+      "seed_sha256": "b6953d813b3986cfa9816f692b3668e4303ad00f3f09421a78b2930e710051a7"
+    },
+    {
+      "path": "deploy/engine/test-idle-cache.cpp",
+      "source_sha256": "45fcd22207fc4d8f45aa819671aab08320181e54d458b27acde4c99ec73d8061",
+      "seed_sha256": "45fcd22207fc4d8f45aa819671aab08320181e54d458b27acde4c99ec73d8061"
+    },
+    {
+      "path": "deploy/engine/test-ndi-box3.cpp",
+      "source_sha256": "1ce6effce67713e2d65a85c5d7a0972d0dc4ffeb12ed6e43682074b156771d91",
+      "seed_sha256": "1ce6effce67713e2d65a85c5d7a0972d0dc4ffeb12ed6e43682074b156771d91"
+    },
+    {
+      "path": "deploy/engine/test-uc-image-copy.c",
+      "source_sha256": "1e6b3ba54eb500248836d603c824c6f50aacdee3dfd8c6c4b71bbf4ff956aa14",
+      "seed_sha256": "1e6b3ba54eb500248836d603c824c6f50aacdee3dfd8c6c4b71bbf4ff956aa14"
+    }
+  ]
+}

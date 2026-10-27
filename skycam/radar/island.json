@@ -1,0 +1,58 @@
+{
+  "kind": "island",
+  "width": 960,
+  "height": 540,
+  "model": "spherical-camera",
+  "parameters": [
+    2.1032818746038777,
+    -0.013263886034686553,
+    0.05947484418247946,
+    -18.82727363728638,
+    -2.4880289109415723,
+    820.5746811218212,
+    6.9817369271408305
+  ],
+  "seed_controls": [
+    [
+      -59.3,
+      47.62,
+      27,
+      390
+    ],
+    [
+      -53.07,
+      46.655,
+      855,
+      524
+    ],
+    [
+      -52.62,
+      47.52,
+      855,
+      402
+    ],
+    [
+      -53.08,
+      48.7,
+      755,
+      299
+    ],
+    [
+      -55.43,
+      51.64,
+      485,
+      101
+    ],
+    [
+      -54.2,
+      46.82,
+      699,
+      484
+    ]
+  ],
+  "coast_distance_median_px": 3.3911701440811157,
+  "coast_distance_p90_px": 16.225765037536632,
+  "reference": "Natural Earth 1:10m coastline",
+  "status": "approximate",
+  "seed_description": "Approximate cape locations on supplied reference image; automatic robust coastline fit. Not independently surveyed."
+}

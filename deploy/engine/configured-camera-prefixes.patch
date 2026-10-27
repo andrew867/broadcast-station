@@ -1,0 +1,99 @@
+--- /dev/null
++++ b/src/modules/ffmpeg/producer/camera_policy.h
+@@ -0,0 +1,15 @@
++// SPDX-License-Identifier: GPL-3.0-or-later
++#pragma once
++#include <string>
++
++namespace caspar { namespace ffmpeg {
++// Prefixes end at a path boundary. Other protocols and empty prefixes are never cameras.
++inline bool camera_prefix_matches(const std::string& path, const std::string& prefix)
++{
++    const bool network = prefix.rfind("rtsp://", 0) == 0 || prefix.rfind("rtmp://", 0) == 0 || prefix.rfind("rtmps://", 0) == 0;
++    const auto authority = prefix.find("://");
++    const auto slash = authority == std::string::npos ? std::string::npos : prefix.find('/', authority + 3);
++    return network && slash != std::string::npos && slash > authority + 3 &&
++           prefix.back() == '/' && path.size() > prefix.size() && path.rfind(prefix, 0) == 0;
++}
++}}
+--- a/src/modules/ffmpeg/producer/av_input.h
++++ b/src/modules/ffmpeg/producer/av_input.h
+@@ -20,6 +20,9 @@
+ struct AVFormatContext;
+ 
+ namespace caspar { namespace ffmpeg {
++
++bool configured_camera(const std::string& path);
++std::optional<std::string> configured_camera_name(const std::string& path);
+ 
+ class Input
+ {
+--- a/src/modules/ffmpeg/producer/av_input.cpp
++++ b/src/modules/ffmpeg/producer/av_input.cpp
+@@ -1,4 +1,7 @@
+ #include "av_input.h"
++#include "camera_policy.h"
++#include <common/env.h>
++#include <boost/property_tree/ptree.hpp>
+ 
+ #include "../util/av_assert.h"
+ #include "../util/av_util.h"
+@@ -25,6 +28,23 @@
+ #endif
+ 
+ namespace caspar { namespace ffmpeg {
++
++std::optional<std::string> configured_camera_name(const std::string& path)
++{
++    if (!env::properties().get(L"configuration.ffmpeg.producer.live-camera-latest", false))
++        return {};
++    auto prefixes = env::properties().get_child_optional(L"configuration.ffmpeg.producer.camera-prefixes");
++    if (!prefixes) return {};
++    size_t matched = 0;
++    for (const auto& item : *prefixes) {
++        const auto prefix = u8(item.second.get_value<std::wstring>());
++        if (item.first == L"prefix" && camera_prefix_matches(path, prefix) && prefix.size() > matched)
++            matched = prefix.size();
++    }
++    return matched ? std::optional<std::string>(path.substr(matched)) : std::optional<std::string>();
++}
++
++bool configured_camera(const std::string& path) { return configured_camera_name(path).has_value(); }
+ 
+ Input::Input(const std::string& filename, std::shared_ptr<diagnostics::graph> graph, std::optional<bool> seekable)
+     : filename_(filename)
+@@ -174,6 +194,13 @@
+         filename_    = u8(url_parts.second);
+     }
+ 
++    if (url_parts.first == L"rtsp" && configured_camera(filename_)) {
++        FF(av_dict_set(&options, "rtsp_transport", "tcp", 0));
++        FF(av_dict_set(&options, "buffer_size", "4194304", 0));
++        FF(av_dict_set(&options, "max_delay", "2000000", 0));
++        FF(av_dict_set(&options, "timeout", "15000000", 0));
++    }
++
+     if (seekable_) {
+         CASPAR_LOG(debug) << "av_input[" + filename_ + "] Disabled seeking";
+         FF(av_dict_set(&options, "seekable", *seekable_ ? "1" : "0", 0));
+--- a/src/modules/ffmpeg/producer/av_producer.cpp
++++ b/src/modules/ffmpeg/producer/av_producer.cpp
+@@ -865,15 +865,12 @@
+         , video_executor_(L"video-executor")
+         , audio_executor_(L"audio-executor")
+     {
+-        // Restrict freshness policy to our muted camera contribution paths.
++        // Restrict freshness policy to explicitly configured camera contribution paths.
+         // File/music producers keep lossless, ordered buffering.
+-        live_camera_ = env::properties().get(L"configuration.ffmpeg.producer.live-camera-latest", false) &&
+-            (path_.rfind("rtsp://192.0.2.10:8554/", 0) == 0 ||
+-             path_.rfind("rtsp://127.0.0.1:8555/", 0) == 0 ||
+-             path_.rfind("rtmp://192.0.2.10/", 0) == 0);
++        live_camera_ = configured_camera(path_);
+         if (live_camera_) {
+             buffer_capacity_ = 4;
+-            auto name = path_.substr(path_.find('/', path_.find("://") + 3) + 1);
++            auto name = configured_camera_name(path_).value_or("");
+             if (!name.empty() && name.find_first_not_of("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_-/") == std::string::npos) {
+                 camera_recovery_ = std::make_shared<CameraRecovery>();
+                 std::string encoded;

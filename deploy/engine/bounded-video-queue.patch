@@ -1,0 +1,14 @@
+--- a/src/modules/ffmpeg/consumer/ffmpeg_consumer.cpp
++++ b/src/modules/ffmpeg/consumer/ffmpeg_consumer.cpp
+@@ -455,7 +455,10 @@
+     {
+         state_["file/path"] = u8(path_);
+ 
+-        frame_buffer_.set_capacity(realtime_ ? 1 : 64);
++        // Bound pictures independently of the audio queue. The configured limit
++        // prevents a live FILE output retaining 64 full UHD GPU readbacks.
++        auto picture_capacity = env::properties().get(L"configuration.ffmpeg.consumer.video-buffer-frames", 64);
++        frame_buffer_.set_capacity(realtime_ ? 1 : std::clamp(picture_capacity, 1, 64));
+         audio_buffer_.set_capacity(256);
+ 
+         diagnostics::register_graph(graph_);

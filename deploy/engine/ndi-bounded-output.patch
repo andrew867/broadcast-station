@@ -1,0 +1,54 @@
+--- a/src/modules/newtek/consumer/newtek_ndi_consumer.cpp
++++ b/src/modules/newtek/consumer/newtek_ndi_consumer.cpp
+@@ -74,6 +74,7 @@
+     std::condition_variable              worker_cond_;
+     bool                                 ready_for_frame_;
+     std::queue<core::const_frame>        buffer_;
++    bool stopping_ = false;
+     boost::thread                        send_thread;
+     executor                             executor_;
+ 
+@@ -100,7 +101,11 @@
+     ~newtek_ndi_consumer()
+     {
+         if (send_thread.joinable()) {
+-            send_thread.interrupt();
++            {
++                std::lock_guard<std::mutex> lock(buffer_mutex_);
++                stopping_ = true;
++            }
++            worker_cond_.notify_all();
+             send_thread.join();
+         }
+     }
+@@ -158,7 +163,8 @@
+                 while (!send_thread.interruption_requested()) {
+                     {
+                         std::unique_lock<std::mutex> lock(buffer_mutex_);
+-                        worker_cond_.wait(lock, [&] { return buffer_.size() > buffer_size; });
++                        worker_cond_.wait(lock, [&] { return stopping_ || buffer_.size() >= 8; });
++                        if (stopping_) return;
+                         graph_->set_value("buffered-frames", static_cast<double>(buffer_.size() + 0.001) / 8);
+                         buffer_size = buffer_.size();
+                         if (buffer_.size() >= 8) {
+@@ -175,7 +181,8 @@
+                     core::const_frame frame;
+                     {
+                         std::unique_lock<std::mutex> lock(buffer_mutex_);
+-                        worker_cond_.wait(lock, [&] { return !buffer_.empty(); });
++                        worker_cond_.wait(lock, [&] { return stopping_ || !buffer_.empty(); });
++                        if (stopping_) return;
+                         graph_->set_value("buffered-frames", static_cast<double>(buffer_.size() + 0.001) / 8);
+                         frame = std::move(buffer_.front());
+                         buffer_.pop();
+@@ -218,6 +225,10 @@
+             tick_timer_.restart();
+             {
+                 std::unique_lock<std::mutex> lock(buffer_mutex_);
++                if (stopping_) return false;
++                // Confidence output must never accumulate unlimited UHD frames.
++                // Dropping the oldest monitor frame cannot stall the program.
++                while (buffer_.size() >= 8) buffer_.pop();
+                 buffer_.push(std::move(frame));
+             }
+             worker_cond_.notify_all();

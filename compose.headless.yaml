@@ -1,0 +1,5 @@
+# Remove display variables even if a custom base image supplies them.
+services:
+  engine:
+    entrypoint: [env, -u, DISPLAY, -u, WAYLAND_DISPLAY, -u, XAUTHORITY]
+    command: [/usr/bin/casparcg-server-2.5, /workspace/casparcg.config]

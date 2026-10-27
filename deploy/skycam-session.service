@@ -1,0 +1,19 @@
+[Unit]
+Description=Start SkyCam after the Plasma display and audio session is ready
+After=plasma-workspace.target pipewire-pulse.service
+PartOf=graphical-session.target
+StartLimitIntervalSec=300
+StartLimitBurst=6
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+RuntimeDirectory=skycam-runtime
+RuntimeDirectoryPreserve=yes
+ExecStart=/usr/bin/bash /srv/station/skycam/deploy/start-session.sh
+TimeoutStartSec=120
+Restart=on-failure
+RestartSec=15
+
+[Install]
+WantedBy=graphical-session.target

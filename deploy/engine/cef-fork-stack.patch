@@ -1,0 +1,39 @@
+--- a/src/modules/html/html.cpp
++++ b/src/modules/html/html.cpp
+@@ -219,6 +219,10 @@
+     IMPLEMENT_REFCOUNTING(renderer_application);
+ };
+ 
++// CEF changes the stack canary after fork; callers must not check the old one.
++#if defined(__linux__) && (defined(__GNUC__) || defined(__clang__))
++__attribute__((no_stack_protector))
++#endif
+ bool intercept_command_line(int argc, char** argv)
+ {
+ #ifdef _WIN32
+--- a/src/shell/main.cpp
++++ b/src/shell/main.cpp
+@@ -189,6 +189,10 @@
+ 
+ } // namespace caspar
+ 
++// CEF changes the stack canary after fork; callers must not check the old one.
++#if defined(__linux__) && (defined(__GNUC__) || defined(__clang__))
++__attribute__((no_stack_protector))
++#endif
+ int main(int argc, char** argv)
+ {
+     using namespace caspar;
+--- a/src/shell/included_modules.tmpl
++++ b/src/shell/included_modules.tmpl
+@@ -11,6 +11,10 @@
+ 
+ namespace caspar {
+ 
++// CEF changes the stack canary after fork; callers must not check the old one.
++#if defined(__linux__) && (defined(__GNUC__) || defined(__clang__))
++__attribute__((no_stack_protector))
++#endif
+ static bool intercept_command_line_args(int argc, char** argv)
+ {${CASPARCG_MODULE_COMMAND_LINE_ARG_INTERCEPTORS_STATEMENTS}
+ 	return false;

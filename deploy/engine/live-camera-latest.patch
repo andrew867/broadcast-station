@@ -1,0 +1,101 @@
+--- a/src/modules/ffmpeg/producer/av_producer.cpp
++++ b/src/modules/ffmpeg/producer/av_producer.cpp
+@@ -71,6 +71,7 @@
+     int64_t                  duration    = 0;
+     int64_t                  frame_count = 0;
+     int64_t                  video_sequence = 0;
++    std::chrono::steady_clock::time_point queued_at;
+ };
+ 
+ AVPixelFormat get_pix_fmt_with_alpha(AVPixelFormat fmt)
+@@ -717,6 +718,11 @@
+     mutable boost::mutex         state_mutex_;
+     int64_t decoded_video_sequence_ = 0;
+     std::atomic<int64_t> delivered_video_sequence_{0};
++    bool live_camera_ = false;
++    std::atomic<int64_t> live_dropped_{0};
++    std::atomic<int64_t> live_corrupt_{0};
++    std::atomic<int64_t> live_queue_depth_{0};
++    std::atomic<int64_t> live_queue_age_ms_{0};
+ 
+     spl::shared_ptr<diagnostics::graph> graph_;
+ 
+@@ -791,6 +797,13 @@
+         , video_executor_(L"video-executor")
+         , audio_executor_(L"audio-executor")
+     {
++        // Restrict freshness policy to our muted camera contribution paths.
++        // File/music producers keep lossless, ordered buffering.
++        live_camera_ = env::properties().get(L"configuration.ffmpeg.producer.live-camera-latest", false) &&
++            (path_.rfind("rtsp://192.0.2.10:8554/", 0) == 0 ||
++             path_.rfind("rtsp://127.0.0.1:8555/", 0) == 0 ||
++             path_.rfind("rtmp://192.0.2.10/", 0) == 0);
++        if (live_camera_) buffer_capacity_ = 4;
+         diagnostics::register_graph(graph_);
+         graph_->set_color("underflow", diagnostics::color(0.6f, 0.3f, 0.9f));
+         graph_->set_color("frame-time", diagnostics::color(0.0f, 1.0f, 0.0f));
+@@ -999,9 +1012,19 @@
+ 
+             {
+                 boost::unique_lock<boost::mutex> buffer_lock(buffer_mutex_);
+-                buffer_cond_.wait(buffer_lock, [&] { return buffer_.size() < buffer_capacity_; });
++                if (live_camera_) {
++                    // Drop complete decoded pictures, never compressed packets.
++                    // Do not let a slow render consumer back up the RTSP reader.
++                    while (buffer_.size() >= static_cast<size_t>(buffer_capacity_)) {
++                        buffer_.pop_front(); ++live_dropped_;
++                    }
++                } else {
++                    buffer_cond_.wait(buffer_lock, [&] { return buffer_.size() < buffer_capacity_; });
++                }
+                 if (seek_ == AV_NOPTS_VALUE) {
++                    frame.queued_at = std::chrono::steady_clock::now();
+                     buffer_.push_back(frame);
++                    live_queue_depth_ = buffer_.size();
+                 }
+             }
+ 
+@@ -1027,6 +1050,11 @@
+         state_["file/time"] = {time() / format_desc_.fps, file_duration().value_or(0) / format_desc_.fps};
+         state_["loop"]      = loop_;
+         state_["file/video-frame"] = delivered_video_sequence_.load();
++        state_["file/live-latest"] = live_camera_;
++        state_["file/decoded-dropped"] = live_dropped_.load();
++        state_["file/corrupt-discarded"] = live_corrupt_.load();
++        state_["file/decoded-queue-depth"] = live_queue_depth_.load();
++        state_["file/decoded-queue-age-ms"] = live_queue_age_ms_.load();
+     }
+ 
+     core::draw_frame prev_frame(const core::video_field field)
+@@ -1098,6 +1126,11 @@
+             latency_ = -1;
+         }
+ 
++        if (live_camera_ && format_desc_.field_count == 1) {
++            while (buffer_.size() > 1) { buffer_.pop_front(); ++live_dropped_; }
++            live_queue_age_ms_ = std::chrono::duration_cast<std::chrono::milliseconds>(
++                std::chrono::steady_clock::now() - buffer_[0].queued_at).count();
++        }
+         delivered_video_sequence_ = buffer_[0].video_sequence;
+         frame_          = buffer_[0].frame;
+         frame_time_     = buffer_[0].pts;
+@@ -1105,6 +1138,7 @@
+         frame_flush_    = false;
+ 
+         buffer_.pop_front();
++        live_queue_depth_ = buffer_.size();
+         buffer_cond_.notify_all();
+ 
+         graph_->set_value("buffer", static_cast<double>(buffer_.size()) / static_cast<double>(buffer_capacity_));
+@@ -1231,6 +1265,11 @@
+                 continue;
+             }
+ 
++            if (live_camera_ && frame->width > 0 && frame->data[0] &&
++                ((frame->flags & AV_FRAME_FLAG_CORRUPT) || frame->decode_error_flags)) {
++                ++live_corrupt_;
++                continue;
++            }
+             for (auto& source : p.second) {
+                 if (!frame->data[0]) {
+                     FF(av_buffersrc_close(source, frame->pts, 0));

@@ -1,0 +1,5079 @@
+{
+  "scope": "File-by-file provenance and approved source licence coverage; dependency packages retain their own licences",
+  "files": [
+    {
+      "file": ".dockerignore",
+      "sha256": "0a71bf4babec1baee272913ad90b7705411105ca89a473fc73997195cdebba69",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": ".github/workflows/foundation.yml",
+      "sha256": "5b8678dc6d155cf80c7d6b6224612a097a0fe51f0ab86a5be2c38af987f2a115",
+      "scope": "Independent original build/review tool",
+      "license_context": "Apache-2.0",
+      "review": "Maintainer-approved independent tool scope",
+      "evidence": [
+        "LICENSES/Apache-2.0.txt",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": ".github/workflows/native.yml",
+      "sha256": "250f2e3701bfe40a2330eda091f5f420546906fba6a2b5080e167294e5237dfb",
+      "scope": "Independent original build/review tool",
+      "license_context": "Apache-2.0",
+      "review": "Maintainer-approved independent tool scope",
+      "evidence": [
+        "LICENSES/Apache-2.0.txt",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": ".gitignore",
+      "sha256": "5f6ac4a906d3e406fc0194e065152c1769eea1ff924b69acc1309631a0f5ebc4",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "compose.audio.yaml",
+      "sha256": "55ebd31de0f2fc03bc43bb43cd922285f7889efba17db1a0c9eff3140c731fe0",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "compose.desktop.yaml",
+      "sha256": "fe78198ce6b59adeb4068e55d69c57bfba51b418dc193defbc3f8c7208ddf962",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "compose.headless.yaml",
+      "sha256": "c336bacd60fd03e40fb0ed2cac7af33c86e5bd5e5875d4d9ac2c49940cd5f302",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "compose.health-vaapi.yaml",
+      "sha256": "fd44a31f1f417e38c623372cb0d8869b6d7c7d5f62715ed47171c495502ff337",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "compose.intel.yaml",
+      "sha256": "dffbaecb603b7bd9e5be4507f6d383ff6411234a2fb367c1dc30a06cccf5242f",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "compose.nvidia.yaml",
+      "sha256": "ebc1c8e09fa4d39d5194af853f35015a49ddd2e284d04c562339432642d6bbe3",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "compose.station.yaml",
+      "sha256": "373f393aa053b1fb28a6fdf23b011d1b86e5ae9014b46c7c28f8ca2c628dcfa7",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "compose.yaml",
+      "sha256": "cc5c9b5d63adcb8072d85472cec1b867b3582aad13685d58df12f9eae2379741",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "CONTRIBUTING.md",
+      "sha256": "4dd358eaa8f1ad8a5b3163df60802e60ea9fb14214e6087558e4ad16eccc0866",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "deploy/amcp.py",
+      "sha256": "960b1193e53a67fc7c0868aa2f4129668002e4f21d3905abdd70cfcd3cc66d52",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "deploy/audit-music-loudness.py",
+      "sha256": "3fc4a1106c1960c8e999968f31f6053b6f792c385a0660e6243af2c2db91cb97",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "deploy/backup-settings.py",
+      "sha256": "879d675bf8c00f5c1d624ece3cc5da57760ce292371b182afb9c05e9773653ba",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "deploy/calibrate-radar.py",
+      "sha256": "b0446f0a7833726f2383934718b0ed53929233936cfc6961626aeb2056c351b2",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "deploy/camera-fault-check.py",
+      "sha256": "5689b755ad376d15599fb4971e819c21d201ec9f32fc4e31d5097f35ee478f3f",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "deploy/camera-hub.py",
+      "sha256": "9fe00f0c3bfdbd1e91c8de39fc3ff7b7c82a3a38244b1039f9337e588096c2ce",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "deploy/casparcg.config",
+      "sha256": "06fb6d35fe5c304863b191b7e6c3be2c7517a0032e07061f53a97e3a52f3bad2",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "deploy/cef-mallinfo-compat.c",
+      "sha256": "017cb178fd695a35e934e1749a5b804141c01e98e7627ca78f06f4f5d9b5556a",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "deploy/continuity-check.py",
+      "sha256": "22f66a43a6543257f25a446be1f2996e362105f8d85074981df5e20d9dafb10d",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "deploy/debian.sources",
+      "sha256": "ab1c80c93bc401d32508da4febc0723b451320207ed3d5717177c3cf8a0f29ff",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "deploy/Dockerfile.caspar",
+      "sha256": "30b2b8afc771f7aa5b9fce7f68ed6d9ce2c889ea2816528c7cfbd68a66bc24e7",
+      "scope": "CasparCG native build/changes",
+      "license_context": "GPL-3.0-or-later",
+      "review": "Checksum-pinned native source and ordered patch series; build and distribution gates recorded separately",
+      "evidence": [
+        "deploy/engine/LICENSE-CasparCG"
+      ]
+    },
+    {
+      "file": "deploy/Dockerfile.caspar-readback",
+      "sha256": "a6d91bcbd19275eb25d559f43e0e6a2e9de10b4b63f3e1c64476b04e8f6cb022",
+      "scope": "CasparCG native build/changes",
+      "license_context": "GPL-3.0-or-later",
+      "review": "Checksum-pinned native source and ordered patch series; build and distribution gates recorded separately",
+      "evidence": [
+        "deploy/engine/LICENSE-CasparCG"
+      ]
+    },
+    {
+      "file": "deploy/engine/bounded-graphics-cache.patch",
+      "sha256": "085f3571e5e79b513c488011a7b1214f4f3cb01d81da33e827c376e289ec5390",
+      "scope": "CasparCG native build/changes",
+      "license_context": "GPL-3.0-or-later",
+      "review": "Checksum-pinned native source and ordered patch series; build and distribution gates recorded separately",
+      "evidence": [
+        "deploy/engine/LICENSE-CasparCG"
+      ]
+    },
+    {
+      "file": "deploy/engine/bounded-video-queue.patch",
+      "sha256": "0bfae153ac853d7a5884a75357500a8a4996ba121aa6e2cf948ab9755e8c9b86",
+      "scope": "CasparCG native build/changes",
+      "license_context": "GPL-3.0-or-later",
+      "review": "Checksum-pinned native source and ordered patch series; build and distribution gates recorded separately",
+      "evidence": [
+        "deploy/engine/LICENSE-CasparCG"
+      ]
+    },
+    {
+      "file": "deploy/engine/camera-keyframe-recovery.patch",
+      "sha256": "88d93f921dd0f28784cb46b9606bbd447f42505095440b41c8ac0db4605dbdf3",
+      "scope": "CasparCG native build/changes",
+      "license_context": "GPL-3.0-or-later",
+      "review": "Checksum-pinned native source and ordered patch series; build and distribution gates recorded separately",
+      "evidence": [
+        "deploy/engine/LICENSE-CasparCG"
+      ]
+    },
+    {
+      "file": "deploy/engine/cef-fork-stack.patch",
+      "sha256": "b74d21015fe48c75edf4ba612d7790e7509bfa010daffd7718f291b04855b82b",
+      "scope": "CasparCG native build/changes",
+      "license_context": "GPL-3.0-or-later",
+      "review": "Checksum-pinned native source and ordered patch series; build and distribution gates recorded separately",
+      "evidence": [
+        "deploy/engine/LICENSE-CasparCG"
+      ]
+    },
+    {
+      "file": "deploy/engine/configured-camera-prefixes.patch",
+      "sha256": "456252cbec010a7a89c9ef1424b80fc35f8e583b3e840c00573c7cc0b1662866",
+      "scope": "CasparCG native build/changes",
+      "license_context": "GPL-3.0-or-later",
+      "review": "Checksum-pinned native source and ordered patch series; build and distribution gates recorded separately",
+      "evidence": [
+        "deploy/engine/LICENSE-CasparCG"
+      ]
+    },
+    {
+      "file": "deploy/engine/delivered-video-counter.patch",
+      "sha256": "a0fafcd771c79ddbdec5ddc76ce69765fc96056b66c1bae382af94e52b2fe820",
+      "scope": "CasparCG native build/changes",
+      "license_context": "GPL-3.0-or-later",
+      "review": "Checksum-pinned native source and ordered patch series; build and distribution gates recorded separately",
+      "evidence": [
+        "deploy/engine/LICENSE-CasparCG"
+      ]
+    },
+    {
+      "file": "deploy/engine/idle-graphics-cache.patch",
+      "sha256": "6c95f858afaddb65622a27b1f89baf6a803c30ba8815b4f953a4d1b5c7256329",
+      "scope": "CasparCG native build/changes",
+      "license_context": "GPL-3.0-or-later",
+      "review": "Checksum-pinned native source and ordered patch series; build and distribution gates recorded separately",
+      "evidence": [
+        "deploy/engine/LICENSE-CasparCG"
+      ]
+    },
+    {
+      "file": "deploy/engine/idle_cache.h",
+      "sha256": "3f076f20abf0799c81f275e7dc3a48cbd9b9018bd4a42ac8ac32fe0896090be4",
+      "scope": "CasparCG native build/changes",
+      "license_context": "GPL-3.0-or-later",
+      "review": "Checksum-pinned native source and ordered patch series; build and distribution gates recorded separately",
+      "evidence": [
+        "deploy/engine/LICENSE-CasparCG"
+      ]
+    },
+    {
+      "file": "deploy/engine/independent-audio.patch",
+      "sha256": "d186e47249656234dcd834141766a31b34d782161d3710b087c60882cefd3234",
+      "scope": "CasparCG native build/changes",
+      "license_context": "GPL-3.0-or-later",
+      "review": "Checksum-pinned native source and ordered patch series; build and distribution gates recorded separately",
+      "evidence": [
+        "deploy/engine/LICENSE-CasparCG"
+      ]
+    },
+    {
+      "file": "deploy/engine/LICENSE-CasparCG",
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+      "scope": "CasparCG native build/changes",
+      "license_context": "GPL-3.0-or-later",
+      "review": "Checksum-pinned native source and ordered patch series; build and distribution gates recorded separately",
+      "evidence": [
+        "deploy/engine/LICENSE-CasparCG"
+      ]
+    },
+    {
+      "file": "deploy/engine/live-camera-latest.patch",
+      "sha256": "6084a5854be0a8bfa617e22ba75836aed02597da16daeea7fed0c6b2ba993e20",
+      "scope": "CasparCG native build/changes",
+      "license_context": "GPL-3.0-or-later",
+      "review": "Checksum-pinned native source and ordered patch series; build and distribution gates recorded separately",
+      "evidence": [
+        "deploy/engine/LICENSE-CasparCG"
+      ]
+    },
+    {
+      "file": "deploy/engine/monitor-snapshot.patch",
+      "sha256": "9e33dcff981c549fb7aa29b74faaa6675180f88341fdb964f035f45ee4855830",
+      "scope": "CasparCG native build/changes",
+      "license_context": "GPL-3.0-or-later",
+      "review": "Checksum-pinned native source and ordered patch series; build and distribution gates recorded separately",
+      "evidence": [
+        "deploy/engine/LICENSE-CasparCG"
+      ]
+    },
+    {
+      "file": "deploy/engine/ndi-bounded-output.patch",
+      "sha256": "7a4a149523094b85a8c7a6fad2e5e29408b0ae45a99919d61208a155e776ee8d",
+      "scope": "CasparCG native build/changes",
+      "license_context": "GPL-3.0-or-later",
+      "review": "Checksum-pinned native source and ordered patch series; build and distribution gates recorded separately",
+      "evidence": [
+        "deploy/engine/LICENSE-CasparCG"
+      ]
+    },
+    {
+      "file": "deploy/engine/ndi-box-reduction.patch",
+      "sha256": "fec82bbecb21057d6266d7b574d07e374021b3ec5da6e12458fbbb9b067ff785",
+      "scope": "CasparCG native build/changes",
+      "license_context": "GPL-3.0-or-later",
+      "review": "Checksum-pinned native source and ordered patch series; build and distribution gates recorded separately",
+      "evidence": [
+        "deploy/engine/LICENSE-CasparCG"
+      ]
+    },
+    {
+      "file": "deploy/engine/ndi-independent-audio.patch",
+      "sha256": "157c49c888a4817d9d23ac736f9b7259ed78f9f36388de709dda5ab49a227790",
+      "scope": "CasparCG native build/changes",
+      "license_context": "GPL-3.0-or-later",
+      "review": "Checksum-pinned native source and ordered patch series; build and distribution gates recorded separately",
+      "evidence": [
+        "deploy/engine/LICENSE-CasparCG"
+      ]
+    },
+    {
+      "file": "deploy/engine/ndi-library-lifetime.patch",
+      "sha256": "f447c803f1408e9fc5f9f7d4b201813ee5cb8fecd1da086940d8982911cc6f19",
+      "scope": "CasparCG native build/changes",
+      "license_context": "GPL-3.0-or-later",
+      "review": "Checksum-pinned native source and ordered patch series; build and distribution gates recorded separately",
+      "evidence": [
+        "deploy/engine/LICENSE-CasparCG"
+      ]
+    },
+    {
+      "file": "deploy/engine/ndi-program-scale.patch",
+      "sha256": "a937c39ef8792bf7a00bab0309f8c48f678a2ece28fe1f95cd0de15662f4d014",
+      "scope": "CasparCG native build/changes",
+      "license_context": "GPL-3.0-or-later",
+      "review": "Checksum-pinned native source and ordered patch series; build and distribution gates recorded separately",
+      "evidence": [
+        "deploy/engine/LICENSE-CasparCG"
+      ]
+    },
+    {
+      "file": "deploy/engine/ndi-readback-release.patch",
+      "sha256": "297caf4d4943971d2ee127fdacc7563dff31532f6eb29736dc5d8f66925f3f59",
+      "scope": "CasparCG native build/changes",
+      "license_context": "GPL-3.0-or-later",
+      "review": "Checksum-pinned native source and ordered patch series; build and distribution gates recorded separately",
+      "evidence": [
+        "deploy/engine/LICENSE-CasparCG"
+      ]
+    },
+    {
+      "file": "deploy/engine/ndi_box3.h",
+      "sha256": "dca525bbf2ce8b130bb20a33b00ed9e6fc1e95553f6527d399debbb13b0b0f18",
+      "scope": "CasparCG native build/changes",
+      "license_context": "GPL-3.0-or-later",
+      "review": "Checksum-pinned native source and ordered patch series; build and distribution gates recorded separately",
+      "evidence": [
+        "deploy/engine/LICENSE-CasparCG"
+      ]
+    },
+    {
+      "file": "deploy/engine/owned-readback.patch",
+      "sha256": "b6953d813b3986cfa9816f692b3668e4303ad00f3f09421a78b2930e710051a7",
+      "scope": "CasparCG native build/changes",
+      "license_context": "GPL-3.0-or-later",
+      "review": "Checksum-pinned native source and ordered patch series; build and distribution gates recorded separately",
+      "evidence": [
+        "deploy/engine/LICENSE-CasparCG"
+      ]
+    },
+    {
+      "file": "deploy/engine/test-camera-policy.cpp",
+      "sha256": "129bdaf8d8e62b635bddf9251550e245bc3d7cc35f794eddcc9568749375ba7a",
+      "scope": "CasparCG native build/changes",
+      "license_context": "GPL-3.0-or-later",
+      "review": "Checksum-pinned native source and ordered patch series; build and distribution gates recorded separately",
+      "evidence": [
+        "deploy/engine/LICENSE-CasparCG"
+      ]
+    },
+    {
+      "file": "deploy/engine/test-idle-cache.cpp",
+      "sha256": "45fcd22207fc4d8f45aa819671aab08320181e54d458b27acde4c99ec73d8061",
+      "scope": "CasparCG native build/changes",
+      "license_context": "GPL-3.0-or-later",
+      "review": "Checksum-pinned native source and ordered patch series; build and distribution gates recorded separately",
+      "evidence": [
+        "deploy/engine/LICENSE-CasparCG"
+      ]
+    },
+    {
+      "file": "deploy/engine/test-ndi-box3.cpp",
+      "sha256": "1ce6effce67713e2d65a85c5d7a0972d0dc4ffeb12ed6e43682074b156771d91",
+      "scope": "CasparCG native build/changes",
+      "license_context": "GPL-3.0-or-later",
+      "review": "Checksum-pinned native source and ordered patch series; build and distribution gates recorded separately",
+      "evidence": [
+        "deploy/engine/LICENSE-CasparCG"
+      ]
+    },
+    {
+      "file": "deploy/engine/test-uc-image-copy.c",
+      "sha256": "1e6b3ba54eb500248836d603c824c6f50aacdee3dfd8c6c4b71bbf4ff956aa14",
+      "scope": "CasparCG native build/changes",
+      "license_context": "GPL-3.0-or-later",
+      "review": "Checksum-pinned native source and ordered patch series; build and distribution gates recorded separately",
+      "evidence": [
+        "deploy/engine/LICENSE-CasparCG"
+      ]
+    },
+    {
+      "file": "deploy/keep-display-awake.py",
+      "sha256": "eb75fe736e1c3de2037660699dffcf58c0390e0e3ead3b68bf3e051e570d2167",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "deploy/ndi-output.py",
+      "sha256": "05fe3bb605ffb7fece2dec6b654bbfccb7a0164f614f6380bc605b1868bdbeff",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "deploy/network-outputs.py",
+      "sha256": "5e0261fec96c611fc9db125df91f79362b465881400fe220a294383fbdc7832c",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "deploy/nvdec-prefer.c",
+      "sha256": "5cb8b9ba173b75ef00b738b3e2b3eec4c830e3fc61deaa2608a4760025e40e00",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "deploy/packet-continuity.py",
+      "sha256": "82c751e9a0df31cd16dfd7852feedaf2d7febd713d3989bac527758a95fd9e25",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "deploy/program-watchdog.py",
+      "sha256": "b975be1575f2fba43ff965ebb30ed35997f69ad268db167484aa2dff4a8e4a08",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "deploy/publish.py",
+      "sha256": "5d3c6feeba378f72c324f309fe3571abfca0b3e2024d641c9c2fbe8ccd56431d",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "deploy/radar-mask.py",
+      "sha256": "114dde23f964212b8de7587889d48f745aa3fd4be980d2462d00cb95a6005567",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "deploy/run-camera-fault-check.py",
+      "sha256": "3d5bd32088e60858398114fb5932a5d519f359b678825c5186d8ff37cad6736b",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "deploy/skycam-camera-hub.service",
+      "sha256": "3e0991241db7dcab1e94276a4a48aecaf744d71e2483cb4dc0993d466cf60826",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "deploy/skycam-display.service",
+      "sha256": "c695ce18b85175d3d33020699d29876b4bd079ab032a361950b32d890e642c04",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "deploy/skycam-session.service",
+      "sha256": "ec61de650a1ac1958f6062ea33624f6169093c684a7a17ed0768032c4a0d65fa",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "deploy/skycam-sources.service",
+      "sha256": "599c23874e1c5555e906e6106176945e55f98111c5c6f776e6e4daf34cb9ff86",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "deploy/skycam-watchdog.service",
+      "sha256": "811d1e501e5d8a803774483f17c7e05ac76f70fad8178875b2a0a9fbbc14e141",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "deploy/skycamctl",
+      "sha256": "88505d0af2c34a3e3fd207c50d1f45a1b124f2ff7ac1d17eb4381f32541935bf",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "deploy/soak-resources.py",
+      "sha256": "9458e73f9b6784daf18e68ccfad6a99ae49225378581ce655cd7e3d772626b77",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "deploy/source-health.py",
+      "sha256": "9c066380c0dbc2089b7e5f128a502fad652ec8b614e97adb5646407c3587822c",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "deploy/start-caspar.sh",
+      "sha256": "4d6a256aa89b33ce199911780adbd4fdc29617b27ec947240c41666e3257d55b",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "deploy/start-session.sh",
+      "sha256": "bce5f87ba7d0738e5831c046da0ec8f00c7870609c88db70bc0fed9dfd998355",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "deploy/start-web.sh",
+      "sha256": "b931e7231db8c9657accf5b4f66ca737de6c6dc3a5408a7ebdbd1dba4592007e",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "deploy/take.py",
+      "sha256": "8e71c3f27be114c473160fd15762df362b9280c815a3c98019dde866d6f02eee",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "deploy/test-isolated-rollback.py",
+      "sha256": "a98001937323d86faa594bd12ade8db9294195f06aed50d8bc0494a60f42925a",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "deploy/test-source-reconnect.py",
+      "sha256": "9dd26a1a2b4f7463e3d6474a4318261e634b469af330f4bad38686ddea5c8a70",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "deploy/ubuntu.sources",
+      "sha256": "fd19948c5e8e4e190207a7313c820b5d799ff529e703fe331ff7ca85822a0d4e",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "deploy/uc-image-copy.c",
+      "sha256": "43ddb5b9a246cb98fe9f1cc4e340da1f926898f08595340615f8b450e9ff5633",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "deploy/youtube-relay.py",
+      "sha256": "4cf402d00ff05819bdc892cd280625f8bc3654bf41c2b8127a06305ab2249c74",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "Dockerfile",
+      "sha256": "bff2234c98a9fe379e857024ee29f27e0f7857a9fc7b1bdec8179b390d5b00d2",
+      "scope": "Independent original build/review tool",
+      "license_context": "Apache-2.0",
+      "review": "Maintainer-approved independent tool scope",
+      "evidence": [
+        "LICENSES/Apache-2.0.txt",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "Dockerfile.test",
+      "sha256": "cdfeff07643b458f72c3c5bd60b77f8eb18e13a044cb54b38280ce3ab43182f4",
+      "scope": "Independent original build/review tool",
+      "license_context": "Apache-2.0",
+      "review": "Maintainer-approved independent tool scope",
+      "evidence": [
+        "LICENSES/Apache-2.0.txt",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "docs/ACCEPTANCE-ARCHIVE-20261024.md",
+      "sha256": "7b9b7d53f6e6197d4579c4a967211c11104156924e1d7d2d679ae02e27ed8b24",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "docs/ACCEPTANCE-STATUS.md",
+      "sha256": "be5970ea323221184f7b7b0427aae305840f46d9b32c507e25be5c283bb27bdd",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "docs/BINARY-RELEASE-CHECKLIST.md",
+      "sha256": "f0946eabf2689b4a270b397d7bf66d48aa15b2e2286e6bcf5649f436f557db78",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "docs/BRANDING.md",
+      "sha256": "8de03c1ad56f1a047bef668ff3821a059878385e0931485b9611b94df3555a67",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "docs/BUILD-INPUTS.md",
+      "sha256": "39fb6caf14b82867cda38e433f7ecd3c75ec54b7da32bac884f3c5f35799feb9",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "docs/CI-CD.md",
+      "sha256": "6cf23c4ef52906443ef2911d8440d59bf32cd776c1cffb9a5a8ee04e8e94e927",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "docs/CLEAN-INSTALL-20261024.md",
+      "sha256": "28ed70ec4cd170986540c022a92db8bd4a9027ad02570ee9ebee59d3070f3a86",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "docs/DEPLOYMENT-VALIDATION.md",
+      "sha256": "268e0e07de3bf15f9008e2da08d2222586dc7660918ad84e5cffaed024fc9f4e",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "docs/FOUNDATION-STATUS.md",
+      "sha256": "1eb2bec82c83e1e47130a8a7d8aa17c66c1aeac9c3526f39b36867422403decd",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "docs/HARDWARE-ACCEPTANCE.md",
+      "sha256": "79be7dcb1f1ed2091890f9ac1e303d9b36c7dcb84767e6d64934ce81edb31141",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "docs/HEADLESS-ACCEPTANCE-20261025.md",
+      "sha256": "e5bd428508e6255017693a8c65008b32432f972d86126b261c4cb3d1e7037af0",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "docs/HEADLESS.md",
+      "sha256": "730846bf62141cf1e3dcbd7b23cd7d5732624c387b829c0e06ca430f3cdcb2f4",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "docs/INTEL-ACCEPTANCE-20261023.md",
+      "sha256": "63919329bbd4376d9be73c3e096fca6d2f0d8b49fb6b5c2e24ea617673b7c617",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "docs/INTEL-STANDBY-20261024.md",
+      "sha256": "ee0b853404205015b51aee287d929fb40204cead0389cc463590285701346b4c",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "docs/LAPTOP-ACCEPTANCE.md",
+      "sha256": "0099d1a0878f18e3852eaff8e0ac901f81af2234ccba4cc5904c11b525943d31",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "docs/LINUX-DEPLOYMENT.md",
+      "sha256": "389b77ac032868da9acfabf330f0b3f80bf16f663e717cd0799da1ddea5025c6",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "docs/MIGRATION-VALIDATION.md",
+      "sha256": "25bb435d965d23586a9c410c38f287ad95b4dd2592c2e1e74c4b89cccd5b42f9",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "docs/NATIVE-DEPENDENCIES.md",
+      "sha256": "2b4452ad57a0f70f02c68737c7bc07469ed385cd14b8b0c0d8011d136cef2af7",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "docs/NVIDIA-ACCEPTANCE-20261021.md",
+      "sha256": "f3d748be30090c0016373680c99166826a6695735736312d9a596c0364717233",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "docs/POWER-REPORTS.md",
+      "sha256": "1c852f94456a879dee9f3a19fd30b3f4257064fbee53df5fe257217309ae6b6c",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "docs/POWER-SYSTEM.md",
+      "sha256": "e4220c91b425fbba76e3aec6fcb85d500bd054f12ce0b11e9e0410e743fbd63a",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "docs/PRODUCTION-MIGRATION-20261022.md",
+      "sha256": "06555f0e5bc125d44d9b0e3a08ffeda1b2169262b316099b9ec2e91b15d14da1",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "docs/README.md",
+      "sha256": "6f0ccc29807c930f58936dfe016bffec433fd91e971d764244cfc16fbd9afd6c",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "docs/RELEASE-CHECKLIST.md",
+      "sha256": "4887823db7448391d819558ee6dc6bc5bf2b374207dc9f5bf2fee4206cf35d67",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "docs/RELIABILITY-20261024.md",
+      "sha256": "c2be66bca4666bb93b5da4be7d78e1268709102dd39f4414df84b356dd2f0404",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "docs/SECURITY-REVIEW-20261024.md",
+      "sha256": "239fe2bbb117f61eedca1a2e5628d626ff7831dad90983d1f7962b058bfc9975",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "docs/SOAK-REVIEW-20261023.md",
+      "sha256": "61450d00cbbacd2ff81d35a0d7ac88c3898cedf9f458d1f3fcd13fee10257bb7",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "docs/SOURCE-AND-LICENCES.md",
+      "sha256": "9f98631e4fa5932f22f6660acb78e2660ca286e2f5f82c4d22d2a2c0b4d3e3f0",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "docs/STANDBY.md",
+      "sha256": "8f6206da91cd853a9d66a984caffac78403011a76b34e1c272b9c9bfc6deb502",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "docs/STATION-CONFIGURATION.md",
+      "sha256": "29640085e74c50fb1e59fbfb6e6886395cc4884a38f45994d37d41720a75331d",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "docs/STUDIO-ACCEPTANCE-20261021.md",
+      "sha256": "0c2b0ee524b4589790d578d699bc3baee9504024b489ae06ab80147e5417db2c",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "docs/STUDIO-GUIDE.md",
+      "sha256": "7f9ffca004bf312510b3f57f466248d481e30f26fcc66724536c6b4140ec1e7e",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "examples/branding.json",
+      "sha256": "4e733e14fe239f0d50c9b90fbcdb6a2de66ad5ae48df0a0296da86ab967e2093",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "examples/cef-credits-inventory.json",
+      "sha256": "8a505061c76aa8dc4fe447a1787a88e275ebe6adf794ed7789fa8e555e7a74c4",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "examples/component-inventory.json",
+      "sha256": "66e3d204244add5852f00f6ad35ceecb5514fdf3175c2b1d668117a249b87897",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "examples/engine-source-verification.json",
+      "sha256": "d935cb75de44281b7b6d0629304189dbe029f8b624ec2be640598e657413c866",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "examples/export-provenance.json",
+      "sha256": "20977885044c242d8c936bc14c3ee0c7ae0cd6684e1744aebd2348936de56ec0",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "examples/font-verification.json",
+      "sha256": "e90c8926771818b53091a558423237dac250d0990d2d3ae6695979e621964cd0",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "examples/leaflet-verification.json",
+      "sha256": "1c67cd28560f069d516684b312afa2a90f1a0947bccee684bbb56fc6ed0790b5",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "examples/music-source-verification.json",
+      "sha256": "5dd7527b0259f7d5bc6b5717df61e0a0833cec978e482fd6e5b01228a870e18b",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "examples/station.json",
+      "sha256": "0073e394e6afae58522566d6586aab27a2376f59bff8c163b0799ff9be7f50b6",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "examples/station.schema.json",
+      "sha256": "3ba2bfe73ada0ca2782c38e3c146cb2851eb36671bc2563aec72769e200bf44b",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "LICENSE",
+      "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "LICENSES/AGPL-3.0-or-later.txt",
+      "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "LICENSES/Apache-2.0.txt",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "LICENSES/GPL-3.0-or-later.txt",
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "LICENSING.md",
+      "sha256": "51c12ff833c72f2f529e0ddc5e0af66f010857b2618cd6dd5c791071448952eb",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "NOTICE",
+      "sha256": "ae408ce3eaad7f63d83be8276ce7eb732d4ba1f2815753f04cba30d4053d738d",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "README.md",
+      "sha256": "3fd4375b55b9edd2f8448b3545008957176fc00e7eda3b7b2ef53ad76afc1de8",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "requirements-linux-x86_64.lock",
+      "sha256": "9d00918912d7b9065ea003c783096fddfce6b0ca0cc8735bc3aae4e3c48793c6",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "requirements-test-linux-x86_64.lock",
+      "sha256": "d10280ece2616f861a720c6dfe9edd0f0641ecb7e6813d4f69f002eca57a60ba",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "requirements-test.txt",
+      "sha256": "fbbc28afc394a22d28646f48f5a4d91558058a87bb550f66aa818d4b412c80e8",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "requirements.txt",
+      "sha256": "ef12c74d40427f45eb4b990b46df917721b2d81853319d685398a8f44c7e4d65",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "samples/cam1-native.png",
+      "sha256": "6572f691208a82edd332d4b1af9329b99b24b77dad36537c933f0be7d101de1f",
+      "scope": "Original synthetic demonstration fixture",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original synthetic asset under application AGPL licence",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "samples/cam1-night.png",
+      "sha256": "6572f691208a82edd332d4b1af9329b99b24b77dad36537c933f0be7d101de1f",
+      "scope": "Original synthetic demonstration fixture",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original synthetic asset under application AGPL licence",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "samples/cam2-native.png",
+      "sha256": "6572f691208a82edd332d4b1af9329b99b24b77dad36537c933f0be7d101de1f",
+      "scope": "Original synthetic demonstration fixture",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original synthetic asset under application AGPL licence",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "samples/cam2-night.png",
+      "sha256": "6572f691208a82edd332d4b1af9329b99b24b77dad36537c933f0be7d101de1f",
+      "scope": "Original synthetic demonstration fixture",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original synthetic asset under application AGPL licence",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "samples/cam3-reference.png",
+      "sha256": "6572f691208a82edd332d4b1af9329b99b24b77dad36537c933f0be7d101de1f",
+      "scope": "Original synthetic demonstration fixture",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original synthetic asset under application AGPL licence",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "samples/cam4-reference.png",
+      "sha256": "6572f691208a82edd332d4b1af9329b99b24b77dad36537c933f0be7d101de1f",
+      "scope": "Original synthetic demonstration fixture",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original synthetic asset under application AGPL licence",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "samples/camera-placeholder.svg",
+      "sha256": "8dc9d9c01a94cff9f9aeeb3d62b0f29ff15b01c733fd1f60f4f72e032e714fa7",
+      "scope": "Original synthetic demonstration fixture",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original synthetic asset under application AGPL licence",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "samples/camera-reference.png",
+      "sha256": "6572f691208a82edd332d4b1af9329b99b24b77dad36537c933f0be7d101de1f",
+      "scope": "Original synthetic demonstration fixture",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original synthetic asset under application AGPL licence",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "samples/daylight-card.svg",
+      "sha256": "8dc9d9c01a94cff9f9aeeb3d62b0f29ff15b01c733fd1f60f4f72e032e714fa7",
+      "scope": "Original synthetic demonstration fixture",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original synthetic asset under application AGPL licence",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "samples/map-card.svg",
+      "sha256": "8dc9d9c01a94cff9f9aeeb3d62b0f29ff15b01c733fd1f60f4f72e032e714fa7",
+      "scope": "Original synthetic demonstration fixture",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original synthetic asset under application AGPL licence",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "samples/ntv-cam1-reference.png",
+      "sha256": "6572f691208a82edd332d4b1af9329b99b24b77dad36537c933f0be7d101de1f",
+      "scope": "Original synthetic demonstration fixture",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original synthetic asset under application AGPL licence",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "samples/ntv-cam2-reference.png",
+      "sha256": "6572f691208a82edd332d4b1af9329b99b24b77dad36537c933f0be7d101de1f",
+      "scope": "Original synthetic demonstration fixture",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original synthetic asset under application AGPL licence",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "samples/ntv-cam3-reference.png",
+      "sha256": "6572f691208a82edd332d4b1af9329b99b24b77dad36537c933f0be7d101de1f",
+      "scope": "Original synthetic demonstration fixture",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original synthetic asset under application AGPL licence",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "samples/ntv-cam4-reference.png",
+      "sha256": "6572f691208a82edd332d4b1af9329b99b24b77dad36537c933f0be7d101de1f",
+      "scope": "Original synthetic demonstration fixture",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original synthetic asset under application AGPL licence",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "samples/station-card.svg",
+      "sha256": "8dc9d9c01a94cff9f9aeeb3d62b0f29ff15b01c733fd1f60f4f72e032e714fa7",
+      "scope": "Original synthetic demonstration fixture",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original synthetic asset under application AGPL licence",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "samples/synthetic-still.png",
+      "sha256": "6572f691208a82edd332d4b1af9329b99b24b77dad36537c933f0be7d101de1f",
+      "scope": "Original synthetic demonstration fixture",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original synthetic asset under application AGPL licence",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "samples/weather-card.svg",
+      "sha256": "8dc9d9c01a94cff9f9aeeb3d62b0f29ff15b01c733fd1f60f4f72e032e714fa7",
+      "scope": "Original synthetic demonstration fixture",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original synthetic asset under application AGPL licence",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "samples/yyt-arrivals-card.svg",
+      "sha256": "8dc9d9c01a94cff9f9aeeb3d62b0f29ff15b01c733fd1f60f4f72e032e714fa7",
+      "scope": "Original synthetic demonstration fixture",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original synthetic asset under application AGPL licence",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "samples/yyt-departures-card.svg",
+      "sha256": "8dc9d9c01a94cff9f9aeeb3d62b0f29ff15b01c733fd1f60f4f72e032e714fa7",
+      "scope": "Original synthetic demonstration fixture",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original synthetic asset under application AGPL licence",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "SECURITY.md",
+      "sha256": "414046779937344b2f0cdf39ef8fe0a3eb5d82488c47c4c0d84b270cc84b6e43",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/__init__.py",
+      "sha256": "fb1b379a120198009dddd7dbf2e2c382ed210f0673eb10eaefd6258b803f9fce",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/aeroapi.py",
+      "sha256": "b0ace7815b8fc434fbaa5fb43ea0ea8b5956f6f192f14af7dc388c3a0c3994f4",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/aircraft_graphics.py",
+      "sha256": "c1f937ddfe336f34225d99afd21729a4c8aee69412aaf830d4d11a6b995ff412",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/aircraft_metadata.py",
+      "sha256": "99336cabe6c5f263da6b238341d3ea4d0be0ee72c1577ffbfd6c9a3f2591fb2a",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/ais.py",
+      "sha256": "2ee45550636c8f2eb2fc69bd3162886fbad1775bc6d306f5a1b65451a9570d93",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/alert_audio.py",
+      "sha256": "14fb4a8a4f3fb8960392fce2d18c32503c35bac7dbd024a7e31eca3232aafe42",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/alert_graphics.py",
+      "sha256": "84faf353f8dca1a5d4f6b51f829c090eb363bc9ab36978abb8cd659a8280bda6",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/alert_presentation.py",
+      "sha256": "fe34bf721e459d493034e92b2e110d3c4f01bfb2ae7b09fc0e2a3f5268a2f0aa",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/alert_resources.py",
+      "sha256": "78a52f95c31fe25baa957d83b0426826636d8cfd1003b0dd6344518df58c2637",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/alert_titles.py",
+      "sha256": "0447e494a12f0fb71da7269d378affc490324fffa9e471e41f894437c5ebc29c",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/alert_verification.py",
+      "sha256": "462b1f4dee7b2252d843becd16abd96ef5e02757c40139c5087f7e82e069314d",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/alerts.py",
+      "sha256": "c92aeecb51cb943b1497937c2573215d2a7ff83a35daa6d38ac17474ab9a8d92",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/app.py",
+      "sha256": "7e09489fe134a39060b278da8b2d1587130cc47a6a29728e36e0056a0d69647a",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/assets/ATTENTION-SIGNAL.md",
+      "sha256": "880e365c185a64a40c8bd3d59807d7bf57c99d77a1a52a6125c25125d4d207b4",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/assets/attention.wav",
+      "sha256": "50e281808e9c81df675a1474561b2b71f1685d06725127e2e7cfe254adabc6ae",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/assets/piano-kw/36.wav",
+      "sha256": "7395bb81d07a6b51c8863366eb743bbd6a480a1fb09573281f6317e361d00618",
+      "scope": "FreePats Upright Piano KW",
+      "license_context": "CC0-1.0",
+      "review": "Notice and source manifest retained",
+      "evidence": [
+        "skycam/assets/piano-kw/cc0.txt",
+        "skycam/assets/piano-kw/manifest.json"
+      ]
+    },
+    {
+      "file": "skycam/assets/piano-kw/39.wav",
+      "sha256": "a46e2da1c4c7c003372cb3659c546bf9dfb09ead38e754321acb4a3a99b99b85",
+      "scope": "FreePats Upright Piano KW",
+      "license_context": "CC0-1.0",
+      "review": "Notice and source manifest retained",
+      "evidence": [
+        "skycam/assets/piano-kw/cc0.txt",
+        "skycam/assets/piano-kw/manifest.json"
+      ]
+    },
+    {
+      "file": "skycam/assets/piano-kw/42.wav",
+      "sha256": "fe6826cb9d37cdd3997a3317d21faadedbeb16487d97bc9e9d170c3ae93f014f",
+      "scope": "FreePats Upright Piano KW",
+      "license_context": "CC0-1.0",
+      "review": "Notice and source manifest retained",
+      "evidence": [
+        "skycam/assets/piano-kw/cc0.txt",
+        "skycam/assets/piano-kw/manifest.json"
+      ]
+    },
+    {
+      "file": "skycam/assets/piano-kw/45.wav",
+      "sha256": "04beb68b69bf3da980fe8c1c9ab54358b925a9a48e207c33fc4a44cf84831bee",
+      "scope": "FreePats Upright Piano KW",
+      "license_context": "CC0-1.0",
+      "review": "Notice and source manifest retained",
+      "evidence": [
+        "skycam/assets/piano-kw/cc0.txt",
+        "skycam/assets/piano-kw/manifest.json"
+      ]
+    },
+    {
+      "file": "skycam/assets/piano-kw/48.wav",
+      "sha256": "2aad7abad79aa5562248c4c9ae68bf0c996b6ef4d18138cfc36750cb26ae05e2",
+      "scope": "FreePats Upright Piano KW",
+      "license_context": "CC0-1.0",
+      "review": "Notice and source manifest retained",
+      "evidence": [
+        "skycam/assets/piano-kw/cc0.txt",
+        "skycam/assets/piano-kw/manifest.json"
+      ]
+    },
+    {
+      "file": "skycam/assets/piano-kw/51.wav",
+      "sha256": "ec2a355be5cdccb02604744d94d214878a3e1ad9c501c42e0598ba3a6b3a4733",
+      "scope": "FreePats Upright Piano KW",
+      "license_context": "CC0-1.0",
+      "review": "Notice and source manifest retained",
+      "evidence": [
+        "skycam/assets/piano-kw/cc0.txt",
+        "skycam/assets/piano-kw/manifest.json"
+      ]
+    },
+    {
+      "file": "skycam/assets/piano-kw/54.wav",
+      "sha256": "7d2a7b5234b29a7f84cc9c01da1596b0e8bcca29fa1404aede8ae056bbdd9c90",
+      "scope": "FreePats Upright Piano KW",
+      "license_context": "CC0-1.0",
+      "review": "Notice and source manifest retained",
+      "evidence": [
+        "skycam/assets/piano-kw/cc0.txt",
+        "skycam/assets/piano-kw/manifest.json"
+      ]
+    },
+    {
+      "file": "skycam/assets/piano-kw/57.wav",
+      "sha256": "d6c171e98573ac11a704c63381c90ce1703c922a9e7a22a785c97e4ae91379cc",
+      "scope": "FreePats Upright Piano KW",
+      "license_context": "CC0-1.0",
+      "review": "Notice and source manifest retained",
+      "evidence": [
+        "skycam/assets/piano-kw/cc0.txt",
+        "skycam/assets/piano-kw/manifest.json"
+      ]
+    },
+    {
+      "file": "skycam/assets/piano-kw/60.wav",
+      "sha256": "53d014ce1c2a4d75bb2b600f6035b9fdf054e15c46c528a2cbefde9b1fedf3f8",
+      "scope": "FreePats Upright Piano KW",
+      "license_context": "CC0-1.0",
+      "review": "Notice and source manifest retained",
+      "evidence": [
+        "skycam/assets/piano-kw/cc0.txt",
+        "skycam/assets/piano-kw/manifest.json"
+      ]
+    },
+    {
+      "file": "skycam/assets/piano-kw/63.wav",
+      "sha256": "1f717143c8a32ac9da90f90995d597fbfb7d6c0cd1e3856eba86e33c59de5343",
+      "scope": "FreePats Upright Piano KW",
+      "license_context": "CC0-1.0",
+      "review": "Notice and source manifest retained",
+      "evidence": [
+        "skycam/assets/piano-kw/cc0.txt",
+        "skycam/assets/piano-kw/manifest.json"
+      ]
+    },
+    {
+      "file": "skycam/assets/piano-kw/66.wav",
+      "sha256": "4231a1c699f39ffe603dc9f206967420c0d1f2ab6f88e0ab55472ee4fc1f3b9c",
+      "scope": "FreePats Upright Piano KW",
+      "license_context": "CC0-1.0",
+      "review": "Notice and source manifest retained",
+      "evidence": [
+        "skycam/assets/piano-kw/cc0.txt",
+        "skycam/assets/piano-kw/manifest.json"
+      ]
+    },
+    {
+      "file": "skycam/assets/piano-kw/69.wav",
+      "sha256": "c44aa252f5c414577598f8a118bef1c3efdb9c47451d635382173b685d050f7d",
+      "scope": "FreePats Upright Piano KW",
+      "license_context": "CC0-1.0",
+      "review": "Notice and source manifest retained",
+      "evidence": [
+        "skycam/assets/piano-kw/cc0.txt",
+        "skycam/assets/piano-kw/manifest.json"
+      ]
+    },
+    {
+      "file": "skycam/assets/piano-kw/72.wav",
+      "sha256": "ee89230a3b57365ba3272eb8cc17b9b3239322e43f1d99af2572de587b6e4c1a",
+      "scope": "FreePats Upright Piano KW",
+      "license_context": "CC0-1.0",
+      "review": "Notice and source manifest retained",
+      "evidence": [
+        "skycam/assets/piano-kw/cc0.txt",
+        "skycam/assets/piano-kw/manifest.json"
+      ]
+    },
+    {
+      "file": "skycam/assets/piano-kw/75.wav",
+      "sha256": "11a5f26fef4031f29639507dc88a883d4f0418cf35190cbfe86eefdca6f7c899",
+      "scope": "FreePats Upright Piano KW",
+      "license_context": "CC0-1.0",
+      "review": "Notice and source manifest retained",
+      "evidence": [
+        "skycam/assets/piano-kw/cc0.txt",
+        "skycam/assets/piano-kw/manifest.json"
+      ]
+    },
+    {
+      "file": "skycam/assets/piano-kw/78.wav",
+      "sha256": "76c87b86211e647d2e9687290d1ccb137d88cb6d67310749950a88d862a9b6b2",
+      "scope": "FreePats Upright Piano KW",
+      "license_context": "CC0-1.0",
+      "review": "Notice and source manifest retained",
+      "evidence": [
+        "skycam/assets/piano-kw/cc0.txt",
+        "skycam/assets/piano-kw/manifest.json"
+      ]
+    },
+    {
+      "file": "skycam/assets/piano-kw/81.wav",
+      "sha256": "83524aea162e17f5ed3b0e072d3ca1d45ea71b8a6a2a01a9e10d7948c2c7b1d6",
+      "scope": "FreePats Upright Piano KW",
+      "license_context": "CC0-1.0",
+      "review": "Notice and source manifest retained",
+      "evidence": [
+        "skycam/assets/piano-kw/cc0.txt",
+        "skycam/assets/piano-kw/manifest.json"
+      ]
+    },
+    {
+      "file": "skycam/assets/piano-kw/84.wav",
+      "sha256": "2ac6013ab5a8bf1b0c4048e17d139a7c50cb83058eefca1b6387307797a711a0",
+      "scope": "FreePats Upright Piano KW",
+      "license_context": "CC0-1.0",
+      "review": "Notice and source manifest retained",
+      "evidence": [
+        "skycam/assets/piano-kw/cc0.txt",
+        "skycam/assets/piano-kw/manifest.json"
+      ]
+    },
+    {
+      "file": "skycam/assets/piano-kw/cc0.txt",
+      "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+      "scope": "FreePats Upright Piano KW",
+      "license_context": "CC0-1.0",
+      "review": "Notice and source manifest retained",
+      "evidence": [
+        "skycam/assets/piano-kw/cc0.txt",
+        "skycam/assets/piano-kw/manifest.json"
+      ]
+    },
+    {
+      "file": "skycam/assets/piano-kw/manifest.json",
+      "sha256": "59d4f951dc9bbf7b52d386fefafdbf4c46f1906c66c04eeab74a0839c96a0353",
+      "scope": "FreePats Upright Piano KW",
+      "license_context": "CC0-1.0",
+      "review": "Notice and source manifest retained",
+      "evidence": [
+        "skycam/assets/piano-kw/cc0.txt",
+        "skycam/assets/piano-kw/manifest.json"
+      ]
+    },
+    {
+      "file": "skycam/assets/piano-kw/readme.txt",
+      "sha256": "a052efa44607e7f1f35e0959f8b837cfa1ebe204428f350073b5f80ffcf73190",
+      "scope": "FreePats Upright Piano KW",
+      "license_context": "CC0-1.0",
+      "review": "Notice and source manifest retained",
+      "evidence": [
+        "skycam/assets/piano-kw/cc0.txt",
+        "skycam/assets/piano-kw/manifest.json"
+      ]
+    },
+    {
+      "file": "skycam/assets/strudel-arrange.mjs",
+      "sha256": "64c51af4dec15cf9eb97cf1bd47b6ee2d963682275247ef0903e27092117543b",
+      "scope": "Strudel arrangement integration",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Source archive and seeded rebuild verified; combined application distributed under AGPL",
+      "evidence": [
+        "skycam/assets/strudel-source/LICENSE",
+        "skycam/assets/strudel-source/package-lock.json"
+      ]
+    },
+    {
+      "file": "skycam/assets/strudel-source/arrange.mjs",
+      "sha256": "6eb03e6a0862999c8c486d8b684a4920b228997a1f41d1e523794a11e0873361",
+      "scope": "Strudel arrangement integration",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Source archive and seeded rebuild verified; combined application distributed under AGPL",
+      "evidence": [
+        "skycam/assets/strudel-source/LICENSE",
+        "skycam/assets/strudel-source/package-lock.json"
+      ]
+    },
+    {
+      "file": "skycam/assets/strudel-source/build.mjs",
+      "sha256": "53cfab1a7d7bb8d9de844b4921c00122398c13ed998bb16abe8f778fe24cb38a",
+      "scope": "Strudel arrangement integration",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Source archive and seeded rebuild verified; combined application distributed under AGPL",
+      "evidence": [
+        "skycam/assets/strudel-source/LICENSE",
+        "skycam/assets/strudel-source/package-lock.json"
+      ]
+    },
+    {
+      "file": "skycam/assets/strudel-source/dependencies-source.tgz",
+      "sha256": "4b9947a128163cc002e2c05d677cd8e9f86c2bd47251bfc39ae79838fe09af56",
+      "scope": "Bundled Strudel/Kabelsalat/fraction dependency source",
+      "license_context": "AGPL-3.0-or-later AND MIT",
+      "review": "Per-package licence notices retained inside archive",
+      "evidence": [
+        "examples/music-source-verification.json",
+        "skycam/assets/strudel-source/README.txt"
+      ]
+    },
+    {
+      "file": "skycam/assets/strudel-source/fraction-LICENSE",
+      "sha256": "ea6916b674c353de0e9b84b9c91e3b3f8c620a1000d6a65662961b8a67840f19",
+      "scope": "fraction.js notice",
+      "license_context": "MIT",
+      "review": "Upstream notice retained",
+      "evidence": [
+        "skycam/assets/strudel-source/fraction-LICENSE"
+      ]
+    },
+    {
+      "file": "skycam/assets/strudel-source/kabelsalat-LICENSE",
+      "sha256": "4df3c306dddaaf4baffdff5ca820cc679ac8cd6dc263c6a74517783e42fa7a3b",
+      "scope": "Strudel arrangement integration",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Source archive and seeded rebuild verified; combined application distributed under AGPL",
+      "evidence": [
+        "skycam/assets/strudel-source/LICENSE",
+        "skycam/assets/strudel-source/package-lock.json"
+      ]
+    },
+    {
+      "file": "skycam/assets/strudel-source/LICENSE",
+      "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+      "scope": "Strudel arrangement integration",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Source archive and seeded rebuild verified; combined application distributed under AGPL",
+      "evidence": [
+        "skycam/assets/strudel-source/LICENSE",
+        "skycam/assets/strudel-source/package-lock.json"
+      ]
+    },
+    {
+      "file": "skycam/assets/strudel-source/package-lock.json",
+      "sha256": "9499878b33600128b6e8105629c0b1a539e776f58017c31703e60255a3be8c03",
+      "scope": "Strudel arrangement integration",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Source archive and seeded rebuild verified; combined application distributed under AGPL",
+      "evidence": [
+        "skycam/assets/strudel-source/LICENSE",
+        "skycam/assets/strudel-source/package-lock.json"
+      ]
+    },
+    {
+      "file": "skycam/assets/strudel-source/package.json",
+      "sha256": "24431c39860ce5707b79aa87b7627c9cf4ae4594592a0a34603198b286bec0f5",
+      "scope": "Strudel arrangement integration",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Source archive and seeded rebuild verified; combined application distributed under AGPL",
+      "evidence": [
+        "skycam/assets/strudel-source/LICENSE",
+        "skycam/assets/strudel-source/package-lock.json"
+      ]
+    },
+    {
+      "file": "skycam/assets/strudel-source/README.txt",
+      "sha256": "eb78a4468b5f257d93cb8ba3ac55a7710fc3b69b48d21634bdc0ff635e431044",
+      "scope": "Strudel arrangement integration",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Source archive and seeded rebuild verified; combined application distributed under AGPL",
+      "evidence": [
+        "skycam/assets/strudel-source/LICENSE",
+        "skycam/assets/strudel-source/package-lock.json"
+      ]
+    },
+    {
+      "file": "skycam/assets/strudel-source/strudel-core-LICENSE",
+      "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+      "scope": "Strudel arrangement integration",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Source archive and seeded rebuild verified; combined application distributed under AGPL",
+      "evidence": [
+        "skycam/assets/strudel-source/LICENSE",
+        "skycam/assets/strudel-source/package-lock.json"
+      ]
+    },
+    {
+      "file": "skycam/assets/study-radio-arrange.mjs",
+      "sha256": "8d13feb80c5b49360867d66697bb92d5e8af80650ac958f49e20d26a8073b729",
+      "scope": "Strudel arrangement integration",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Source archive and seeded rebuild verified; combined application distributed under AGPL",
+      "evidence": [
+        "skycam/assets/strudel-source/LICENSE",
+        "skycam/assets/strudel-source/package-lock.json"
+      ]
+    },
+    {
+      "file": "skycam/bounded_http.py",
+      "sha256": "e9f0b8a2e533747c9530b0dd906269bef1bceb866da5c74996785add67022c1e",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/branding.py",
+      "sha256": "49378913e7c66aac672407d32f73b3b5ff90394f897f3a103b6e67126e0f0dad",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/broadcast.py",
+      "sha256": "8e8cc09cfe33e34fa737ac2f62738b7e9169f2350781edb6444bd7a789c8d90f",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/calibration.py",
+      "sha256": "6316a6f8d1afe85bbe3e0fd2d4eba111f566bd9a0ba59e7cde77178e8493b1e2",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/camera_recovery.py",
+      "sha256": "300a0e9bcb65d1cf0336fe7112cba06c49a46de9051683e80fdc6c5045d921d1",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/camera_rotation.py",
+      "sha256": "480b869d21d26c1741210daa17e79ef425472bb47c968aeb46202384a97ef6ab",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/camera_tools.py",
+      "sha256": "3f7a57204d4f644259da72521be6f2cb59758ff6a9f8edd8eb27a6286a584d22",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/commercial.py",
+      "sha256": "4d52c9d8e83c038edff77f97c34cbc168c9bccbb145f8ffad082f54e1f10e3f7",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/community_cards.py",
+      "sha256": "029894aabc925128c3ccdf55d6f4b000ca1390e2a643d437349c62d0d8d299a9",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/daylight.py",
+      "sha256": "5b2ea39072c31b5f66b6e2577d7cf12b5d8de78bc684caa537c13c1cdafaafd1",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/dayparts.py",
+      "sha256": "d87e067c084426cf946d6e05bb56a700e941794c566b9c6e7f0531b0cddd4ecb",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/feature_scenes.py",
+      "sha256": "fa8ca28389fb1257d9f78b08c6fb915fc97de1d91480d84d4798e6f897a5907e",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/flight_features.py",
+      "sha256": "df9f4cb74c00376ec755c7a9fd943f7debfbaa710a50eed3b27a58a3b4af8333",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/flights.py",
+      "sha256": "2fc22b941a7bd22e44530f80d79c1513d52ca11709c4d349e6f49302b2e6fe38",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/format_defaults.py",
+      "sha256": "c85140b06b6d112313e94cdca5d619287e6fe9949ed5cf6488d1711e8e826f99",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/generative_music.py",
+      "sha256": "76bd85f666ed78e5c49a4ef158a90a5495e27e94e444fb2b22b864ad7f80b326",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/geometry.py",
+      "sha256": "099a3d329d5ebd9bf015c3e5ca655cab2d17fc50a4c3d6e5afe5cc344889ab44",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/graphics.py",
+      "sha256": "5240b93cb6dd8c576470a618b2187fb5dbd837c00c047d3a2659bd5d2bfd901c",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/image_cache.py",
+      "sha256": "26fb6131ad4cae23a8d18490c50ebb477cb3064ac37470548414fc9f1a813e4e",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/issuer_trust.py",
+      "sha256": "d5f01498fd50bf8fb64386cda05ce1cfa32c7823020eafc8cd3d50d3311739a8",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/language_policy.py",
+      "sha256": "762b8eea6fe8b504d9845a9e7809e17774c914f073e330b13aa01eae054f8858",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/live_markets.py",
+      "sha256": "9a59a8a0a3c5fb92341c3757f5f40d6590ab2a1f48424210b5a829b1502f7503",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/lofi_music.py",
+      "sha256": "6e7554bb6de967ce01fc9f17958100e122c62301715251fea79e1790fb2bc584",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/map_renderer.py",
+      "sha256": "67fd86f773e839ebe69bd4eebf3727b5706dc6a8c99692b62a48fdfdf170dba4",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/map_scenes.py",
+      "sha256": "9c1eee56eef46865a4acd0ab3750a683f0bf48efb2f24039e7a757953766d943",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/map_theme.py",
+      "sha256": "bfb70580e5e8162ab308f9c49e4b26d32deb65af54f6563eec959a7c42488d0e",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/marine.py",
+      "sha256": "0038821c13ebe5a825d07b8db413b77aae38f7956e387dbbfcdc87c2bb1c5c84",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/market_graphics.py",
+      "sha256": "ad74d224fc53eca06a4b360b1b5627a4d23626e57443b122c8140f17fe82b74f",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/markets.py",
+      "sha256": "298ab62a05ae62268da10efdbb9f29fbaff8dee49d97a72ecd9a4eb5d9729219",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/media_probe.py",
+      "sha256": "7033a449733b5e3712439cd3d639e70ee4f768ab4e82e21ea7371f6c54183db7",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/models.py",
+      "sha256": "2bb724bf123cfe9f2baa7dd702725a73279bef97d12db3ffb8998a61345f2732",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/moon_card.py",
+      "sha256": "b1266da5432b2b6ebc37a3bf48e2379389d4d462b7709cece54818767167c75f",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/music.py",
+      "sha256": "70f7cf106c563fbc821b804e4b6e78cc07c23e0010496e7d6d679cb86f96679c",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/music_levels.py",
+      "sha256": "f8057398f091f59bea53639a1cc92e8b8d7711843682b1f8ceb87d9a10fd57a2",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/music_status.py",
+      "sha256": "2439fe6e3c6c17a54368c212750685d45f390c5d6fdd5fd30d4973059eb10cf6",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/music_worker.py",
+      "sha256": "84fcd9b7ba859f2e79dbf004f3821c30a0bdf8c632e31c07d27d81cacc759dab",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/native_ticker.py",
+      "sha256": "77d0437c813d3db7a749cba97c8ddc35402d26adb2a1b0ec2e21ca38ca54e293",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/network_health.py",
+      "sha256": "f9feefffb90823f7fb12f59c0e62a9b4f0f50c3e81b3293f6f6260c820e0b550",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/network_policy.py",
+      "sha256": "bf0229d97e5a52696b24512e31c8350eee66d4bf21ff9fa1c02da3c130039f06",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/notices.py",
+      "sha256": "8c91c1051e5d5abde690c8e2dc320beecaae9facf4b6592718629b97c6547de2",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/outages.py",
+      "sha256": "841009299455364013a62d9bed1356df21e6d20d445a1f1423c4b74bb1840981",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/output_timing.py",
+      "sha256": "d82b6e7d9582b02af4257aa4f0023650381073f09db86f7ad50aea923a6b8d0d",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/performance.py",
+      "sha256": "362aa1bbca1f28033b162e2f4b06bf12db8eeae5463a3bd8645177296c07686e",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/performance_history.py",
+      "sha256": "84f8396491a49250cab30e750d1cbe945aa7199ec4d08468bb0d2edc03c87147",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/picture_history.py",
+      "sha256": "91d1b8fac0eed04c3c2b906d8d7b027e4d8cf67bbbef35f8d56c740ea52a44a2",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/playout.py",
+      "sha256": "bc34914727b6767a572448c058d409d1f1f087c2ceb5382f35ed4087c70b569a",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/power_report_graphics.py",
+      "sha256": "776ed2da780480e39408dafe9f52e80b92e9b5f5f722b6492fb60602985e98e3",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/power_report_parser.py",
+      "sha256": "fce8c76be8344fd30a671e6e8fc70c6d4da8248c53bd66c758e9bc15e86fdc8f",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/power_reports.py",
+      "sha256": "2e422dd8821f4889b01b52653c0477705608fc89c05f0a79bdc6bfb63f2a9762",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/power_system.py",
+      "sha256": "af2db34a3e138f1e32daba203186da0311bb218396b59209a5fed22f92bfdc77",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/program_clock.py",
+      "sha256": "41dfd9210b458fc750c89ba90bf04702672077f2fc2840bc40ac620fdcb15d2e",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/public_errors.py",
+      "sha256": "34bb3ec4463f42389f8329ec00558f5ec7541336b6bf17ca56393bcd2fd8df86",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/radar/east-reference.jpg",
+      "sha256": "e506b547e8815d8cb0ef659c8e7337f097d77fc66929ea3574b6f4c1044ae131",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/radar/east.json",
+      "sha256": "7aae1bffc22c7d61c6dadcb71acbf3b08d62597fbcca58441575b464f0333423",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/radar/island-reference.jpg",
+      "sha256": "6b54dfc058f15b24a4f3ff310da91f7b8eba23e610e2a5767733312313a68913",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/radar/island.json",
+      "sha256": "2eab235e199b6752d251f1420cf641fb4bcf054b4c47ed67a387d7da300d9113",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/radar_calibration.py",
+      "sha256": "6db10ab6f9b7b80425cffa9fe2d0e54d512729277c156ab9f68a00951a6c553d",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/radar_renderer.py",
+      "sha256": "baf69be43fae887a3c8411feda75fc4e7f309c01b077f74d8a6b307fd831bfdf",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/readiness.py",
+      "sha256": "f2c122c5dc98d032ee0c09958213507e41bb6a8a772d52e6407d5a4c863a780e",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/rendered_preview.py",
+      "sha256": "ced567e695082e83accec296a112c348e0f916e088e9ebcae4548d1e87297c09",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/request_limits.py",
+      "sha256": "393cd7e292c249a8e1d2886735d449c84585dd61e4a7f2de604303becad96e7f",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/resource_budget.py",
+      "sha256": "ac63cf218710fd98e86f748c094059047e447d00415c26163cab40bf888741d5",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/rundown.py",
+      "sha256": "9ff5078ba6ae5f242cb24640562f017389074b82b5c9aa32c237578d796479b0",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/rundown_library.py",
+      "sha256": "a8d1f7acce3a57f23f5357a0c4e047e2addf82c736837908d69e2acc94fc87c9",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/serve.py",
+      "sha256": "47db1481f1c8c3ee5cb2ba303f98dda478d80f346d91d6c6bf50eb217bfba776",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/source_delivery.py",
+      "sha256": "b655dab8c62b5925e7c8b612420f54d00fefa9b2395858fdacf14fc2d67c4583",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/source_frames.py",
+      "sha256": "34205660bee8c7bdf8a97e780c9e0779dbbad4d49788cea6531e8c3266af9fce",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/source_routing.py",
+      "sha256": "470915ae491c7273a05aec5acd8a4d1724e5381054631d35a73ad56eb4c1d599",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/sources.py",
+      "sha256": "7080d52d260c66339771dbcc55549136ede87e99669f041cbda0ada92891fca7",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/static/ais.html",
+      "sha256": "32c11f0e147d1b54a8463ab15ed8bb65aa401aa0e876b1315113a00c98a2f05e",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/static/ais.js",
+      "sha256": "480d5436992b0c01725fde8886d833e91b85e6084e8e4c729108f420ac03514e",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/static/alerts.html",
+      "sha256": "450261692ef5737844b5f5f76361449fecbcabd424d911fa8165f83b778a7b2c",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/static/alerts.js",
+      "sha256": "8192343cceed282c1568227c582650fa300c34e0bee1389f1cb1f43e3241c873",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/static/app.js",
+      "sha256": "e72126d3d6b119205bf633fce47860fc849524954ab20554068c551d40201506",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/static/branding.js",
+      "sha256": "192f7b4892ec622aa80f9fd2108f1d9136c271f708c70ffac0f4c233bcf98440",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/static/broadcast.css",
+      "sha256": "8256acef397b3ac6e1e2217cb22512ef2dd4f8df92e60e9567d84eb17092508e",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/static/broadcast.html",
+      "sha256": "96cfab95b714d72ec60409d4605429cf5059fc6f7b2616fe712d9c16002c86f9",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/static/broadcast.js",
+      "sha256": "a153ec5a19eaa847de8799c433512f32f20f073188b3e6e23ca13c3ba613d6ec",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/static/cameras.html",
+      "sha256": "b4f1b477494eb883e074c1f9c90c792417bfeed9207b17e8ff5de5ae7ecc8055",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/static/cameras.js",
+      "sha256": "458b19aa56878dbb77b4d5ef41d233e42110c05c493317279ea6dfdfe05559d4",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/static/clock.html",
+      "sha256": "354a7c9d9d0aa52340f42aa2a982e213144cfedeb0eb4df76a55cf9fd77536ec",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/static/clock.js",
+      "sha256": "bed81f5a65a9434a36561a893632915d7ade687cf7422e5c9ceab6413619a608",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/static/commercial.html",
+      "sha256": "a5d4c41ff78f7acff1da83f062e700dd09c585cf04c13826297dbfb44fb9745c",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/static/commercial.js",
+      "sha256": "8e33e6137a61bd4698eaf5467f8fcac966cfe96c0259e6f4ef7042c272502c22",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/static/confidence.html",
+      "sha256": "461167fa167bc6d450634ba43452e360718c4e0c510e7519d8c725d7195a850a",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/static/confidence.js",
+      "sha256": "86ad47dfb251a26ea2a4ffd3282a3c927f032b0b67345c0663b7bf320d3b7310",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/static/continuity.js",
+      "sha256": "dcd442b0d0435cc4762ae56e35bd3771db09e2f6d8dda562c3b01a247de44257",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/static/control-pages.css",
+      "sha256": "f283fa8bde14e7e1502f429d7af5db2de31581637a46b9d150e771f882f4500c",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/static/dayparts.js",
+      "sha256": "039105b98ea802f9e96f2c330316b967768bc8e84f503e649d2d4d74ad907565",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/static/fonts/Barlow-OFL.txt",
+      "sha256": "186d750eb496a4c17a76385f82be6aea2ac1cf2de074a811d63786cf374ea73f",
+      "scope": "Bundled typefaces",
+      "license_context": "OFL-1.1",
+      "review": "Family mapping and upstream file hashes verified; OFL notices retained",
+      "evidence": [
+        "skycam/static/fonts/Barlow-OFL.txt",
+        "skycam/static/fonts/SourceSans3-OFL.txt"
+      ]
+    },
+    {
+      "file": "skycam/static/fonts/BarlowCondensed-Bold.ttf",
+      "sha256": "e476562ec9c1e16cf16475895b511f08c804f438cc9a9f80a44ea50a0eeb5b65",
+      "scope": "Bundled typefaces",
+      "license_context": "OFL-1.1",
+      "review": "Family mapping and upstream file hashes verified; OFL notices retained",
+      "evidence": [
+        "skycam/static/fonts/Barlow-OFL.txt",
+        "skycam/static/fonts/SourceSans3-OFL.txt"
+      ]
+    },
+    {
+      "file": "skycam/static/fonts/BarlowCondensed-SemiBold.ttf",
+      "sha256": "7b619d14bc2327509a9ef32b0890f709626f7ecc9ff61191c2a4314c5499d2d9",
+      "scope": "Bundled typefaces",
+      "license_context": "OFL-1.1",
+      "review": "Family mapping and upstream file hashes verified; OFL notices retained",
+      "evidence": [
+        "skycam/static/fonts/Barlow-OFL.txt",
+        "skycam/static/fonts/SourceSans3-OFL.txt"
+      ]
+    },
+    {
+      "file": "skycam/static/fonts/SourceSans3-OFL.txt",
+      "sha256": "09746787287a289323b0ec3cff4d1a4a801331b82b7207c1e186f5d26619a392",
+      "scope": "Bundled typefaces",
+      "license_context": "OFL-1.1",
+      "review": "Family mapping and upstream file hashes verified; OFL notices retained",
+      "evidence": [
+        "skycam/static/fonts/Barlow-OFL.txt",
+        "skycam/static/fonts/SourceSans3-OFL.txt"
+      ]
+    },
+    {
+      "file": "skycam/static/fonts/SourceSans3.ttf",
+      "sha256": "042fe2cc0b933e328410d7acbd0aa6a1873dca5aef81875f4bc214b08825c7b9",
+      "scope": "Bundled typefaces",
+      "license_context": "OFL-1.1",
+      "review": "Family mapping and upstream file hashes verified; OFL notices retained",
+      "evidence": [
+        "skycam/static/fonts/Barlow-OFL.txt",
+        "skycam/static/fonts/SourceSans3-OFL.txt"
+      ]
+    },
+    {
+      "file": "skycam/static/guide.html",
+      "sha256": "22b1be15c4e0ef72e52496abbcd81523c8960511a638e3dd3b4746fe708b55a0",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/static/index.html",
+      "sha256": "b1147beff5633695c25e5c5c54e8b5f309b72d3195e1fee3f66693736042260c",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/static/map-theme.js",
+      "sha256": "620e821a187401d6d7dbd7bfdc409989b134ce188abd7c98eb59eee53cb8b0d1",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/static/map-view.html",
+      "sha256": "1af13aaac32bda926f6e296d702ab95df7141187b40f7ebdd810a75685af3353",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/static/notices.html",
+      "sha256": "3305b4e70b35eb06e940ccc20e65694158f1ec0f0addcb825bbf20a27a918723",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/static/notices.js",
+      "sha256": "e5a2883032ad2299e44cf8981e022c9124646aa83ae7566c224749a17dd3e6ac",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/static/outages.html",
+      "sha256": "8ec681d07c3997750609bcbfb780d2dc373ae3776c86cbbebefff9ce8d541ca0",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/static/outages.js",
+      "sha256": "f0bf33b7dcfd00483601adaa8ada2c553e3c61058f6f9891be887f97663bb0e4",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/static/overlay.html",
+      "sha256": "95e65a5e9e4d180bc0e06f3e9ad014269bf6b3963829b580913c5e6859e4803e",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/static/performance.js",
+      "sha256": "4c78ab239c8a4bbf93c4013e2864a8975fd19000341f197d84f13496e1699254",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/static/power.html",
+      "sha256": "102c19ebecc946dc34edda5b7fa31e684a3a0a76c7dc98297f11ee38bf6adc30",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/static/power.js",
+      "sha256": "21ffe7eccbe7d27ab9fdd8d197a2bb93ddae7922c9aac522fca4cc6108dd22ef",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/static/rendered-preview.js",
+      "sha256": "92c75326b17681c20682fd4fa0d4e00b9840a2c94ca9767586813e27091dd25b",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/static/rundown-library.js",
+      "sha256": "286ac8f0ec03f7a32c49d17440ef11dee4cf72b9cf387ddef58275a502ef297c",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/static/rundown-presets.js",
+      "sha256": "67a383d235a4ccba167c8b8141cfb38498f4a8e2b1d76a0495c47c4d4f46c391",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/static/rundown-presets.json",
+      "sha256": "f25321f8eab36d67445f9ae632f6c74bc1670537f45f807e5e553e4831dfecb4",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/static/rundown.js",
+      "sha256": "ab09dab49a14145574a7c771df208c6619bebf7a88d1ae5d5db5f1e6715f7e00",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/static/scene.html",
+      "sha256": "da8a7990f64375b91c44dca0bb966522f96c14e9cfb6d19afd41f036212f0393",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/static/studio-navigation.css",
+      "sha256": "fbccaa7553f90b5769998641b80bb882365cbcd1255bcc4aedb60e80d1b074cd",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/static/studio-navigation.js",
+      "sha256": "424b6ac70c97a7831251b22bd39af23fa88c0aea464f5054750c7cc5030f10a7",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/static/studio.html",
+      "sha256": "203beaee11247c3ba433ddf66a583374aecd6fdd17b5810df85f4a52ff7346c6",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/static/studio.js",
+      "sha256": "4604ddc95389aff447f181ef186f1efa0122bfba527997b9b32dac7adf30652a",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/static/style.css",
+      "sha256": "f445115c91576424db9ccaf7c0d5b5267ba46e78484d8521178e0b36b57384d9",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/static/vendor/LEAFLET-LICENSE.txt",
+      "sha256": "53e8dc25862014e4324741ca18fbe3611e11d42ef69f59f86ea8c5389647d4cb",
+      "scope": "Leaflet",
+      "license_context": "BSD-2-Clause",
+      "review": "JS, CSS and notice match upstream Leaflet 1.9.4 archive",
+      "evidence": [
+        "skycam/static/vendor/LEAFLET-LICENSE.txt"
+      ]
+    },
+    {
+      "file": "skycam/static/vendor/leaflet.css",
+      "sha256": "a7837102824184820dfa198d1ebcd109ff6d0ff9a2672a074b9a1b4d147d04c6",
+      "scope": "Leaflet",
+      "license_context": "BSD-2-Clause",
+      "review": "JS, CSS and notice match upstream Leaflet 1.9.4 archive",
+      "evidence": [
+        "skycam/static/vendor/LEAFLET-LICENSE.txt"
+      ]
+    },
+    {
+      "file": "skycam/static/vendor/leaflet.js",
+      "sha256": "db49d009c841f5ca34a888c96511ae936fd9f5533e90d8b2c4d57596f4e5641a",
+      "scope": "Leaflet",
+      "license_context": "BSD-2-Clause",
+      "review": "JS, CSS and notice match upstream Leaflet 1.9.4 archive",
+      "evidence": [
+        "skycam/static/vendor/LEAFLET-LICENSE.txt"
+      ]
+    },
+    {
+      "file": "skycam/station_config.py",
+      "sha256": "d158cb736e18829190b9c32f8d9c640f7b6b13f5a6eca8fdc1d55a7ac13586e1",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/storage.py",
+      "sha256": "bfa21f987a4eecf97ab539715fa76f392ad45486b822d6b0abbf8d2d8345d370",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/strudel_music.py",
+      "sha256": "5a32a8fd3c483dc9242e5bf4d91297999f7e0b764ab95d6c951c35c1b5c3d514",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/study_radio.py",
+      "sha256": "e2b4f860082b83c5291013d1bcc19ab9fb315121431f1eab0ec8d4e1b4abc1da",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/study_radio_config.py",
+      "sha256": "edc81fa13ea6bdb53643b4cbedacc7ba39482dcf4f5c5e60f080982a1298ae16",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/study_songs.py",
+      "sha256": "c1f1bf36249c81f4aaaed21513f264948a871a316ad6d5e85c65c21e8243238b",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/tides.py",
+      "sha256": "738e9efc2cdbcc1e43e31d9046c13dc0c4afb3a7cdab1919aa1a08949bb8511d",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/tmx_markets.py",
+      "sha256": "ffa16586228a20c5555a2334c6fd6cfa5057915de1bdf411661e2cf2b08cd7e6",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/tracking.py",
+      "sha256": "536ae3761a60f2ad09cb8fb51343926ff21e207ef846da68ad76d760aebaf26e",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/transport_health.py",
+      "sha256": "f81f765ae40d4e7606ce83643ad190db1e6f2fd693ce31e304975d4b23529e77",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/weather.py",
+      "sha256": "5a2de53a4f58f9a4c2530ffd5b88da5ee7dcf6a5650e9bb88d115b3cf5c52578",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "skycam/weather_renderer.py",
+      "sha256": "c014996c5628f9629b37f5072044a780d743388aec712512c9c599800631c049",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "SUPPORT.md",
+      "sha256": "85643bb790c1ed4fd49564dd7aacffa0f79a151dabe7c46b5388c9438231f841",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/conftest.py",
+      "sha256": "5f32bd6458e6f5347bdcf51f28d751f771ddea77da568598a6af05d963f8db90",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/fixtures/aircraft-synthetic.json",
+      "sha256": "2d38f088ac0d2d275bae86ba8f670e1e74546bb155ec751478ec784db9b107d6",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/fixtures/marine-synthetic.xml",
+      "sha256": "0042a00bdee6775de1a384d26c816bd5e355106479bc5d36350c31bba5f96394",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/fixtures/weather-synthetic.json",
+      "sha256": "c031dfb5e7dcbbcccb504296531864471c11027bd6767f8343e04504cafd03bd",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/fixtures.py",
+      "sha256": "63e5b27d580b0d2fe12068e5fa7f39bb869fb6473f1280629bd82d6681959d47",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_acceptance_boundaries.py",
+      "sha256": "0757abe6a558a09564c0a55bd983c61e47d9dc59184b65f94c11904c48faab1a",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_ad_background.py",
+      "sha256": "adbffea4be933c936d6c1519edbaeaba4b8ae025d473f7dafe6ff6c209f5eadd",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_aeroapi.py",
+      "sha256": "761f87a95650a4f503fb877b305a94e8c2cb239875581c49a65f0ae1256df036",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_aircraft_metadata.py",
+      "sha256": "47c515689133b45d2d2be67830d9177736b651192b90533291da7da9e7be95e5",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_ais.py",
+      "sha256": "fd2b821dd73d125e29950a1d5ede0002ebc24670c5635c4d8c863170cbafd2c0",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_alert_history_recovery.py",
+      "sha256": "33a6f9f57b5d24e35a957bc0092092c2f0dce233418cf9f5dd722cc3348bf23c",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_alert_playout.py",
+      "sha256": "4eb81ba38b2e79ed4cf83fb4be67b9c637c1335acc2ef00e55e4f03b1104b5d6",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_alert_resources.py",
+      "sha256": "4425501a4f33631ef698111946e9785da329ba069b8e040679d6790d2b95910d",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_alert_summary.py",
+      "sha256": "c3a0a8ff24116d9642800d7b998f5955683dbfafa2613e0f51db7c0800304d4e",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_alert_titles.py",
+      "sha256": "b62b5de8586260d00c31a23daa8eaabdf0810ee21aadaaeb65f565368fa7eb73",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_alerts.py",
+      "sha256": "bdf4810e2383ef7d8e051f04e79d8dd2cee7231d2d11d5defb5a7958fb75f4fb",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_bounded_http.py",
+      "sha256": "9e02e7c6eebab088cb116e74de93c240fae2e0b198ac83a7e120678200edc7fe",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_broadcast.py",
+      "sha256": "3d9e848b72d2537ab120adb25540639488d8d5c3cb215840b71833716d0506fe",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_camera_catalog.py",
+      "sha256": "6d73dadaa16ebae0c3dde4cb4aec6b1415ef0dcc3ce5e2296b8200706bd008d3",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_camera_rotation.py",
+      "sha256": "a6502b6244d34ad2858a4c904a9f490ae420a068feff3982ee3898840dc4c8d5",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_clone_station.py",
+      "sha256": "d217bde710e896a291e8824d9fa4b381138b7fe3de59abdbc44d76e884469903",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_community_cards.py",
+      "sha256": "1cc422d7809c1d864074f091ae0564f5f57a37eb0b731e7c94e001805255e647",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_continuity_report.py",
+      "sha256": "967d84a4e7abc1ebdffacdb4a5ea6d7b141fb2ddb5ef997fca881d622c3f6a15",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_copy_cleanup.py",
+      "sha256": "758e088fd9b2781442a76af1b6a8985ec552183814dac36a1cda2870c67bd5ee",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_dayparts.py",
+      "sha256": "910a487a6a19b793d682b8f45e49029742aa2049fb4b3dfb503ea5a96bfbbb34",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_delivered_picture.py",
+      "sha256": "612f1473d0fd6fb553bd5ce81ba8d60df2ac4aa0612c317bcdaf4e4202bd7b4a",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_f06_markets_sky.py",
+      "sha256": "1b27d924f9999221a7dfd1245c1c1441a8623e19a12d129c24ddbbfacccdc126",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_features.py",
+      "sha256": "d2133ac2875f19e92e03e7d77ca2aefac2d4eb28be3cdeb62814e282b2282988",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_flights.py",
+      "sha256": "1cd0f4d9242fe62d823c4245f2f5eab1c7efdb290579fa8c91a6afb312160573",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_generative_music.py",
+      "sha256": "1dc1687295d5172864012c21e4a5309e56a248a63a86f7c09bf7ada1c5b0a292",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_headless.py",
+      "sha256": "5f6ff99929ce8207429df195de5fa0f6745a965a0c27986d7538208255c74a6c",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_health_decode_options.py",
+      "sha256": "73d22c8586f10777cf2d70f1559fc25c890564551e92759822f8aa93029e0af4",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_helicopter_polish.py",
+      "sha256": "19252a1173c42bd8ae6be5c261ca50c0b4ee29315e08ace3b2219bbc1bf346c8",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_host_readiness.py",
+      "sha256": "6e1dee1569ad5071ccc7b8b379a2ec1fb1f3efca25a0552ce0f543ec3093c3c4",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_image_cache.py",
+      "sha256": "b784b7cb2e2f871b3a2475de9e6091bb25c0f8826cd7b5df827d9c073e6d0ce5",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_issuer_policy.py",
+      "sha256": "2fd9f36a3e39bfea3c93ff6be8740f2832ed0433fbf05fbeedb980ef59d846e6",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_issuer_trust.py",
+      "sha256": "e924998b4f3e533e8ba30f40c60dd705ddc55e1327bc2cc09a900c0e87b25a7a",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_language_policy.py",
+      "sha256": "253ee1f0353b3120e4f88c0d9e8db17c73ca57c9c4adf24e88d947c4f9086988",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_map_frames.py",
+      "sha256": "85571bd35b7ab522832ef1bb2fe298c0e3fef01397b8e0b8f6352e4d5561b855",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_map_theme.py",
+      "sha256": "095d7368786dbb15b9221b44f602aa15951878b6918b540a036dec5b45050253",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_moon_market_polish.py",
+      "sha256": "8ae7f5ae86e2de9ce0c01776f53bbae8c066bce56366788f4d6d6f5788731198",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_music_levels.py",
+      "sha256": "b8193ceaa34943975fd98905d06e2a53aa4e680a9b874fcb5f69628cdca856f5",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_music_startup.py",
+      "sha256": "0516e3f3818557953f37ffa0a85bf7635c9f3739f98ed81e592932a9d6806f41",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_music_worker.py",
+      "sha256": "4e9c215bd69d853e191d010079f24d6d4c6b0cb1b9cf70e0f3dd95c63a6907f7",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_named_quads.py",
+      "sha256": "ab593e4b71a352fc10049a7b432d2b4bfe5054acde178eb10297049d0cc3d1e8",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_native_inventory.py",
+      "sha256": "b895589169cae2cb1431b998bd2df19e85f557a51d61845f80f0505f14b7c397",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_native_materials.py",
+      "sha256": "e7a7ef638c8275aec4a19abda97a7d4e3ba2aa34156bbab5fa4e9e241f2631ee",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_ndi_output.py",
+      "sha256": "f96dee4539b43db4d984da3ebc6900fe520c350af074ad8371325c035f79d8f1",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_network_health.py",
+      "sha256": "ca772b137ba7158bc1602dfde4d5ea4fe249b0229085c320f2b5eeaaf72d1518",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_news_mix.py",
+      "sha256": "3d54f2f477314dcd20eaebd863724d86aaba596470c4e567c5401634e23f0a9a",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_notices.py",
+      "sha256": "f2b673c4e20532220df2f7539b2addd3c3f4c5d71eabd83ca8a4868242d7ccda",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_operator_responsiveness.py",
+      "sha256": "26b83b0980cd31c74ed753c6ce6bcb3a7b0f810777d082a2092e5bdd141a4502",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_outages.py",
+      "sha256": "3af6907fa326853f18bf530f02b0b271f1b5305462965db0527315b93189f82d",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_output_timing.py",
+      "sha256": "e81233ebd5d4654a5cb79176d09eae4ba73c06a8aaf094c823a5be2f6618c6ff",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_overnight_recovery.py",
+      "sha256": "3bf92c7d8d5a04c5c24247d6ecf407a0fdcaf0543928f44ad495f6333f9bc07d",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_packet_continuity.py",
+      "sha256": "5dd768e6f3952207e84cd2bc5388c4b0e2a2d968d07553cda4ae3cb034c9aeb8",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_performance.py",
+      "sha256": "434ed15f109e17625d26c70ac075f0424070b7f94b37a3b07b9e462b9f886f06",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_performance_history.py",
+      "sha256": "e8a0a9ad27ea0d2ed1d0e93aa4291384052c4478584dd3e5767fa70b396a90f7",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_power_reports.py",
+      "sha256": "bf60809bfa9e9f88daf1d251f9bea76e88bbe70f7989eec0f4f385ca02fe8bb7",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_power_system.py",
+      "sha256": "519ff25c54360654b964d6a4f9589dd105ccf683ad8471bb86098311fe75f94a",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_priority_wave.py",
+      "sha256": "97018a325a7aae67edc412cbe2f45893b814ce468974d2995ae13d85b992e764",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_program_clock.py",
+      "sha256": "7b72dc619e0f65236beee9659cdf758b2135ce71cd2718816596dcd3cdbdb562",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_radar.py",
+      "sha256": "33b8092f0be4cc99047ec250f1d44a6582ecb5e7385d4c7d5e9316c0a45bccb1",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_recording_acceptance.py",
+      "sha256": "faa5e7811e427f84bad1437d1a57620cdff642b1ae8be14e49006b4dfe5f2bf3",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_release_build_inputs.py",
+      "sha256": "dabc9580f65a948c25a78ff3c1ae193406a234eafcd481ead8bdeb2de3bc36ca",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_release_foundation.py",
+      "sha256": "92b1bf34c3a486f949abe62509f472c2cfb6b6a9007ce85548abfb1195544f93",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_release_hardening.py",
+      "sha256": "3dde4f4e94ad1eb19651c96d8a8311bfde184a6492a8796c1a7ea3b2649251cb",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_reliability.py",
+      "sha256": "ba02b0be69b1b4b72841b5eb73b9dec18d4729219a138e563beb0c8cdf191a47",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_rendered_preview.py",
+      "sha256": "4daaa7a7f1066cb85cf35f0f6a88a6b6d6b7351835ce04d577205f09747e11b2",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_request_limits.py",
+      "sha256": "33d79131e3a7697daf737702f11dfec3a8953d9584b247b6a0b975e5a284c3dc",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_restart_health.py",
+      "sha256": "566718a49e85d35f31eb0e023705b1143e44df591313e6d87af0d652408725bd",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_review_soak.py",
+      "sha256": "adc11b1a6867516dfce008a48700fc258328a77f48b42e720181f33d197f4962",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_rundown_library.py",
+      "sha256": "45ba0b325d04e443e2da058e733f7d9a07883eeb9603bbafdf88042083f5dd4b",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_runtime_services.py",
+      "sha256": "84d5cab4e4f4ec2fcfe677f061c2053d4f59d3e5577211c8ab3205b78736bd24",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_soak_station.py",
+      "sha256": "13514a62452a32cd4eb0a209abdb69c203c51583af4201a9199a60618211ccda",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_source_delivery.py",
+      "sha256": "22ef4fbc7284ca858059b3a6daed5cbd7efaedbd2c8d8e84b213a455cca9fedd",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_source_frames.py",
+      "sha256": "e0dd4a10eeb1b0f9bfa37197abf35bb6f792007ec437260fc9f54c98c857a8f3",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_source_routing.py",
+      "sha256": "c75583a2e072f5fd23e0b94ebe631ef45f060b858ac75a06cb44385fe1a63ec8",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_station_config.py",
+      "sha256": "5c6b0231a09c60147bcfc05394a8eaf03141e78e33986542dd5b6d7e2613044b",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_station_deployment.py",
+      "sha256": "e592da40e4726e0265275f630402062d1e345b3a0a9ccbbbc2cee0f7b9452bb7",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_station_format.py",
+      "sha256": "050fbc88d95d757b08697feed77dc3557b026612b470ba8dd8c7b15df0f57258",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_station_startup.py",
+      "sha256": "2d8a792387aa70d987d1d3a3f403c3b54f4983717310a705cee2745d048a8bda",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_stock_freshness.py",
+      "sha256": "a29f8b97f39e8d987744c2b40ae1ab3db856bb81ef46cf224957fef568ae0acd",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_strudel_music.py",
+      "sha256": "efe091b8e53ca2e66c0c5a8fd8f315737b6eea50b41a23934f9cb3b76ef21e3c",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_studio_pages.py",
+      "sha256": "d23103388d730fb2dcb007a989ee79c140dc2b786933b76bfd2d1f670ecda568",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_study_radio.py",
+      "sha256": "e6df889c99a90826fd5bdaf84ccc050eaccdd5ac47f3ee72d6116f225c413b45",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_study_songs.py",
+      "sha256": "7d0b7a628c809d7de3dd331de182cecece8d17c87109d7e4193544dd44069ed2",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_support_bundle.py",
+      "sha256": "53a89d03a880aa85c64c8326e555b70a6a84b807c8c40b972f5b2273f7bbb546",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_system.py",
+      "sha256": "05cce5fb78d1eabc575cf7a30c48bd6a99659a44ff2886475da60f923bd03756",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_ticker_recovery.py",
+      "sha256": "86d637049c9408c5b7e04a43f15ad3469dfa62a27db48cb09ccdcc5d359e1033",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_tmx_markets.py",
+      "sha256": "e90aa1e85a9ba9d38d7fde2e0fe2f04fd6967fd474a24dd609cf6ed70ba94aa6",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_transition_retirement.py",
+      "sha256": "439de3f8ba846387a3daac113dd04e920aa1a6e120fc680d2f98cb8e0a86c43b",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_transport_health.py",
+      "sha256": "c826696d14023d044c621e0b5bd111c0af7b3d451462675447c56cd8c93f7ce9",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_unavailable_source_gate.py",
+      "sha256": "5c16e879cc634b9b360b8dcd00017f2963ec5bdffa2e4039a95caff01b6af44d",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_vessel_display.py",
+      "sha256": "2d081f9049afef82a53688690a3d63ea5c7e42152aad01c629a03bc3e3b29d7e",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_watchdog.py",
+      "sha256": "ab9f717d14836a28976b51bc844b563075f77b3fd8d360918fdbb4c9ef2978e1",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_watchdog_fragmented_amcp.py",
+      "sha256": "9840bc8e15586b1b756eca686c1790fc34866f5e4de3c658d02e5cb0b3ad1aca",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_weather.py",
+      "sha256": "fed951dfc9a77c329daea6e920c8e9fc2bef7436f8a7095fc040314068c2b5a7",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tests/test_youtube_relay.py",
+      "sha256": "a903c1f1d6e1fe2da790719275acc65dffe32c0ee98a043a06c3035e77e29053",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "THIRD_PARTY_NOTICES.md",
+      "sha256": "0cb800c63e5c7071f848e226cb520fc6d127a02a6bd3944f5be19b19d9956d94",
+      "scope": "Project source/documentation",
+      "license_context": "AGPL-3.0-or-later",
+      "review": "Original application scope approved by maintainer",
+      "evidence": [
+        "LICENSE",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tools/check_compose_launch.py",
+      "sha256": "5b0fb0081d26dfa709621ca46efc49bb4d887226d61568db3ea6ee635257cfa7",
+      "scope": "Independent original build/review tool",
+      "license_context": "Apache-2.0",
+      "review": "Maintainer-approved independent tool scope",
+      "evidence": [
+        "LICENSES/Apache-2.0.txt",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tools/check_native_output.py",
+      "sha256": "70f3d3835b969f697ed1725833ca03197d2dfb74990c154c3b97c2a31d413cd1",
+      "scope": "Independent original build/review tool",
+      "license_context": "Apache-2.0",
+      "review": "Maintainer-approved independent tool scope",
+      "evidence": [
+        "LICENSES/Apache-2.0.txt",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tools/check_program_recording.py",
+      "sha256": "9f5ba66b1602fd031ee7d2ade4819a7c5e34aae09bcf63119ad63a256bf8e22f",
+      "scope": "Independent original build/review tool",
+      "license_context": "Apache-2.0",
+      "review": "Maintainer-approved independent tool scope",
+      "evidence": [
+        "LICENSES/Apache-2.0.txt",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tools/check_source_recovery.py",
+      "sha256": "6f9d20cd6222d6094759c3615d374d4fc332cf179e87ee1c0839f42d67cbb4c4",
+      "scope": "Independent original build/review tool",
+      "license_context": "Apache-2.0",
+      "review": "Maintainer-approved independent tool scope",
+      "evidence": [
+        "LICENSES/Apache-2.0.txt",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tools/clone_station.py",
+      "sha256": "802c96f08272f047d78f0036838c310c44fcd1179e5502e597583d169216f7b7",
+      "scope": "Independent original build/review tool",
+      "license_context": "Apache-2.0",
+      "review": "Maintainer-approved independent tool scope",
+      "evidence": [
+        "LICENSES/Apache-2.0.txt",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tools/collect_os_sources.py",
+      "sha256": "dc4fca7b657f6b814f180eac0404534ffd867fad82ab29e424835237e62f9cb6",
+      "scope": "Independent original build/review tool",
+      "license_context": "Apache-2.0",
+      "review": "Maintainer-approved independent tool scope",
+      "evidence": [
+        "LICENSES/Apache-2.0.txt",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tools/host_readiness.py",
+      "sha256": "e4eafaefbd3a30f9b52e69f37c652fd852d34d5e145b5a002669fa6a52caedab",
+      "scope": "Independent original build/review tool",
+      "license_context": "Apache-2.0",
+      "review": "Maintainer-approved independent tool scope",
+      "evidence": [
+        "LICENSES/Apache-2.0.txt",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tools/image_inventory.py",
+      "sha256": "2de7508d1d160b3ed1bb0ec7bdd2807e243c6642855fa9e7e728ae9d3f3b6332",
+      "scope": "Independent original build/review tool",
+      "license_context": "Apache-2.0",
+      "review": "Maintainer-approved independent tool scope",
+      "evidence": [
+        "LICENSES/Apache-2.0.txt",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tools/import_station.py",
+      "sha256": "6c331591f09a7ce0af79851ffd5d38668c6e89acaa2aff9307065f47f2a74b71",
+      "scope": "Independent original build/review tool",
+      "license_context": "Apache-2.0",
+      "review": "Maintainer-approved independent tool scope",
+      "evidence": [
+        "LICENSES/Apache-2.0.txt",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tools/install_autostart.py",
+      "sha256": "decd84d5bd003d42a5056b68159bf275308a1d3beaa7d6d5cef5d56a019b5674",
+      "scope": "Independent original build/review tool",
+      "license_context": "Apache-2.0",
+      "review": "Maintainer-approved independent tool scope",
+      "evidence": [
+        "LICENSES/Apache-2.0.txt",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tools/install_headless_startup.py",
+      "sha256": "b6971470851aee448ca6fe6b91923c66b44de5113d3e0527d4a86b8cb660aa06",
+      "scope": "Independent original build/review tool",
+      "license_context": "Apache-2.0",
+      "review": "Maintainer-approved independent tool scope",
+      "evidence": [
+        "LICENSES/Apache-2.0.txt",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tools/install_runtime_services.py",
+      "sha256": "91e167d666459655ba81c945f328cda3ff05ed65f0ec3291752dd34fc395e5a1",
+      "scope": "Independent original build/review tool",
+      "license_context": "Apache-2.0",
+      "review": "Maintainer-approved independent tool scope",
+      "evidence": [
+        "LICENSES/Apache-2.0.txt",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tools/inventory_assets.py",
+      "sha256": "187cbac58bdf49b93d2469c3da5c88a394672f81bc56a5982f8a258d57a85ad5",
+      "scope": "Independent original build/review tool",
+      "license_context": "Apache-2.0",
+      "review": "Maintainer-approved independent tool scope",
+      "evidence": [
+        "LICENSES/Apache-2.0.txt",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tools/inventory_components.py",
+      "sha256": "d8d604fdc9c7678c71649215b0f72c9a553874ca9ce83792267f6932372b2db3",
+      "scope": "Independent original build/review tool",
+      "license_context": "Apache-2.0",
+      "review": "Maintainer-approved independent tool scope",
+      "evidence": [
+        "LICENSES/Apache-2.0.txt",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tools/keep_display_awake.py",
+      "sha256": "904453786102e3778140c0403ac53e9be9e88c532c7a45baa0ac25f299771f0c",
+      "scope": "Independent original build/review tool",
+      "license_context": "Apache-2.0",
+      "review": "Maintainer-approved independent tool scope",
+      "evidence": [
+        "LICENSES/Apache-2.0.txt",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tools/lock_from_report.py",
+      "sha256": "8b9e67b9beea3cdc3cfe55d0f1559f6c506051c15607cd8e9e723ef86f7fcad6",
+      "scope": "Independent original build/review tool",
+      "license_context": "Apache-2.0",
+      "review": "Maintainer-approved independent tool scope",
+      "evidence": [
+        "LICENSES/Apache-2.0.txt",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tools/native_inventory.py",
+      "sha256": "0202f903b1cd0f2b413c3f018359155765e99a1001aeb07d99188fc0daa45046",
+      "scope": "Independent original build/review tool",
+      "license_context": "Apache-2.0",
+      "review": "Maintainer-approved independent tool scope",
+      "evidence": [
+        "LICENSES/Apache-2.0.txt",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tools/package_source.py",
+      "sha256": "3109d99a4ffe2f5e834339f9b8431a4b2f9e9de944e0a9f01e5d546452e147c1",
+      "scope": "Independent original build/review tool",
+      "license_context": "Apache-2.0",
+      "review": "Maintainer-approved independent tool scope",
+      "evidence": [
+        "LICENSES/Apache-2.0.txt",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tools/retain_cef_materials.py",
+      "sha256": "683fe2b655be6a4c26f56eb3923a54933eaf2b0f32c6288abbb4a8038f5330bf",
+      "scope": "Independent original build/review tool",
+      "license_context": "Apache-2.0",
+      "review": "Maintainer-approved independent tool scope",
+      "evidence": [
+        "LICENSES/Apache-2.0.txt",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tools/review_soak.py",
+      "sha256": "6304e6eb39a288d25a2696dbf81714819e44ffa134f8760224c340fe21a7b6b2",
+      "scope": "Independent original build/review tool",
+      "license_context": "Apache-2.0",
+      "review": "Maintainer-approved independent tool scope",
+      "evidence": [
+        "LICENSES/Apache-2.0.txt",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tools/session_start.py",
+      "sha256": "146aedb08824c0a89d58f86bb6fe9faaa03534f21ce57be37c0b88ab475c7a77",
+      "scope": "Independent original build/review tool",
+      "license_context": "Apache-2.0",
+      "review": "Maintainer-approved independent tool scope",
+      "evidence": [
+        "LICENSES/Apache-2.0.txt",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tools/smoke_image.py",
+      "sha256": "ad9c047887cca6054f4f3b4dc4a1e974527b43370e3116205cbc54482eee37b0",
+      "scope": "Independent original build/review tool",
+      "license_context": "Apache-2.0",
+      "review": "Maintainer-approved independent tool scope",
+      "evidence": [
+        "LICENSES/Apache-2.0.txt",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tools/soak_station.py",
+      "sha256": "dca2552050dfcb3f971d92f8a5a8f3833656b63ece5bf21b6d615a1d44e641f9",
+      "scope": "Independent original build/review tool",
+      "license_context": "Apache-2.0",
+      "review": "Maintainer-approved independent tool scope",
+      "evidence": [
+        "LICENSES/Apache-2.0.txt",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tools/station_config.py",
+      "sha256": "0439116ec6ea78476b76c05a282a13b596a1e94eca7837c0f44839c016744b5e",
+      "scope": "Independent original build/review tool",
+      "license_context": "Apache-2.0",
+      "review": "Maintainer-approved independent tool scope",
+      "evidence": [
+        "LICENSES/Apache-2.0.txt",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tools/station_watchdog.py",
+      "sha256": "adff4d8d556e8a8dda2bf0d3de1b0fb30215d0a71a8972ea28ba7db4bcff2bb8",
+      "scope": "Independent original build/review tool",
+      "license_context": "Apache-2.0",
+      "review": "Maintainer-approved independent tool scope",
+      "evidence": [
+        "LICENSES/Apache-2.0.txt",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tools/stationctl.py",
+      "sha256": "62ccca11ff2138fb32e04148eed36beb1ad61211c2449e69c8783c32138a5006",
+      "scope": "Independent original build/review tool",
+      "license_context": "Apache-2.0",
+      "review": "Maintainer-approved independent tool scope",
+      "evidence": [
+        "LICENSES/Apache-2.0.txt",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tools/storage_maintenance.py",
+      "sha256": "f51c618923e97309124780bb2c835ca09ef5b916c6f751e0d6927f287ffe735f",
+      "scope": "Independent original build/review tool",
+      "license_context": "Apache-2.0",
+      "review": "Maintainer-approved independent tool scope",
+      "evidence": [
+        "LICENSES/Apache-2.0.txt",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tools/support_bundle.py",
+      "sha256": "a174df46c9eb93af06ca7e1086f2e09a1294c10fc2f8d236b07822870dc62d63",
+      "scope": "Independent original build/review tool",
+      "license_context": "Apache-2.0",
+      "review": "Maintainer-approved independent tool scope",
+      "evidence": [
+        "LICENSES/Apache-2.0.txt",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tools/validate_launch.py",
+      "sha256": "8740d16cf1d4887b1bb9c6e7f3c6cb1801873ade4becbda74d4459299f115581",
+      "scope": "Independent original build/review tool",
+      "license_context": "Apache-2.0",
+      "review": "Maintainer-approved independent tool scope",
+      "evidence": [
+        "LICENSES/Apache-2.0.txt",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tools/verify_docs.py",
+      "sha256": "6ad25ebd76571f875cde2d369fc96a2c96979ae6357b73806b6604a82de0dee4",
+      "scope": "Independent original build/review tool",
+      "license_context": "Apache-2.0",
+      "review": "Maintainer-approved independent tool scope",
+      "evidence": [
+        "LICENSES/Apache-2.0.txt",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tools/verify_engine_source.py",
+      "sha256": "0fe7da3adb7b6eb30adccef8c6683dae2208ba60b5d94400215ac33273e8c234",
+      "scope": "Independent original build/review tool",
+      "license_context": "Apache-2.0",
+      "review": "Maintainer-approved independent tool scope",
+      "evidence": [
+        "LICENSES/Apache-2.0.txt",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tools/verify_music_source.py",
+      "sha256": "0050c2ab2a94106c3b8cc8c0a9780292d13d966eab63d0abd92ce0e9be344f05",
+      "scope": "Independent original build/review tool",
+      "license_context": "Apache-2.0",
+      "review": "Maintainer-approved independent tool scope",
+      "evidence": [
+        "LICENSES/Apache-2.0.txt",
+        "LICENSING.md"
+      ]
+    },
+    {
+      "file": "tools/verify_release.py",
+      "sha256": "c351d2f71f9ddc5d797519749e34336575f4364c61b9986902567d529039927e",
+      "scope": "Independent original build/review tool",
+      "license_context": "Apache-2.0",
+      "review": "Maintainer-approved independent tool scope",
+      "evidence": [
+        "LICENSES/Apache-2.0.txt",
+        "LICENSING.md"
+      ]
+    }
+  ]
+}

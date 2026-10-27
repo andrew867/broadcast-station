@@ -1,0 +1,71 @@
+--- a/src/modules/newtek/consumer/newtek_ndi_consumer.cpp
++++ b/src/modules/newtek/consumer/newtek_ndi_consumer.cpp
+@@ -75,6 +75,8 @@
+     bool                                 ready_for_frame_;
+     std::queue<core::const_frame>        buffer_;
+     bool stopping_ = false;
++    std::queue<std::vector<int32_t>> audio_buffer_;
++    boost::thread audio_thread;
+     boost::thread                        send_thread;
+     executor                             executor_;
+ 
+@@ -107,6 +109,7 @@
+             }
+             worker_cond_.notify_all();
+             send_thread.join();
++            if (audio_thread.joinable()) audio_thread.join();
+         }
+     }
+ 
+@@ -151,6 +154,24 @@
+ 
+         graph_->set_text(print());
+         // CASPAR_VERIFY(ndi_send_instance_);
++
++        // Audio must not share the lossy confidence-video queue.
++        audio_thread = boost::thread([this]() {
++            set_thread_name(L"NDI-AUDIO: " + name_);
++            while (true) {
++                std::vector<int32_t> samples;
++                {
++                    std::unique_lock<std::mutex> lock(buffer_mutex_);
++                    worker_cond_.wait(lock, [&] { return stopping_ || !audio_buffer_.empty(); });
++                    if (stopping_) return;
++                    samples = std::move(audio_buffer_.front());
++                    audio_buffer_.pop();
++                }
++                ndi_audio_frame_.no_samples = static_cast<int>(samples.size()) / format_desc_.audio_channels;
++                ndi_audio_frame_.p_data = samples.data();
++                ndi_lib_->util_send_send_audio_interleaved_32s(*ndi_send_instance_, &ndi_audio_frame_);
++            }
++        });
+ 
+         send_thread = boost::thread([=]() {
+             set_thread_realtime_priority();
+@@ -190,11 +211,6 @@
+                     graph_->set_value("ndi-tick", ndi_timer_.elapsed() * format_desc_.fps * 0.5);
+                     ndi_timer_.restart();
+                     frame_timer_.restart();
+-                    auto audio_data             = frame.audio_data();
+-                    int  audio_data_size        = static_cast<int>(audio_data.size());
+-                    ndi_audio_frame_.no_samples = audio_data_size / format_desc_.audio_channels;
+-                    ndi_audio_frame_.p_data     = const_cast<int*>(audio_data.data());
+-                    ndi_lib_->util_send_send_audio_interleaved_32s(*ndi_send_instance_, &ndi_audio_frame_);
+                     if (format_desc_.field_count == 2 && allow_fields_) {
+                         ndi_video_frame_.frame_format_type =
+                             (frame_no_ % 2 ? NDIlib_frame_format_type_field_1 : NDIlib_frame_format_type_field_0);
+@@ -226,6 +242,14 @@
+             {
+                 std::unique_lock<std::mutex> lock(buffer_mutex_);
+                 if (stopping_) return false;
++                auto audio = frame.audio_data();
++                if (audio.size() > 0) {
++                    if (audio_buffer_.size() >= 256) {
++                        audio_buffer_.pop();
++                        CASPAR_LOG(warning) << L"NDI confidence audio queue exhausted";
++                    }
++                    audio_buffer_.emplace(audio.begin(), audio.end());
++                }
+                 // Confidence output must never accumulate unlimited UHD frames.
+                 // Dropping the oldest monitor frame cannot stall the program.
+                 while (buffer_.size() >= 8) buffer_.pop();

@@ -1,0 +1,11 @@
+# syntax=docker/dockerfile:1
+ARG FOUNDATION_IMAGE=station-foundation:test
+FROM ${FOUNDATION_IMAGE}
+USER root
+COPY requirements-test-linux-x86_64.lock /app/
+RUN pip install --no-cache-dir --require-hashes --only-binary=:all: -r /app/requirements-test-linux-x86_64.lock && pip check
+COPY tests /app/tests
+COPY tools /app/tools
+USER 10001
+ENV STATION_OFFLINE=1 SKYCAM_PLAYOUT=0 PYTHONDONTWRITEBYTECODE=1
+CMD ["python","-m","pytest","tests","-q","--basetemp=/tmp/station-tests","-p","no:cacheprovider"]

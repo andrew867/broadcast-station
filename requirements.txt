@@ -1,0 +1,16 @@
+fastapi==0.136.1
+uvicorn==0.46.0
+httpx==0.28.1
+numpy==2.2.6
+scipy==1.17.0
+opencv-python-headless==5.0.0.93
+pydantic==2.12.5
+
+Pillow==13.0.0
+astral==3.2
+websockets==15.0.1
+signxml==5.2.0
+
+tzdata==2026.5; sys_platform == "win32"
+
+pdfplumber==0.11.9

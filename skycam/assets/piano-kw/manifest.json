@@ -1,0 +1,148 @@
+{
+  "name": "FreePats Upright Piano KW, soft velocity",
+  "authors": "Gonzalo and Roberto, FreePats",
+  "version": "2022-02-21",
+  "license": "CC0-1.0",
+  "source": "https://freepats.zenvoid.org/Piano/acoustic-grand-piano.html",
+  "archive": "https://freepats.zenvoid.org/Piano/UprightPianoKW/UprightPianoKW-SFZ-20220221.7z",
+  "archive_sha256": "40d68616b4628c96eb1cdc79c07526311d387894b263de274693483864651b11",
+  "conversion": "Soft layer, notes 36 through 84; mono 24 kHz 16-bit, first 7 seconds, bounded gain, final 100ms fade. No loop.",
+  "samples": [
+    {
+      "note": 36,
+      "original": "samples/C2vL.wav",
+      "original_sha256": "7e53b83d1bbb593f2ae56c0d22bf0d98e31e3967f18f7147a0367ea0d787a06d",
+      "gain": 0.7021901494710656,
+      "file": "36.wav",
+      "sha256": "7395bb81d07a6b51c8863366eb743bbd6a480a1fb09573281f6317e361d00618"
+    },
+    {
+      "note": 39,
+      "original": "samples/D#2vL.wav",
+      "original_sha256": "75101edd3bc97876da2d81904557f089792a9b2869fa932ed5c017536477d7e2",
+      "gain": 0.5842460633123427,
+      "file": "39.wav",
+      "sha256": "a46e2da1c4c7c003372cb3659c546bf9dfb09ead38e754321acb4a3a99b99b85"
+    },
+    {
+      "note": 42,
+      "original": "samples/F#2vL.wav",
+      "original_sha256": "f66ba7cb7ca9aa53944741894fb32940c0ab1c410bd426145791580d40385338",
+      "gain": 0.8250316627512692,
+      "file": "42.wav",
+      "sha256": "fe6826cb9d37cdd3997a3317d21faadedbeb16487d97bc9e9d170c3ae93f014f"
+    },
+    {
+      "note": 45,
+      "original": "samples/A2vL.wav",
+      "original_sha256": "d96fbe791fbcb5ddb5a4dbecfb2d87e80f8cafdc1d59b9f72776c82d71f9a2b5",
+      "gain": 0.7068743569555334,
+      "file": "45.wav",
+      "sha256": "04beb68b69bf3da980fe8c1c9ab54358b925a9a48e207c33fc4a44cf84831bee"
+    },
+    {
+      "note": 48,
+      "original": "samples/C3vL.wav",
+      "original_sha256": "87f6e75ede2eb06ae8aafd1b15749299e0f9a92a2f364bd0a4242c8c72e8f7d2",
+      "gain": 0.8075285481412519,
+      "file": "48.wav",
+      "sha256": "2aad7abad79aa5562248c4c9ae68bf0c996b6ef4d18138cfc36750cb26ae05e2"
+    },
+    {
+      "note": 51,
+      "original": "samples/D#3vL.wav",
+      "original_sha256": "e0a69c3565e5f00e8b6ccde412b51d8127edaf7d6edce7d2c3f0ff8271135d98",
+      "gain": 0.9052598072015978,
+      "file": "51.wav",
+      "sha256": "ec2a355be5cdccb02604744d94d214878a3e1ad9c501c42e0598ba3a6b3a4733"
+    },
+    {
+      "note": 54,
+      "original": "samples/F#3vL.wav",
+      "original_sha256": "c07a21b3ba7bd312ffa966361b42d68f3059aa63df03fbc6f407581ae8df6948",
+      "gain": 0.7988355750486852,
+      "file": "54.wav",
+      "sha256": "7d2a7b5234b29a7f84cc9c01da1596b0e8bcca29fa1404aede8ae056bbdd9c90"
+    },
+    {
+      "note": 57,
+      "original": "samples/A3vL.wav",
+      "original_sha256": "71a7080a0de946cbfdd277f968b3335e83ee4f7447b1de7c435779232e366ba5",
+      "gain": 0.7344590105739047,
+      "file": "57.wav",
+      "sha256": "d6c171e98573ac11a704c63381c90ce1703c922a9e7a22a785c97e4ae91379cc"
+    },
+    {
+      "note": 60,
+      "original": "samples/C4vL.wav",
+      "original_sha256": "a3e5a90d6ea85117ed8a2d37408f4fe5630d6018ba8be47a465dc28b827eaab2",
+      "gain": 0.8592778939757377,
+      "file": "60.wav",
+      "sha256": "53d014ce1c2a4d75bb2b600f6035b9fdf054e15c46c528a2cbefde9b1fedf3f8"
+    },
+    {
+      "note": 63,
+      "original": "samples/D#4vL.wav",
+      "original_sha256": "cdebe710e8051df50e03bb8856ac4871112a6fccdb00c72c9f179cf6fcf41992",
+      "gain": 0.7292090936759109,
+      "file": "63.wav",
+      "sha256": "1f717143c8a32ac9da90f90995d597fbfb7d6c0cd1e3856eba86e33c59de5343"
+    },
+    {
+      "note": 66,
+      "original": "samples/F#4vL.wav",
+      "original_sha256": "e88e1df5f496a3b7ac3ad1aa132b96819bec4773bf4fe5898a02ef3fd91079b7",
+      "gain": 0.5600484427551513,
+      "file": "66.wav",
+      "sha256": "4231a1c699f39ffe603dc9f206967420c0d1f2ab6f88e0ab55472ee4fc1f3b9c"
+    },
+    {
+      "note": 69,
+      "original": "samples/A4vL.wav",
+      "original_sha256": "f00660cd0232f1adf0687b7a94702d1094ae76ed0bad63003081d439df38a0fa",
+      "gain": 0.7843134513544034,
+      "file": "69.wav",
+      "sha256": "c44aa252f5c414577598f8a118bef1c3efdb9c47451d635382173b685d050f7d"
+    },
+    {
+      "note": 72,
+      "original": "samples/C5vL.wav",
+      "original_sha256": "cb056ce1caa01824cb3b73e00c8b978d917c82e9c6e70eb8dfcd0b3ccb0c5916",
+      "gain": 1.218646728879339,
+      "file": "72.wav",
+      "sha256": "ee89230a3b57365ba3272eb8cc17b9b3239322e43f1d99af2572de587b6e4c1a"
+    },
+    {
+      "note": 75,
+      "original": "samples/D#5vL.wav",
+      "original_sha256": "a98feeaed41fe2c82da440deaf278b7e8e56f1f4b1ab3f6e5720fc3142c502e1",
+      "gain": 1.2130839157204056,
+      "file": "75.wav",
+      "sha256": "11a5f26fef4031f29639507dc88a883d4f0418cf35190cbfe86eefdca6f7c899"
+    },
+    {
+      "note": 78,
+      "original": "samples/F#5vL.wav",
+      "original_sha256": "201b8ae4046733239abd7efaf7bf211d70db3e755ca00f4119715c9077cd110a",
+      "gain": 1.0409511828496791,
+      "file": "78.wav",
+      "sha256": "76c87b86211e647d2e9687290d1ccb137d88cb6d67310749950a88d862a9b6b2"
+    },
+    {
+      "note": 81,
+      "original": "samples/A5vL.wav",
+      "original_sha256": "efd30238e5816ce5d6c91b26cd0b013051e4299f16b60058ced3b11a51562ff1",
+      "gain": 0.7127404284710962,
+      "file": "81.wav",
+      "sha256": "83524aea162e17f5ed3b0e072d3ca1d45ea71b8a6a2a01a9e10d7948c2c7b1d6"
+    },
+    {
+      "note": 84,
+      "original": "samples/C6vL.wav",
+      "original_sha256": "43813db8623d3420d3639c290f9216d6233337bea57b413995731ae843a544c3",
+      "gain": 1.0662654331278245,
+      "file": "84.wav",
+      "sha256": "2ac6013ab5a8bf1b0c4048e17d139a7c50cb83058eefca1b6387307797a711a0"
+    }
+  ]
+}

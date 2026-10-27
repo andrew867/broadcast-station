@@ -1,0 +1,46 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="icon" href="data:,"><title>[[product_name]] transparent overlay</title>
+<style>html,body{margin:0;width:100%;height:100%;overflow:hidden;background:transparent!important}canvas{display:block;width:100%;height:100%}</style><script src="/static/branding.js" defer></script></head>
+<body><canvas id="overlay"></canvas><script>
+'use strict';
+const canvas=document.getElementById('overlay'),ctx=canvas.getContext('2d');
+const camera=new URLSearchParams(location.search).get('camera')||'cam1';
+let frame=null, received=0, playing=true;
+function clear(){ctx.clearRect(0,0,canvas.width,canvas.height)}
+function draw(){
+  canvas.width=innerWidth;canvas.height=innerHeight;clear();
+  if(playing&&frame&&performance.now()-received<frame.expires_in_ms&&frame.state==='live'){
+    // Use identical native aspect ratio in the producer. Fail closed on mismatch.
+    if(Math.abs(canvas.width/canvas.height-frame.width/frame.height)<.005){
+      const sx=canvas.width/frame.width,sy=canvas.height/frame.height;
+      ctx.font='600 18px Arial';ctx.textBaseline='top';
+      const boxes=[];
+      for(const p of frame.labels){
+        const x=p.x*sx,y=p.y*sy;
+        ctx.strokeStyle='#8ef5ff';ctx.lineWidth=2;ctx.beginPath();ctx.arc(x,y,6,0,Math.PI*2);ctx.stroke();
+        const text=p.callsign+'  '+Math.round(p.altitude_ft).toLocaleString()+' ft GNSS';
+        const w=ctx.measureText(text).width+16,h=44;
+        let bx=Math.max(0,Math.min(canvas.width-w,x+16)),by=Math.max(0,Math.min(canvas.height-h,y-48));
+        for(let n=0;n<6&&boxes.some(b=>bx<b.x+b.w&&bx+w>b.x&&by<b.y+b.h&&by+h>b.y);n++)by=Math.min(canvas.height-h,by+48);
+        if(boxes.some(b=>bx<b.x+b.w&&bx+w>b.x&&by<b.y+b.h&&by+h>b.y))continue;
+        boxes.push({x:bx,y:by,w,h});
+        ctx.beginPath();ctx.moveTo(x,y);ctx.lineTo(bx,by+h/2);ctx.stroke();
+        ctx.fillStyle='rgba(3,14,23,.82)';ctx.fillRect(bx,by,w,h);
+        ctx.fillStyle='white';ctx.fillText(text,bx+8,by+5);
+        ctx.font='13px Arial';ctx.fillStyle='#b7e0e5';ctx.fillText(p.range_km.toFixed(1)+' km · '+p.mode,bx+8,by+27);ctx.font='600 18px Arial';
+      }
+    }
+  }
+  requestAnimationFrame(draw);
+}
+async function poll(){
+  const control=new AbortController(),timer=setTimeout(()=>control.abort(),650);
+  try{const r=await fetch('/api/frame/'+encodeURIComponent(camera),{cache:'no-store',signal:control.signal});
+    if(!r.ok)throw Error(r.status);frame=await r.json();received=performance.now();
+  }catch(e){frame=null;clear()}finally{clearTimeout(timer);setTimeout(poll,100)}
+}
+// CasparCG HTML template callbacks; the same page works as a URL producer.
+window.play=()=>{playing=true};window.stop=()=>{playing=false;clear()};
+window.update=()=>{};window.next=()=>{};
+poll();draw();
+</script></body></html>
+

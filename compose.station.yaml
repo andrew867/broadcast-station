@@ -1,0 +1,96 @@
+# Explicit full-station candidate. The default compose.yaml remains offline.
+x-common: &common
+  image: ${STATION_CONTROLLER_IMAGE:-station-controller:candidate}
+  build: .
+  user: "${STATION_UID:?}:${STATION_GID:?}"
+  restart: unless-stopped
+  read_only: true
+  cap_drop: [ALL]
+  security_opt: [no-new-privileges:true]
+  tmpfs: ["/tmp:rw,size=512m"]
+  logging: &logs
+    driver: json-file
+    options: {max-size: 10m, max-file: "3"}
+  environment: &environment
+    STATION_CONFIG: /station/station.json
+    STATION_OFFLINE: "0"
+    SKYCAM_PLAYOUT: "1"
+    SKYCAM_DATA: /workspace/data-web
+    SKYCAM_MUSIC: /workspace/media/music
+    PYTHONDONTWRITEBYTECODE: "1"
+    STATION_ALLOWED_HOSTS: "${STATION_ALLOWED_HOSTS:-}"
+  volumes: &volumes
+    - ${STATION_HOME:?}/station.json:/station/station.json:ro
+    - ${STATION_HOME:?}/branding.json:/station/branding.json:ro
+    - ${STATION_HOME:?}/branding-assets:/station/branding-assets:ro
+    - ${STATION_HOME:?}/data:/workspace/data-web
+    - ${STATION_HOME:?}/runtime:/workspace/data-web/runtime
+    - ${STATION_HOME:?}/music:/workspace/media/music
+    - ${STATION_HOME:?}/secrets:/station/secrets:ro
+services:
+  validate:
+    <<: *common
+    restart: "no"
+    command: [python, tools/validate_launch.py]
+    volumes:
+      - ${STATION_HOME:?}:/station
+      - ${STATION_HOME:?}/data:/workspace/data-web
+      - ${STATION_HOME:?}/music:/workspace/media/music
+  studio:
+    <<: *common
+    depends_on:
+      validate: {condition: service_completed_successfully}
+    ports: ["${STATION_HTTP_BIND:-127.0.0.1}:${STATION_HTTP_PORT:-8765}:8765"]
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8765/api/health',timeout=3)"]
+      interval: 15s
+      timeout: 5s
+      retries: 4
+      start_period: 90s
+  source-hub:
+    <<: *common
+    depends_on:
+      validate: {condition: service_completed_successfully}
+    command: [python, deploy/camera-hub.py]
+  source-health:
+    <<: *common
+    depends_on: [source-hub]
+    command: [python, deploy/source-health.py]
+    cpus: 2
+    mem_limit: 1g
+  maintenance:
+    <<: *common
+    depends_on:
+      validate: {condition: service_completed_successfully}
+    command: [python, tools/storage_maintenance.py, --watch]
+    cpus: 0.25
+    mem_limit: 256m
+  engine:
+    image: ${STATION_ENGINE_IMAGE:-station-engine:candidate}
+    build:
+      context: .
+      dockerfile: deploy/Dockerfile.caspar-readback
+    depends_on:
+      studio: {condition: service_healthy}
+    user: "${STATION_UID:?}:${STATION_GID:?}"
+    restart: unless-stopped
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    shm_size: 2g
+    tmpfs: ["/tmp:rw,size=512m"]
+    logging: *logs
+    environment:
+      HOME: /tmp
+      NVIDIA_DRIVER_CAPABILITIES: all
+    ports: ["127.0.0.1:${STATION_AMCP_PORT:-5250}:5250"]
+    volumes:
+      - ${STATION_HOME:?}/casparcg.config:/workspace/casparcg.config:ro
+      - ${STATION_HOME:?}/data:/workspace/data-web:ro
+      - ${STATION_HOME:?}/runtime:/workspace/runtime
+      - ${STATION_HOME:?}/music:/workspace/media/music:ro
+      - ${STATION_HOME:?}/runtime:/workspace/media/runtime
+      - ${STATION_HOME:?}/logs:/workspace/logs
+      - ${STATION_HOME:?}/engine-data:/workspace/data
+      # CasparCG checks template-directory writability during startup.
+      - ${STATION_HOME:?}/templates:/workspace/templates

@@ -1,0 +1,438 @@
+{
+  "bundle_sha256": "64c51af4dec15cf9eb97cf1bd47b6ee2d963682275247ef0903e27092117543b",
+  "previous_bundle_change": "Only checkout-path labels removed; complete byte comparison after path normalization passed",
+  "seeded_output_checks": [
+    {
+      "seed": 42,
+      "song": 0,
+      "output_sha256": "fa5aca0eb5eb1dbe90bb8d847dcaeef1e7b6ae23ba8c64afe5de140eead261a8"
+    },
+    {
+      "seed": 42,
+      "song": 1,
+      "output_sha256": "2b5982fb280f4ee30c58da468d7734989cca3fba28af67f79502376ee7fceb0b"
+    },
+    {
+      "seed": 98765,
+      "song": 5,
+      "output_sha256": "9dbda4c34d82936c6ae93020da8bb8d2052bfaf72cfee7caf030b4f9ebe8964f"
+    }
+  ],
+  "archived_source_files": [
+    {
+      "file": "@strudel/core/clockworker.js",
+      "sha256": "1cc91792403ba99802b07cfdfb55f30f230d0e440460b30b22c322930c416c46",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "@strudel/core/controls.mjs",
+      "sha256": "108ada29dcbac33d268ba5813624fc3b2323bed019072c222ebd9cd8a93e018f",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "@strudel/core/cyclist.mjs",
+      "sha256": "a800e83a056accc89fedc1f790ce17df30bbd6975a3cd2105011d2a73c133a74",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "@strudel/core/drawLine.mjs",
+      "sha256": "e90fe5b31736d7e6916d028a4935b5b5adbf6ab628b37a3acd6446acbb43beac",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "@strudel/core/euclid.mjs",
+      "sha256": "096a8df2362a6ae9e188b3be3d89cf1d86671833ae6c5631198bb9ae61b8f99c",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "@strudel/core/evaluate.mjs",
+      "sha256": "2b2b1ca70b3e0adf0e53dbfea648830d22501f4fd0b4e8118835818e4270590b",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "@strudel/core/fraction.mjs",
+      "sha256": "7425286ce2ce685a1a0597ad0870375b30fb997611fa0bc792505c0e821c63c8",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "@strudel/core/hap.mjs",
+      "sha256": "34fcd685f604b49a56dfa3570d15de383b2e4ffd38c93115168a3dbcb5ee527e",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "@strudel/core/impure.mjs",
+      "sha256": "e738c32ff89f905e81b4a51ade55af15de5f5c4385bdcb288d85586ac9ea8833",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "@strudel/core/index.mjs",
+      "sha256": "925ea3bf312d7c9c654fa96863a28ade1a81735b3e74af65e66e47566bf3cebc",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "@strudel/core/LICENSE",
+      "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "@strudel/core/logger.mjs",
+      "sha256": "20cf848516ef8e9189d44fbcdbc7491b19de6258e37785d80880eab5e36fc8f5",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "@strudel/core/neocyclist.mjs",
+      "sha256": "c6cd1081729feb028d0427cdb72acc5a1ce6196586ef473b755f9fc9d185ca23",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "@strudel/core/package.json",
+      "sha256": "f8e9dbad715554590b5df40ed94e810868166ceebbc524fbb32f03cf75de3530",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "@strudel/core/pattern.mjs",
+      "sha256": "d562fa5f23ad204588d343165ed02376b5874ca74280c248dfe87b56738c0abd",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "@strudel/core/pick.mjs",
+      "sha256": "184928d977812e129fadbc325b89afc450340de9cd43ef17e4969228307b688e",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "@strudel/core/README.md",
+      "sha256": "6ea0115695cb0a72942d722db4754c3c0598e3df4225cf88f8e6185dd943d58a",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "@strudel/core/repl.mjs",
+      "sha256": "6199a6f430c2ba1974b94d5d22a617d02a34ca93fb0f46756564fe75ec965497",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "@strudel/core/schedulerState.mjs",
+      "sha256": "9e012d489eb0c97f66bc0f07ec871ebed0e1c8970f4ec312cbc99e1d23ba2b81",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "@strudel/core/signal.mjs",
+      "sha256": "4e94e59e0960e5f3fec27638c4e0be6537de8f10f6783a3691544e5df940abfa",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "@strudel/core/speak.mjs",
+      "sha256": "fba48289310a81763d6f5bfe101381438838de96a1b89fc3df59a2eea8c664c4",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "@strudel/core/state.mjs",
+      "sha256": "38b7e225732910063c2c1d4c8edef618ecd3edbddce749064e9682a60cfc249a",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "@strudel/core/timespan.mjs",
+      "sha256": "1db61a87e85deae28b1cd9c292ae5818a89e054e54bdbc7b0541ffac86927791",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "@strudel/core/ui.mjs",
+      "sha256": "5461a72fba66ef443c0240e3f10b9c9e93daa36c1abc46a8117186245393d2f2",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "@strudel/core/util.mjs",
+      "sha256": "41eaa96d7d838a5df96d1acdacd31ebe0bf71ee6c79f2fa3cb6deb5c1515ebd1",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "@strudel/core/value.mjs",
+      "sha256": "183a9e1ff13ea768da7bd9e00f2abc41bbac0a92d03bd6bd1e98a604c52770d2",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "@strudel/core/vite.config.js",
+      "sha256": "0c6c5659816e6232dc91dee602fe1aeb02e77aa737d4d9b1db959420c7c8fce4",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "@strudel/core/zyklus.mjs",
+      "sha256": "663b5defed847a3d61a64338981deb4b45b0b1cec91548ff1e4aa7b86e3893c8",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "@strudel/core/bench/pattern.bench.mjs",
+      "sha256": "56fc4f89700704d348324e72d3fd193919781be5e5b58a6b0eaac26fdb03ab3e",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "@strudel/core/bench/signal.bench.mjs",
+      "sha256": "d4ede63ae9e1ff7790f6a20bb0699ad77c3c767376a0aa5f60cf6d07c67962e4",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "@strudel/core/dist/index.mjs",
+      "sha256": "3364227254ec386b41d45c49f25aa1b7498b5337ed64bbeb014bd544ed8d2668",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "@strudel/core/test/controls.test.mjs",
+      "sha256": "46efb214cefc51aa533e4cad9aaf1344fafcd1e4a3cef65b89cbefba914e40ac",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "@strudel/core/test/drawLine.test.mjs",
+      "sha256": "25acb2426414cbfe4afd14f4f16d8d0e3e31c59eeb1b9e99f07574a118ae885a",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "@strudel/core/test/euclid.test.js",
+      "sha256": "232d763f261a142820b744734e346cb4a43619b13322c3ee02e6fdf842fea6ff",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "@strudel/core/test/fraction.test.mjs",
+      "sha256": "04b6dff5ce7ddb652548922c86974f1a4f6e7d48dbb8ab47d764c4287609be9f",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "@strudel/core/test/pattern.test.mjs",
+      "sha256": "c570ba33de3eb81f5ea3a1bfefb5250a50a71b3be5e49663f0d919605d245d78",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "@strudel/core/test/signal.test.mjs",
+      "sha256": "337f52a5d00d8d725a462878faf0dd9e7d0eb08c3a0909f5b35e5348b7694fc2",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "@strudel/core/test/solmization.test.js",
+      "sha256": "35bd753fecba87aa6e49607ab87f57128164f7c36740ca38ff549fafc7893613",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "@strudel/core/test/util.test.mjs",
+      "sha256": "e65b0078d9a3a91acc3b0ab1b67aa18a75860561f1d82caeee645abc085ad587",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "@strudel/core/test/value.test.mjs",
+      "sha256": "8b07ce05d2d9b664503c812382621009f998e11d132baf57de93e1aed59fffd5",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "@strudel/core/dist/assets/clockworker-ZDiUtESR.js",
+      "sha256": "effd682665d000035c72c378e9b6338ab996c0a13d847910caaaef0fec20984a",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "fraction.js/CHANGELOG.md",
+      "sha256": "fe3901877a9ba4ba3b5e5f21eb859aaf23230e464059e14153f00d20ca589bea",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "fraction.js/fraction.d.mts",
+      "sha256": "5d8157b38d0490e4d83f570ee7fe99407d13847bdee9cd28e9b037dd75f2bea5",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "fraction.js/fraction.d.ts",
+      "sha256": "2da141a0ef760b9bcca187744cedefa9231ff6c2359b2fbb4504da62e0eea961",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "fraction.js/LICENSE",
+      "sha256": "ea6916b674c353de0e9b84b9c91e3b3f8c620a1000d6a65662961b8a67840f19",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "fraction.js/package.json",
+      "sha256": "ae23a9b3ee40dcaac82bd9cc03af55c26bb37fddbcbf099d24d8fa8650d1a0a6",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "fraction.js/README.md",
+      "sha256": "a36474bebe3534a921e88e292ab0ef1eaa1c87a029099b8fc865513c2b3ea7c3",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "fraction.js/dist/fraction.js",
+      "sha256": "169542b29b6749b6f9a0a2a613ca2339b893d81f05a97ba46ed8aa0ee430299c",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "fraction.js/dist/fraction.min.js",
+      "sha256": "c11f86816be43d6079e8e9c5612c19b8c88f6b43b2dab95bdc0896c4b689f78c",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "fraction.js/dist/fraction.mjs",
+      "sha256": "f7a651d7ef4ea8f8c815ec8136fca5bdc5a39d8947455f1d9f2e308031814406",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "fraction.js/examples/angles.js",
+      "sha256": "380a01723f46245a95f8d94995bee280b7a02fc54660474ef99abb80b98caf39",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "fraction.js/examples/approx.js",
+      "sha256": "598a12c0a53b54996d6bdfde358702b87c1ddb5bfa9e56419ded77ff41e596ec",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "fraction.js/examples/egyptian.js",
+      "sha256": "03ee53c7ee8f26d32c45d674a21fd2b1320653c5136c7a903aa734e914d919cc",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "fraction.js/examples/hesse-convergence.js",
+      "sha256": "444cb65376f8b9b7936b321cbfb2d33aeb341c07078542340966068c6dfb22bc",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "fraction.js/examples/integrate.js",
+      "sha256": "655bb648eb4c6f30ab3dd4f5dcae64c38412a25033f631702a33f0aae1588b6b",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "fraction.js/examples/ratio-chain.js",
+      "sha256": "8a054cbf74cef86e78407a6920b3f5b3fa52acd5c94effd2f310c732afe75dfa",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "fraction.js/examples/rational-pow.js",
+      "sha256": "11d6d48f223e229523fce2414da6255a9e28975cba7574e9e98fedbe231b2b3b",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "fraction.js/examples/tape-measure.js",
+      "sha256": "cb2325faa50b1a5fe3db2d19c10e18593213c8f2bb155b4a4a9015156bd8f987",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "fraction.js/examples/toFraction.js",
+      "sha256": "d0ea20d0e91217352d02e3e9dbdff389a0e762b37b388482baf53a06c03a1ed8",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "fraction.js/examples/valueOfPi.js",
+      "sha256": "62b3ae4996324c669f7a4db131da9362d8b2981871bce23b2508b75f6cf0bb40",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "fraction.js/src/fraction.js",
+      "sha256": "b285eaa9766a42d2d9cabbec57570c61c403a4adddcc67475dda3659b211b111",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "fraction.js/tests/fraction.test.js",
+      "sha256": "fbc2779e7702a98ee3bd5e20b60f852e0735b9b000b10119cc4a23d269411655",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "@kabelsalat/core/LICENSE",
+      "sha256": "4df3c306dddaaf4baffdff5ca820cc679ac8cd6dc263c6a74517783e42fa7a3b",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "@kabelsalat/core/package.json",
+      "sha256": "cdc396fd273003ff5462394b3a5eda418d4b6a5207ff9c899da5e858a3c6d991",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "@kabelsalat/core/README.md",
+      "sha256": "230829a1ed449ca933efaac17e8d9a05426209c37c0ff4bbc95bb7a3848b63bd",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "@kabelsalat/core/dist/index.js",
+      "sha256": "a2ffbdcf113a532e0c0298801af824e79f8ecacc09c8d8e136bef009b143d30b",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "@kabelsalat/core/dist/index.mjs",
+      "sha256": "f5d905ed4337c7cba8004e6505e40351c971d487c649fe4043a4d0e96598a1ca",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "@kabelsalat/core/src/compiler.js",
+      "sha256": "b5dc4c1a8cf1a401c6dda8a24957a963d03683717aa449e4814c6e4889db8022",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "@kabelsalat/core/src/graph.js",
+      "sha256": "afc3f0cbb69e91f9552a628217ec06e7e875d283c07a92ab80706298a2e76c87",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "@kabelsalat/core/src/index.js",
+      "sha256": "9e0d7859581d0c1a6fec782183958dac791a8b1e60f516179f8e1f5a2b66c4f1",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "@kabelsalat/web/example.html",
+      "sha256": "6e31759a6b22e80f71eaad7ff19b9599e0eb2427e8749406f6f9d647ed5a4b30",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "@kabelsalat/web/LICENSE",
+      "sha256": "4df3c306dddaaf4baffdff5ca820cc679ac8cd6dc263c6a74517783e42fa7a3b",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "@kabelsalat/web/package.json",
+      "sha256": "b9d8d2e968066e6a4ca3a223682283ccaa5a70b012d869c5e4115dd7157d73e7",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "@kabelsalat/web/README.md",
+      "sha256": "09d27af20784c3032b1fd0f40da5955093ac1b6769354e8acf3afeef9a6cee28",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "@kabelsalat/web/vite.config.js",
+      "sha256": "a534c946785a5f17a18b0c196e47f7356f0502294126d49b78347500f6262f9d",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "@kabelsalat/web/dist/index.js",
+      "sha256": "5d595e2d77d863624cdfadc1205e78e46e2392263b777c5e82f51246d62408dd",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "@kabelsalat/web/dist/index.mjs",
+      "sha256": "35b145b9dec4243d80ebcb2dbc3ad002cffac418709f7d3d3edbbadfb65fe09c",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "@kabelsalat/web/src/audioview.js",
+      "sha256": "555de97cc85d5063a631104f4802a37f8249781d2b1b62cc7b58db1d28a341f8",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "@kabelsalat/web/src/index.js",
+      "sha256": "65e0af3c3784deb2664e8302c67c731803923d1ae12c07f320e148d5547a3572",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "@kabelsalat/web/src/recorder.js",
+      "sha256": "53c0c3dadc3db74cd56d2cc14747c54dcc3bc93be00346a2e7d0f87d1040b92f",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "@kabelsalat/web/src/repl.js",
+      "sha256": "8c73ed224bc6db92111bdd455df05d26f80efa2a8d3e8913771ecba8efe9e0b1",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "@kabelsalat/web/src/wav.js",
+      "sha256": "09d9052b4d1797c4d2e29ebad84afbf97b6b54e89191ef967b2e24ad8b9df0bd",
+      "matches_npm_ci": true
+    },
+    {
+      "file": "@kabelsalat/web/src/worklet.js",
+      "sha256": "089826efd0036be2ff496a4c85d3bac6608a1626dd9f9bcd92e47a70a8e7048c",
+      "matches_npm_ci": true
+    }
+  ]
+}

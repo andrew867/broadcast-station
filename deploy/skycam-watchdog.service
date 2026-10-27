@@ -1,0 +1,14 @@
+[Unit]
+Description=Recover stalled SkyCam program output and controller
+After=skycam-session.service
+PartOf=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python /srv/station/skycam/deploy/program-watchdog.py
+Restart=on-failure
+RestartSec=10
+TimeoutStopSec=10
+
+[Install]
+WantedBy=graphical-session.target

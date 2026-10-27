@@ -1,0 +1,3254 @@
+{
+  "cef": "142.0.17+g60aac24",
+  "chromium": "142.0.7444.176",
+  "credits_sha256": "31e3c8dc81fb2a21e484de74b1a6eb7fd6efa7466e9aa7293ed22ec0c1ae51ae",
+  "components": [
+    {
+      "component": "2-dim General Purpose FFT (Fast Fourier/Cosine/Sine Transform) Package",
+      "homepage": "http://www.kurims.kyoto-u.ac.jp/~ooura/fft.html",
+      "notice_sha256": "64a68ebd98d10064bfd8f6c8dc4fa094747bd33af191f694183ce163cba5c9b5",
+      "notice_characters": 185
+    },
+    {
+      "component": "@bufbuild/protobuf",
+      "homepage": "https://www.npmjs.com/package/@bufbuild/protobuf",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "@puppeteer/replay",
+      "homepage": "https://github.com/puppeteer/replay",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Abseil",
+      "homepage": "https://github.com/abseil/abseil-cpp",
+      "notice_sha256": "c79a7fea0e3cac04cd43f20e7b648e5a0ff8fa5344e644b0ee09ca1162b62747",
+      "notice_characters": 11361
+    },
+    {
+      "component": "abseil",
+      "homepage": "https://github.com/abseil/abseil-cpp/",
+      "notice_sha256": "c79a7fea0e3cac04cd43f20e7b648e5a0ff8fa5344e644b0ee09ca1162b62747",
+      "notice_characters": 11361
+    },
+    {
+      "component": "Acorn, a tiny, fast JavaScript parser written in JavaScript.",
+      "homepage": "https://github.com/acornjs/acorn",
+      "notice_sha256": "76a876cf886ff9be2a8b5e2e86514fed06223c8c9f0c1e9ee9606e93841e00b7",
+      "notice_characters": 1099
+    },
+    {
+      "component": "Activity",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/activity/activity/1.12.0-SNAPSHOT/activity-1.12.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Activity Compose",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/activity/activity-compose/1.12.0-SNAPSHOT/activity-compose-1.12.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Activity Kotlin Extensions",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/activity/activity-ktx/1.12.0-SNAPSHOT/activity-ktx-1.12.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Alliance for Open Media Video Codec",
+      "homepage": "https://aomedia.googlesource.com/aom/",
+      "notice_sha256": "e49fa60fef14fe04997131cc1af28391f053f3747f46108ea1d0a397408e649e",
+      "notice_characters": 7019
+    },
+    {
+      "component": "Almost Native Graphics Layer Engine",
+      "homepage": "https://chromium.googlesource.com/angle/angle/",
+      "notice_sha256": "bf4da21bd20bcfb5b60b7ecc67fa864a79be049e21d6178076887f178dd6c71a",
+      "notice_characters": 1643
+    },
+    {
+      "component": "Android Explicit Synchronization",
+      "homepage": "http://source.android.com",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Android Graphics Path",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/graphics/graphics-path/1.1.0-SNAPSHOT/graphics-path-1.1.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Android Multi-Dex Library",
+      "homepage": "https://dl.google.com/dl/android/maven2/androidx/multidex/multidex/2.0.0/multidex-2.0.0.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Android NDK",
+      "homepage": "http://developer.android.com/ndk/index.html",
+      "notice_sha256": "31b13387e6bde5c7e7006b63ea762020ce583be32e4d62417584c03ac3d3f19a",
+      "notice_characters": 547906
+    },
+    {
+      "component": "Android Open Source Project - App Compat Library",
+      "homepage": "https://android.googlesource.com/platform/frameworks/support",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Android SDK",
+      "homepage": "http://developer.android.com/sdk/index.html",
+      "notice_sha256": "85a84a92acffa105f51233e05d5fdc28eab76d1a8d180c924d9d3b2ea0389b55",
+      "notice_characters": 11991
+    },
+    {
+      "component": "Android Support Library Annotations",
+      "homepage": "https://dl.google.com/dl/android/maven2/com/android/support/support-annotations/28.0.0/support-annotations-28.0.0.jar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Android Support Library core UI",
+      "homepage": "https://dl.google.com/dl/android/maven2/androidx/legacy/legacy-support-core-ui/1.0.0/legacy-support-core-ui-1.0.0.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Android Support Library core utils",
+      "homepage": "https://dl.google.com/dl/android/maven2/androidx/legacy/legacy-support-core-utils/1.0.0/legacy-support-core-utils-1.0.0.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Android Support Library Local Broadcast Manager",
+      "homepage": "https://dl.google.com/dl/android/maven2/androidx/localbroadcastmanager/localbroadcastmanager/1.0.0/localbroadcastmanager-1.0.0.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Android Support Library v4",
+      "homepage": "https://dl.google.com/dl/android/maven2/androidx/legacy/legacy-support-v4/1.0.0/legacy-support-v4-1.0.0.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "android-jni-wrappers",
+      "homepage": "https://gitlab.freedesktop.org/monado/utilities/android-jni-wrappers",
+      "notice_sha256": "d3910dee6fe9fe134856d76268fe82adb1ade1ecf51b3568b7da6b94894b88f3",
+      "notice_characters": 10283
+    },
+    {
+      "component": "androidx.core:core-viewtree",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/core/core-viewtree/1.1.0-SNAPSHOT/core-viewtree-1.1.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "androidx.credentials.registry:registry-provider",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/credentials/registry/registry-provider/1.0.0-SNAPSHOT/registry-provider-1.0.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "androidx.credentials.registry:registry-provider-play-services",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/credentials/registry/registry-provider-play-services/1.0.0-SNAPSHOT/registry-provider-play-services-1.0.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "androidx.pdf:pdf-document-service",
+      "homepage": "https://dl.google.com/dl/android/maven2/androidx/pdf/pdf-document-service/1.0.0-alpha06/pdf-document-service-1.0.0-alpha06.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "androidx.pdf:pdf-viewer",
+      "homepage": "https://dl.google.com/dl/android/maven2/androidx/pdf/pdf-viewer/1.0.0-alpha06/pdf-viewer-1.0.0-alpha06.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "androidx.pdf:pdf-viewer-fragment",
+      "homepage": "https://dl.google.com/dl/android/maven2/androidx/pdf/pdf-viewer-fragment/1.0.0-alpha06/pdf-viewer-fragment-1.0.0-alpha06.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "androidx.privacysandbox.ads:ads-adservices-java",
+      "homepage": "https://dl.google.com/dl/android/maven2/androidx/privacysandbox/ads/ads-adservices-java/1.1.0-beta11/ads-adservices-java-1.1.0-beta11.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Animal Sniffer Annotations",
+      "homepage": "http://www.mojohaus.org/animal-sniffer/animal-sniffer-annotations/",
+      "notice_sha256": "3d513d148a633b667a28e90fbb402908567bbeb8492c270ddccf6242113eb9cb",
+      "notice_characters": 1074
+    },
+    {
+      "component": "AnimatedVectorDrawable",
+      "homepage": "https://dl.google.com/dl/android/maven2/androidx/vectordrawable/vectordrawable-animated/1.2.0/vectordrawable-animated-1.2.0.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Animation",
+      "homepage": "https://dl.google.com/dl/android/maven2/androidx/core/core-animation/1.0.0/core-animation-1.0.0.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Annotation",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/annotation/annotation-jvm/1.10.0-SNAPSHOT/annotation-jvm-1.10.0-20250929.203443-1.jar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Anonymous Tokens",
+      "homepage": "https://github.com/google/anonymous-tokens",
+      "notice_sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+      "notice_characters": 11357
+    },
+    {
+      "component": "Anti-Grain Geometry",
+      "homepage": "https://sourceforge.net/projects/agg/",
+      "notice_sha256": "0e16f9c2285583269242e94c6f502de0c9910dfcbbc7b386e236cdf29ecd4333",
+      "notice_characters": 443
+    },
+    {
+      "component": "apiclient",
+      "homepage": "https://github.com/google/google-api-python-client/",
+      "notice_sha256": "3d0e3d178675046db71fca9a0ee61e59acb4e76a15f934e408e75dfb93758a24",
+      "notice_characters": 767
+    },
+    {
+      "component": "AppCompat",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/appcompat/appcompat/1.8.0-SNAPSHOT/appcompat-1.8.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "AppCompat Resources",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/appcompat/appcompat-resources/1.8.0-SNAPSHOT/appcompat-resources-1.8.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "AppSearch",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/appsearch/appsearch/1.2.0-SNAPSHOT/appsearch-1.2.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "AppSearch Builtin Types",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/appsearch/appsearch-builtin-types/1.2.0-SNAPSHOT/appsearch-builtin-types-1.2.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "AppSearch Platform Storage",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/appsearch/appsearch-platform-storage/1.2.0-SNAPSHOT/appsearch-platform-storage-1.2.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Arch-Common",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/arch/core/core-common/2.3.0-SNAPSHOT/core-common-2.3.0-20250929.203443-1.jar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Arch-Runtime",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/arch/core/core-runtime/2.3.0-SNAPSHOT/core-runtime-2.3.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "ARCore",
+      "homepage": "https://dl.google.com/dl/android/maven2/androidx/xr/arcore/arcore/1.0.0-alpha05/arcore-1.0.0-alpha05.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "ARCore SDK",
+      "homepage": "https://github.com/google-ar/arcore-android-sdk",
+      "notice_sha256": "584e795ba5833279c327245594d6dc216fc664144fa3626a0bdf136bc00af76c",
+      "notice_characters": 10301
+    },
+    {
+      "component": "ARCore SDK client library for Chrome",
+      "homepage": "https://developers.google.com/ar/develop/java/enable-arcore#dependencies",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "ARM_NEON_2_x86_SSE",
+      "homepage": "https://github.com/intel/ARM_NEON_2_x86_SSE",
+      "notice_sha256": "7022f51b439a5915e933ecc270c83e24ca0cb2cceeb08b0132dcd4dbb03ed2dc",
+      "notice_characters": 1662
+    },
+    {
+      "component": "AsyncLayoutInflater",
+      "homepage": "https://dl.google.com/dl/android/maven2/androidx/asynclayoutinflater/asynclayoutinflater/1.1.0/asynclayoutinflater-1.1.0.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "AsyncLayoutInflater AppCompat",
+      "homepage": "https://dl.google.com/dl/android/maven2/androidx/asynclayoutinflater/asynclayoutinflater-appcompat/1.1.0/asynclayoutinflater-appcompat-1.1.0.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "atomicfu",
+      "homepage": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/atomicfu-jvm/0.23.2/atomicfu-jvm-0.23.2.jar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Autofill",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/autofill/autofill/1.4.0-SNAPSHOT/autofill-1.4.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "AutoService",
+      "homepage": "https://github.com/google/auto/tree/main/service",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "AXE-CORE Accessibility Audit",
+      "homepage": "https://github.com/dequelabs/axe-core/",
+      "notice_sha256": "af175b9d96ee93c21a036152e1b905b0b95304d4ae8c2c921c7609100ba8df7e",
+      "notice_characters": 15921
+    },
+    {
+      "component": "BeautifulSoup",
+      "homepage": "http://www.crummy.com/software/BeautifulSoup/",
+      "notice_sha256": "424336c2b3446b3c179f07217271bb914dc881a65c2bf7021da98c77e776d2c9",
+      "notice_characters": 1263
+    },
+    {
+      "component": "Biometric",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/biometric/biometric/1.4.0-SNAPSHOT/biometric-1.4.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Blackmagic DeckLink SDK - Mac",
+      "homepage": "http://software.blackmagicdesign.com/DeckLink/v10.7/Blackmagic_DeckLink_SDK_10.7.zip",
+      "notice_sha256": "43452b94e6aa0c2d076ad25b87f580c11571689d52f3aa1a1f7bdcab31a0bd15",
+      "notice_characters": 1429
+    },
+    {
+      "component": "BoringSSL",
+      "homepage": "https://boringssl.googlesource.com/boringssl",
+      "notice_sha256": "827c8d8fc207c2392794eef9e00fe246f9f61fdcc132556c275be3dd8c3cd97f",
+      "notice_characters": 13115
+    },
+    {
+      "component": "BoringSSL",
+      "homepage": "https://boringssl.googlesource.com/boringssl/",
+      "notice_sha256": "827c8d8fc207c2392794eef9e00fe246f9f61fdcc132556c275be3dd8c3cd97f",
+      "notice_characters": 13115
+    },
+    {
+      "component": "Braille Translation Library",
+      "homepage": "https://github.com/liblouis/liblouis",
+      "notice_sha256": "13a8f67f18d085beed152a8d30cc964e7b24f6b88be0635274aaf17dba847238",
+      "notice_characters": 1051
+    },
+    {
+      "component": "Brotli",
+      "homepage": "https://github.com/google/brotli",
+      "notice_sha256": "3d180008e36922a4e8daec11c34c7af264fed5962d07924aea928c38e8663c94",
+      "notice_characters": 1084
+    },
+    {
+      "component": "Browser",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/browser/browser/1.10.0-SNAPSHOT/browser-1.10.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "C++ port of zxcvbn, an advanced password strength estimation library.",
+      "homepage": "https://thelig.ht/code/zxcvbn-cpp",
+      "notice_sha256": "1744e977d24e20e77b1e97d745fe43779430a1b84247b6c0e89d16e116e7ff92",
+      "notice_characters": 1109
+    },
+    {
+      "component": "C++ Signal/Slot Library",
+      "homepage": "http://sigslot.sourceforge.net/",
+      "notice_sha256": "905bc5ab1c66eea2669aee6cb5185488508264df6492f71ae1a6595180ff8c2b",
+      "notice_characters": 262
+    },
+    {
+      "component": "cachetools",
+      "homepage": "https://github.com/tkem/cachetools",
+      "notice_sha256": "7dd496262c0ba3787f7eebf02663c50c305ff575a81f69208e1645738da3cffc",
+      "notice_characters": 1085
+    },
+    {
+      "component": "Cardboard SDK",
+      "homepage": "https://github.com/googlevr/cardboard",
+      "notice_sha256": "fd47b8b87f5f105a2602652e946c02205a6bd0d37afbd624e2d539dd86a6c2ab",
+      "notice_characters": 17927
+    },
+    {
+      "component": "CardView",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/cardview/cardview/1.1.0-SNAPSHOT/cardview-1.1.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "CastCore Publics",
+      "homepage": "https://chromium.googlesource.com/cast_core/public",
+      "notice_sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+      "notice_characters": 11357
+    },
+    {
+      "component": "CF",
+      "homepage": "https://www.opensource.apple.com/",
+      "notice_sha256": "b23e682fda7310afe43505ed6041919ccff8f9e0c6799ebd7542cbcef11102e3",
+      "notice_characters": 20085
+    },
+    {
+      "component": "Checked in build outputs generated on Windows.",
+      "homepage": "https://source.chromium.org/chromium/chromium/src/+/main:third_party/win_build_output/",
+      "notice_sha256": "368cca1106be99d39ecd32a38d8305585d802a475effb66380b91ffc9bcf709b",
+      "notice_characters": 1536
+    },
+    {
+      "component": "Checker Qual",
+      "homepage": "https://checkerframework.org/",
+      "notice_sha256": "887fd0008912d990d9bc442d1c03b7d1e55c84d1792fdf4cb1d97552d768523e",
+      "notice_characters": 22334
+    },
+    {
+      "component": "Checker Util",
+      "homepage": "https://checkerframework.org/",
+      "notice_sha256": "0427555bfd6b634fc3f28281767152aa2dcfb83c92137c874a852e85d2a23616",
+      "notice_characters": 1125
+    },
+    {
+      "component": "ChromeOS Components",
+      "homepage": "https://chromium.googlesource.com/external/google3/cros_components/",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "ChromeVox",
+      "homepage": "http://code.google.com/p/google-axs-chrome/",
+      "notice_sha256": "5a12a0c01bfcdbc90b550c9cd8bfc3e90e6be9c9bbfdb58bfb5daaf6817eb78f",
+      "notice_characters": 589
+    },
+    {
+      "component": "Chromium OS system API",
+      "homepage": "https://www.chromium.org/chromium-os",
+      "notice_sha256": "c87ee91f4687ddeb8a959d4cb2f5571cdc9fc4e6fc568b49be6d2b2ef09e796a",
+      "notice_characters": 1543
+    },
+    {
+      "component": "ChromiumUpdater",
+      "homepage": "Internal",
+      "notice_sha256": "9e4c15bf2ede3b99675d7ea9dd2e68e17c39aec0a1041789e688124c90698143",
+      "notice_characters": 1554
+    },
+    {
+      "component": "CityHash",
+      "homepage": "https://github.com/google/cityhash",
+      "notice_sha256": "3ed00dd93c75655599456c83cba2f69c6824fd53f24fc24206ba27b65057709d",
+      "notice_characters": 1110
+    },
+    {
+      "component": "Closure Library",
+      "homepage": "https://github.com/google/closure-library",
+      "notice_sha256": "70449a78c63462b11c8a703830d71fd4c44ea47eadd1bb0507cd6bc6bb0c6a9a",
+      "notice_characters": 11341
+    },
+    {
+      "component": "CodeMirror 5",
+      "homepage": "https://github.com/codemirror/CodeMirror/",
+      "notice_sha256": "a3f2fe2ac6b471aa80c737c5d283dd049bdc903a73835ee6d4d2cac02fdd53bf",
+      "notice_characters": 1107
+    },
+    {
+      "component": "CodeMirror 6",
+      "homepage": "https://github.com/codemirror/CodeMirror.next/",
+      "notice_sha256": "aa8f65819a471c1a25fb3c0816c5a75e45f009b7899d292ee3cc70d9dbdd8f7e",
+      "notice_characters": 1112
+    },
+    {
+      "component": "collections",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/collection/collection-jvm/1.6.0-SNAPSHOT/collection-jvm-1.6.0-20250929.203443-1.jar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Collections Kotlin Extensions",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/collection/collection-ktx/1.6.0-SNAPSHOT/collection-ktx-1.6.0-20250929.203443-1.jar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Compact Encoding Detection",
+      "homepage": "https://github.com/google/compact_enc_det",
+      "notice_sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+      "notice_characters": 11357
+    },
+    {
+      "component": "Compact Language Detector v3",
+      "homepage": "https://github.com/google/cld3",
+      "notice_sha256": "c2d13ec3b431617beb314705c0f42d17ca579eed00032ed8a13dbcd23fc9bdd5",
+      "notice_characters": 11392
+    },
+    {
+      "component": "compiler-rt",
+      "homepage": "https://compiler-rt.llvm.org/",
+      "notice_sha256": "1a8f1058753f1ba890de984e48f0242a3a5c29a6a8f2ed9fd813f36985387e8d",
+      "notice_characters": 16708
+    },
+    {
+      "component": "Compose Animation",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/compose/animation/animation-android/1.10.0-SNAPSHOT/animation-android-1.10.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Compose Animation Core",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/compose/animation/animation-core-android/1.10.0-SNAPSHOT/animation-core-android-1.10.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Compose Foundation",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/compose/foundation/foundation-android/1.10.0-SNAPSHOT/foundation-android-1.10.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Compose Geometry",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/compose/ui/ui-geometry-android/1.10.0-SNAPSHOT/ui-geometry-android-1.10.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Compose Google Fonts integration",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/compose/ui/ui-text-google-fonts/1.10.0-SNAPSHOT/ui-text-google-fonts-1.10.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Compose Graphics",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/compose/ui/ui-graphics-android/1.10.0-SNAPSHOT/ui-graphics-android-1.10.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Compose Layouts",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/compose/foundation/foundation-layout-android/1.10.0-SNAPSHOT/foundation-layout-android-1.10.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Compose Material Ripple",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/compose/material/material-ripple-android/1.10.0-SNAPSHOT/material-ripple-android-1.10.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Compose Material3 Components",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/compose/material3/material3-android/1.5.0-SNAPSHOT/material3-android-1.5.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Compose Navigation",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/navigation/navigation-compose-android/2.10.0-SNAPSHOT/navigation-compose-android-2.10.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Compose Runtime",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/compose/runtime/runtime-android/1.10.0-SNAPSHOT/runtime-android-1.10.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Compose Runtime Annotation",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/compose/runtime/runtime-annotation-android/1.10.0-SNAPSHOT/runtime-annotation-android-1.10.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Compose Runtime Retain",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/compose/runtime/runtime-retain-android/1.10.0-SNAPSHOT/runtime-retain-android-1.10.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Compose Saveable",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/compose/runtime/runtime-saveable-android/1.10.0-SNAPSHOT/runtime-saveable-android-1.10.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Compose UI",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/compose/ui/ui-android/1.10.0-SNAPSHOT/ui-android-1.10.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Compose UI Text",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/compose/ui/ui-text-android/1.10.0-SNAPSHOT/ui-text-android-1.10.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Compose Unit",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/compose/ui/ui-unit-android/1.10.0-SNAPSHOT/ui-unit-android-1.10.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Compose Util",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/compose/ui/ui-util-android/1.10.0-SNAPSHOT/ui-util-android-1.10.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "ConstraintLayout",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/constraintlayout/constraintlayout/2.3.0-SNAPSHOT/constraintlayout-2.3.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "ConstraintLayout Core",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/constraintlayout/constraintlayout-core/1.2.0-SNAPSHOT/constraintlayout-core-1.2.0-20250929.203443-1.jar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Coordinator Layout",
+      "homepage": "https://dl.google.com/dl/android/maven2/androidx/coordinatorlayout/coordinatorlayout/1.3.0/coordinatorlayout-1.3.0.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Core",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/core/core/1.18.0-SNAPSHOT/core-1.18.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Core Kotlin Extensions",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/core/core-ktx/1.18.0-SNAPSHOT/core-ktx-1.18.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Core ML Tools",
+      "homepage": "https://github.com/apple/coremltools",
+      "notice_sha256": "86627e93ac1b8c98c848e41d52bca8d71bfe614cc65a031574f54fcd5137710d",
+      "notice_characters": 1488
+    },
+    {
+      "component": "core-common",
+      "homepage": "https://developers.google.com/android/guides/setup",
+      "notice_sha256": "af33167624098d5610964aae33caafb1ffb051c578f2bd42630c71eabf59cef0",
+      "notice_characters": 743852
+    },
+    {
+      "component": "coverage.py",
+      "homepage": "https://pypi.python.org/pypi/coverage",
+      "notice_sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+      "notice_characters": 10174
+    },
+    {
+      "component": "cpu_features",
+      "homepage": "https://github.com/google/cpu_features",
+      "notice_sha256": "af272c1b4dd08dd61d43e001d3134119d03ca7a2b057a64f7355fdf27fbea3dd",
+      "notice_characters": 12876
+    },
+    {
+      "component": "cpuinfo",
+      "homepage": "https://github.com/pytorch/cpuinfo",
+      "notice_sha256": "8e7e60636c3aa0cb03571a1a841ce5697f9551ff92b3c426c2561613d15ade70",
+      "notice_characters": 1424
+    },
+    {
+      "component": "CrabbyAvif - Library for decoding AVIF files.",
+      "homepage": "https://github.com/webmproject/CrabbyAvif",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Crashpad",
+      "homepage": "https://chromium.googlesource.com/crashpad/crashpad",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "CRC32C",
+      "homepage": "https://github.com/google/crc32c",
+      "notice_sha256": "a1f30b77c01e0995fa32a00119e00749e8731ee8a3c4c3549bce74083c72b0b6",
+      "notice_characters": 1460
+    },
+    {
+      "component": "Credentials",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/credentials/credentials/1.6.0-SNAPSHOT/credentials-1.6.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Credentials Play Services Auth",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/credentials/credentials-play-services-auth/1.6.0-SNAPSHOT/credentials-play-services-auth-1.6.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "CSP Evaluator Core Library, a tool that allows developers to check if a Content Security Policy (CSP) serves as mitigation against XSS attacks",
+      "homepage": "https://www.npmjs.com/package/csp_evaluator",
+      "notice_sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+      "notice_characters": 11357
+    },
+    {
+      "component": "Cursor Adapter",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/cursoradapter/cursoradapter/1.1.0-SNAPSHOT/cursoradapter-1.1.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Custom View",
+      "homepage": "https://dl.google.com/dl/android/maven2/androidx/customview/customview/1.2.0/customview-1.2.0.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "CustomView Pooling Container",
+      "homepage": "https://dl.google.com/dl/android/maven2/androidx/customview/customview-poolingcontainer/1.1.0/customview-poolingcontainer-1.1.0.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "d3",
+      "homepage": "https://github.com/d3/d3",
+      "notice_sha256": "3e6849627f74ff73c257a3ae1efb574015d94fc1035c05ec3c15805165efcbc4",
+      "notice_characters": 731
+    },
+    {
+      "component": "Darwin",
+      "homepage": "https://github.com/apple-oss-distributions/libmalloc",
+      "notice_sha256": "b23e682fda7310afe43505ed6041919ccff8f9e0c6799ebd7542cbcef11102e3",
+      "notice_characters": 20085
+    },
+    {
+      "component": "Darwin configd",
+      "homepage": "https://github.com/apple-oss-distributions/configd",
+      "notice_sha256": "b23e682fda7310afe43505ed6041919ccff8f9e0c6799ebd7542cbcef11102e3",
+      "notice_characters": 20085
+    },
+    {
+      "component": "DataStore",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/datastore/datastore-android/1.2.0-SNAPSHOT/datastore-android-1.2.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "DataStore Core",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/datastore/datastore-core-android/1.2.0-SNAPSHOT/datastore-core-android-1.2.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "DataStore Core Okio",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/datastore/datastore-core-okio-jvm/1.2.0-SNAPSHOT/datastore-core-okio-jvm-1.2.0-20250929.203443-1.jar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "dav1d is an AV1 decoder :)",
+      "homepage": "https://code.videolan.org/videolan/dav1d",
+      "notice_sha256": "2da4494d2a8b5c742afbb905b10621e40129284c977ac138e3081ed0d9d83aed",
+      "notice_characters": 1311
+    },
+    {
+      "component": "Dawn",
+      "homepage": "https://dawn.googlesource.com/dawn",
+      "notice_sha256": "e2908f7576fb12be5bdb8480cddb0be62badb498cadb821d043aeaf01b0b0899",
+      "notice_characters": 1561
+    },
+    {
+      "component": "Devtools-Frontend",
+      "homepage": "https://chromium.googlesource.com/devtools/devtools-frontend",
+      "notice_sha256": "ff11d445fb41a1087c7630e120ab15f1a2cb67c1b707173cb494141805fca35e",
+      "notice_characters": 1537
+    },
+    {
+      "component": "Document File",
+      "homepage": "https://dl.google.com/dl/android/maven2/androidx/documentfile/documentfile/1.1.0/documentfile-1.1.0.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "dom-distiller-js",
+      "homepage": "https://github.com/chromium/dom-distiller",
+      "notice_sha256": "560c13594cab53e1edc37bb1bf3fe4aa128146cd5dd990f63854d9d7d1f7cce1",
+      "notice_characters": 10879
+    },
+    {
+      "component": "dragonbox",
+      "homepage": "https://github.com/jk-jeon/dragonbox",
+      "notice_sha256": "678c25489a5d5cd2a5353a3b32e273c1236c881e97090bb92f39695eb826122b",
+      "notice_characters": 13602
+    },
+    {
+      "component": "Drawer Layout",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/drawerlayout/drawerlayout/1.3.0-SNAPSHOT/drawerlayout-1.3.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "DynamicAnimation",
+      "homepage": "https://dl.google.com/dl/android/maven2/androidx/dynamicanimation/dynamicanimation/1.1.0/dynamicanimation-1.1.0.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "EasyList",
+      "homepage": "https://easylist.to/easylist/easylist.txt",
+      "notice_sha256": "033d0150b3bd78b36894c88fcc68da0c3f2e661d3b3485e8cc9a61b2c2bf7895",
+      "notice_characters": 24240
+    },
+    {
+      "component": "Eigen",
+      "homepage": "https://gitlab.com/libeigen/eigen",
+      "notice_sha256": "66a3107d5ad6a058aab753eaac2047ccb2ed0e39465dd0fe5844da3e300d5172",
+      "notice_characters": 16727
+    },
+    {
+      "component": "Emoji",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/emoji/emoji/1.2.0-SNAPSHOT/emoji-1.2.0-20250929.203443-1.aar",
+      "notice_sha256": "0a427580d3c890f0543987590b04c56db7a15bfb399527d47cb2ce4199117e96",
+      "notice_characters": 18074
+    },
+    {
+      "component": "Emoji Segmenter",
+      "homepage": "https://github.com/googlei18n/emoji-segmenter",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "emoji-metadata",
+      "homepage": "https://github.com/googlefonts/emoji-metadata",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Emoji2",
+      "homepage": "https://dl.google.com/dl/android/maven2/androidx/emoji2/emoji2/1.6.0/emoji2-1.6.0.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Emoji2 Views Helper",
+      "homepage": "https://dl.google.com/dl/android/maven2/androidx/emoji2/emoji2-views-helper/1.6.0/emoji2-views-helper-1.6.0.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "error-prone annotations",
+      "homepage": "https://github.com/google/error-prone/tree/master/annotations",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "etc1",
+      "homepage": "This is the canonical public repository",
+      "notice_sha256": "623d3727872cbcb7ff339b9a151f6f1a6eeb5bdf9f0afe2d7d51b2804fb6591c",
+      "notice_characters": 619
+    },
+    {
+      "component": "ExifInterface",
+      "homepage": "https://dl.google.com/dl/android/maven2/androidx/exifinterface/exifinterface/1.4.1/exifinterface-1.4.1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Expat XML Parser",
+      "homepage": "https://github.com/libexpat/libexpat",
+      "notice_sha256": "31b15de82aa19a845156169a17a5488bf597e561b2c318d159ed583139b25e87",
+      "notice_characters": 1144
+    },
+    {
+      "component": "Experimental annotation",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/annotation/annotation-experimental/1.6.0-SNAPSHOT/annotation-experimental-1.6.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "FarmHash",
+      "homepage": "https://github.com/google/farmhash",
+      "notice_sha256": "4162dd091caae234f72d3b57e138174f733e736b2430a4c51b098b17d866fcb6",
+      "notice_characters": 1110
+    },
+    {
+      "component": "fast_float",
+      "homepage": "https://github.com/fastfloat/fast_float",
+      "notice_sha256": "e562f3f974ced7e69dd1db77b820b36bcf8f30377f1aa105723fba449c53c4e6",
+      "notice_characters": 1079
+    },
+    {
+      "component": "feature-delivery",
+      "homepage": "https://developers.google.com/android/guides/setup",
+      "notice_sha256": "66372f54fa909650fd0aefa3254edd5a527ddd796677a37865c312e65f73c447",
+      "notice_characters": 769116
+    },
+    {
+      "component": "federated-compute",
+      "homepage": "https://github.com/google-parfait/federated-compute/",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "ffmpeg",
+      "homepage": "http://ffmpeg.org/",
+      "notice_sha256": "4e7db8bd20d67d33f69d468f66cc5424e39978760096771d9ff1bc76e3855dba",
+      "notice_characters": 45015
+    },
+    {
+      "component": "fft",
+      "homepage": "This is the canonical repository.",
+      "notice_sha256": "6fdbabd2c95c5efc6f1e46175278239afb9343120a3022ed0e0cb04267a6aeb3",
+      "notice_characters": 1125
+    },
+    {
+      "component": "Fiat-Crypto: Synthesizing Correct-by-Construction Code for Cryptographic Primitives",
+      "homepage": "https://github.com/mit-plv/fiat-crypto",
+      "notice_sha256": "9eacbcb81be660840c714a560a9d65ba07913db98dd4baf969f78dd499fdd60f",
+      "notice_characters": 638
+    },
+    {
+      "component": "FideltyFX Single Pass Downsampler",
+      "homepage": "https://github.com/GPUOpen-Effects/FidelityFX-SPD",
+      "notice_sha256": "09a7c3fbc0b4ae6a9ccc4ffdcbfa511c14b8647a24f24783838862cf6c226d4e",
+      "notice_characters": 1093
+    },
+    {
+      "component": "FindBugs-jsr305",
+      "homepage": "http://findbugs.sourceforge.net/",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "firebase-annotations",
+      "homepage": "https://firebase.google.com",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "firebase-common",
+      "homepage": "https://firebase.google.com",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "firebase-components",
+      "homepage": "https://firebase.google.com",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "firebase-datatransport",
+      "homepage": "https://firebase.google.com",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "firebase-encoders",
+      "homepage": "https://firebase.google.com",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "firebase-encoders-json",
+      "homepage": "https://firebase.google.com",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "firebase-encoders-proto",
+      "homepage": "https://firebase.google.com",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "firebase-iid-interop",
+      "homepage": "https://firebase.google.com",
+      "notice_sha256": "654ff80366c387806330e31d940c00b9c36d46aa356d1c86232da184185e49b9",
+      "notice_characters": 88057
+    },
+    {
+      "component": "firebase-installations",
+      "homepage": "https://firebase.google.com",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "firebase-installations-interop",
+      "homepage": "https://firebase.google.com",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "firebase-measurement-connector",
+      "homepage": "https://firebase.google.com",
+      "notice_sha256": "ac436882ae0f9abfa592c686ab4313267af48616f7656e49474422307a7cd740",
+      "notice_characters": 121556
+    },
+    {
+      "component": "firebase-messaging",
+      "homepage": "https://firebase.google.com",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "flac",
+      "homepage": "https://github.com/xiph/flac/archive/refs/tags/1.4.2.zip",
+      "notice_sha256": "6e58d3036f05e2a0d58af854c12a505ddbe75011d71a598a2170987f3b15408d",
+      "notice_characters": 1509
+    },
+    {
+      "component": "FlatBuffers",
+      "homepage": "https://github.com/google/flatbuffers",
+      "notice_sha256": "7ec9661a8afafab1eee3523d6f1a193eff76314a5ab10b4ce96aefd87621b0c3",
+      "notice_characters": 11342
+    },
+    {
+      "component": "Flot",
+      "homepage": "http://www.flotcharts.org/",
+      "notice_sha256": "52cb566b16d84314b92b91361ed072eaaf166e8d3dfa3d0fd3577613925f205c",
+      "notice_characters": 1069
+    },
+    {
+      "component": "fontconfig",
+      "homepage": "http://www.freedesktop.org/wiki/Software/fontconfig/",
+      "notice_sha256": "51a51aa9823704fd90bccc616cdd17ebabb5b2b3e9cbde886ca02c7002288067",
+      "notice_characters": 8599
+    },
+    {
+      "component": "FP16",
+      "homepage": "https://github.com/Maratyszcza/FP16",
+      "notice_sha256": "c91377adafa2f498211a4fe017788e20c38892124673860f068f2919c289193d",
+      "notice_characters": 1158
+    },
+    {
+      "component": "fragment",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/fragment/fragment/1.9.0-SNAPSHOT/fragment-1.9.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Fragment Compose",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/fragment/fragment-compose/1.9.0-SNAPSHOT/fragment-compose-1.9.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Fragment Kotlin Extensions",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/fragment/fragment-ktx/1.9.0-SNAPSHOT/fragment-ktx-1.9.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "FreeType",
+      "homepage": "http://www.freetype.org/",
+      "notice_sha256": "5a5ee54c5001bbad1cdc1a57cc3dd4c42199b2da09d39c7ee41fab002d02967f",
+      "notice_characters": 6742
+    },
+    {
+      "component": "FreeType",
+      "homepage": "https://gitlab.freedesktop.org/freetype/freetype",
+      "notice_sha256": "832e75434619e56c81ca252fecd7c50711fda68b7208df37000a7c4370f70e8c",
+      "notice_characters": 6741
+    },
+    {
+      "component": "Fuchsia GN SDK",
+      "homepage": "This is the canonical public repository.",
+      "notice_sha256": "47248d1ec833e0771ddacb65f2cf9978785f4a9976b5b0b69d1e33c60a50be55",
+      "notice_characters": 1274
+    },
+    {
+      "component": "Fuse.js",
+      "homepage": "https://fusejs.io",
+      "notice_sha256": "cc807e3caa26cdee316bab2ff6fdb508a2f619b74959fe59e513ef6e61635ebe",
+      "notice_characters": 11343
+    },
+    {
+      "component": "Futures",
+      "homepage": "https://dl.google.com/dl/android/maven2/androidx/concurrent/concurrent-futures/1.3.0/concurrent-futures-1.3.0.jar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Futures Kotlin Extensions",
+      "homepage": "https://dl.google.com/dl/android/maven2/androidx/concurrent/concurrent-futures-ktx/1.3.0/concurrent-futures-ktx-1.3.0.jar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "FXDiv",
+      "homepage": "https://github.com/Maratyszcza/FXdiv",
+      "notice_sha256": "7cac00006125b1486a27e4801ed66357236e984c540bd323945ab7b66b078ec3",
+      "notice_characters": 1117
+    },
+    {
+      "component": "gemmlowp",
+      "homepage": "https://github.com/google/gemmlowp",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "General Purpose FFT (Fast Fourier/Cosine/Sine Transform) Package",
+      "homepage": "http://www.kurims.kyoto-u.ac.jp/~ooura/fft.html",
+      "notice_sha256": "25b7731b70c77ecd5f3bb19303fbaa99be18860f81d44f71da670fdcd04829db",
+      "notice_characters": 272
+    },
+    {
+      "component": "getopt",
+      "homepage": "https://sourceware.org/ml/newlib/2005/msg00758.html",
+      "notice_sha256": "f40ee07401827b6ac9cf0aee1aaffb00e42a3f2c729f9c83f96a3daafef5d944",
+      "notice_characters": 203
+    },
+    {
+      "component": "GifPlayer Animated GIF Library",
+      "homepage": "This is the canonical public repository",
+      "notice_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "notice_characters": 11357
+    },
+    {
+      "component": "Google Android Annotations Library",
+      "homepage": "http://source.android.com/",
+      "notice_sha256": "61a1acc337e0ff545dc26321e4d9575cfc69d3f2241298adf90d690adfb6b77c",
+      "notice_characters": 16389
+    },
+    {
+      "component": "Google App Engine MapReduce",
+      "homepage": "https://github.com/GoogleCloudPlatform/appengine-mapreduce",
+      "notice_sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+      "notice_characters": 11357
+    },
+    {
+      "component": "Google App Engine Pipeline",
+      "homepage": "https://github.com/GoogleCloudPlatform/appengine-pipelines",
+      "notice_sha256": "8173d5c29b4f956d532781d2b86e4e30f83e6b7878dce18c919451d6ba707c90",
+      "notice_characters": 10850
+    },
+    {
+      "component": "Google Chrome Content Analysis Connector Agent SDK",
+      "homepage": "https://github.com/chromium/content_analysis_sdk",
+      "notice_sha256": "7340f764102806e7e96b80a153a23debafb83dff600f08c27a84c6addefcc93f",
+      "notice_characters": 1538
+    },
+    {
+      "component": "Google Closure Library",
+      "homepage": "https://github.com/google/closure-library",
+      "notice_sha256": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9",
+      "notice_characters": 10173
+    },
+    {
+      "component": "Google Cloud Storage Client Library",
+      "homepage": "https://github.com/GoogleCloudPlatform/appengine-gcs-client",
+      "notice_sha256": "50e6751797c50dedd75ef1b8a0d9e42f5f8472e9fbce91f34718e9f97b0c780a",
+      "notice_characters": 11324
+    },
+    {
+      "component": "Google Double Conversion",
+      "homepage": "https://github.com/google/double-conversion",
+      "notice_sha256": "4af93c12062c58058378de2397dc1c92bbff9ddfb1d583a01c84127557ce97ca",
+      "notice_characters": 1527
+    },
+    {
+      "component": "Google Input Tools",
+      "homepage": "https://github.com/googlei18n/google-input-tools.git",
+      "notice_sha256": "7232ccb8f246801a46ef651e8215b075f2b1c6e879c760ee30907a6cc3b06ce3",
+      "notice_characters": 11340
+    },
+    {
+      "component": "Google Toolbox for Mac",
+      "homepage": "https://github.com/google/google-toolbox-for-mac",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "google-auth",
+      "homepage": "https://github.com/googleapis/google-auth-library-python",
+      "notice_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "notice_characters": 11357
+    },
+    {
+      "component": "google-glog's symbolization library",
+      "homepage": "https://github.com/google/glog",
+      "notice_sha256": "538edc6f52c563cf06eca1bac8dd785ff60ef5a371a950265700d5d40386db6e",
+      "notice_characters": 1560
+    },
+    {
+      "component": "googleid",
+      "homepage": "https://developers.google.com/android/guides/setup",
+      "notice_sha256": "5c752cf67f98a11c1510ba4a10da08b439661369723ef82baebc8e996c5a8a24",
+      "notice_characters": 812507
+    },
+    {
+      "component": "Granite",
+      "homepage": "https://github.com/Themaister/Granite",
+      "notice_sha256": "118be5792e5126839694ca2209c62c71d2d7cd49e7bbb43bbdee9b016fb06094",
+      "notice_characters": 1129
+    },
+    {
+      "component": "Graphics Shapes",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/graphics/graphics-shapes-android/1.1.0-SNAPSHOT/graphics-shapes-android-1.1.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Graphy",
+      "homepage": "http://code.google.com/p/graphy/",
+      "notice_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "notice_characters": 11357
+    },
+    {
+      "component": "Grid Layout",
+      "homepage": "https://dl.google.com/dl/android/maven2/androidx/gridlayout/gridlayout/1.1.0/gridlayout-1.1.0.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "grpc",
+      "homepage": "https://github.com/grpc/grpc",
+      "notice_sha256": "590198e3f305f2c347fde64d637c65492bbef554db6c8364e149cd375e3797ee",
+      "notice_characters": 29687
+    },
+    {
+      "component": "Gson",
+      "homepage": "https://github.com/google/gson",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "gsutil",
+      "homepage": "https://github.com/GoogleCloudPlatform/gsutil",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "gtk",
+      "homepage": "https://github.com/GNOME/gtk",
+      "notice_sha256": "b7993225104d90ddd8024fd838faf300bea5e83d91203eab98e29512acebd69c",
+      "notice_characters": 25383
+    },
+    {
+      "component": "Guava InternalFutureFailureAccess and InternalFutures",
+      "homepage": "https://github.com/google/guava",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Guava: Google Core Libraries for Java",
+      "homepage": "https://github.com/google/guava",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "harfbuzz-ng",
+      "homepage": "http://harfbuzz.org",
+      "notice_sha256": "ba8f810f2455c2f08e2d56bb49b72f37fcf68f1f4fade38977cfd7372050ad64",
+      "notice_characters": 1954
+    },
+    {
+      "component": "Headers for DirectX APIs.",
+      "homepage": "https://github.com/microsoft/directx-headers",
+      "notice_sha256": "fd532481d828e13a0b13ccb598e02338a3617740675a862ee6bdc1541b68e93d",
+      "notice_characters": 1073
+    },
+    {
+      "component": "Headers for ONNX Runtime C/C++ APIs",
+      "homepage": "https://github.com/microsoft/onnxruntime",
+      "notice_sha256": "2f07c72751aed99790b8a4869cf2311df85a860b22ded05fa22803587a48922c",
+      "notice_characters": 1073
+    },
+    {
+      "component": "Headers for the Windows WebAuthn API (webauthn.dll)",
+      "homepage": "https://github.com/Microsoft/webauthn/",
+      "notice_sha256": "27ebda9d51f0a56b7e281ccd8230a27236dcb51c05f64b07869ecf6e965d68b0",
+      "notice_characters": 1162
+    },
+    {
+      "component": "Highway: C++ library for SIMD",
+      "homepage": "https://github.com/google/highway",
+      "notice_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "notice_characters": 11357
+    },
+    {
+      "component": "Highway: C++ library for SIMD",
+      "homepage": "https://github.com/google/highway",
+      "notice_sha256": "43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1",
+      "notice_characters": 11356
+    },
+    {
+      "component": "hunspell",
+      "homepage": "http://hunspell.sourceforge.net/",
+      "notice_sha256": "53692a2ed6c6a2c6ec9b32dd0b820dfae91e0a1fcdf625ca9ed0bdf8705fcc4f",
+      "notice_characters": 25755
+    },
+    {
+      "component": "hyphenation-patterns",
+      "homepage": "https://android.googlesource.com/platform/external/hyphenation-patterns/",
+      "notice_sha256": "848b839a69abf379954f0a564a0c84f5dbb2aab4acc26c41571a20c0657a4fb7",
+      "notice_characters": 143370
+    },
+    {
+      "component": "IAccessible2 COM interfaces for accessibility",
+      "homepage": "https://github.com/LinuxA11y/IAccessible2",
+      "notice_sha256": "610809f1586ee4d22468f1e97c256153cea8be7a662193db70d6ca424e0f17c8",
+      "notice_characters": 2377
+    },
+    {
+      "component": "icu",
+      "homepage": "https://github.com/unicode-org/icu",
+      "notice_sha256": "17510cf7a58b4879b887ec05a45d72cf1b73544dd9ec7e72f20110ed104229ee",
+      "notice_characters": 25182
+    },
+    {
+      "component": "idna",
+      "homepage": "https://github.com/kjd/idna",
+      "notice_sha256": "0d4bc7abd48dcfb14e24254ee404066737ff0167144e222914a2113b8794683e",
+      "notice_characters": 3947
+    },
+    {
+      "component": "ijson",
+      "homepage": "https://github.com/isagalaev/ijson",
+      "notice_sha256": "3cdb5f5be14a92dec127561fc90d8f7127aa59d81522938ffc91952615ea13eb",
+      "notice_characters": 1488
+    },
+    {
+      "component": "Implementation of WebDriver BiDi standard",
+      "homepage": "https://registry.npmjs.org/chromium-bidi/-/chromium-bidi-9.1.0.tgz",
+      "notice_sha256": "43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1",
+      "notice_characters": 11356
+    },
+    {
+      "component": "impress",
+      "homepage": "https://maven.google.com/web/index.html?q=impress#com.google.ar:impress",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "In line A-law and u-law conversion routines",
+      "homepage": "https://www.soft-switch.org/downloads/spandsp/",
+      "notice_sha256": "b29c8f13f91feb2dab7d6655444369fa9f29c0d7121a52dab90ff97e40343a85",
+      "notice_characters": 429
+    },
+    {
+      "component": "Ink",
+      "homepage": "https://github.com/google/ink.git",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Ink Stroke Modeler",
+      "homepage": "https://github.com/google/ink-stroke-modeler",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "inspector protocol",
+      "homepage": "https://chromium.googlesource.com/deps/inspector_protocol/",
+      "notice_sha256": "b9be92f13356083392d97da13cab8ae543c7911f44eff5289b693da8b17b9e08",
+      "notice_characters": 1559
+    },
+    {
+      "component": "International Phone Number Library",
+      "homepage": "https://github.com/googlei18n/libphonenumber/",
+      "notice_sha256": "a6cba85bc92e0cff7a450b1d873c0eaa2e9fc96bf472df0247a26bec77bf3ff9",
+      "notice_characters": 10173
+    },
+    {
+      "component": "Interpolators",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/interpolator/interpolator/1.1.0-SNAPSHOT/interpolator-1.1.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "intl-messageformat",
+      "homepage": "https://github.com/formatjs/formatjs",
+      "notice_sha256": "0212e9ffd60f4c2e05426ac172b91266256b9ff4c0f0156e85b761a1d6f5e17f",
+      "notice_characters": 1560
+    },
+    {
+      "component": "io.grpc:grpc-api",
+      "homepage": "https://github.com/grpc/grpc-java",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "io.grpc:grpc-binder",
+      "homepage": "https://github.com/grpc/grpc-java",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "io.grpc:grpc-context",
+      "homepage": "https://github.com/grpc/grpc-java",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "io.grpc:grpc-core",
+      "homepage": "https://github.com/grpc/grpc-java",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "io.grpc:grpc-protobuf-lite",
+      "homepage": "https://github.com/grpc/grpc-java",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "io.grpc:grpc-stub",
+      "homepage": "https://github.com/grpc/grpc-java",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "ipcz",
+      "homepage": "https://chromium.googlesource.com/chromium/src/third_party/ipcz",
+      "notice_sha256": "8938c6deca58d85570c8887b6abf2c415e444299b7ec8752fcdb4e40935d8794",
+      "notice_characters": 1536
+    },
+    {
+      "component": "ISimpleDOM COM interfaces for accessibility",
+      "homepage": "https://github.com/mozilla/gecko-dev",
+      "notice_sha256": "7a92c5e7a83b5ddcc693bb84ea8bdb842308509c1758cffdfe24717609154c75",
+      "notice_characters": 1699
+    },
+    {
+      "component": "J2ObjC Annotations",
+      "homepage": "https://github.com/google/j2objc/",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "javax.inject",
+      "homepage": "http://code.google.com/p/atinject/",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "JNI Zero",
+      "homepage": "This is the canonical repository",
+      "notice_sha256": "57faf03e216d5628169a779df31a842347e55c8e6567e1107b6cb8fb90175b59",
+      "notice_characters": 1458
+    },
+    {
+      "component": "JNIPP",
+      "homepage": "https://github.com/mitchdowd/jnipp",
+      "notice_sha256": "3f46b895fbd843c7abe5b49fa0b699a5093fc8b345940a7c587948c57cc8f270",
+      "notice_characters": 1070
+    },
+    {
+      "component": "jpeg-js",
+      "homepage": "https://github.com/jpeg-js/jpeg-js",
+      "notice_sha256": "be3fd324066af702fad2a9ef05664ce9665495ebc1824fd7b28960802ec7891e",
+      "notice_characters": 1616
+    },
+    {
+      "component": "jQuery",
+      "homepage": "https://jquery.com/",
+      "notice_sha256": "a078a8f80016416042c2e5f04dbb7f499f0f6deebb086511f3a3b72633a2d761",
+      "notice_characters": 1605
+    },
+    {
+      "component": "json5",
+      "homepage": "https://github.com/json5/json5",
+      "notice_sha256": "53e59feb13058722d977c699eb0407c7bce2f93c949b681bbd2ff31698535927",
+      "notice_characters": 1145
+    },
+    {
+      "component": "jsoncpp",
+      "homepage": "https://github.com/open-source-parsers/jsoncpp",
+      "notice_sha256": "76c45ece83a26117f86f4e349e7df118708e061e87225328fb478ce1e8b3eb86",
+      "notice_characters": 2665
+    },
+    {
+      "component": "JSpecify annotations",
+      "homepage": "http://jspecify.org/",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "JSZip",
+      "homepage": "https://github.com/Stuk/jszip",
+      "notice_sha256": "602ef1d5d3db1b23ada0b61d4230ef336012de7bc3b773d565f2b27a2757f51d",
+      "notice_characters": 33751
+    },
+    {
+      "component": "Khronos header files",
+      "homepage": "http://www.khronos.org/registry",
+      "notice_sha256": "71a19392a0eb3255ab2055ed978bb0f93865cea84d31a3510eaffb74d8981e7f",
+      "notice_characters": 2566
+    },
+    {
+      "component": "khronos_platform",
+      "homepage": "https://registry.khronos.org/EGL/",
+      "notice_sha256": "4597c5d916315c5070b36b45fb1e242be2c0fb29b3c094891dc3e8a0ffc13644",
+      "notice_characters": 1438
+    },
+    {
+      "component": "Kotlin Android Extensions Runtime",
+      "homepage": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-android-extensions-runtime/1.9.22/kotlin-android-extensions-runtime-1.9.22.jar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Kotlin Standard Library",
+      "homepage": "https://kotlinlang.org/api/latest/jvm/stdlib/",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "kotlinx-coroutines-android",
+      "homepage": "https://github.com/Kotlin/kotlinx.coroutines",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "kotlinx-coroutines-core",
+      "homepage": "https://github.com/Kotlin/kotlinx.coroutines",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "kotlinx-coroutines-guava",
+      "homepage": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-guava/1.8.1/kotlinx-coroutines-guava-1.8.1.jar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "kotlinx-coroutines-play-services",
+      "homepage": "https://github.com/Kotlin/kotlinx.coroutines",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "kotlinx-serialization-core",
+      "homepage": "https://github.com/Kotlin/kotlinx.serialization",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "kotlinx-serialization-json",
+      "homepage": "https://github.com/Kotlin/kotlinx.serialization",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Leanback",
+      "homepage": "https://dl.google.com/dl/android/maven2/androidx/leanback/leanback/1.2.0/leanback-1.2.0.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Leanback Grid",
+      "homepage": "https://dl.google.com/dl/android/maven2/androidx/leanback/leanback-grid/1.0.0/leanback-grid-1.0.0.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Leanback Preference",
+      "homepage": "https://dl.google.com/dl/android/maven2/androidx/leanback/leanback-preference/1.2.0/leanback-preference-1.2.0.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "legacy-javascript",
+      "homepage": "https://github.com/GoogleChrome/lighthouse/tree/main/core/lib/legacy-javascript",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Lens Protos",
+      "homepage": "This is the canonical public repository",
+      "notice_sha256": "a3775cb5f3e55a1a7fc417a6aed46048fe675d7377f88f143dab15694b9b2029",
+      "notice_characters": 1537
+    },
+    {
+      "component": "LevelDB: A Fast Persistent Key-Value Store",
+      "homepage": "https://github.com/google/leveldb.git",
+      "notice_sha256": "ccc19f1da0798ed666609b65a5b44dd8b3abe6fc08b9c0592eb76e82e174db19",
+      "notice_characters": 1484
+    },
+    {
+      "component": "libaddressinput",
+      "homepage": "https://github.com/google/libaddressinput",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "libbrlapi",
+      "homepage": "https://github.com/brltty/brltty",
+      "notice_sha256": "d80c9d084ebfb50ea1ed91bfbc2410d6ce542097a32c43b00781b83adcb8c77f",
+      "notice_characters": 26528
+    },
+    {
+      "component": "libcxx",
+      "homepage": "http://libcxx.llvm.org/",
+      "notice_sha256": "539dd7aed86e8a4f12cbdd0e6c50c189c7d74847e4fecc64ce2c6ee3a01da38b",
+      "notice_characters": 16703
+    },
+    {
+      "component": "libcxxabi",
+      "homepage": "http://libcxxabi.llvm.org/",
+      "notice_sha256": "e2b35be49f7284a45b7baca8fc7b3ab7440e7902392b2528a457816b5bb2a15c",
+      "notice_characters": 16706
+    },
+    {
+      "component": "libei",
+      "homepage": "https://gitlab.freedesktop.org/libinput/libei",
+      "notice_sha256": "99406b2e7cacd825c770d1652bbac228c8ab33ea0ae8e204c803949f11fb31cd",
+      "notice_characters": 1087
+    },
+    {
+      "component": "libgav1",
+      "homepage": "https://chromium.googlesource.com/codecs/libgav1/",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "libipp",
+      "homepage": "https://chromium.googlesource.com/chromiumos/platform2/libipp",
+      "notice_sha256": "37d8bfba91b745693ea58f846f2f1276229745adf532974b73c1911cfd144241",
+      "notice_characters": 1562
+    },
+    {
+      "component": "libjingle XMPP and xmllite libraries",
+      "homepage": "https://chromium.googlesource.com/external/webrtc",
+      "notice_sha256": "ab00a482b6a3902e40211b43c5d0441962ea99b6cc7c25c0f243fa270b78d482",
+      "notice_characters": 1511
+    },
+    {
+      "component": "libjpeg-turbo",
+      "homepage": "https://github.com/libjpeg-turbo/libjpeg-turbo/",
+      "notice_sha256": "96f5b328adbb78eeaaec6980d73fd558cb1e4d62560ed615646bc3cf5e532430",
+      "notice_characters": 5619
+    },
+    {
+      "component": "libpng",
+      "homepage": "http://libpng.org/",
+      "notice_sha256": "bf5e22b9dce8464064ae17a48ea1133c3369ac9e1d80ef9e320e5219aa14ea9b",
+      "notice_characters": 5345
+    },
+    {
+      "component": "libprotobuf-mutator",
+      "homepage": "https://github.com/google/libprotobuf-mutator",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "libsecret",
+      "homepage": "https://git.gnome.org/browse/libsecret/",
+      "notice_sha256": "a1a33180d02960ab1c5de36cf20b1a2f0fe9888d83826ad263da5db52f1b183b",
+      "notice_characters": 26529
+    },
+    {
+      "component": "libsrtp",
+      "homepage": "https://github.com/cisco/libsrtp",
+      "notice_sha256": "8e19d42a1eec9561f3f347253ddf2e385c55f392f025bb0fd41b88dbf38db5ae",
+      "notice_characters": 1614
+    },
+    {
+      "component": "Libtess2",
+      "homepage": "https://github.com/memononen/libtess2",
+      "notice_sha256": "582c43ef2eb5aba92c6fb92913194a966989ffb044aef5dee0e37590029a86a5",
+      "notice_characters": 1577
+    },
+    {
+      "component": "LibTIFF",
+      "homepage": "https://gitlab.com/libtiff/libtiff",
+      "notice_sha256": "0780558a8bfba0af1160ec1ff11ade4f41c0d7deafd6ecfc796b492a788e380d",
+      "notice_characters": 1162
+    },
+    {
+      "component": "libunwind",
+      "homepage": "https://chromium.googlesource.com/external/github.com/llvm/llvm-project/libunwind.git",
+      "notice_sha256": "b5efebcaca80879234098e52d1725e6d9eb8fb96a19fce625d39184b705f7b6d",
+      "notice_characters": 16706
+    },
+    {
+      "component": "libusbx",
+      "homepage": "https://github.com/libusb/libusb",
+      "notice_sha256": "5df07007198989c622f5d41de8d703e7bef3d0e79d62e24332ee739a452af62a",
+      "notice_characters": 26436
+    },
+    {
+      "component": "libutf",
+      "homepage": "https://github.com/cls/libutf",
+      "notice_sha256": "99a313b8c6296019863929983f56f997e285c0c18d9a3f6218fe28066cf8b5d0",
+      "notice_characters": 3338
+    },
+    {
+      "component": "libvpx",
+      "homepage": "https://chromium.googlesource.com/webm/libvpx",
+      "notice_sha256": "b80a23ff7619a3b5c150cf718b43af5a5b9a2339ff019c562c9938d91303d08c",
+      "notice_characters": 2975
+    },
+    {
+      "component": "libx11",
+      "homepage": "https://gitlab.freedesktop.org/xorg/lib/libx11",
+      "notice_sha256": "ab95aa35fa2b3bd9930d30eda6920dfa905cd4d551e058cea2c9993e57c41b6a",
+      "notice_characters": 1142
+    },
+    {
+      "component": "libxcb-keysyms",
+      "homepage": "https://gitlab.freedesktop.org/xorg/lib/libxcb-keysyms",
+      "notice_sha256": "d499c1bf2c2a5f0a0498e5204d998388e308dcf2273dfbe2250a5b9a73f66537",
+      "notice_characters": 1452
+    },
+    {
+      "component": "libxml",
+      "homepage": "http://xmlsoft.org",
+      "notice_sha256": "5d4873884a890122a4b9b20ad56ac6f7da1d796a5bfcf04a427970ac96217626",
+      "notice_characters": 1314
+    },
+    {
+      "component": "libxslt",
+      "homepage": "http://xmlsoft.org/XSLT",
+      "notice_sha256": "7e48e290b6bfccc2ec1b297023a1d77f2fd87417f71fbb9f50aabef40a851819",
+      "notice_characters": 2968
+    },
+    {
+      "component": "libyuv",
+      "homepage": "https://chromium.googlesource.com/libyuv/libyuv/",
+      "notice_sha256": "2b2cc1180c7e6988328ad2033b04b80117419db9c4c584918bbb3cfec7e9364f",
+      "notice_characters": 1506
+    },
+    {
+      "component": "libzip",
+      "homepage": "https://github.com/nih-at/libzip",
+      "notice_sha256": "0b052dcaa4b084c41fd5ba28c8ca4c54e24750d34ac9a07c758d3ea88aa0ea93",
+      "notice_characters": 1451
+    },
+    {
+      "component": "Lifecycle Kotlin Extensions",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/lifecycle/lifecycle-runtime-ktx-android/2.10.0-SNAPSHOT/lifecycle-runtime-ktx-android-2.10.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Lifecycle LiveData",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/lifecycle/lifecycle-livedata/2.10.0-SNAPSHOT/lifecycle-livedata-2.10.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Lifecycle LiveData Core",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/lifecycle/lifecycle-livedata-core/2.10.0-SNAPSHOT/lifecycle-livedata-core-2.10.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Lifecycle Process",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/lifecycle/lifecycle-process/2.10.0-SNAPSHOT/lifecycle-process-2.10.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Lifecycle Runtime",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/lifecycle/lifecycle-runtime-android/2.10.0-SNAPSHOT/lifecycle-runtime-android-2.10.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Lifecycle Runtime Compose",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/lifecycle/lifecycle-runtime-compose-android/2.10.0-SNAPSHOT/lifecycle-runtime-compose-android-2.10.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Lifecycle Service",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/lifecycle/lifecycle-service/2.10.0-SNAPSHOT/lifecycle-service-2.10.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Lifecycle ViewModel",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/lifecycle/lifecycle-viewmodel-android/2.10.0-SNAPSHOT/lifecycle-viewmodel-android-2.10.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Lifecycle ViewModel Compose",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/lifecycle/lifecycle-viewmodel-compose-android/2.10.0-SNAPSHOT/lifecycle-viewmodel-compose-android-2.10.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Lifecycle ViewModel Kotlin Extensions",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/lifecycle/lifecycle-viewmodel-ktx/2.10.0-SNAPSHOT/lifecycle-viewmodel-ktx-2.10.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Lifecycle ViewModel with SavedState",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/lifecycle/lifecycle-viewmodel-savedstate-android/2.10.0-SNAPSHOT/lifecycle-viewmodel-savedstate-android-2.10.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Lifecycle-Common",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/lifecycle/lifecycle-common-jvm/2.10.0-SNAPSHOT/lifecycle-common-jvm-2.10.0-20250929.203443-1.jar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Lifecycle-Common for Java 8",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/lifecycle/lifecycle-common-java8/2.10.0-SNAPSHOT/lifecycle-common-java8-2.10.0-20250929.203443-1.jar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Lighthouse",
+      "homepage": "https://github.com/GoogleChrome/lighthouse",
+      "notice_sha256": "7ec9661a8afafab1eee3523d6f1a193eff76314a5ab10b4ce96aefd87621b0c3",
+      "notice_characters": 11342
+    },
+    {
+      "component": "Lighthouse i18n.js",
+      "homepage": "https://github.com/GoogleChrome/lighthouse",
+      "notice_sha256": "7ec9661a8afafab1eee3523d6f1a193eff76314a5ab10b4ce96aefd87621b0c3",
+      "notice_characters": 11342
+    },
+    {
+      "component": "linux-syscall-support",
+      "homepage": "https://chromium.googlesource.com/linux-syscall-support/",
+      "notice_sha256": "63cc54f1d849448b225e71026acd6393390b09418cfad899b9dd453177f35c49",
+      "notice_characters": 1447
+    },
+    {
+      "component": "Lit",
+      "homepage": "https://github.com/lit/lit",
+      "notice_sha256": "45d31799d0db956cc3eb5469346abbd9b7025babc5ff29fab10d7095da992ef1",
+      "notice_characters": 1517
+    },
+    {
+      "component": "Lit",
+      "homepage": "https://lit.dev",
+      "notice_sha256": "45d31799d0db956cc3eb5469346abbd9b7025babc5ff29fab10d7095da992ef1",
+      "notice_characters": 1517
+    },
+    {
+      "component": "Lit",
+      "homepage": "https://lit.dev",
+      "notice_sha256": "45d31799d0db956cc3eb5469346abbd9b7025babc5ff29fab10d7095da992ef1",
+      "notice_characters": 1517
+    },
+    {
+      "component": "Little CMS",
+      "homepage": "https://github.com/mm2/Little-CMS",
+      "notice_sha256": "6dbd60437f8ef91d8de1f08ad75882547fd4931bfcc3566a0735f28db1484d31",
+      "notice_characters": 1080
+    },
+    {
+      "component": "LiveData Core Kotlin Extensions",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/lifecycle/lifecycle-livedata-core-ktx/2.10.0-SNAPSHOT/lifecycle-livedata-core-ktx-2.10.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "LiveData Kotlin Extensions",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/lifecycle/lifecycle-livedata-ktx/2.10.0-SNAPSHOT/lifecycle-livedata-ktx-2.10.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "llvm-libc",
+      "homepage": "https://libc.llvm.org/",
+      "notice_sha256": "ebcd9bbf783a73d05c53ba4d586b8d5813dcdf3bbec50265860ccc885e606f47",
+      "notice_characters": 15140
+    },
+    {
+      "component": "loader",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/loader/loader/1.2.0-SNAPSHOT/loader-1.2.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Lottie",
+      "homepage": "https://github.com/airbnb/lottie-android",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Lottie Web",
+      "homepage": "https://github.com/airbnb/lottie-web",
+      "notice_sha256": "0d4077a7055ead389c4c5a9a6ac4bb8b784fc6e9e37be2caf544fcceed26cb16",
+      "notice_characters": 2928
+    },
+    {
+      "component": "LZMA SDK",
+      "homepage": "http://www.7-zip.org/sdk.html",
+      "notice_sha256": "7de6196d9c03ec05e626d4fe7ab86a9c900f11d73176a816423fc14e0a1ee0de",
+      "notice_characters": 262
+    },
+    {
+      "component": "Marked",
+      "homepage": "https://github.com/markedjs/marked",
+      "notice_sha256": "91968bf678e8c3d94ebf8596e98ca9cb5fca1c6555b53f721a940cb50f1b3d66",
+      "notice_characters": 2609
+    },
+    {
+      "component": "Material color utilities",
+      "homepage": "https://github.com/material-foundation/material-color-utilities",
+      "notice_sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+      "notice_characters": 11357
+    },
+    {
+      "component": "Material Components for Android",
+      "homepage": "https://github.com/material-components/material-components-android",
+      "notice_sha256": "61a1acc337e0ff545dc26321e4d9575cfc69d3f2241298adf90d690adfb6b77c",
+      "notice_characters": 16389
+    },
+    {
+      "component": "Material Design Icons",
+      "homepage": "https://github.com/google/material-design-icons",
+      "notice_sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+      "notice_characters": 11357
+    },
+    {
+      "component": "Material Web Components",
+      "homepage": "https://github.com/material-components/material-components-web-components",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Media",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/media/media/1.8.0-SNAPSHOT/media-1.8.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Media3 common module",
+      "homepage": "https://dl.google.com/dl/android/maven2/androidx/media3/media3-common/1.2.0/media3-common-1.2.0.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Media3 Container module",
+      "homepage": "https://dl.google.com/dl/android/maven2/androidx/media3/media3-container/1.2.0/media3-container-1.2.0.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Media3 database module",
+      "homepage": "https://dl.google.com/dl/android/maven2/androidx/media3/media3-database/1.2.0/media3-database-1.2.0.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Media3 DataSource module",
+      "homepage": "https://dl.google.com/dl/android/maven2/androidx/media3/media3-datasource/1.2.0/media3-datasource-1.2.0.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Media3 decoder module",
+      "homepage": "https://dl.google.com/dl/android/maven2/androidx/media3/media3-decoder/1.2.0/media3-decoder-1.2.0.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Media3 ExoPlayer module",
+      "homepage": "https://dl.google.com/dl/android/maven2/androidx/media3/media3-exoplayer/1.2.0/media3-exoplayer-1.2.0.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Media3 Extractor module",
+      "homepage": "https://dl.google.com/dl/android/maven2/androidx/media3/media3-extractor/1.2.0/media3-extractor-1.2.0.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Media3 Session module",
+      "homepage": "https://dl.google.com/dl/android/maven2/androidx/media3/media3-session/1.2.0/media3-session-1.2.0.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Media3 UI module",
+      "homepage": "https://dl.google.com/dl/android/maven2/androidx/media3/media3-ui/1.2.0/media3-ui-1.2.0.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "MediaController Android sample.",
+      "homepage": "https://android.googlesource.com/platform/development/+/b356564/samples/Support4Demos/src/com/example/android/supportv4/media/MediaController.java",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "MediaPipe",
+      "homepage": "https://github.com/google/mediapipe",
+      "notice_sha256": "8707eef0533987efc5b155d64761eeb6e20793f50b9bd1a68dad1cf4719d0ed8",
+      "notice_characters": 12331
+    },
+    {
+      "component": "Mediapipe Tasks Vision",
+      "homepage": "https://www.npmjs.com/package/@mediapipe/tasks-vision",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "MediaRouter",
+      "homepage": "https://dl.google.com/dl/android/maven2/androidx/mediarouter/mediarouter/1.8.1/mediarouter-1.8.1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "MediaStoreUtils Android sample.",
+      "homepage": "https://android.googlesource.com/platform/cts/",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "messageformat",
+      "homepage": "https://www.npmjs.com/package/messageformat",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Metrics Protos",
+      "homepage": "Google Internal",
+      "notice_sha256": "9f9a3a4b074f0fcf4879a5b48eb268a17a65a54dc7f943ba40c755378cbe200d",
+      "notice_characters": 1537
+    },
+    {
+      "component": "Microsoft Authentication Library for JavaScript (MSAL.js) for Browser-Based Single-Page Applications",
+      "homepage": "https://www.npmjs.com/package/@azure/msal-browser",
+      "notice_sha256": "c544adf8f0d43453d9fdf6c11da19605d12d89806a7870653169b8cc97f5bb53",
+      "notice_characters": 1094
+    },
+    {
+      "component": "minigbm",
+      "homepage": "https://chromium.googlesource.com/chromiumos/platform/minigbm",
+      "notice_sha256": "83bb6bd9ccd2cf5230cb1807ed16258289768dc4d9cb80069a814e04415a1275",
+      "notice_characters": 1562
+    },
+    {
+      "component": "mitt",
+      "homepage": "https://github.com/developit/mitt",
+      "notice_sha256": "1cab22f196264195a4caec8ca5630170fdde76ee8f43346e47021d087332d3b0",
+      "notice_characters": 1069
+    },
+    {
+      "component": "mitt",
+      "homepage": "https://github.com/developit/mitt",
+      "notice_sha256": "4687b3b5b6eb3af13be50891dd67dab9e85bdca3f41c63d3e33b3364d6a717b5",
+      "notice_characters": 1068
+    },
+    {
+      "component": "ml_dtypes",
+      "homepage": "https://github.com/jax-ml/ml_dtypes",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "modp base64 decoder",
+      "homepage": "https://github.com/client9/stringencoders",
+      "notice_sha256": "d47e8390fb0d7ad4a18f26aedd6283c7ab6b5b4fabab536ccb4db7f9f6d90c08",
+      "notice_characters": 1721
+    },
+    {
+      "component": "Mozilla Personal Security Manager",
+      "homepage": "https://dxr.mozilla.org/mozilla1.9.2/source/security/manager/",
+      "notice_sha256": "bed70fc84f1bea2b4b144564b9a0f9a5a3bc7b0d78f6e62092aeb689cac56bdd",
+      "notice_characters": 1699
+    },
+    {
+      "component": "Mozilla Windows Cert code",
+      "homepage": "https://searchfox.org/mozilla-central/rev/0fec57c05d3996cc00c55a66f20dd5793a9bfb5d/security/manager/ssl/EnterpriseRoots.cpp",
+      "notice_sha256": "6d29b685206b28617dd9ac13818ccc943e57df68aeea1db0f4a5539f4507a9aa",
+      "notice_characters": 18122
+    },
+    {
+      "component": "Navigation Common",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/navigation/navigation-common-android/2.10.0-SNAPSHOT/navigation-common-android-2.10.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Navigation Event",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/navigationevent/navigationevent-android/1.0.0-SNAPSHOT/navigationevent-android-1.0.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Navigation Runtime",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/navigation/navigation-runtime-android/2.10.0-SNAPSHOT/navigation-runtime-android-2.10.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "NavigationEvent Compose",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/navigationevent/navigationevent-compose-android/1.0.0-SNAPSHOT/navigationevent-compose-android-1.0.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Nearby Connections Library",
+      "homepage": "https://github.com/google/nearby",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Netscape Portable Runtime (NSPR)",
+      "homepage": "https://hg.mozilla.org/projects/nspr",
+      "notice_sha256": "d55a403514532af12dc2fbfb2e41900090a5dd6c7c76c8e4d9b20bcc737eac35",
+      "notice_characters": 1724
+    },
+    {
+      "component": "NVidia Control X Extension Library",
+      "homepage": "http://cgit.freedesktop.org/~aplattner/nvidia-settings/",
+      "notice_sha256": "31346421254a3e6e12687cf17f19f6357ee73a617fa7b3d3ccefdcbabe49bdd3",
+      "notice_characters": 1158
+    },
+    {
+      "component": "oak",
+      "homepage": "https://github.com/project-oak/oak/",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Oboe.js",
+      "homepage": "https://github.com/jimhigson/oboe.js",
+      "notice_sha256": "c08b62ea7d3b80b856eb8b6eebe0996305fdf2079cc8f003388aba54481f2c01",
+      "notice_characters": 1509
+    },
+    {
+      "component": "okio",
+      "homepage": "https://github.com/square/okio/",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Omnibox Protos",
+      "homepage": "This is the canonical public repository",
+      "notice_sha256": "00aeab59bc8fbc9fc457feb487813a695120053ffe63dd56ba3191e9977f3880",
+      "notice_characters": 1537
+    },
+    {
+      "component": "One Euro Filter",
+      "homepage": "https://github.com/casiez/OneEuroFilter",
+      "notice_sha256": "8bed129a6a15e631c93a624985e631eb62a55f7e072b78f4e1c3dde7c745283d",
+      "notice_characters": 1565
+    },
+    {
+      "component": "Open Screen Protocol Library",
+      "homepage": "https://chromium.googlesource.com/openscreen",
+      "notice_sha256": "4df77ff8575f0b6053e0e02e1b60aa0b2e87e6aaaaa629a7111970e6c4a12e94",
+      "notice_characters": 1536
+    },
+    {
+      "component": "OpenH264",
+      "homepage": "http://www.openh264.org/",
+      "notice_sha256": "dd5c1c9668512530fa5a96e4c29ac4033d70a7eeb0eed7a42fddb6dd794ebdbb",
+      "notice_characters": 1295
+    },
+    {
+      "component": "OpenJPEG",
+      "homepage": "https://github.com/uclouvain/openjpeg",
+      "notice_sha256": "a6af136f3e15038a666b61f376612a07d9a4e48cb7c01adbf3e33b3f14ab49b6",
+      "notice_characters": 2112
+    },
+    {
+      "component": "OpenXR SDK",
+      "homepage": "https://github.com/KhronosGroup/OpenXR-SDK",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "opus",
+      "homepage": "https://gitlab.xiph.org/xiph/opus",
+      "notice_sha256": "01e1167d54a096d123cf6dfbbeb19587278845c6481d2d66d545669846079551",
+      "notice_characters": 1945
+    },
+    {
+      "component": "OTS (OpenType Sanitizer)",
+      "homepage": "https://github.com/khaledhosny/ots.git",
+      "notice_sha256": "0d74de3c3cd3196a9ed1bc612cfd5f81d7509d66c4be34a50f99d61bd1ad00d4",
+      "notice_characters": 1485
+    },
+    {
+      "component": "Paging-Common",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/paging/paging-common-android/3.4.0-SNAPSHOT/paging-common-android-3.4.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Paging-Common Kotlin Extensions",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/paging/paging-common-ktx/3.4.0-SNAPSHOT/paging-common-ktx-3.4.0-20250929.203443-1.jar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Paging-Compose",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/paging/paging-compose-android/3.4.0-SNAPSHOT/paging-compose-android-3.4.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Paging-Runtime",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/paging/paging-runtime/3.4.0-SNAPSHOT/paging-runtime-3.4.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "pako",
+      "homepage": "https://github.com/nodeca/pako",
+      "notice_sha256": "a04665b3b2de56c66730c1f720f528175739e4104f79073614aa611da1e85539",
+      "notice_characters": 1104
+    },
+    {
+      "component": "pako - zlib port to javascript, very fast!",
+      "homepage": "https://github.com/nodeca/pako",
+      "notice_sha256": "3bc404ffa7888053253eedcc5a667619aa08dc1be0bea400e5ff28c51602180f",
+      "notice_characters": 1084
+    },
+    {
+      "component": "Palette",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/palette/palette/1.1.0-SNAPSHOT/palette-1.1.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Parcelize Runtime",
+      "homepage": "https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-parcelize-runtime/1.9.22/kotlin-parcelize-runtime-1.9.22.jar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "parsel",
+      "homepage": "https://github.com/LeaVerou/parsel",
+      "notice_sha256": "eb0fa16c7452341017d97ac695c737cd19a8a47e8a87edd66db9493017c0d077",
+      "notice_characters": 1065
+    },
+    {
+      "component": "Paul Hsieh's SuperFastHash",
+      "homepage": "http://www.azillionmonkeys.com/qed/hash.html",
+      "notice_sha256": "90b2201c340cee36b40a443f949d9eb416f0a0d204c32d350aff87fedeb67ae8",
+      "notice_characters": 1527
+    },
+    {
+      "component": "PDFium",
+      "homepage": "https://pdfium.googlesource.com/pdfium/",
+      "notice_sha256": "1fe9dea718fbd75cf149adaf4d8a22a4335604d964ddb76d1b45383dec8668c9",
+      "notice_characters": 12896
+    },
+    {
+      "component": "Perfetto",
+      "homepage": "https://github.com/google/perfetto/",
+      "notice_sha256": "df3384bec476fac3525c723d0c10da9ac9820ef56cbb065ec035d32e9b55bd7a",
+      "notice_characters": 14169
+    },
+    {
+      "component": "perfmark:perfmark-api",
+      "homepage": "https://github.com/perfmark/perfmark",
+      "notice_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "notice_characters": 11357
+    },
+    {
+      "component": "PFFFT: a pretty fast FFT.",
+      "homepage": "https://bitbucket.org/jpommier/pffft/",
+      "notice_sha256": "a46200592eb193853527250da098e6bb0c75424e7a2c7db8da526c4f301c3d88",
+      "notice_characters": 1919
+    },
+    {
+      "component": "plasma-wayland-protocols",
+      "homepage": "https://github.com/KDE/plasma-wayland-protocols",
+      "notice_sha256": "a9bdde5616ecdd1e980b44f360600ee8783b1f99b8cc83a2beb163a0a390e861",
+      "notice_characters": 26527
+    },
+    {
+      "component": "play-services-auth",
+      "homepage": "https://developers.google.com/android/guides/setup",
+      "notice_sha256": "ad8903ea98240584831a50d14a69fdbe8e51ea8fc3c5dfd8dc75d36bce2e9e05",
+      "notice_characters": 438036
+    },
+    {
+      "component": "play-services-auth-api-phone",
+      "homepage": "https://developers.google.com/android/guides/setup",
+      "notice_sha256": "f683b4f5e97e293057be61965980c6b104b8887345a81d4ec043213e2d555567",
+      "notice_characters": 347714
+    },
+    {
+      "component": "play-services-auth-base",
+      "homepage": "https://developers.google.com/android/guides/setup",
+      "notice_sha256": "1ef028e5be210b604de1f42ccbf5cfacb50f26fc99f7687b21a9020a96fa5da8",
+      "notice_characters": 432350
+    },
+    {
+      "component": "play-services-auth-blockstore",
+      "homepage": "https://developers.google.com/android/guides/setup",
+      "notice_sha256": "7f1535fa8b850a830401db71bc6d2b43937bf42b20eecff7f702e99e7c0ee2ac",
+      "notice_characters": 336332
+    },
+    {
+      "component": "play-services-base",
+      "homepage": "https://developers.google.com/android/guides/setup",
+      "notice_sha256": "f683b4f5e97e293057be61965980c6b104b8887345a81d4ec043213e2d555567",
+      "notice_characters": 347714
+    },
+    {
+      "component": "play-services-basement",
+      "homepage": "https://developers.google.com/android/guides/setup",
+      "notice_sha256": "f683b4f5e97e293057be61965980c6b104b8887345a81d4ec043213e2d555567",
+      "notice_characters": 347714
+    },
+    {
+      "component": "play-services-cast",
+      "homepage": "https://developers.google.com/android/guides/setup",
+      "notice_sha256": "6144115243170d4a8e189c4e6f05080e2f15696eb01c992c2c1474331d8af9e2",
+      "notice_characters": 372003
+    },
+    {
+      "component": "play-services-cast-framework",
+      "homepage": "https://developers.google.com/android/guides/setup",
+      "notice_sha256": "4a9d7ca4d43c211cff23ec6eadc23fa4c8ed2252b8e8469039db5c4a15527935",
+      "notice_characters": 445265
+    },
+    {
+      "component": "play-services-clearcut",
+      "homepage": "https://developers.google.com/android/guides/setup",
+      "notice_sha256": "ba220d16a385c4b8ab87cea5542505dceb68250f33889229b0b5b5c74f21a4a7",
+      "notice_characters": 72125
+    },
+    {
+      "component": "play-services-cloud-messaging",
+      "homepage": "https://developers.google.com/android/guides/setup",
+      "notice_sha256": "7f1535fa8b850a830401db71bc6d2b43937bf42b20eecff7f702e99e7c0ee2ac",
+      "notice_characters": 336332
+    },
+    {
+      "component": "play-services-fido",
+      "homepage": "https://developers.google.com/android/guides/setup",
+      "notice_sha256": "e51889e7d10f1dea7f6035e1c0b1f4d66014947699be2247311ef766dac8599a",
+      "notice_characters": 444844
+    },
+    {
+      "component": "play-services-flags",
+      "homepage": "https://developers.google.com/android/guides/setup",
+      "notice_sha256": "654ff80366c387806330e31d940c00b9c36d46aa356d1c86232da184185e49b9",
+      "notice_characters": 88057
+    },
+    {
+      "component": "play-services-gcm",
+      "homepage": "https://developers.google.com/android/guides/setup",
+      "notice_sha256": "34b092030ad00387ee7a986e87e9ef4e94977b8b2c87c8ff526101b9669474cb",
+      "notice_characters": 64920
+    },
+    {
+      "component": "play-services-identity-credentials",
+      "homepage": "https://developers.google.com/android/guides/setup",
+      "notice_sha256": "f683b4f5e97e293057be61965980c6b104b8887345a81d4ec043213e2d555567",
+      "notice_characters": 347714
+    },
+    {
+      "component": "play-services-iid",
+      "homepage": "https://developers.google.com/android/guides/setup",
+      "notice_sha256": "3d9b6c342bffb915c8e67e8e84129f4b93abe39a73ee4c6e18d464e79e5dacfa",
+      "notice_characters": 87926
+    },
+    {
+      "component": "play-services-instantapps",
+      "homepage": "https://developers.google.com/android/guides/setup",
+      "notice_sha256": "539f68e1430941f4368115c81027a402353d149cc3bcadf3eed61b979c19d669",
+      "notice_characters": 349476
+    },
+    {
+      "component": "play-services-location",
+      "homepage": "https://developers.google.com/android/guides/setup",
+      "notice_sha256": "5ab553ddcf83c8d22697395fe69467dafba882d3eec2a1a2bb27b623e288ec83",
+      "notice_characters": 383582
+    },
+    {
+      "component": "play-services-phenotype",
+      "homepage": "https://developers.google.com/android/guides/setup",
+      "notice_sha256": "ba220d16a385c4b8ab87cea5542505dceb68250f33889229b0b5b5c74f21a4a7",
+      "notice_characters": 72125
+    },
+    {
+      "component": "play-services-stats",
+      "homepage": "https://developers.google.com/android/guides/setup",
+      "notice_sha256": "654ff80366c387806330e31d940c00b9c36d46aa356d1c86232da184185e49b9",
+      "notice_characters": 88057
+    },
+    {
+      "component": "play-services-tasks",
+      "homepage": "https://developers.google.com/android/guides/setup",
+      "notice_sha256": "f683b4f5e97e293057be61965980c6b104b8887345a81d4ec043213e2d555567",
+      "notice_characters": 347714
+    },
+    {
+      "component": "play-services-vision",
+      "homepage": "https://developers.google.com/android/guides/setup",
+      "notice_sha256": "719afa1d9cd18173c6f4fd88f2186bf73a56a73ea395289eac95ffd3402b7664",
+      "notice_characters": 99446
+    },
+    {
+      "component": "play-services-vision-common",
+      "homepage": "https://developers.google.com/android/guides/setup",
+      "notice_sha256": "719afa1d9cd18173c6f4fd88f2186bf73a56a73ea395289eac95ffd3402b7664",
+      "notice_characters": 99446
+    },
+    {
+      "component": "Polymer",
+      "homepage": "http://www.polymer-project.org",
+      "notice_sha256": "24699c6858472311aa9acc6c2b7112ff9de6e7792569158ba9e439deb0529ef6",
+      "notice_characters": 1562
+    },
+    {
+      "component": "Polymer",
+      "homepage": "https://github.com/Polymer/polymer.git",
+      "notice_sha256": "24699c6858472311aa9acc6c2b7112ff9de6e7792569158ba9e439deb0529ef6",
+      "notice_characters": 1562
+    },
+    {
+      "component": "Portaudio library for mac",
+      "homepage": "https://github.com/PortAudio/portaudio/tree/master/src/common",
+      "notice_sha256": "641007ea2810c4cfc10a5d1a44db33983ec1409305e953c7119cc2457ec5c536",
+      "notice_characters": 4057
+    },
+    {
+      "component": "pprof",
+      "homepage": "https://github.com/google/pprof/tree/master/proto",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Preference",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/preference/preference/1.3.0-SNAPSHOT/preference-1.3.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Preferences DataStore",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/datastore/datastore-preferences-android/1.2.0-SNAPSHOT/datastore-preferences-android-1.2.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Preferences DataStore Core",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/datastore/datastore-preferences-core-android/1.2.0-SNAPSHOT/datastore-preferences-core-android-1.2.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Preferences DataStore Proto",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/datastore/datastore-preferences-proto/1.2.0-SNAPSHOT/datastore-preferences-proto-1.2.0-20250929.203443-1.jar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Preferences External Protobuf",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/datastore/datastore-preferences-external-protobuf/1.2.0-SNAPSHOT/datastore-preferences-external-protobuf-1.2.0-20250929.203443-1.jar",
+      "notice_sha256": "6e5e117324afd944dcf67f36cf329843bc1a92229a8cd9bb573d7a83130fea7d",
+      "notice_characters": 1732
+    },
+    {
+      "component": "Print",
+      "homepage": "https://dl.google.com/dl/android/maven2/androidx/print/print/1.1.0/print-1.1.0.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Privacy Sandbox for Ad Services",
+      "homepage": "https://dl.google.com/dl/android/maven2/androidx/privacysandbox/ads/ads-adservices/1.1.0-beta11/ads-adservices-1.1.0-beta11.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Private Join and Compute subset",
+      "homepage": "https://github.com/google/private-join-and-compute",
+      "notice_sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+      "notice_characters": 11357
+    },
+    {
+      "component": "Profile Installer",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/profileinstaller/profileinstaller/1.5.0-SNAPSHOT/profileinstaller-1.5.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Protected Content Interface for libva",
+      "homepage": "https://github.com/intel/libva",
+      "notice_sha256": "c86a782ee845b52472dae9b9d79fb915d333628ac0efe49cdce63644814931de",
+      "notice_characters": 1130
+    },
+    {
+      "component": "Protocol Buffers",
+      "homepage": "https://github.com/google/protobuf",
+      "notice_sha256": "6e5e117324afd944dcf67f36cf329843bc1a92229a8cd9bb573d7a83130fea7d",
+      "notice_characters": 1732
+    },
+    {
+      "component": "Protocol Buffers (javascript)",
+      "homepage": "https://github.com/protocolbuffers/protobuf-javascript",
+      "notice_sha256": "103441a2584cb720426c60320bcba53807024aab3080b00e0da841c305757a34",
+      "notice_characters": 1519
+    },
+    {
+      "component": "Protocol Buffers [Lite]",
+      "homepage": "https://github.com/protocolbuffers/protobuf/blob/master/java/lite.md",
+      "notice_sha256": "6e5e117324afd944dcf67f36cf329843bc1a92229a8cd9bb573d7a83130fea7d",
+      "notice_characters": 1732
+    },
+    {
+      "component": "PSM (Private Set Membership) client side",
+      "homepage": "This is the canonical public repository",
+      "notice_sha256": "432959ed8cca3b44d8dd8dda9c8bf84ef982aa0cfdf9782ad9cdedc4e1146f8b",
+      "notice_characters": 552
+    },
+    {
+      "component": "pthreadpool",
+      "homepage": "https://github.com/google/pthreadpool",
+      "notice_sha256": "57814a606b4d0fb087d9a534919084b6c11b58a4174cb5a4aef200187780dc3a",
+      "notice_characters": 1378
+    },
+    {
+      "component": "Puffin deterministic deflate recompressor",
+      "homepage": "https://android.googlesource.com/platform/external/puffin",
+      "notice_sha256": "a6d3ebd1c2f37d4fd83d0676621f695fc0cc2d8c6e646cdbb831b46e0650c208",
+      "notice_characters": 1562
+    },
+    {
+      "component": "Puppeteer Core",
+      "homepage": "https://github.com/puppeteer/puppeteer/tree/main/packages/puppeteer-core",
+      "notice_sha256": "a27ca07269b3518550b2e83aed13eadd7d14d924b5864e14889b40cf227530ca",
+      "notice_characters": 11344
+    },
+    {
+      "component": "pyasn1_modules",
+      "homepage": "https://github.com/etingof/pyasn1-modules",
+      "notice_sha256": "22c5cc6922ab5d69fba32d8c5ee4cdd14981508cb53afc0ebd85593847fd95a5",
+      "notice_characters": 1334
+    },
+    {
+      "component": "pyfakefs",
+      "homepage": "https://pypi.python.org/pypi/pyfakefs",
+      "notice_sha256": "09e8a9bcec8067104652c168685ab0931e7868f9c8284b66f5ae6edae5f1130b",
+      "notice_characters": 10142
+    },
+    {
+      "component": "pyparsing",
+      "homepage": "https://pypi.org/project/pyparsing",
+      "notice_sha256": "10d5120a16805804ffda8b688c220bfb4e8f39741b57320604d455a309e01972",
+      "notice_characters": 1023
+    },
+    {
+      "component": "python-gflags",
+      "homepage": "http://code.google.com/p/python-gflags/",
+      "notice_sha256": "90d1f3701813c3cd65eee2dc736746fe46b465918f3f7d6d31463a2018b33fa5",
+      "notice_characters": 1479
+    },
+    {
+      "component": "QUICHE",
+      "homepage": "https://quiche.googlesource.com/quiche",
+      "notice_sha256": "845022e0c1db1abb41a6ba4cd3c4b674ec290f3359d9d3c78ae558d4c0ed9308",
+      "notice_characters": 1559
+    },
+    {
+      "component": "rapidhash",
+      "homepage": "https://github.com/Nicoshev/rapidhash/blob/master/rapidhash.h",
+      "notice_sha256": "b8e376aed40d481f1a001c20883918c18dae72ba307c8abe4188189deca52316",
+      "notice_characters": 1704
+    },
+    {
+      "component": "re2 - an efficient, principled regular expression library",
+      "homepage": "https://github.com/google/re2",
+      "notice_sha256": "6040cda75d90b1738292a631d89934c411ef7ffd543c4d6a1b7edfc8edf29449",
+      "notice_characters": 1558
+    },
+    {
+      "component": "reactive-streams",
+      "homepage": "http://www.reactive-streams.org/",
+      "notice_sha256": "96a3b2d45af72054d0676e8eb9a944a096812a7f8ff1b71bd82dadbc60ce0444",
+      "notice_characters": 911
+    },
+    {
+      "component": "readability",
+      "homepage": "https://github.com/mozilla/readability",
+      "notice_sha256": "a5b1e8181751ce05b85b7bfaa832b785e87086250a5148e679d17ca9bdcfa958",
+      "notice_characters": 553
+    },
+    {
+      "component": "Recurrent neural network for audio noise reduction",
+      "homepage": "https://github.com/xiph/rnnoise",
+      "notice_sha256": "e2f59ff41d9d03adc3dcf3deff170f8c8cf4a6eb4a9b174762a7656d23200ffa",
+      "notice_characters": 1581
+    },
+    {
+      "component": "RecyclerView",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/recyclerview/recyclerview/1.5.0-SNAPSHOT/recyclerview-1.5.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Redux",
+      "homepage": "https://redux.js.org/",
+      "notice_sha256": "f2da73c752c6b87624755edacf927cbd915fa76555d383e74494bad4a5155ab3",
+      "notice_characters": 1086
+    },
+    {
+      "component": "Resource Inspection - Annotations",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/resourceinspection/resourceinspection-annotation/1.1.0-SNAPSHOT/resourceinspection-annotation-1.1.0-20250929.203443-1.jar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "rjsmin",
+      "homepage": "https://github.com/ndparker/rjsmin",
+      "notice_sha256": "59899c6091b540582ed617e8eeaac4919dc985ccfc35459ee9752b699be5205b",
+      "notice_characters": 10172
+    },
+    {
+      "component": "Room-Common",
+      "homepage": "https://dl.google.com/dl/android/maven2/androidx/room/room-common-jvm/2.8.1/room-common-jvm-2.8.1.jar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Room-Runtime",
+      "homepage": "https://dl.google.com/dl/android/maven2/androidx/room/room-runtime-android/2.8.1/room-runtime-android-2.8.1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "RxAndroid",
+      "homepage": "https://github.com/ReactiveX/RxAndroid",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "RxJava",
+      "homepage": "https://github.com/ReactiveX/RxJava",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "rxjs",
+      "homepage": "https://github.com/ReactiveX/rxjs",
+      "notice_sha256": "a8d80f63116de4ec1abd3800ec98f68e0acba524f12db62518868649a722f631",
+      "notice_characters": 11061
+    },
+    {
+      "component": "Saved State",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/savedstate/savedstate-android/1.4.0-SNAPSHOT/savedstate-android-1.4.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Saved State Compose",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/savedstate/savedstate-compose-android/1.4.0-SNAPSHOT/savedstate-compose-android-1.4.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "SavedState Kotlin Extensions",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/savedstate/savedstate-ktx/1.4.0-SNAPSHOT/savedstate-ktx-1.4.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "ScreenAI Library",
+      "homepage": "https://source.corp.google.com/piper///depot/google3/chrome/accessibility/machine_intelligence/chrome_screen_ai",
+      "notice_sha256": "5ea61af3b5cdcaa866185f6e087a55e13de7de77b9cc7887bfb5f0e13153cc35",
+      "notice_characters": 828411
+    },
+    {
+      "component": "Search Engines resources",
+      "homepage": "This is the canonical public repository",
+      "notice_sha256": "368cca1106be99d39ecd32a38d8305585d802a475effb66380b91ffc9bcf709b",
+      "notice_characters": 1536
+    },
+    {
+      "component": "Secure Message",
+      "homepage": "https://github.com/google/securemessage",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Selenium Atoms",
+      "homepage": "https://github.com/SeleniumHQ/selenium/tree/trunk",
+      "notice_sha256": "568a3599346856120dede4ccbc2864436f3d0a998b2155fe6eac80a51c4b0181",
+      "notice_characters": 11364
+    },
+    {
+      "component": "Sentencepiece",
+      "homepage": "https://github.com/google/sentencepiece",
+      "notice_sha256": "f97654902d8552aed44d8316054ffeb3aeb1fbc5ca6011a5ec62b63f2226acac",
+      "notice_characters": 15930
+    },
+    {
+      "component": "simdutf unicode transcoder",
+      "homepage": "https://github.com/simdutf/simdutf",
+      "notice_sha256": "fc8dbc04e03ad4efc08a647ffe7f995b811a95bc04c0e85a56d5277c6593fa5f",
+      "notice_characters": 1059
+    },
+    {
+      "component": "Simple Homomorphic Encryption Library with Lattices",
+      "homepage": "https://github.com/google/shell-encryption",
+      "notice_sha256": "bcf29b4fd3ec2cb5f9d40a0866da446f6da62170d2ccedf4aeca9cf9406dd20c",
+      "notice_characters": 11341
+    },
+    {
+      "component": "simplejson",
+      "homepage": "https://github.com/simplejson/simplejson",
+      "notice_sha256": "33c9a2fe619e1200937629f318895898ffcd1bf7d0ddd39adc382c030925e61e",
+      "notice_characters": 1056
+    },
+    {
+      "component": "six",
+      "homepage": "https://pypi.org/project/six/",
+      "notice_sha256": "8bb850c565aa389fdc16f3a46965ad23d82adff60f2393fc2762b63185e8e6c9",
+      "notice_characters": 1066
+    },
+    {
+      "component": "Sizzle",
+      "homepage": "https://sizzlejs.com/",
+      "notice_sha256": "7a1cdaeb0f54a963261d6856842249ef7fd52d49162c2996f9cef20eb7f40cfa",
+      "notice_characters": 1072
+    },
+    {
+      "component": "Skia",
+      "homepage": "https://skia.org/",
+      "notice_sha256": "5f787c1dee3c56547f09ccc2906ab5f5293c4d8dd6c8654e573216c38e908dbd",
+      "notice_characters": 1507
+    },
+    {
+      "component": "Sliding Pane Layout",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/slidingpanelayout/slidingpanelayout/1.3.0-SNAPSHOT/slidingpanelayout-1.3.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "SMHasher",
+      "homepage": "https://github.com/aappleby/smhasher",
+      "notice_sha256": "3f6f1b520bc53e878ccbb698ad0bacef3752a5f4e4b50a26552bd70f60b40748",
+      "notice_characters": 1176
+    },
+    {
+      "component": "Snappy: A fast compressor/decompressor",
+      "homepage": "http://google.github.io/snappy/",
+      "notice_sha256": "55172044f7e241207117448a4d9d6ba1d0925c8ad66b5d4c08c70adfa9cc3de6",
+      "notice_characters": 2641
+    },
+    {
+      "component": "source-map-scopes-codec",
+      "homepage": "https://github.com/ChromeDevTools/source-map-scopes-codec",
+      "notice_sha256": "53b4475d1cda8c46465bbaff85432631f0830cc2c0a4b28234b7e4d12d862e7b",
+      "notice_characters": 1479
+    },
+    {
+      "component": "Speech Dispatcher",
+      "homepage": "https://github.com/brailcom/speechd",
+      "notice_sha256": "592987e8510228d546540b84a22444bde98e48d03078d3b2eefcd889bec5ce8c",
+      "notice_characters": 26521
+    },
+    {
+      "component": "Speech Rule Engine",
+      "homepage": "https://github.com/zorkow/speech-rule-engine",
+      "notice_sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+      "notice_characters": 10174
+    },
+    {
+      "component": "SPIR-V Headers",
+      "homepage": "https://github.com/KhronosGroup/SPIRV-Headers.git",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "SPIR-V Tools",
+      "homepage": "https://github.com/KhronosGroup/SPIRV-Tools.git",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "SPIRV-Headers",
+      "homepage": "https://github.com/KhronosGroup/SPIRV-Headers",
+      "notice_sha256": "ea43b1de38a6f90c488800d66dec1ed671e68cda530266bc96951fb5b6307613",
+      "notice_characters": 23499
+    },
+    {
+      "component": "SPIRV-Tools",
+      "homepage": "https://github.com/KhronosGroup/SPIRV-Tools",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "spl sqrt floor",
+      "homepage": "http://www.pertinentdetail.org/sqrt",
+      "notice_sha256": "41d791701e3e1c1073470403de7e342442d1e6a2af72681023b13a2f45f2125c",
+      "notice_characters": 915
+    },
+    {
+      "component": "SQLite",
+      "homepage": "https://dl.google.com/dl/android/maven2/androidx/sqlite/sqlite-android/2.6.1/sqlite-android-2.6.1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "sqlite",
+      "homepage": "https://github.com/sqlite/sqlite",
+      "notice_sha256": "06545a6ec25fbbff6c62f205f94a35be49e38f33bea827a8cfb07d7b82e4b083",
+      "notice_characters": 254
+    },
+    {
+      "component": "SQLite Framework Integration",
+      "homepage": "https://dl.google.com/dl/android/maven2/androidx/sqlite/sqlite-framework-android/2.6.1/sqlite-framework-android-2.6.1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Startup Runtime",
+      "homepage": "https://dl.google.com/dl/android/maven2/androidx/startup/startup-runtime/1.2.0/startup-runtime-1.2.0.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "SwiftShader",
+      "homepage": "https://swiftshader.googlesource.com/SwiftShader",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Swipe Refresh Layout",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/swiperefreshlayout/swiperefreshlayout/1.2.0-SNAPSHOT/swiperefreshlayout-1.2.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Tamachiyomi",
+      "homepage": "Google Internal",
+      "notice_sha256": "93aa838f8afa2648c527baf21e7e49fd49805ed91456d9bfaaa15b0a7c1831e7",
+      "notice_characters": 1145
+    },
+    {
+      "component": "TensorFlow Lite",
+      "homepage": "https://github.com/tensorflow/tensorflow",
+      "notice_sha256": "37dbed59a6aef0803f24a7dac146679491c460faa8bc3834974d786acf56a40f",
+      "notice_characters": 11419
+    },
+    {
+      "component": "TensorFlow Lite Support",
+      "homepage": "https://github.com/tensorflow/tflite-support",
+      "notice_sha256": "eb890dd89ccc8e997457fd06eb4f0af409d6ce38765f2b0b51effc585e9c4690",
+      "notice_characters": 11418
+    },
+    {
+      "component": "TensorFlow Models",
+      "homepage": "https://github.com/tensorflow/models",
+      "notice_sha256": "5b17814bf0de8cf65069bc6d7cc38cff19fcaa864d243423ad3ef3db01b52385",
+      "notice_characters": 11512
+    },
+    {
+      "component": "TensorFlow Text",
+      "homepage": "https://github.com/tensorflow/text.git",
+      "notice_sha256": "9dc6ae3884ee868d517aa040c43b68cf08a9481cb8540a672b4703dccd592747",
+      "notice_characters": 11416
+    },
+    {
+      "component": "Text Fragments Polyfill",
+      "homepage": "https://github.com/GoogleChromeLabs/text-fragments-polyfill",
+      "notice_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "notice_characters": 11357
+    },
+    {
+      "component": "The Chromium Project",
+      "homepage": "https://www.chromium.org",
+      "notice_sha256": "368cca1106be99d39ecd32a38d8305585d802a475effb66380b91ffc9bcf709b",
+      "notice_characters": 1536
+    },
+    {
+      "component": "The Diff Match and Patch libraries offer robust algorithms to perform the operations required for synchronizing plain text.",
+      "homepage": "https://github.com/google/diff-match-patch/tree/master/javascript",
+      "notice_sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+      "notice_characters": 11357
+    },
+    {
+      "component": "The ITU G.722 codec, encode and decode part.",
+      "homepage": "https://www.soft-switch.org/downloads/spandsp/",
+      "notice_sha256": "61862327fd00d6a4deb2c1276577782c2500f4fe103e072018fc369d8e37e876",
+      "notice_characters": 611
+    },
+    {
+      "component": "The ruy matrix multiplication library",
+      "homepage": "https://github.com/google/ruy",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "The USB ID Repository",
+      "homepage": "http://www.linux-usb.org/usb-ids.html",
+      "notice_sha256": "6629d6edceffa9c68f4245b817137d2265fdab1e98068893420edb6689ccce9e",
+      "notice_characters": 1496
+    },
+    {
+      "component": "third-party-web",
+      "homepage": "https://github.com/patrickhulce/third-party-web",
+      "notice_sha256": "e1f2a92813d0a7160c8bb0e27da66ec2f6599f2832ae5b4d9f95c108e60af5e6",
+      "notice_characters": 1079
+    },
+    {
+      "component": "Tiny CBOR",
+      "homepage": "https://chromium.googlesource.com/external/github.com/intel/tinycbor.git",
+      "notice_sha256": "3c6ba0b5bfa7830505301ffb336a17b0748e0d61c4d34216e9dc98f10e40395e",
+      "notice_characters": 1074
+    },
+    {
+      "component": "Tracing",
+      "homepage": "https://dl.google.com/dl/android/maven2/androidx/tracing/tracing-android/1.3.0/tracing-android-1.3.0.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Transition",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/transition/transition/1.7.0-SNAPSHOT/transition-1.7.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "transport-api",
+      "homepage": "https://developers.google.com/android/guides/setup",
+      "notice_sha256": "61a1acc337e0ff545dc26321e4d9575cfc69d3f2241298adf90d690adfb6b77c",
+      "notice_characters": 16389
+    },
+    {
+      "component": "transport-backend-cct",
+      "homepage": "https://developers.google.com/android/guides/setup",
+      "notice_sha256": "61a1acc337e0ff545dc26321e4d9575cfc69d3f2241298adf90d690adfb6b77c",
+      "notice_characters": 16389
+    },
+    {
+      "component": "transport-runtime",
+      "homepage": "https://developers.google.com/android/guides/setup",
+      "notice_sha256": "31dffd8f6318c2a7e82c7bc01a2b26376bdab221f0799a1ea2f6499e2ef25420",
+      "notice_characters": 27757
+    },
+    {
+      "component": "TV Provider",
+      "homepage": "https://dl.google.com/dl/android/maven2/androidx/tvprovider/tvprovider/1.1.0/tvprovider-1.1.0.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "typ",
+      "homepage": "https://github.com/dpranke/typ.git",
+      "notice_sha256": "6dc0e068dcf3a5bc8e054205b85b7720e1d49265bbc64bf515d2cf79197df69a",
+      "notice_characters": 11323
+    },
+    {
+      "component": "UKey2",
+      "homepage": "https://github.com/google/ukey2",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Unicode Common Locale Data Repository",
+      "homepage": "http://cldr.unicode.org/index/downloads",
+      "notice_sha256": "7467c67c2ce2f91aa30a854c415610a53a1518e1ada00470d9398372b6d02e1c",
+      "notice_characters": 2272
+    },
+    {
+      "component": "UnRAR source for decompressing .RAR and other files.",
+      "homepage": "https://github.com/aawc/unrar.git",
+      "notice_sha256": "6ecc1687808b7d66b24f874755abfed7464d9751ed0001cd4e8e5d9bf397ff8a",
+      "notice_characters": 1976
+    },
+    {
+      "component": "URI Template Parser",
+      "homepage": "https://github.com/google/google-api-cpp-client/",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "URL Pattern Library",
+      "homepage": "This is the canonical public repository",
+      "notice_sha256": "6d7cc46ab05b4712dd73ea17df4bb808cd104836706dbe10bd007a556ce66130",
+      "notice_characters": 1139
+    },
+    {
+      "component": "url_parse",
+      "homepage": "https://github.com/mozilla-firefox/firefox.git",
+      "notice_sha256": "284545e873c704952e5b1b39d457dd83a3b115a51d9f1eb5175137bd69b8fa1b",
+      "notice_characters": 3200
+    },
+    {
+      "component": "v4l-utils",
+      "homepage": "http://git.linuxtv.org/v4l-utils.git",
+      "notice_sha256": "5a7f623a50e384aaf6d2ced068339ddf93d0a50d3a0ecbe86f125b07804ecc78",
+      "notice_characters": 26437
+    },
+    {
+      "component": "V8 fork of fdlibm",
+      "homepage": "https://source.chromium.org/chromium/chromium/src/+/master:v8/src/base/ieee754.cc",
+      "notice_sha256": "e7115e18444dae09d17f361ddc365fb1d342640fe500796209c63f7c80dfae10",
+      "notice_characters": 250
+    },
+    {
+      "component": "V8 JavaScript Engine",
+      "homepage": "https://v8.dev/",
+      "notice_sha256": "6ab33af8774a0f396ee3aeeb761e3229057682d6f9fa7f572e390c2cb3a6e509",
+      "notice_characters": 3093
+    },
+    {
+      "component": "VectorDrawable",
+      "homepage": "https://dl.google.com/dl/android/maven2/androidx/vectordrawable/vectordrawable/1.2.0/vectordrawable-1.2.0.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "VersionedParcelable",
+      "homepage": "https://dl.google.com/dl/android/maven2/androidx/versionedparcelable/versionedparcelable/1.2.1/versionedparcelable-1.2.1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "ViewPager",
+      "homepage": "https://dl.google.com/dl/android/maven2/androidx/viewpager/viewpager/1.1.0/viewpager-1.1.0.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "ViewPager2",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/viewpager2/viewpager2/1.2.0-SNAPSHOT/viewpager2-1.2.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Volk Meta loader for Vulkan API",
+      "homepage": "https://github.com/zeux/volk",
+      "notice_sha256": "336f505f8d5aa73ea40b4d798dde86953e9c1f6525757f1d7f18120fea09bb1d",
+      "notice_characters": 1066
+    },
+    {
+      "component": "Vulkan API headers",
+      "homepage": "https://github.com/KhronosGroup/Vulkan-Headers",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Vulkan Deps",
+      "homepage": "https://chromium.googlesource.com/vulkan-deps/",
+      "notice_sha256": "845022e0c1db1abb41a6ba4cd3c4b674ec290f3359d9d3c78ae558d4c0ed9308",
+      "notice_characters": 1559
+    },
+    {
+      "component": "Vulkan Loader Components",
+      "homepage": "https://github.com/KhronosGroup/Vulkan-Loader",
+      "notice_sha256": "43c0a37e6a0fa7ff3c843b3ec5a4fac84b712558ddac103fbd4c1649662a9ece",
+      "notice_characters": 11661
+    },
+    {
+      "component": "VulkanMemoryAllocator",
+      "homepage": "https://github.com/GPUOpen-LibrariesAndSDKs/VulkanMemoryAllocator",
+      "notice_sha256": "cdb520614db3ec62e667ece01e64e6afa21948fa51e85e748b1494597a7be907",
+      "notice_characters": 1099
+    },
+    {
+      "component": "Wasmparser",
+      "homepage": "https://github.com/wasdk/wasmparser",
+      "notice_sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+      "notice_characters": 10174
+    },
+    {
+      "component": "wayland",
+      "homepage": "http://wayland.freedesktop.org/",
+      "notice_sha256": "6eefcb023622a463168a5c20add95fd24a38c7482622a9254a23b99b7c153061",
+      "notice_characters": 1335
+    },
+    {
+      "component": "wayland-protocols",
+      "homepage": "http://wayland.freedesktop.org/",
+      "notice_sha256": "f1a2b233e8a9a71c40f4aa885be08a0842ac85bb8588703c1dd7e6e6502e3124",
+      "notice_characters": 1492
+    },
+    {
+      "component": "Web Vitals",
+      "homepage": "https://github.com/GoogleChrome/web-vitals",
+      "notice_sha256": "bfdeded4040e05da31ca9b6239dc83bd23fa26ac8db87342a7ca4363f68916ff",
+      "notice_characters": 11342
+    },
+    {
+      "component": "webapp2",
+      "homepage": "https://pypi.python.org/pypi/webapp2",
+      "notice_sha256": "0e168e379d32e2d22aba97ddca39c95146672654408383948708c91f822bebff",
+      "notice_characters": 5984
+    },
+    {
+      "component": "WebKit",
+      "homepage": "https://androidx.dev/snapshots/builds/14185027/artifacts/repository/androidx/webkit/webkit/1.15.0-SNAPSHOT/webkit-1.15.0-20250929.203443-1.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "WebKit",
+      "homepage": "https://webkit.org/",
+      "notice_sha256": "a661d10f8f194b1963a75bb4d308f17b078cc064624313a556902d89705f6876",
+      "notice_characters": 51482
+    },
+    {
+      "component": "WebM container parser and writer.",
+      "homepage": "https://chromium.googlesource.com/webm/libwebm",
+      "notice_sha256": "2da783814898126ca64fa1c30c1f62c6ff5b64b8d7a0fe3ac40d716b0e038852",
+      "notice_characters": 2934
+    },
+    {
+      "component": "WebP image encoder/decoder",
+      "homepage": "https://chromium.googlesource.com/webm/libwebp",
+      "notice_sha256": "2da783814898126ca64fa1c30c1f62c6ff5b64b8d7a0fe3ac40d716b0e038852",
+      "notice_characters": 2934
+    },
+    {
+      "component": "WebRTC",
+      "homepage": "http://www.webrtc.org",
+      "notice_sha256": "ab00a482b6a3902e40211b43c5d0441962ea99b6cc7c25c0f243fa270b78d482",
+      "notice_characters": 1511
+    },
+    {
+      "component": "webtest",
+      "homepage": "https://github.com/Pylons/webtest",
+      "notice_sha256": "6abdf7ef41a142c3571acd24aa18a2bdb361dd566d99dd3ba8267100769880ed",
+      "notice_characters": 1089
+    },
+    {
+      "component": "Wicked Good XPath",
+      "homepage": "https://github.com/google/wicked-good-xpath",
+      "notice_sha256": "580b8af1dced4e95e1d8ffbc8182d4cb4e67724f9450df2503a692b79773d00b",
+      "notice_characters": 1109
+    },
+    {
+      "component": "WindowManager",
+      "homepage": "https://dl.google.com/dl/android/maven2/androidx/window/window/1.5.0/window-1.5.0.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "WindowManager Core",
+      "homepage": "https://dl.google.com/dl/android/maven2/androidx/window/window-core-android/1.5.0/window-core-android-1.5.0.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "Windows Template Library (WTL)",
+      "homepage": "https://sourceforge.net/projects/wtl/files/WTL%2010/",
+      "notice_sha256": "d7f63d38bf8e5cafe3ea7fad53444e307b585c9e2bc5240acfdfdd4c82a1e02d",
+      "notice_characters": 2619
+    },
+    {
+      "component": "woff2",
+      "homepage": "https://github.com/google/woff2",
+      "notice_sha256": "d42a3e363d99da22b860ab760faa37dfa9781d74c9f3ed634d05109081616513",
+      "notice_characters": 1071
+    },
+    {
+      "component": "Wuffs (Wrangling Untrusted File Formats Safely)",
+      "homepage": "https://github.com/google/wuffs-mirror-release-c",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "x11proto",
+      "homepage": "https://gitlab.freedesktop.org/xorg/proto/xproto/",
+      "notice_sha256": "0607a49e0913e0336613c358f629ce134f35c6cdd2339f87ad9c2b6cba96c269",
+      "notice_characters": 2149
+    },
+    {
+      "component": "xdg-user-dirs",
+      "homepage": "http://www.freedesktop.org/wiki/Software/xdg-user-dirs",
+      "notice_sha256": "18351de3d7e2dc469cc83e77d38a3e25d010251e34eb348bbd1a76275e313997",
+      "notice_characters": 1094
+    },
+    {
+      "component": "xdg-utils",
+      "homepage": "https://freedesktop.org/wiki/Software/xdg-utils/",
+      "notice_sha256": "b244f73c3d21edaf44ec253b9a7c389ec43313c417f52f8b71914b0c40d87325",
+      "notice_characters": 1087
+    },
+    {
+      "component": "XNNPACK",
+      "homepage": "https://github.com/google/xnnpack",
+      "notice_sha256": "63f519e15726f4c4f830bd958f694c84fecb4e0a4cacc527d2696bb71ef95ada",
+      "notice_characters": 1560
+    },
+    {
+      "component": "xnu",
+      "homepage": "https://opensource.apple.com/source/xnu/",
+      "notice_sha256": "e5881019d8766c1e88a5fe1dbca4ba40c78011d41fcb18f6e9f50df60182685b",
+      "notice_characters": 19829
+    },
+    {
+      "component": "XR Manifest Runtime",
+      "homepage": "https://dl.google.com/dl/android/maven2/androidx/xr/runtime/runtime-manifest/1.0.0-alpha05/runtime-manifest-1.0.0-alpha05.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "XR OpenXR Runtime",
+      "homepage": "https://dl.google.com/dl/android/maven2/androidx/xr/runtime/runtime-openxr/1.0.0-alpha05/runtime-openxr-1.0.0-alpha05.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "XR Runtime",
+      "homepage": "https://dl.google.com/dl/android/maven2/androidx/xr/runtime/runtime/1.0.0-alpha05/runtime-1.0.0-alpha05.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "XR SceneCore",
+      "homepage": "https://dl.google.com/dl/android/maven2/androidx/xr/scenecore/scenecore/1.0.0-alpha05/scenecore-1.0.0-alpha05.aar",
+      "notice_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "notice_characters": 11358
+    },
+    {
+      "component": "xxHash",
+      "homepage": "https://github.com/Cyan4973/xxHash",
+      "notice_sha256": "86ec6953794503942b70fcd4f35b565d44f63f703b7037ce44dad965c4aaae91",
+      "notice_characters": 1314
+    },
+    {
+      "component": "zlib",
+      "homepage": "https://github.com/madler/zlib",
+      "notice_sha256": "e1cfcc55c325b3f78cf55df9664abaa066e2271dffe8213347d9fccdfbac8f2c",
+      "notice_characters": 910
+    },
+    {
+      "component": "zod",
+      "homepage": "https://zod.dev",
+      "notice_sha256": "7cedc8e6699eb73c8987a9e579f6ecd85fd95336a5f72f7bacb0e732d033f8e2",
+      "notice_characters": 1062
+    },
+    {
+      "component": "Zstandard",
+      "homepage": "https://github.com/facebook/zstd",
+      "notice_sha256": "7055266497633c9025b777c78eb7235af13922117480ed5c674677adc381c9d8",
+      "notice_characters": 1549
+    }
+  ],
+  "scope": "Extracted upstream bundled credit entries, not a complete dependency graph or legal clearance"
+}

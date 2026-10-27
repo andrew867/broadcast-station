@@ -1,0 +1,85 @@
+name: Native deployment candidate
+on:
+  workflow_dispatch:
+    inputs:
+      retain_private_image:
+        description: Retain the tested image for private hardware acceptance
+        type: boolean
+        default: false
+  push:
+    paths:
+      - deploy/**
+      - .github/workflows/native.yml
+      - tools/check_native_output.py
+      - tools/retain_cef_materials.py
+      - tools/native_inventory.py
+      - tools/stationctl.py
+      - compose.*.yaml
+      - .dockerignore
+      - LICENSE
+      - LICENSING.md
+      - THIRD_PARTY_NOTICES.md
+  pull_request:
+    paths:
+      - deploy/**
+      - .github/workflows/native.yml
+      - tools/check_native_output.py
+      - tools/retain_cef_materials.py
+      - tools/native_inventory.py
+      - tools/stationctl.py
+      - compose.*.yaml
+      - .dockerignore
+      - LICENSE
+      - LICENSING.md
+      - THIRD_PARTY_NOTICES.md
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event_name }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+permissions:
+  contents: read
+defaults:
+  run:
+    shell: bash
+jobs:
+  native-image:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - run: mkdir -p evidence
+      - run: docker buildx version
+      - run: docker build --progress=plain -f deploy/Dockerfile.caspar-readback -t station-engine:candidate . 2>&1 | tee evidence/native-build.log
+      - name: Check native linkage and retained patched source
+        run: |
+          docker run --rm --network none --entrypoint sh station-engine:candidate -c 'ldd /usr/bin/casparcg-server-2.5 > /tmp/links && ! grep -q "not found" /tmp/links && tar -tzf /usr/share/station/caspar-source.tar.gz | head -20'
+          mkdir -p evidence
+          docker image inspect station-engine:candidate --format '{{.Id}}' > evidence/native-image-id.txt
+          docker run --rm --network none --entrypoint sh station-engine:candidate -c 'dpkg-query -W' > evidence/native-packages.txt
+          docker run --rm -i --network none --read-only --entrypoint python3 station-engine:candidate - < tools/native_inventory.py > evidence/native-inventory.json
+          python3 -c "import json; d=json.load(open('evidence/native-inventory.json')); assert not d['missing_expected_files']; assert not d['ndi_runtime_matches']"
+      - name: Software OpenGL native picture and audio smoke
+        run: |
+          sudo apt-get update && sudo apt-get install -y --no-install-recommends xvfb xauth ffmpeg
+          python3 tools/check_native_output.py station-engine:candidate
+      - name: Headless EGL graphics, video and audio without X11
+        run: python3 tools/check_native_output.py station-engine:candidate --headless --evidence evidence/headless
+      - name: Retain tested image for private hardware acceptance
+        if: ${{ inputs.retain_private_image && github.event.repository.private }}
+        run: |
+          mkdir -p private-image
+          docker save station-engine:candidate | gzip -1 > private-image/native-image.tar.gz
+          cd private-image
+          sha256sum native-image.tar.gz > native-image.tar.gz.sha256
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: ${{ inputs.retain_private_image && github.event.repository.private }}
+        with:
+          name: private-tested-native-image
+          path: private-image/
+          retention-days: 3
+          if-no-files-found: error
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: native-image-inventory
+          path: evidence/
+          retention-days: 30

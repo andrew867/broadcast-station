@@ -1,0 +1,11 @@
+FROM python:3.13-slim@sha256:cf50a4f6ac4f026458b08d5222023d700ac806410dff5e9ca8728fa44f2b850f AS trust
+FROM ubuntu:24.04@sha256:68ee22004a9109b44973313b02ff7b1de250f1de0f5ecb628d73f579aaff33ac
+COPY --from=trust /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/ca-certificates.crt
+COPY deploy/ubuntu.sources /etc/apt/sources.list.d/ubuntu.sources
+ENV DEBIAN_FRONTEND=noninteractive
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates curl fonts-dejavu-core fonts-liberation && rm -rf /var/lib/apt/lists/*
+WORKDIR /tmp/install
+RUN curl -fL -o cef.deb 'https://github.com/CasparCG/server/releases/download/v2.5.1-stable/casparcg-cef-142_142.0.17.g60aac24%2B2-noble1_amd64.deb' && echo '052cdd35dfdadc28aeee7deb34f3adabda87674269e2b84dcb44a40f0e9c3d52  cef.deb' | sha256sum -c - && curl -fL -o server.deb 'https://github.com/CasparCG/server/releases/download/v2.5.1-stable/casparcg-server-2.5_2.5.1.stable-noble1_amd64.deb' && echo 'bb0756fde874994b129f53b24cdd75bcc6fcc00c405f8126ec735194a10de8c7  server.deb' | sha256sum -c - && apt-get update && apt-get install -y ./cef.deb ./server.deb && rm -rf /tmp/install /var/lib/apt/lists/*
+WORKDIR /workspace
+ENV NVIDIA_VISIBLE_DEVICES=all NVIDIA_DRIVER_CAPABILITIES=all HOME=/tmp/caspar-home
+CMD ["/usr/bin/casparcg-server-2.5", "/workspace/casparcg.config"]

@@ -1,0 +1,4 @@
+-r requirements.txt
+pytest==9.0.2
+# Starlette's TestClient uses httpx2; production feed clients retain httpx.
+httpx2==2.15.1

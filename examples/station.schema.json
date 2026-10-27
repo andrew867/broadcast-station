@@ -1,0 +1,310 @@
+{
+  "$defs": {
+    "Inputs": {
+      "additionalProperties": false,
+      "properties": {
+        "camera_base": {
+          "default": "rtsp://192.0.2.10:8554",
+          "title": "Camera Base",
+          "type": "string"
+        },
+        "camera_shared_base": {
+          "default": "rtsp://source-hub:8554",
+          "title": "Camera Shared Base",
+          "type": "string"
+        },
+        "camera_rtmp_base": {
+          "default": "rtmp://source-hub:1935",
+          "title": "Camera Rtmp Base",
+          "type": "string"
+        },
+        "camera_hls_base": {
+          "default": "http://source-hub:8888",
+          "title": "Camera Hls Base",
+          "type": "string"
+        },
+        "adsb_url": {
+          "default": "",
+          "title": "Adsb Url",
+          "type": "string"
+        },
+        "metadata_url": {
+          "default": "",
+          "title": "Metadata Url",
+          "type": "string"
+        }
+      },
+      "title": "Inputs",
+      "type": "object"
+    },
+    "Location": {
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "default": "Local area",
+          "maxLength": 80,
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        },
+        "latitude": {
+          "default": 0,
+          "maximum": 90,
+          "minimum": -90,
+          "title": "Latitude",
+          "type": "number"
+        },
+        "longitude": {
+          "default": 0,
+          "maximum": 180,
+          "minimum": -180,
+          "title": "Longitude",
+          "type": "number"
+        },
+        "timezone": {
+          "default": "UTC",
+          "title": "Timezone",
+          "type": "string"
+        },
+        "clock_label": {
+          "default": "",
+          "maxLength": 24,
+          "title": "Clock Label",
+          "type": "string"
+        }
+      },
+      "title": "Location",
+      "type": "object"
+    },
+    "Output": {
+      "additionalProperties": false,
+      "properties": {
+        "profile": {
+          "default": "1080p3000",
+          "enum": [
+            "720p3000",
+            "720p6000",
+            "1080p3000",
+            "1080i5994",
+            "2160p3000",
+            "2160p6000"
+          ],
+          "title": "Profile",
+          "type": "string"
+        },
+        "playout": {
+          "default": false,
+          "title": "Playout",
+          "type": "boolean"
+        },
+        "amcp_host": {
+          "default": "engine",
+          "pattern": "^[A-Za-z0-9_.:-]{1,253}$",
+          "title": "Amcp Host",
+          "type": "string"
+        },
+        "amcp_port": {
+          "default": 5250,
+          "maximum": 65535,
+          "minimum": 1,
+          "title": "Amcp Port",
+          "type": "integer"
+        },
+        "studio_url": {
+          "default": "http://studio:8765",
+          "title": "Studio Url",
+          "type": "string"
+        },
+        "publish": {
+          "default": false,
+          "title": "Publish",
+          "type": "boolean"
+        },
+        "publish_url": {
+          "default": "",
+          "title": "Publish Url",
+          "type": "string"
+        },
+        "encoder": {
+          "default": "h264_nvenc",
+          "enum": [
+            "h264_nvenc",
+            "libx264"
+          ],
+          "title": "Encoder",
+          "type": "string"
+        },
+        "x264_preset": {
+          "default": "veryfast",
+          "enum": [
+            "ultrafast",
+            "superfast",
+            "veryfast",
+            "faster",
+            "fast",
+            "medium"
+          ],
+          "title": "X264 Preset",
+          "type": "string"
+        },
+        "bitrate_kbps": {
+          "default": 12000,
+          "maximum": 80000,
+          "minimum": 1000,
+          "title": "Bitrate Kbps",
+          "type": "integer"
+        },
+        "hdmi": {
+          "default": false,
+          "title": "Hdmi",
+          "type": "boolean"
+        },
+        "headless": {
+          "default": false,
+          "title": "Headless",
+          "type": "boolean"
+        },
+        "desktop_audio": {
+          "default": false,
+          "title": "Desktop Audio",
+          "type": "boolean"
+        },
+        "screen": {
+          "default": 0,
+          "maximum": 8,
+          "minimum": 0,
+          "title": "Screen",
+          "type": "integer"
+        },
+        "screen_rect": {
+          "default": [
+            0,
+            0,
+            1920,
+            1080
+          ],
+          "maxItems": 4,
+          "minItems": 4,
+          "prefixItems": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            }
+          ],
+          "title": "Screen Rect",
+          "type": "array"
+        },
+        "audio_rate": {
+          "const": 48000,
+          "default": 48000,
+          "title": "Audio Rate",
+          "type": "integer"
+        }
+      },
+      "title": "Output",
+      "type": "object"
+    },
+    "Storage": {
+      "additionalProperties": false,
+      "properties": {
+        "cache_mib": {
+          "default": 2048,
+          "maximum": 65536,
+          "minimum": 128,
+          "title": "Cache Mib",
+          "type": "integer"
+        },
+        "history_days": {
+          "default": 30,
+          "maximum": 365,
+          "minimum": 1,
+          "title": "History Days",
+          "type": "integer"
+        },
+        "minimum_free_mib": {
+          "default": 2048,
+          "maximum": 65536,
+          "minimum": 512,
+          "title": "Minimum Free Mib",
+          "type": "integer"
+        }
+      },
+      "title": "Storage",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": 1,
+      "default": 1,
+      "title": "Schema Version",
+      "type": "integer"
+    },
+    "location": {
+      "$ref": "#/$defs/Location"
+    },
+    "regional_preset": {
+      "default": "none",
+      "enum": [
+        "none",
+        "newfoundland"
+      ],
+      "title": "Regional Preset",
+      "type": "string"
+    },
+    "inputs": {
+      "$ref": "#/$defs/Inputs"
+    },
+    "output": {
+      "$ref": "#/$defs/Output"
+    },
+    "storage": {
+      "$ref": "#/$defs/Storage"
+    },
+    "data_directory": {
+      "default": "data",
+      "title": "Data Directory",
+      "type": "string"
+    },
+    "music_directory": {
+      "default": "music",
+      "title": "Music Directory",
+      "type": "string"
+    },
+    "brand_file": {
+      "default": "",
+      "title": "Brand File",
+      "type": "string"
+    },
+    "secrets_directory": {
+      "default": "secrets",
+      "title": "Secrets Directory",
+      "type": "string"
+    },
+    "secrets": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Secrets",
+      "type": "object"
+    },
+    "providers": {
+      "additionalProperties": {
+        "type": "boolean"
+      },
+      "title": "Providers",
+      "type": "object"
+    }
+  },
+  "title": "StationConfig",
+  "type": "object"
+}

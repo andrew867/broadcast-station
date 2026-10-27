@@ -1,0 +1,51 @@
+--- a/src/modules/ffmpeg/producer/av_producer.cpp
++++ b/src/modules/ffmpeg/producer/av_producer.cpp
+@@ -70,6 +70,7 @@
+     int64_t                  pts         = AV_NOPTS_VALUE;
+     int64_t                  duration    = 0;
+     int64_t                  frame_count = 0;
++    int64_t                  video_sequence = 0;
+ };
+ 
+ AVPixelFormat get_pix_fmt_with_alpha(AVPixelFormat fmt)
+@@ -714,6 +715,8 @@
+ {
+     caspar::core::monitor::state state_;
+     mutable boost::mutex         state_mutex_;
++    int64_t decoded_video_sequence_ = 0;
++    std::atomic<int64_t> delivered_video_sequence_{0};
+ 
+     spl::shared_ptr<diagnostics::graph> graph_;
+ 
+@@ -971,6 +974,7 @@
+ 
+             if (video_filter_.frame) {
+                 frame.video      = std::move(video_filter_.frame);
++                frame.video_sequence = ++decoded_video_sequence_;
+                 const auto tb    = av_buffersink_get_time_base(video_filter_.sink);
+                 const auto fr    = av_buffersink_get_frame_rate(video_filter_.sink);
+                 frame.start_time = start_time;
+@@ -1022,6 +1026,7 @@
+         state_["file/clip"] = {start().value_or(0) / format_desc_.fps, duration().value_or(0) / format_desc_.fps};
+         state_["file/time"] = {time() / format_desc_.fps, file_duration().value_or(0) / format_desc_.fps};
+         state_["loop"]      = loop_;
++        state_["file/video-frame"] = delivered_video_sequence_.load();
+     }
+ 
+     core::draw_frame prev_frame(const core::video_field field)
+@@ -1034,6 +1039,7 @@
+                 boost::lock_guard<boost::mutex> lock(buffer_mutex_);
+ 
+                 if (!buffer_.empty()) {
++                    delivered_video_sequence_ = buffer_[0].video_sequence;
+                     frame_          = buffer_[0].frame;
+                     frame_time_     = buffer_[0].pts;
+                     frame_duration_ = buffer_[0].duration;
+@@ -1092,6 +1098,7 @@
+             latency_ = -1;
+         }
+ 
++        delivered_video_sequence_ = buffer_[0].video_sequence;
+         frame_          = buffer_[0].frame;
+         frame_time_     = buffer_[0].pts;
+         frame_duration_ = buffer_[0].duration;

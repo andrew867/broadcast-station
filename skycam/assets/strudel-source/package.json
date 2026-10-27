@@ -1,0 +1,10 @@
+{
+  "name": "skycam-strudel-offline-lab",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "AGPL-3.0-or-later",
+  "scripts": {"build": "node build.mjs", "verify": "node build.mjs --check"},
+  "dependencies": {"@strudel/core": "1.2.6"},
+  "devDependencies": {"esbuild": "0.25.12"}
+}

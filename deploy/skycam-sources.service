@@ -1,0 +1,12 @@
+[Unit]
+Description=Independent SkyCam decoded-video health readers
+After=network-online.target
+
+[Service]
+ExecStart=/usr/bin/python /srv/station/skycam/deploy/source-health.py
+Restart=always
+RestartSec=3
+KillMode=control-group
+
+[Install]
+WantedBy=default.target

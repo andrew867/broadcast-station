@@ -1,0 +1,249 @@
+[
+  {
+    "id": "sky-tour",
+    "name": "Daily Sky Tour",
+    "recommended": true,
+    "description": "Camera pairs, quad views and airspace maps.",
+    "transition": "dissolve",
+    "cues": [
+      {
+        "camera": "quad",
+        "seconds": 20,
+        "scene": "standard"
+      },
+      {
+        "camera": "cam1",
+        "seconds": 35,
+        "scene": "standard"
+      },
+      {
+        "camera": "cam2",
+        "seconds": 35,
+        "scene": "standard"
+      },
+      {
+        "camera": "map",
+        "seconds": 35,
+        "scene": "standard"
+      },
+      {
+        "camera": "cam3",
+        "seconds": 35,
+        "scene": "standard"
+      },
+      {
+        "camera": "ntv-cam2",
+        "seconds": 35,
+        "scene": "standard"
+      },
+      {
+        "camera": "map-island",
+        "seconds": 40,
+        "scene": "standard"
+      },
+      {
+        "camera": "cam4",
+        "seconds": 35,
+        "scene": "standard"
+      },
+      {
+        "camera": "ntv-cam4",
+        "seconds": 35,
+        "scene": "standard"
+      },
+      {
+        "camera": "quad2",
+        "seconds": 20,
+        "scene": "standard"
+      },
+      {
+        "camera": "ntv-cam1",
+        "seconds": 35,
+        "scene": "standard"
+      },
+      {
+        "camera": "map",
+        "seconds": 35,
+        "scene": "standard"
+      },
+      {
+        "camera": "ntv-cam3",
+        "seconds": 35,
+        "scene": "standard"
+      },
+      {
+        "camera": "map-island",
+        "seconds": 35,
+        "scene": "standard"
+      }
+    ]
+  },
+  {
+    "id": "weather-airspace",
+    "name": "Weather & Airspace",
+    "recommended": false,
+    "description": "Shorter camera views with more airspace and radar.",
+    "transition": "dissolve",
+    "cues": [
+      {
+        "camera": "quad",
+        "seconds": 20,
+        "scene": "standard"
+      },
+      {
+        "camera": "cam1",
+        "seconds": 25,
+        "scene": "standard"
+      },
+      {
+        "camera": "cam2",
+        "seconds": 25,
+        "scene": "standard"
+      },
+      {
+        "camera": "map",
+        "seconds": 35,
+        "scene": "standard"
+      },
+      {
+        "camera": "cam3",
+        "seconds": 25,
+        "scene": "standard"
+      },
+      {
+        "camera": "ntv-cam2",
+        "seconds": 25,
+        "scene": "standard"
+      },
+      {
+        "camera": "map-island",
+        "seconds": 40,
+        "scene": "standard"
+      },
+      {
+        "camera": "radar-east",
+        "seconds": 35,
+        "scene": "standard"
+      },
+      {
+        "camera": "cam4",
+        "seconds": 35,
+        "scene": "standard"
+      },
+      {
+        "camera": "ntv-cam4",
+        "seconds": 35,
+        "scene": "standard"
+      },
+      {
+        "camera": "quad2",
+        "seconds": 20,
+        "scene": "standard"
+      },
+      {
+        "camera": "ntv-cam1",
+        "seconds": 35,
+        "scene": "standard"
+      },
+      {
+        "camera": "map",
+        "seconds": 35,
+        "scene": "standard"
+      },
+      {
+        "camera": "ntv-cam3",
+        "seconds": 35,
+        "scene": "standard"
+      },
+      {
+        "camera": "map-island",
+        "seconds": 35,
+        "scene": "standard"
+      },
+      {
+        "camera": "radar-island",
+        "seconds": 35,
+        "scene": "standard"
+      }
+    ]
+  },
+  {
+    "id": "scenic-loop",
+    "name": "Relaxed Scenic Loop",
+    "recommended": false,
+    "description": "Longer camera holds with maps and quad views.",
+    "transition": "dissolve",
+    "cues": [
+      {
+        "camera": "quad",
+        "seconds": 25,
+        "scene": "standard"
+      },
+      {
+        "camera": "cam1",
+        "seconds": 60,
+        "scene": "standard"
+      },
+      {
+        "camera": "cam2",
+        "seconds": 60,
+        "scene": "standard"
+      },
+      {
+        "camera": "map",
+        "seconds": 45,
+        "scene": "standard"
+      },
+      {
+        "camera": "cam3",
+        "seconds": 60,
+        "scene": "standard"
+      },
+      {
+        "camera": "ntv-cam2",
+        "seconds": 60,
+        "scene": "standard"
+      },
+      {
+        "camera": "map-island",
+        "seconds": 45,
+        "scene": "standard"
+      },
+      {
+        "camera": "cam4",
+        "seconds": 60,
+        "scene": "standard"
+      },
+      {
+        "camera": "ntv-cam4",
+        "seconds": 60,
+        "scene": "standard"
+      },
+      {
+        "camera": "quad2",
+        "seconds": 25,
+        "scene": "standard"
+      },
+      {
+        "camera": "ntv-cam1",
+        "seconds": 60,
+        "scene": "standard"
+      },
+      {
+        "camera": "map",
+        "seconds": 45,
+        "scene": "standard"
+      },
+      {
+        "camera": "ntv-cam3",
+        "seconds": 60,
+        "scene": "standard"
+      },
+      {
+        "camera": "map-island",
+        "seconds": 45,
+        "scene": "standard"
+      }
+    ]
+  }
+]

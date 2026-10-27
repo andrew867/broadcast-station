@@ -1,0 +1,46 @@
+#!/usr/bin/env bash
+echo "Legacy reference script: portable launch is not implemented. Do not run this candidate on production." >&2
+exit 2
+set -euo pipefail
+cd /srv/station
+action=${1:-status}
+case "$action" in
+ status)
+  docker ps --filter name=skycam --format '{{.Names}}: {{.Status}}'
+  systemctl --user is-active skycam-camera-hub skycam-sources skycam-display skycam-watchdog || true
+  curl --fail --silent --max-time 5 http://127.0.0.1:8765/api/broadcast | python -c 'import json,sys; d=json.load(sys.stdin); print(json.dumps({"program":d["state"]["camera"],"playout":d["playout"],"map":d.get("map_renderer")},indent=2))'
+  ;;
+ watchdog) cat /run/user/$(id -u)/skycam-runtime/watchdog.json ;;
+ maintenance-on) touch /run/user/$(id -u)/skycam-runtime/maintenance; echo 'Automatic recovery paused for maintenance.' ;;
+ maintenance-off) rm -f /run/user/$(id -u)/skycam-runtime/maintenance; echo 'Automatic recovery resumed with startup grace.' ;;
+ reload) docker restart skycam-web ;;
+ backup) python skycam/deploy/backup-settings.py ;;
+ sources) systemctl --user restart skycam-sources ;;
+ camera-hub) systemctl --user restart skycam-camera-hub ;;
+ ndi-on|ndi-off) python skycam/deploy/ndi-output.py "${action#ndi-}" ;;
+ display)
+  systemctl --user restart skycam-display
+  XDG_RUNTIME_DIR=/run/station WAYLAND_DISPLAY=wayland-0 kscreen-doctor output.HDMI-A-3.brightness.100
+  ;;
+ restart-server) docker restart skycam-caspar; docker restart skycam-web ;;
+ recreate-server)
+  display_auth=$(systemctl --user show-environment | sed -n 's/^XAUTHORITY=//p')
+  test -r "$display_auth" || { echo 'Log into the Plasma desktop first.' >&2; exit 1; }
+  nvidia-smi >/dev/null
+  if docker inspect skycam-caspar >/dev/null 2>&1; then
+   previous="skycam-caspar-backup-$(date -u +%Y%m%dT%H%M%SZ)"
+   docker stop skycam-caspar
+   docker rename skycam-caspar "$previous"
+   docker update --restart=no "$previous"
+   echo "Previous container retained as $previous"
+  fi
+  bash skycam/deploy/start-caspar.sh
+  docker restart skycam-web
+  ;;
+ logs)
+  timeout 10 docker logs --tail 40 skycam-web || true
+  timeout 10 docker logs --tail 40 skycam-caspar || true
+  journalctl --user -u skycam-sources -u skycam-camera-hub -n 20 --no-pager
+  ;;
+ *) echo 'Use: status | watchdog | maintenance-on | maintenance-off | backup | reload | sources | camera-hub | ndi-on | ndi-off | display | restart-server | recreate-server | logs' >&2; exit 2 ;;
+esac

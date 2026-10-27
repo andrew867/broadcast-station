@@ -1,0 +1,7 @@
+# Optional integrated-GPU health decoding alongside the NVIDIA engine.
+services:
+  source-health:
+    devices: ["${STATION_HEALTH_DEVICE:?}:${STATION_HEALTH_DEVICE:?}"]
+    group_add: ["${STATION_HEALTH_GID:?}"]
+    environment:
+      STATION_HEALTH_VAAPI: "${STATION_HEALTH_DEVICE:?}"

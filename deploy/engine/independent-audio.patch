@@ -1,0 +1,106 @@
+--- a/src/modules/ffmpeg/consumer/ffmpeg_consumer.cpp
++++ b/src/modules/ffmpeg/consumer/ffmpeg_consumer.cpp
+@@ -437,6 +437,7 @@
+ 
+     tbb::concurrent_bounded_queue<std::tuple<core::const_frame, std::int64_t, std::int64_t> > frame_buffer_;
+     std::thread                                      frame_thread_;
++    tbb::concurrent_bounded_queue<std::tuple<core::const_frame, std::int64_t, std::int64_t>> audio_buffer_;
+ 
+     common::bit_depth depth_;
+ 
+@@ -455,6 +456,7 @@
+         state_["file/path"] = u8(path_);
+ 
+         frame_buffer_.set_capacity(realtime_ ? 1 : 64);
++        audio_buffer_.set_capacity(256);
+ 
+         diagnostics::register_graph(graph_);
+         graph_->set_color("frame-time", diagnostics::color(0.1f, 1.0f, 0.1f));
+@@ -465,6 +467,9 @@
+     ~ffmpeg_consumer()
+     {
+         if (frame_thread_.joinable()) {
++            try {
++                if (!audio_buffer_.try_push({ core::const_frame{}, -1, -1 })) audio_buffer_.abort();
++            } catch (...) { audio_buffer_.abort(); }
+             frame_buffer_.push({ core::const_frame{}, -1, -1 });
+             frame_thread_.join();
+         }
+@@ -609,13 +614,40 @@
+                 {
+                     if (packet_thread.joinable()) {
+                         // TODO Is nullptr needed?
+-                        packet_buffer.push(nullptr);
++                        try { packet_buffer.push(nullptr); } catch (...) {}
+                         packet_buffer.abort();
+                         packet_thread.join();
+                     }
+                 };
+ 
+                 auto packet_cb = [&](std::shared_ptr<AVPacket>&& pkt) { packet_buffer.push(std::move(pkt)); };
++
++                // Keep audio independent of the lossy video queue. Audio-only
++                // const_frame objects retain sample storage, not GPU pictures.
++                auto audio_thread = std::thread([&] {
++                    try {
++                        while (true) {
++                            std::tuple<core::const_frame, std::int64_t, std::int64_t> audio;
++                            audio_buffer_.pop(audio);
++                            if (audio_stream) audio_stream->send(audio, format_desc, packet_cb);
++                            if (!std::get<0>(audio)) break;
++                        }
++                    } catch (const tbb::user_abort&) {
++                        // Consumer shutdown or a failed packet writer.
++                    } catch (...) {
++                        std::lock_guard<std::mutex> lock(exception_mutex_);
++                        exception_ = std::current_exception();
++                        audio_buffer_.abort();
++                        packet_buffer.abort();
++                    }
++                });
++                CASPAR_SCOPE_EXIT {
++                    if (audio_thread.joinable()) {
++                        audio_buffer_.abort();
++                        packet_buffer.abort();
++                        audio_thread.join();
++                    }
++                };
+ 
+                 std::int64_t frame_number = 0;
+                 while (true) {
+@@ -630,20 +662,11 @@
+                                       static_cast<double>(frame_buffer_.size() + 0.001) / frame_buffer_.capacity());
+ 
+                     caspar::timer frame_timer;
+-                    tbb::parallel_invoke(
+-                        [&] {
+-                            if (video_stream) {
+-                                video_stream->send(data, format_desc, packet_cb);
+-                            }
+-                        },
+-                        [&] {
+-                            if (audio_stream) {
+-                                audio_stream->send(data, format_desc, packet_cb);
+-                            }
+-                        });
++                    if (video_stream) video_stream->send(data, format_desc, packet_cb);
+                     graph_->set_value("frame-time", frame_timer.elapsed() * format_desc.fps * 0.5);
+ 
+                     if (!std::get<0>(data)) {
++                        audio_thread.join();
+                         packet_buffer.push(nullptr);
+                         break;
+                     }
+@@ -666,6 +689,12 @@
+             if (exception_ != nullptr) {
+                 std::rethrow_exception(exception_);
+             }
++        }
++
++        core::const_frame audio_only(frame.stream_tag(), {}, frame.audio_data(),
++                                     core::pixel_format_desc(core::pixel_format::gray), nullptr);
++        if (!audio_buffer_.try_push({ std::move(audio_only), video_pts, audio_pts })) {
++            CASPAR_THROW_EXCEPTION(invalid_operation() << msg_info("Audio encoder queue exhausted"));
+         }
+ 
+         if (!frame_buffer_.try_push({ frame, video_pts, audio_pts })) {

@@ -1,0 +1,34 @@
+--- a/src/modules/newtek/consumer/newtek_ndi_consumer.cpp
++++ b/src/modules/newtek/consumer/newtek_ndi_consumer.cpp
+@@ -207,11 +207,11 @@
+                 while (!send_thread.interruption_requested()) {
+                     {
+                         std::unique_lock<std::mutex> lock(buffer_mutex_);
+-                        worker_cond_.wait(lock, [&] { return stopping_ || buffer_.size() >= 3; });
++                        worker_cond_.wait(lock, [&] { return stopping_ || buffer_.size() >= 1; });
+                         if (stopping_) return;
+                         graph_->set_value("buffered-frames", static_cast<double>(buffer_.size() + 0.001) / 8);
+                         buffer_size = buffer_.size();
+-                        if (buffer_.size() >= 3) {
++                        if (buffer_.size() >= 1) {
+                             break;
+                         }
+                     }
+@@ -252,6 +252,8 @@
+                         int dst_stride[] = { monitor_width_ * 4, 0, 0, 0 };
+                         sws_scale(scaler_, src, src_stride, 0, format_desc_.height, dst, dst_stride);
+                         ndi_video_frame_.p_data = scaled_.data();
++                        // Release the shared GPU readback before NDI compression/network I/O.
++                        frame = core::const_frame{};
+                     }
+                     ndi_lib_->send_send_video_v2(*ndi_send_instance_, &ndi_video_frame_);
+                     frame_no_++;
+@@ -283,7 +285,7 @@
+                 }
+                 // Confidence output must never accumulate unlimited UHD frames.
+                 // Dropping the oldest monitor frame cannot stall the program.
+-                while (buffer_.size() >= 3) buffer_.pop();
++                while (buffer_.size() >= 1) buffer_.pop();
+                 buffer_.push(std::move(frame));
+             }
+             worker_cond_.notify_all();

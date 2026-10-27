@@ -1,0 +1,44 @@
+--- a/src/modules/newtek/util/ndi.cpp
++++ b/src/modules/newtek/util/ndi.cpp
+@@ -52,7 +52,10 @@
+ 
+ NDIlib_v5* load_library()
+ {
++    static std::mutex init_mutex;
++    std::lock_guard<std::mutex> init_guard(init_mutex);
+     static NDIlib_v5* ndi_lib = nullptr;
++    std::shared_ptr<void> library;
+ 
+     if (ndi_lib)
+         return ndi_lib;
+@@ -71,7 +74,7 @@
+     FARPROC NDIlib_v5_load = NULL;
+     if (module) {
+         CASPAR_LOG(info) << L"Loaded " << dll_path;
+-        static std::shared_ptr<void> lib(module, FreeLibrary);
++        library = std::shared_ptr<void>(module, FreeLibrary);
+         NDIlib_v5_load = GetProcAddress(module, "NDIlib_v5_load");
+     }
+ 
+@@ -92,7 +95,7 @@
+     const NDIlib_v5* (*NDIlib_v5_load)(void) = NULL;
+     if (hNDILib) {
+         CASPAR_LOG(info) << L"Loaded " << dll_path;
+-        static std::shared_ptr<void> lib(hNDILib, dlclose);
++        library = std::shared_ptr<void>(hNDILib, dlclose);
+         *((void**)&NDIlib_v5_load) = dlsym(hNDILib, "NDIlib_v5_load");
+     }
+ 
+@@ -112,7 +115,11 @@
+     find_instance_options.show_local_sources   = true;
+ 
+     find_instance.reset(new NDIlib_find_instance_t(ndi_lib->NDIlib_find_create_v2(&find_instance_options)),
+-                        [](NDIlib_find_instance_t* p) { ndi_lib->NDIlib_find_destroy(*p); });
++                        [library, destroy = ndi_lib->NDIlib_find_destroy](NDIlib_find_instance_t* p) {
++                            // Keep the runtime loaded until its discovery object is destroyed.
++                            if (*p) destroy(*p);
++                            delete p;
++                        });
+     return ndi_lib;
+ }
+ 

@@ -1,0 +1,105 @@
+name: Release foundation
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event_name }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+permissions:
+  contents: read
+defaults:
+  run:
+    shell: bash
+jobs:
+  isolated-tests:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    env:
+      STATION_OFFLINE: "1"
+      SKYCAM_PLAYOUT: "0"
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          fetch-depth: 0
+      - name: Prepare diagnostic directory
+        run: mkdir -p evidence
+      - name: Validate GitHub workflows
+        run: |
+          curl --fail --location --retry 3 -o /tmp/actionlint.tar.gz https://github.com/rhysd/actionlint/releases/download/v1.7.12/actionlint_1.7.12_linux_amd64.tar.gz
+          echo '8aca8db96f1b94770f1b0d72b6dddcb1ebb8123cb3712530b08cc387b349a3d8  /tmp/actionlint.tar.gz' | sha256sum -c -
+          tar -xzf /tmp/actionlint.tar.gz -C /tmp actionlint
+          /tmp/actionlint -color 2>&1 | tee evidence/workflow-validation.log
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: "3.13"
+      - run: "python -m pip install --require-hashes --only-binary=:all: -r requirements-test-linux-x86_64.lock"
+      - run: python -m pip check
+      - name: Install audio decoder required by the test suite
+        timeout-minutes: 6
+        run: |
+          # The hosted Azure mirror stalled two runs on libavcodec60 downloads.
+          # Change only the disposable runner's archive mirror; retain apt signatures.
+          sudo sed -i 's|http://azure.archive.ubuntu.com/ubuntu|https://archive.ubuntu.com/ubuntu|g' /etc/apt/apt-mirrors.txt
+          sudo apt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=30 -o Acquire::https::Timeout=30 update
+          sudo apt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=30 -o Acquire::https::Timeout=30 install -y --no-install-recommends ffmpeg espeak-ng
+      - name: Verify music rebuild and corresponding package files
+        run: |
+          cd skycam/assets/strudel-source
+          npm ci --ignore-scripts --no-audit --no-fund
+          npm run verify
+          cd ../../..
+          python tools/verify_music_source.py --installed skycam/assets/strudel-source/node_modules
+          rm -rf skycam/assets/strudel-source/node_modules
+      - run: python tools/verify_release.py
+      - name: Validate manuals, embedded help and configuration schema
+        run: python tools/verify_docs.py
+      - name: Scan source and history for secrets
+        run: |
+          curl --fail --location --retry 3 -o /tmp/gitleaks.tar.gz https://github.com/gitleaks/gitleaks/releases/download/v8.30.1/gitleaks_8.30.1_linux_x64.tar.gz
+          echo '551f6fc83ea457d62a0d98237cbad105af8d557003051f41f3e7ca7b3f2470eb  /tmp/gitleaks.tar.gz' | sha256sum -c -
+          tar -xzf /tmp/gitleaks.tar.gz -C /tmp gitleaks
+          /tmp/gitleaks dir . --redact --no-banner
+          /tmp/gitleaks git . --redact --no-banner
+      - run: mkdir -p .test-state
+      - run: python -m pytest tests -q --basetemp=.test-state/pytest -p no:cacheprovider --junitxml=evidence/unit-tests.xml
+      - run: docker compose config --quiet
+      - name: Validate full-stack Compose profiles
+        env:
+          STATION_HOME: /tmp/station-config-test
+          STATION_UID: '1000'
+          STATION_GID: '1000'
+          STATION_RENDER_GID: '109'
+          STATION_VIDEO_GID: '44'
+          DISPLAY: ':0'
+          STATION_XAUTHORITY: /tmp/station-config-test/xauthority
+          STATION_PULSE_SOCKET: /tmp/station-config-test/pulse
+          STATION_HEALTH_DEVICE: /dev/dri/renderD128
+          STATION_HEALTH_GID: '109'
+        run: |
+          docker compose -f compose.station.yaml -f compose.nvidia.yaml -f compose.desktop.yaml config --quiet
+          docker compose -f compose.station.yaml -f compose.intel.yaml -f compose.desktop.yaml config --quiet
+          docker compose -f compose.station.yaml -f compose.nvidia.yaml -f compose.desktop.yaml -f compose.audio.yaml config --quiet
+          docker compose -f compose.station.yaml -f compose.nvidia.yaml -f compose.desktop.yaml -f compose.health-vaapi.yaml config --quiet
+          docker compose -f compose.station.yaml -f compose.nvidia.yaml -f compose.headless.yaml config --quiet
+          STATION_EGL_PLATFORM=surfaceless docker compose -f compose.station.yaml -f compose.intel.yaml -f compose.headless.yaml config --quiet
+      - run: docker build --progress=plain -t station-foundation:test . 2>&1 | tee evidence/controller-build.log
+      - run: python tools/smoke_image.py station-foundation:test
+      - name: Launch real full-station mounts and controller without GPU or feeds
+        run: python tools/check_compose_launch.py station-foundation:test
+      - name: Synthetic source disconnect and recovery
+        run: docker run --rm --network none --cpus 1 --memory 2g --read-only --tmpfs /tmp:rw,size=512m --entrypoint python station-foundation:test tools/check_source_recovery.py
+      - name: Record installed preview image components
+        run: |
+          mkdir -p evidence
+          docker run --rm -i --network none --read-only --entrypoint python station-foundation:test - < tools/image_inventory.py > evidence/image-inventory.json
+          docker image inspect station-foundation:test --format '{{.Id}}' > evidence/image-id.txt
+      - run: docker build --progress=plain -f Dockerfile.test -t station-foundation-tests:ci . 2>&1 | tee evidence/test-image-build.log
+      - run: docker run --rm --network none --cpus 1 --memory 2g --read-only --tmpfs /tmp:rw,size=1g --tmpfs /app/data:uid=10001,gid=10001 station-foundation-tests:ci 2>&1 | tee evidence/container-tests.log
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        if: always()
+        with:
+          name: preview-image-inventory
+          path: evidence/
+          retention-days: 30
+          if-no-files-found: error

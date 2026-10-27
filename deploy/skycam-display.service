@@ -1,0 +1,12 @@
+[Unit]
+Description=Keep the SkyCam HDMI program display awake
+After=graphical-session.target
+PartOf=graphical-session.target
+
+[Service]
+ExecStart=/usr/bin/python /srv/station/skycam/deploy/keep-display-awake.py
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=graphical-session.target

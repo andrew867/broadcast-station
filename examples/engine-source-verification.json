@@ -1,0 +1,194 @@
+{
+  "scope": "Checksum and zero-fuzz patch application; no binary build or licence clearance",
+  "upstream_url": "https://codeload.github.com/CasparCG/server/tar.gz/refs/tags/v2.5.1-stable",
+  "upstream_sha256": "c2852873153569f5df3089dfc1aeb20e9ba62dae182436ad7691a79cce5baf78",
+  "patches": [
+    {
+      "patch": "owned-readback.patch",
+      "sha256": "b6953d813b3986cfa9816f692b3668e4303ad00f3f09421a78b2930e710051a7",
+      "files": [
+        "src/modules/ffmpeg/util/av_util.cpp"
+      ]
+    },
+    {
+      "patch": "independent-audio.patch",
+      "sha256": "d186e47249656234dcd834141766a31b34d782161d3710b087c60882cefd3234",
+      "files": [
+        "src/modules/ffmpeg/consumer/ffmpeg_consumer.cpp"
+      ]
+    },
+    {
+      "patch": "monitor-snapshot.patch",
+      "sha256": "9e33dcff981c549fb7aa29b74faaa6675180f88341fdb964f035f45ee4855830",
+      "files": [
+        "src/core/video_channel.cpp"
+      ]
+    },
+    {
+      "patch": "ndi-bounded-output.patch",
+      "sha256": "7a4a149523094b85a8c7a6fad2e5e29408b0ae45a99919d61208a155e776ee8d",
+      "files": [
+        "src/modules/newtek/consumer/newtek_ndi_consumer.cpp"
+      ]
+    },
+    {
+      "patch": "ndi-independent-audio.patch",
+      "sha256": "157c49c888a4817d9d23ac736f9b7259ed78f9f36388de709dda5ab49a227790",
+      "files": [
+        "src/modules/newtek/consumer/newtek_ndi_consumer.cpp"
+      ]
+    },
+    {
+      "patch": "ndi-program-scale.patch",
+      "sha256": "a937c39ef8792bf7a00bab0309f8c48f678a2ece28fe1f95cd0de15662f4d014",
+      "files": [
+        "src/modules/newtek/consumer/newtek_ndi_consumer.cpp"
+      ]
+    },
+    {
+      "patch": "ndi-readback-release.patch",
+      "sha256": "297caf4d4943971d2ee127fdacc7563dff31532f6eb29736dc5d8f66925f3f59",
+      "files": [
+        "src/modules/newtek/consumer/newtek_ndi_consumer.cpp"
+      ]
+    },
+    {
+      "patch": "delivered-video-counter.patch",
+      "sha256": "a0fafcd771c79ddbdec5ddc76ce69765fc96056b66c1bae382af94e52b2fe820",
+      "files": [
+        "src/modules/ffmpeg/producer/av_producer.cpp"
+      ]
+    },
+    {
+      "patch": "bounded-video-queue.patch",
+      "sha256": "0bfae153ac853d7a5884a75357500a8a4996ba121aa6e2cf948ab9755e8c9b86",
+      "files": [
+        "src/modules/ffmpeg/consumer/ffmpeg_consumer.cpp"
+      ]
+    },
+    {
+      "patch": "bounded-graphics-cache.patch",
+      "sha256": "085f3571e5e79b513c488011a7b1214f4f3cb01d81da33e827c376e289ec5390",
+      "files": [
+        "src/accelerator/ogl/util/device.cpp"
+      ]
+    },
+    {
+      "patch": "cef-fork-stack.patch",
+      "sha256": "b74d21015fe48c75edf4ba612d7790e7509bfa010daffd7718f291b04855b82b",
+      "files": [
+        "src/modules/html/html.cpp",
+        "src/shell/main.cpp",
+        "src/shell/included_modules.tmpl"
+      ]
+    },
+    {
+      "patch": "ndi-library-lifetime.patch",
+      "sha256": "f447c803f1408e9fc5f9f7d4b201813ee5cb8fecd1da086940d8982911cc6f19",
+      "files": [
+        "src/modules/newtek/util/ndi.cpp"
+      ]
+    },
+    {
+      "patch": "ndi-box-reduction.patch",
+      "sha256": "fec82bbecb21057d6266d7b574d07e374021b3ec5da6e12458fbbb9b067ff785",
+      "files": [
+        "src/modules/newtek/consumer/newtek_ndi_consumer.cpp",
+        "src/modules/newtek/consumer/ndi_box3.h"
+      ]
+    },
+    {
+      "patch": "live-camera-latest.patch",
+      "sha256": "6084a5854be0a8bfa617e22ba75836aed02597da16daeea7fed0c6b2ba993e20",
+      "files": [
+        "src/modules/ffmpeg/producer/av_producer.cpp"
+      ]
+    },
+    {
+      "patch": "camera-keyframe-recovery.patch",
+      "sha256": "88d93f921dd0f28784cb46b9606bbd447f42505095440b41c8ac0db4605dbdf3",
+      "files": [
+        "src/modules/ffmpeg/producer/av_producer.cpp"
+      ]
+    },
+    {
+      "patch": "idle-graphics-cache.patch",
+      "sha256": "6c95f858afaddb65622a27b1f89baf6a803c30ba8815b4f953a4d1b5c7256329",
+      "files": [
+        "src/accelerator/ogl/util/device.cpp"
+      ]
+    },
+    {
+      "patch": "configured-camera-prefixes.patch",
+      "sha256": "456252cbec010a7a89c9ef1424b80fc35f8e583b3e840c00573c7cc0b1662866",
+      "files": [
+        "src/modules/ffmpeg/producer/camera_policy.h",
+        "src/modules/ffmpeg/producer/av_input.h",
+        "src/modules/ffmpeg/producer/av_input.cpp",
+        "src/modules/ffmpeg/producer/av_producer.cpp"
+      ]
+    }
+  ],
+  "modified_files": [
+    {
+      "file": "src/accelerator/ogl/util/device.cpp",
+      "sha256": "06c9d742c669c01873c1015f3343fcd07c0974bcb3ed6adf192a208873b6a8b2"
+    },
+    {
+      "file": "src/accelerator/ogl/util/idle_cache.h",
+      "sha256": "3f076f20abf0799c81f275e7dc3a48cbd9b9018bd4a42ac8ac32fe0896090be4"
+    },
+    {
+      "file": "src/core/video_channel.cpp",
+      "sha256": "68bc01ff383afcbe3492c0a2df8217a425bfafb5dd1170a47e3fd219b2103f11"
+    },
+    {
+      "file": "src/modules/ffmpeg/consumer/ffmpeg_consumer.cpp",
+      "sha256": "568a3daf861af9c0d5ac83e4af506162d7160ef665530d03ab52b67876686011"
+    },
+    {
+      "file": "src/modules/ffmpeg/producer/av_input.cpp",
+      "sha256": "d0d13af3ceda4d042fb8436236aa386b5b8c7f710b14b97c5673813853edaa4d"
+    },
+    {
+      "file": "src/modules/ffmpeg/producer/av_input.h",
+      "sha256": "fe6b7b681ef99a890d157185839425b268b244c65623fd91c8e8e7f1285c5327"
+    },
+    {
+      "file": "src/modules/ffmpeg/producer/av_producer.cpp",
+      "sha256": "5c745bf0e980872cb0967edc5a2ef82f6cd28a06171496c004247828d1888f82"
+    },
+    {
+      "file": "src/modules/ffmpeg/producer/camera_policy.h",
+      "sha256": "c943f86491aa058dfe831d616fa2eb60fd00662d5425ca5173cd33c09fd040c2"
+    },
+    {
+      "file": "src/modules/ffmpeg/util/av_util.cpp",
+      "sha256": "dc95c6d7d54ff16b9d5db367e15877ea14264af91fca8c0aea45e22689166412"
+    },
+    {
+      "file": "src/modules/html/html.cpp",
+      "sha256": "a001f23f88c2f05730fbad5d23428c587a098e6ee44b4ec6d460e9ce9ba395fa"
+    },
+    {
+      "file": "src/modules/newtek/consumer/ndi_box3.h",
+      "sha256": "dca525bbf2ce8b130bb20a33b00ed9e6fc1e95553f6527d399debbb13b0b0f18"
+    },
+    {
+      "file": "src/modules/newtek/consumer/newtek_ndi_consumer.cpp",
+      "sha256": "38872c78ba6e3f006ac8b3958374396c602b3089f8c3612e9dbf1bc30c1740f8"
+    },
+    {
+      "file": "src/modules/newtek/util/ndi.cpp",
+      "sha256": "eca85f3909103891fb676c00550d97fff417cabd69371e808e28767f2eb557a5"
+    },
+    {
+      "file": "src/shell/included_modules.tmpl",
+      "sha256": "9e9dea791017b1f27ec2b10073be0ac6959d1a1ae164cccc89ab7564a4e73296"
+    },
+    {
+      "file": "src/shell/main.cpp",
+      "sha256": "593e57f4cda802097f54310c48798fe0d9b6ac45cb313d0f24d2f046412734c8"
+    }
+  ]
+}
