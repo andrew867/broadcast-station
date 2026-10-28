@@ -1,6 +1,6 @@
 # Security policy
 
-This alpha is for a single operator on a trusted workstation or private LAN. The studio has no multi-user authentication. Internet-facing deployment, shared hosting and untrusted tenants are unsupported. Keep the default loopback binding and use an SSH tunnel for remote operation. Do not expose AMCP, Docker or source-hub ports publicly.
+This alpha is for a single operator on a trusted workstation or private LAN. The studio has no multi-user authentication. The Director remote uses a separate key and private-address check, but remains limited to a trusted private LAN. Internet-facing deployment, shared hosting and untrusted tenants are unsupported. Keep the default loopback binding and use an SSH tunnel for remote operation. Do not expose AMCP, Docker or source-hub ports publicly.
 
 ## Report a vulnerability
 

@@ -62,7 +62,7 @@ def test_api_guards_conflicts_and_export_without_live_changes(tmp_path,monkeypat
     saved=response.json();key=saved['saved_id']
     assert client.post('/api/rundown-library',json=body,headers=headers).status_code==409
     exported=client.get(f'/api/rundown-library/{key}/export').json()
-    assert exported['config']==body['config'] and exported['format']=='skycam-rundown'
+    assert exported['config']==module.RundownConfig.model_validate(body['config']).model_dump() and exported['format']=='skycam-rundown'
     body['expected_revision']=1;body['name']='Bad';body['config']['cues'][0]['camera']='missing-view'
     assert client.post('/api/rundown-library',json=body,headers=headers).status_code==422
     assert client.request('DELETE',f'/api/rundown-library/{key}',json={'expected_revision':1},headers=headers).status_code==200

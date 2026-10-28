@@ -23,6 +23,7 @@ See the [project overview](../README.md) and [programme and operator screenshots
 
 - [Electricity and outages](POWER-SYSTEM.md): readings, freshness, outage presentation and customer counts.
 - [Published electricity reports](POWER-REPORTS.md): PDF extraction, history and approximate chart data.
+- [Information screens and automatic programming](INFORMATION-SCREENS.md): scene inputs, conditional playout, briefings, travel, calendar and Director remote.
 
 Regional weather, radar, airport, tides and utility adapters target Newfoundland. Other regions require suitable providers; changing the station location does not change those feeds automatically.
 

@@ -14,6 +14,7 @@ class Cue(StrictModel):
     camera: str = Field(pattern=r'^[a-z0-9][a-z0-9_-]{0,47}$')
     seconds: int = Field(default=30,ge=5,le=3600)
     scene: Literal['standard','clean','breaking'] = 'standard'
+    condition: Literal['auto','always','when-current','when-exception'] = 'auto'
 
 class RundownConfig(StrictModel):
     cues: list[Cue] = Field(default_factory=lambda:[Cue(camera=c,seconds=d) for c,d in [('cam1',30),('cam2',30),('cam3',45),('cam4',45),('quad',30)]],min_length=1,max_length=30)
@@ -30,6 +31,7 @@ class Rundown:
         self.followups=None;self.followup_take=None;self.followup_valid=None;self.interlude=None;self.followup_queue=[]
         self.ready=ready or (lambda _:True);self.prepare=prepare;self.prepared_index=None
         self.eligible=lambda _:True
+        self.condition_eligible=lambda _scene,_condition:True
         self.recovery_ready=recovery_ready or (lambda:True)
         self.intent_path=self.path.with_name('rundown-intent.json');self.resume_pending=False
         try:
@@ -140,7 +142,7 @@ class Rundown:
         indices=range(index,len(config.cues)) if self.block else [(index+i)%len(config.cues) for i in range(len(config.cues))]
         for candidate in indices:
             cue=config.cues[candidate]
-            if not self.eligible(cue.camera) or not self.ready(cue.camera):skipped.append(cue.camera);continue
+            if not self.eligible(cue.camera) or not self.condition_eligible(cue.camera,cue.condition) or not self.ready(cue.camera):skipped.append(cue.camera);continue
             try:
                 self._take(candidate)
                 self.note=(self.block['name'] if self.block else 'Automatic rotation')+('; skipped '+', '.join(skipped) if skipped else '')
@@ -192,7 +194,7 @@ class Rundown:
                     if self.clock_preview!=next_block['slot']:
                         try:
                             row=self.clock.resolve(next_block['rule']['playlist_id'])
-                            cue=next((c for c in RundownConfig.model_validate(row['config']).cues if self.eligible(c.camera) and self.ready(c.camera)),None)
+                            cue=next((c for c in RundownConfig.model_validate(row['config']).cues if self.eligible(c.camera) and self.condition_eligible(c.camera,c.condition) and self.ready(c.camera)),None)
                             if cue:self.prepare(cue.camera,cue.scene)
                             self.clock_preview=next_block['slot']
                         except (ValueError,RuntimeError,OSError,KeyError) as exc:self.clock_error=str(exc)[:160]
@@ -203,7 +205,7 @@ class Rundown:
                 indices=range(current+1,len(config.cues)) if self.block else [(current+i)%len(config.cues) for i in range(1,len(config.cues)+1)]
                 for index in indices:
                     cue=config.cues[index]
-                    if self.eligible(cue.camera) and self.ready(cue.camera):
+                    if self.eligible(cue.camera) and self.condition_eligible(cue.camera,cue.condition) and self.ready(cue.camera):
                         if self.prepared_index!=index:
                             try:self.prepare(cue.camera,cue.scene);self.prepared_index=index
                             except (ValueError,RuntimeError,OSError) as exc:self.error=str(exc)

@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>[[product_name]] | Director</title><link rel="icon" href="data:,"><link rel="stylesheet" href="/static/director.css"><script src="/static/branding.js" defer></script></head><body>
+<header><span class="eyebrow">[[station_short]] / DIRECTOR</span><h1>Live director</h1><p id="connection">Enter the director key to connect.</p></header>
+<main>
+<section id="login" class="panel"><h2>Connect</h2><label>Director key<input id="key" type="password" autocomplete="current-password"></label><button id="connect">Connect</button><p class="hint">The key is stored only for this browser tab. This page is for the station's private operator network.</p></section>
+<div id="controls" hidden>
+<section class="program"><span>PROGRAM</span><strong id="program">Checking output</strong><small id="output"></small></section>
+<nav class="transport"><button id="start">Start loop</button><button id="next">Next</button><button id="pause">Hold</button><button id="safe" class="safe">Safe map</button></nav>
+<section class="panel"><div class="row"><h2>Scenes</h2><input id="search" type="search" placeholder="Find a scene" aria-label="Find a scene"></div><div id="scenes" class="scenes"></div></section>
+<section class="panel"><h2>Source confidence</h2><div id="confidence"></div></section>
+</div></main>
+<script src="/static/director.js"></script></body></html>

@@ -9,7 +9,7 @@ from . import daylight
 from .graphics import brand, font, fit, PAPER, ORANGE
 from .image_cache import valid_image
 
-SCENES = ('marine', 'moon', 'daylight', 'station-info', 'yyt-arrivals', 'yyt-departures', 'community-notices', 'markets', 'tides', 'power-outages', 'power-supply', 'power-history', 'power-report')
+SCENES = ('marine', 'moon', 'daylight', 'station-info', 'yyt-arrivals', 'yyt-departures', 'community-notices', 'community-calendar', 'markets', 'tides', 'power-outages', 'power-supply', 'power-history', 'power-report', 'weather-timeline', 'nl-travel', 'harbour-watch', 'tonights-sky', 'morning-briefing', 'evening-briefing')
 MUTED = '#b4c9d5'
 
 def clock(value):
@@ -123,7 +123,7 @@ def flight_image(data,page):
 
 class CommunityCards:
     def __init__(self,data,flights=None,notices=None,markets=None,tides=None,outages=None):
-        self.marine=None;self.power_system=None;self.power_reports=None;self.market_timing=lambda:None
+        self.marine=None;self.power_system=None;self.power_reports=None;self.weather=None;self.travel=None;self.ais=None;self.space_weather=None;self.market_timing=lambda:None
         self.folder=Path(data)/'runtime'/'community-cards';self.folder.mkdir(parents=True,exist_ok=True)
         self.lock=threading.RLock();self.status={};self.flights=flights;self.notices=notices;self.markets=markets;self.tides=tides;self.outages=outages;self.outage_map=None
     def path(self,scene,now=None,page_override=None):
@@ -155,12 +155,21 @@ class CommunityCards:
         if scene=='community-notices':
             data=notice_pages(self.notices.active() if self.notices else [])
             page=(int(now.timestamp()//20) if page_override is None else page_override)%max(1,len(data))
+        if scene=='community-calendar':data=self.notices.public(now)['items'] if self.notices else []
+        if scene=='weather-timeline':data=self.weather.public(now.timestamp()) if self.weather else {'forecast_available':False}
+        if scene=='nl-travel':data=self.travel.public(now.timestamp()) if self.travel else {'available':False}
+        if scene=='harbour-watch':data={'ais':self.ais.public(now.timestamp()) if self.ais else {},'tides':self.tides.public(now.timestamp()) if self.tides else {},'marine':self.marine.public(now.timestamp()) if self.marine else {}}
+        if scene=='tonights-sky':
+            from .moon_card import public as moon_public
+            data={'daylight':daylight.public(now),'moon':moon_public(now),'weather':self.weather.public(now.timestamp()) if self.weather else {},'space':self.space_weather.public(now.timestamp()) if self.space_weather else {},'location':CONFIG.location.name}
+        if scene in ('morning-briefing','evening-briefing'):
+            data={'weather':self.weather.public(now.timestamp()) if self.weather else {},'travel':self.travel.public(now.timestamp()) if self.travel else {},'outages':self.outages.public(now.timestamp()) if self.outages else {},'location':CONFIG.location.name}
         if scene.startswith('yyt-'):
             direction=scene.split('-',1)[1]
             data=self.flights.public(direction,now.timestamp()) if self.flights else {'direction':direction,'rows':[],'available':False,'checked_at':None}
             pages=max(1,(len(data['rows'])+5)//6)
             page=(int(now.timestamp()//18) if page_override is None else page_override)%pages
-        key=hashlib.sha256(json.dumps([scene,data,page,'v4-copy-cleanup'],sort_keys=True).encode()).hexdigest()[:24]
+        key=hashlib.sha256(json.dumps([scene,data,page,'v5-composite-screens'],sort_keys=True).encode()).hexdigest()[:24]
         with self.lock:
             path=self.folder/(scene+'-'+key+'.png')
             if not valid_image(path,(3840,2160)):
@@ -170,7 +179,8 @@ class CommunityCards:
                 from .outages import outage_image
                 from .power_system import image as power_image
                 from .power_report_graphics import image as report_image
-                im=report_image(data,scene) if scene in ('power-history','power-report') else power_image(data) if scene=='power-supply' else marine_image(data,page) if scene=='marine' else moon_image(data) if scene=='moon' else outage_image(data,page,self.outage_map) if scene=='power-outages' else tides_image(data) if scene=='tides' else markets_image(data,page) if scene=='markets' else notice_image(data[page] if data else None,self.notices.assets if self.notices else None) if scene=='community-notices' else flight_image(data,page) if scene.startswith('yyt-') else daylight_image(data) if data else station_image()
+                from .information_graphics import weather_timeline_image,travel_image,harbour_image,sky_image,briefing_image,calendar_image
+                im=(weather_timeline_image(data) if scene=='weather-timeline' else travel_image(data) if scene=='nl-travel' else harbour_image(data) if scene=='harbour-watch' else sky_image(data) if scene=='tonights-sky' else briefing_image(data,'morning' if scene=='morning-briefing' else 'evening') if scene in ('morning-briefing','evening-briefing') else calendar_image(data,now) if scene=='community-calendar' else report_image(data,scene) if scene in ('power-history','power-report') else power_image(data) if scene=='power-supply' else marine_image(data,page) if scene=='marine' else moon_image(data) if scene=='moon' else outage_image(data,page,self.outage_map) if scene=='power-outages' else tides_image(data) if scene=='tides' else markets_image(data,page) if scene=='markets' else notice_image(data[page] if data else None,self.notices.assets if self.notices else None) if scene=='community-notices' else flight_image(data,page) if scene.startswith('yyt-') else daylight_image(data) if data else station_image())
                 temp=path.with_suffix('.tmp');im.save(temp,format='PNG',compress_level=1);temp.replace(path)
             # Bounded runtime RAM cache. Keep recent assets for both scene banks.
             others=[p for p in self.folder.glob(scene+'-*.png') if p!=path]

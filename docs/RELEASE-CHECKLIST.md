@@ -1,6 +1,6 @@
 # Release status and remaining work
 
-Updated 27 October 2026. This is the authoritative remaining-work list. Version 0.1.0-alpha.2 is the first public source alpha, with a generic Docker preview, native build instructions and screenshots. No public stable release or prebuilt native engine image is included. Dated test records describe their own revisions and do not override this checklist.
+Updated 28 October 2026. This is the authoritative remaining-work list. Version 0.1.0-alpha.3 is a public source alpha; no public stable release or engine image has been published. Dated test records describe their own revisions and do not override this checklist.
 
 The release baseline is NVIDIA UHD30 and the limited Intel HD30 workload. Sustained UHD60 is optional performance work, not a prerequisite for this baseline release.
 
@@ -10,8 +10,8 @@ The release baseline is NVIDIA UHD30 and the limited Intel HD30 workload. Sustai
 |---|---|---|
 | R1 | Complete unattended hardware coverage | Completed for the tested startup modes. Intel HD30 recovered programme and music after reboot without login. NVIDIA passed four hours of headless UHD30 observation and controlled physical power-off/on with desktop autologin. Restored desktop applications initially covered HDMI; disabling saved-session restoration passed a follow-up reboot. Abrupt-loss, automatic BIOS restoration and headless physical cold-start remain outside this evidence. |
 | R2 | Preserve promotion evidence | Hardened controller and matching engine promoted on production and standby. Controller rollback, unchanged operator settings, exact source identities and production receiver timing passed. Retain the previous image pair and protected state checkpoints. |
-| R3 | Publish the accepted fixed artifacts | The complete bundle was verified. The frozen `0.1.0-alpha.1` installer passed upgrades on Intel standby and NVIDIA production, including unchanged operator files and independent receiver checks. The application source alpha is public. Native binary publication and public delivery of its complete corresponding source collection remain pending; the public alpha does not distribute those images. |
-| R4 | Activate public reporting | The public source repository uses GitHub private vulnerability reporting. Configuration is checked during publication; an independent reporter-to-maintainer notification test remains open. CEF 142 remains an explicit compatibility/security exception, not a current browser-security claim. |
+| R3 | Publish the accepted fixed artifacts | The source repository is public. The frozen `0.1.0-alpha.1` installer passed upgrades on Intel standby and NVIDIA production, including unchanged operator files and independent receiver checks. A fixed public binary release, trusted delivery and an engine image remain pending. |
+| R4 | Activate public reporting | Complete. The public repository has private vulnerability reporting enabled. CEF 142 remains an explicit compatibility/security exception, not a current browser-security claim. |
 | R5 | Verify a clean GPU installation | Fresh EndeavourOS live-session Intel HD30 passed package loading, hardware EGL, generic station rendering/audio, browser checks and stop/resume. The live overlay required a separate RAM-backed Docker/containerd store; a false-success image-load check was repaired. A clean persistent installed-OS GPU test, including reboot, remains open. The live session and earlier software-rendered VM do not establish persistence. |
 
 The [versioned bundle guide](RELEASE-INSTALLATION.md) defines installation, and the [package acceptance record](PACKAGE-ACCEPTANCE-20261026.md) records the completed upgrade tests. The [binary release checklist](BINARY-RELEASE-CHECKLIST.md) defines distribution details. The [security policy](../SECURITY.md) limits the studio to a trusted host or private LAN; Internet-facing studio access is unsupported.
@@ -53,7 +53,7 @@ These features are deferred, not release-blocking defects. Existing controls rem
 | Contribution transport | Compare a single-encoder SRT route against the accepted RTMP route, with timing measurements and rollback. |
 | Timing | Evaluate an external reference clock only if measurements show that it addresses a remaining continuity problem. |
 | Camera management | Upstream MediaMTX feed management and additional permission-cleared sources. Camera catalogue editing already exists. |
-| Radar history | Replay aircraft positions at the radar image's observation time instead of hiding current aircraft during historical playback. |
+| Radar history | Completed for receipt-time history. Each changed radar file stores a bounded aircraft snapshot received with that file. Replay labels this relationship honestly; it does not claim observation-time synchronization. |
 | Advertising | Named advertising slots, advance on video completion and controlled advertisement audio/music reduction. |
 | Identity | Live branding reload and complete use of configurable colour tokens. Names and logos are already configurable. |
 | Platforms and outputs | NDI as a separately licensed optional integration; sustained UHD60; broader Intel quad workloads; additional GPU/platform qualification and a complete Windows dependency lock. |
@@ -64,13 +64,14 @@ These features are deferred, not release-blocking defects. Existing controls rem
 |---|---|
 | Configuration and migration | Versioned settings, private secret references, copied-state import, rollback and preservation of operator edits. |
 | Studio | Seven-page desk, draft preservation, explicit on-air actions, recovery states and browser checks. |
+| Information programming | Conditional cues, local-hour clock rules, morning and evening briefings, weather timeline, travel, harbour, sky, calendar and Last Hour scenes, plus a private-key Director remote. |
 | Production | Cutover, rollback, picture/audio confirmation, a 24-hour observation and automatic desktop-login/reboot recovery. |
 | Intel standby | Four real sources in single-camera/map rotation; accepted HD30 workload with occasional dips. The latest four-hour headless observation retained one performance dip; all three scheduled receiver recordings passed. |
 | Headless | NVIDIA UHD30/NVENC and Intel HD30 native EGL output, each with 359 decoded frames, visible graphics and non-silent 48 kHz audio. Separate full-station crash recovery passed at independent RTMP receivers. |
 | Clean installation | Empty-cache Ubuntu 24.04 VM built the generic preview, controller and native engine without private state. Software-rendered CEF/video/audio passed bounded checks. |
 | Security hardening | Bounded requests/provider replies, constrained media inspection, host validation, redaction, alert-cache isolation and safe provider defaults. |
 | Native materials | Exact inventories and matching source identities for 269 engine and 233 controller OS packages; CEF/Chromium provenance and 541 bundled credit entries retained. No proprietary NDI runtime bundled. |
-| Automated checks | Application CI at revision 129c77e passed 604 tests on Linux and 604 in the restricted container. Native CI at 9d322ea passed desktop and headless software-rendered picture/audio checks; only documentation changed between those revisions. These are recorded baselines, not a claim that later commits have passed. |
+| Automated checks | Application CI at revision `a08b7bc` passed 626 tests on Linux and 626 in the restricted container, plus release/document checks, source and history secret scans, Compose validation, controller smoke and source-recovery checks. Real-Chrome Studio, rundown, preview and Director checks completed with no console errors. Native CI at `9d322ea` passed desktop and headless software-rendered picture/audio checks. |
 
 See the [acceptance register](ACCEPTANCE-STATUS.md) for measured workloads, failed experiments and evidence limits.
 

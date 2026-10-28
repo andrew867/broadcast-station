@@ -99,6 +99,21 @@ class RadarRenderer(MapRenderer):
     @property
     def history(self):
         return self._history
+    def aircraft_snapshot(self,at):
+        data=self.get_data();rows=[]
+        if self.transform is not None:
+            for plane in (data.get('aircraft') or [])[:100]:
+                try:
+                    x,y=self.point(plane['lat'],plane['lon'])
+                    if not self.contains(x,y):continue
+                    rows.append({'x':round((x-RADAR_X)/RADAR_SCALE,2),'y':round((y-RADAR_Y)/RADAR_SCALE,2),
+                        'angle':round(self.heading(plane),4),'callsign':str(plane.get('callsign') or plane.get('hex') or '')[:16],
+                        'altitude_ft':plane.get('altitude_ft'),'category':str(plane.get('category') or '')[:4],
+                        'stale':bool(plane.get('stale')),'report_age_s':round(float(plane.get('age_s') or 0),1)})
+                except (KeyError,TypeError,ValueError,OverflowError):continue
+        return {'captured_at':at,'receiver_healthy':bool(data.get('healthy')),'aircraft':rows[:50],
+                'timing':'Aircraft reports received when this radar file arrived; radar observation time remains the time printed on the image.'}
+
     def fetch(self):
         try:
             with httpx.Client(timeout=10,follow_redirects=True) as client:
@@ -106,7 +121,7 @@ class RadarRenderer(MapRenderer):
                 response.raise_for_status()
                 if len(response.content)>8_000_000:raise ValueError('Unexpectedly large radar image')
                 self.accept(response.content)
-                self.history.add(response.content, deduplicate=True)
+                captured=time.time();self.history.add(response.content,deduplicate=True,metadata=self.aircraft_snapshot(captured))
                 tmp=self.cache.with_suffix('.tmp');tmp.write_bytes(response.content);tmp.replace(self.cache)
             self.status.update(fetch_error=None,downloaded_at=self.last_download,image_changed_at=self.changed_at)
         except Exception as exc:

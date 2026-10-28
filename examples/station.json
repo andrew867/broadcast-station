@@ -61,6 +61,8 @@
     "power": false,
     "power_reports": false,
     "alerts": false,
-    "radar": false
+    "radar": false,
+    "travel": false,
+    "spaceweather": false
   }
 }

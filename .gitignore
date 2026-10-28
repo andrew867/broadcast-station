@@ -27,3 +27,5 @@ evidence/
 dist/
 build/
 *.egg-info/
+output/
+.playwright-cli/

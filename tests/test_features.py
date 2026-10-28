@@ -11,14 +11,14 @@ def jpeg(color='red'):
 
 def test_history_dedup_restart_age_count_and_invalid(tmp_path):
  h=PictureHistory(tmp_path,count=3,age=60,budget=50000);now=time.time()
- assert h.add(jpeg(),now-30,deduplicate=True)
+ assert h.add(jpeg(),now-30,deduplicate=True,metadata={'source':'test','rows':[1,2]})
  assert not h.add(jpeg(),now-20,deduplicate=True)
- assert h.add(jpeg('blue'),now-15,deduplicate=True)
+ assert h.add(jpeg('blue'),now-15,deduplicate=True,metadata={'source':'test','rows':[1,2]})
  assert h.add(jpeg('green'),now-10,deduplicate=True)
  assert h.add(jpeg('white'),now-5,deduplicate=True)
  assert len(h.entries())==3 and len(list(tmp_path.glob('*.jpg')))==3
  restored=PictureHistory(tmp_path,count=3,age=60,budget=50000)
- assert restored.entries()==h.entries()
+ assert restored.entries()==h.entries() and restored.entries()[0]['metadata']['source']=='test'
  with pytest.raises(Exception):h.add(b'bad image')
  assert len(h.entries())==3
  h.prune(now+61);assert not h.entries() and not list(tmp_path.glob('*.jpg'))
@@ -59,13 +59,14 @@ def test_radar_archive_only_downloads_no_false_cached_history(tmp_path):
  r.history.add((ASSETS/'east-reference.jpg').read_bytes(),deduplicate=True)
  assert r.history.public()['frames']==1
 
-def test_replay_hides_aircraft_and_collect_requires_fresh_decoder(tmp_path,monkeypatch):
+def test_replay_uses_saved_aircraft_and_collect_requires_fresh_decoder(tmp_path,monkeypatch):
  from skycam.sources import CAMERAS
  camera=next(iter(CAMERAS));r=RadarRenderer(tmp_path,lambda:{},'east',19)
  def fail():raise AssertionError('Historical radar must not request current aircraft')
  f=FeatureScenes(tmp_path,fail,{'radar-east':r,'radar-island':r})
- r.history.add((ASSETS/'east-reference.jpg').read_bytes())
+ r.history.add((ASSETS/'east-reference.jpg').read_bytes(),metadata={'captured_at':time.time(),'aircraft':[{'x':500,'y':300,'angle':0,'callsign':'TEST123','altitude_ft':12000,'category':'A3','stale':False}]})
  assert f.replay_image('radar-history-east',0).size==(3840,2160)
+ assert r.history.entries()[0]['metadata']['aircraft'][0]['callsign']=='TEST123'
  path=f.thumbnail(camera);path.parent.mkdir(parents=True);path.write_bytes(jpeg())
  health={'checked_at':time.time(),'cameras':{camera:{'ready':False,'state':'reconnecting'}}}
  (tmp_path/'source-health.json').write_text(json.dumps(health));f.collect();assert not f.history(camera).entries()
@@ -94,3 +95,13 @@ def test_ocean_rgba_map_writes_program_and_jpeg_preview(tmp_path,monkeypatch):
  path=f.path('map-ocean')
  with Image.open(path) as im:assert im.size==(1920,1080)
  with Image.open(f.folder/'map-ocean.jpg') as im:assert im.mode=='RGB' and im.size==(960,540)
+
+
+def test_radar_snapshot_records_received_positions_not_claimed_observation_time(tmp_path):
+ plane={'lat':47.4,'lon':-52.7,'callsign':'TEST123','hex':'abc123','altitude_ft':12000,'category':'A3','stale':False,'age_s':3,'track':90}
+ r=RadarRenderer(tmp_path,lambda:{'aircraft':[plane],'healthy':True},'east',19)
+ r.accept((ASSETS/'east-reference.jpg').read_bytes(),False)
+ snapshot=r.aircraft_snapshot(time.time())
+ assert snapshot['receiver_healthy'] is True
+ assert 'radar observation time remains' in snapshot['timing']
+ assert len(snapshot['aircraft'])<=1

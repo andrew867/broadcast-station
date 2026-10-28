@@ -76,7 +76,11 @@ def test_format_apply_collision_settings_backup_and_stale_rejection(tmp_path):
     result=apply(tmp_path,r,c,l,body)
     assert r.enabled and c.config.enabled and Path(result['backup']).exists()
     assert all(x.camera!='weather' for x in r.config.cues)
-    assert [(x.every_minutes,x.offset_minutes,x.include_alerts) for x in c.config.rules]==[(10,0,False),(20,0,True),(15,13,False),(30,5,False)]
+    assert [(x.id,x.every_minutes,x.offset_minutes,x.condition,x.hours,x.include_alerts) for x in c.config.rules]==[
+        ('short-weather',10,0,'always',[],False),('extended-weather',20,0,'always',[],True),
+        ('power-outages',15,13,'power-outages',[],False),('morning-briefing',60,0,'always',[6,7,8,9],False),
+        ('evening-briefing',60,0,'always',[17,18,19,20,21],False),('travel-exceptions',15,7,'travel-exceptions',[],False),
+        ('community-calendar',60,25,'always',[8,12,16,20],False),('local-information',30,5,'always',[],False)]
     with pytest.raises(LibraryConflict):apply(tmp_path,r,c,l,body)
 
 def test_format_write_failure_rolls_back(tmp_path,monkeypatch):
@@ -135,5 +139,5 @@ def test_market_cache_shape_and_tide_extrema_expiry(tmp_path):
 def test_information_block_leaves_room_before_next_weather_slot():
  from skycam.format_defaults import BLOCKS
  cues=BLOCKS['Local information']
- assert {'marine','moon'} <= {scene for scene,_ in cues}
- assert sum(seconds for _,seconds in cues)+len(cues)*4 < 300
+ assert {'harbour-watch','community-calendar'} <= {row[0] for row in cues}
+ assert sum(row[1] for row in cues)+len(cues)*4 < 300

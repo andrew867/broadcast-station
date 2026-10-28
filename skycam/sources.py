@@ -130,4 +130,4 @@ QUADS=CATALOG.quads
 
 def scene_rows():
     with CATALOG.lock:
-        return [*CAMERAS.values(),*[{'id':id,'name':CATALOG.quad_names[id],'reference':CAMERAS[members[0]]['reference'],'location':'AVALON PENINSULA, NL','members':list(members)} for id,members in QUADS.items()],*[{'id':id,**meta,'reference':meta.get('reference','map-card.svg')} for id,meta in MAP_SCENES.items()],*[{'id':id,**meta} for id,meta in DIRECT_SCENES.items() if meta.get('kind')=='card']]
+        return [*[{'id':row['id'],**{k:v for k,v in row.items() if k!='id'},'family':'Cameras'} for row in CAMERAS.values()],*[{'id':id,'name':CATALOG.quad_names[id],'reference':CAMERAS[members[0]]['reference'],'location':'AVALON PENINSULA, NL','members':list(members),'family':'Cameras'} for id,members in QUADS.items()],*[{'id':id,**meta,'reference':meta.get('reference','map-card.svg')} for id,meta in MAP_SCENES.items()],*[{'id':id,**meta} for id,meta in DIRECT_SCENES.items() if meta.get('kind')=='card']]

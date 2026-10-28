@@ -27,7 +27,12 @@ class PictureHistory:
                 name in seen):continue
             path=self.folder/name
             if path.is_symlink() or not path.is_file():continue
-            self.rows.append({'at':at,'file':name,'digest':digest});seen.add(name)
+            record={'at':at,'file':name,'digest':digest}
+            metadata=row.get('metadata')
+            try:metadata_size=len(json.dumps(metadata,separators=(',',':')).encode())
+            except (TypeError,ValueError):metadata_size=0
+            if isinstance(metadata,dict) and metadata_size<=131072:record['metadata']=metadata
+            self.rows.append(record);seen.add(name)
         self.prune()
         if saved!=self.rows:self.save()
         known={r['file'] for r in self.rows}
@@ -51,11 +56,15 @@ class PictureHistory:
             changed=keep!=self.rows;self.rows=keep
             if changed:self.save()
 
-    def add(self, content, at=None, deduplicate=False):
+    def add(self, content, at=None, deduplicate=False, metadata=None):
         at=time.time() if at is None else at
         if not 0<=time.time()-at<=self.age:raise ValueError('History timestamp is outside retention window')
         if len(content)>8_000_000:raise ValueError('History image exceeds input limit')
         digest=hashlib.sha256(content).hexdigest()
+        if metadata is not None:
+            try:metadata_size=len(json.dumps(metadata,separators=(',',':')).encode())
+            except (TypeError,ValueError):raise ValueError('History metadata is not JSON data') from None
+            if not isinstance(metadata,dict) or metadata_size>131072:raise ValueError('History metadata exceeds input limit')
         with self.lock:
             self.prune()
             if self.rows and (at<=self.rows[-1]['at'] or (deduplicate and digest==self.rows[-1]['digest'])):return False
@@ -66,7 +75,9 @@ class PictureHistory:
             if len(content)>self.budget:raise ValueError('History image exceeds storage budget')
             name=f'{int(at*1000)}-{digest[:12]}.jpg';path=self.folder/name
             temp=path.with_suffix('.tmp');temp.write_bytes(content);temp.replace(path)
-            self.rows.append({'at':at,'file':name,'digest':digest})
+            row={'at':at,'file':name,'digest':digest}
+            if metadata is not None:row['metadata']=metadata
+            self.rows.append(row)
             self.prune();self.save();return True
 
     def entries(self):

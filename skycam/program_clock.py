@@ -15,12 +15,14 @@ class ClockRule(StrictModel):
     every_minutes:Literal[5,10,15,20,30,60]=10
     offset_minutes:int=Field(default=0,ge=0,le=59)
     priority:int=Field(default=0,ge=0,le=99)
-    condition:Literal['always','power-outages']='always'
+    condition:Literal['always','power-outages','weather-alerts','travel-exceptions','camera-degraded']='always'
+    hours:list[int]=Field(default_factory=list,max_length=24)
     include_alerts:bool=False
     enabled:bool=True
     @model_validator(mode='after')
     def offset_in_period(self):
         if self.offset_minutes>=self.every_minutes:raise ValueError('Offset must be smaller than the interval')
+        if any(type(hour) is not int or not 0<=hour<=23 for hour in self.hours) or len(set(self.hours))!=len(self.hours):raise ValueError('Hours must be unique local clock hours from 0 through 23')
         return self
 
 class ClockConfig(StrictModel):
@@ -57,7 +59,7 @@ class ProgramClock:
             self.config=body.config;self.revision+=1;self.armed_at=time.time() if now is None else now
     def _candidate(self,stamp):
         local=datetime.fromtimestamp(stamp,ZoneInfo(TIMEZONE))
-        rules=[r for r in self.config.rules if r.enabled and local.minute%r.every_minutes==r.offset_minutes]
+        rules=[r for r in self.config.rules if r.enabled and (not r.hours or local.hour in r.hours) and local.minute%r.every_minutes==r.offset_minutes]
         # Once per local clock minute, including the repeated autumn hour.
         slot=local.strftime('%Y-%m-%dT%H:%M')
         if not rules or any(h['slot']==slot for h in self.history):return None

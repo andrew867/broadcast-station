@@ -16,11 +16,12 @@
   previewColumn.className='previewColumn';picker.className='scenePicker';
   const sceneHeading=document.createElement('h2');sceneHeading.textContent='Scenes';
   const search=document.createElement('input');search.type='search';search.placeholder='Find a camera or slide';search.setAttribute('aria-label','Find a scene');search.dataset.previewSafe='true';
+  const family=document.createElement('select');family.setAttribute('aria-label','Scene family');family.append(new Option('All scene families',''));
   const cards=live.querySelector('#cameras'),take=live.querySelector('#takeCamera');
   for(const child of [...live.children])if(child!==cards&&child!==take)previewColumn.append(child);
-  picker.append(sceneHeading,search,cards,take);live.append(previewColumn,picker);
-  function filterScenes(){const query=search.value.trim().toLocaleLowerCase();for(const card of cards.children)card.hidden=!card.textContent.toLocaleLowerCase().includes(query);}
-  search.addEventListener('input',filterScenes);new MutationObserver(filterScenes).observe(cards,{childList:true});
+  picker.append(sceneHeading,search,family,cards,take);live.append(previewColumn,picker);
+  function filterScenes(){const query=search.value.trim().toLocaleLowerCase();const selected=family.value;for(const card of cards.children)card.hidden=!card.textContent.toLocaleLowerCase().includes(query)||(selected&&card.dataset.family!==selected);}
+  search.addEventListener('input',filterScenes);family.addEventListener('change',filterScenes);new MutationObserver(()=>{const selected=family.value;const names=[...new Set([...cards.children].map(card=>card.dataset.family).filter(Boolean))].sort();family.replaceChildren(new Option('All scene families',''),...names.map(name=>new Option(name,name)));family.value=names.includes(selected)?selected:'';filterScenes();}).observe(cards,{childList:true});
   const links=document.querySelector('header .nav');
   const setup=document.createElement('div');setup.className='panel setupLinks';
   const title=document.createElement('h2');title.textContent='Station setup';setup.append(title);

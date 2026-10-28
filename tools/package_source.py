@@ -7,7 +7,8 @@ import tarfile
 from pathlib import Path
 
 SKIP = {'.git', '.venv', '__pycache__', 'node_modules', '.pytest_cache', '.test-state',
-        'data', 'runtime', 'history', 'evidence', 'secrets', 'backups', 'dist', 'build'}
+        'data', 'runtime', 'history', 'evidence', 'secrets', 'backups', 'dist', 'build', 'output',
+        '.playwright-cli'}
 SECRET = {'.key', '.pem', '.p12', '.pfx', '.pyc', '.log'}
 
 

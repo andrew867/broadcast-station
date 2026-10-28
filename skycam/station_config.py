@@ -98,7 +98,7 @@ class Storage(Strict):
     minimum_free_mib:int=Field(default=2048,ge=512,le=65536)
 
 
-PROVIDERS=('adsb','metadata','news','weather','flights','markets','marine','ais','tides','outages','power','power_reports','alerts','radar')
+PROVIDERS=('adsb','metadata','news','weather','flights','markets','marine','ais','tides','outages','power','power_reports','alerts','radar','travel','spaceweather')
 
 
 class StationConfig(Strict):
@@ -123,14 +123,14 @@ class StationConfig(Strict):
     @classmethod
     def secret_names(cls,v):
         import re
-        if set(v)-{'aisstream','finnhub','aeroapi','publish_url'}:raise ValueError('Unknown secret role')
+        if set(v)-{'aisstream','finnhub','aeroapi','publish_url','nl511','director_token'}:raise ValueError('Unknown secret role')
         if any(not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9_.-]{0,99}',name) or name in ('.','..') for name in v.values()):
             raise ValueError('Secrets must be filenames inside the secrets directory')
         return v
 
     @model_validator(mode='after')
     def provider_scope(self):
-        regional={'weather','flights','marine','tides','outages','power','power_reports','radar'}
+        regional={'weather','flights','marine','tides','outages','power','power_reports','radar','travel','spaceweather'}
         if self.regional_preset=='none' and any(self.providers.get(k) for k in regional):
             raise ValueError('These adapters require the explicitly selected Newfoundland regional preset')
         if self.output.publish and not (self.output.publish_url or self.secrets.get('publish_url')):

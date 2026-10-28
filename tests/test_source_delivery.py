@@ -19,6 +19,8 @@ def test_source_package_is_repeatable_and_excludes_runtime(tmp_path):
     root=tmp_path/'input';root.mkdir()
     (root/'main.py').write_text('print(1)')
     (root/'data').mkdir();(root/'data/private.json').write_text('private')
+    (root/'output').mkdir();(root/'output/report.json').write_text('generated')
+    (root/'.playwright-cli').mkdir();(root/'.playwright-cli'/'console.log').write_text('generated')
     one,two=tmp_path/'one.gz',tmp_path/'two.gz'
     assert packager()(root,one)==1
     packager()(root,two)

@@ -12,6 +12,8 @@ The desk has seven pages: Live, Rundown, Graphics, Music, News, System and Setup
 
 Use Live to select and preview a scene, then Take to put it on air. A manual take pauses automatic rotation. Loading a saved rundown only copies it into the editor; use its apply and playback controls to change the running programme.
 
+The private Director page provides compact scene takes and rotation controls for a phone or tablet. It requires a separate director key and a private-network client; it is not an Internet-facing control service.
+
 The orange unapplied-changes notice names pages with unsaved edits. Apply wanted changes before reloading the browser or updating the server. A browser draft is not a saved station setting.
 
 <a id="rundown"></a>
@@ -21,6 +23,8 @@ The orange unapplied-changes notice names pages with unsaved edits. Apply wanted
 Use Rundown to arrange scenes, set their durations and save named lists. Check the preview and durations before starting a list. Keep a saved copy of a working schedule before changing it.
 
 Camera acquisition runs independently of scene selection. Disabled cameras are excluded from automatic full-screen cues. By default, an enabled camera is skipped after 180 seconds without a decoded picture and returns after 10 seconds of stable recovery. Manual camera selections and quad scenes remain available with fallback graphics.
+
+Each cue can use the scene policy, always play, require current data or require an exceptional condition. These choices affect automatic rotation only. Manual takes remain available and show the selected scene with an unavailable message when its provider is down.
 
 A preview is not proof that the encoded programme reached a viewer. Confirm transitions and audio on HDMI or an independent stream receiver.
 
@@ -32,7 +36,7 @@ The clock combines a repeating background rundown with scheduled blocks. Use sho
 
 Each rule has an interval, an offset within that interval and a priority. Where rules coincide, the higher-priority rule takes precedence. An active block finishes before another begins; missed slots are not queued for later playback. A manual hold takes priority over automatic scheduling.
 
-The default format schedules short weather at :10, :30 and :50, and extended weather with alert pages at :00, :20 and :40. Local information starts at :05 and :35. Outage updates are scheduled at :13, :28, :43 and :58 when current outages are eligible. Applying the default format replaces the running loop and clock, saves a backup and starts automatic rotation.
+The default format schedules short and extended weather, morning and evening briefings, travel exceptions, community events, local information and conditional outage updates. Briefings are restricted to configured local hours. Applying the default format replaces the running loop and clock, saves a backup and starts automatic rotation.
 
 Review the saved clock rules and block durations on the scheduling page before enabling the clock. Keep enough time between slots for the complete block and its transitions. The editor displays the installed defaults; saved operator schedules are not replaced by a software update.
 
@@ -85,6 +89,8 @@ A zero customer count hides only the count, not the outage. A missing count is n
 ## Information slides
 
 Weather, electricity, tides, airport and utility adapters use the Newfoundland regional preset. Provider timestamps and unavailable labels distinguish current observations from older or missing data. A missing reading is never displayed as zero.
+
+Weather Timeline, NL Travel Now, Harbour Watch, Tonight's Sky, Morning Briefing, Evening Briefing, Community Calendar and Last Hour are available as normal rundown scenes. Scene cards show current, cached or unavailable data before an operator schedules them.
 
 Sun and Moon positions are calculated for the configured location and time. Tide values are predictions relative to chart datum, not observed water levels. Market arrows describe the displayed comparison; quote timestamps, session labels and delayed or last-known states remain part of the reading.
 

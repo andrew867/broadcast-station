@@ -10,12 +10,17 @@ from .storage import save_json
 
 BLOCKS={
  'Electricity update':[('power-supply',25),('power-history',30),('power-report',35)],
- 'Power outage update':[('power-outages',60)],
- 'Short local forecast':[('weather',35),('radar-east',25)],
- 'Extended local weather':[('weather',45),('radar-east',35),('radar-island',35),('daylight',25)],
- 'Local information':[('yyt-arrivals',45),('yyt-departures',45),('marine',80),('tides',25),('moon',25),('markets',25),('power-supply',25)],
+ 'Power outage update':[('power-outages',60,'when-exception')],
+ 'Short local forecast':[('weather-timeline',40),('radar-east',25)],
+ 'Extended local weather':[('weather-timeline',50),('radar-east',35),('radar-island',35),('daylight',25),('tonights-sky',30)],
+ 'Morning briefing':[('morning-briefing',35),('weather-timeline',45),('nl-travel',30),('yyt-departures',35)],
+ 'Evening briefing':[('evening-briefing',35),('weather-timeline',45),('nl-travel',30),('harbour-watch',35),('tonights-sky',35)],
+ 'Travel exceptions':[('nl-travel',45,'when-exception')],
+ 'Community calendar':[('community-calendar',45,'when-current')],
+ 'Local information':[('yyt-arrivals',40),('yyt-departures',40),('harbour-watch',40),('community-calendar',40),('markets',30),('power-supply',25)],
 }
-def block_config(name):return RundownConfig(cues=[{'camera':c,'seconds':s} for c,s in BLOCKS[name]])
+def block_config(name):
+    return RundownConfig(cues=[{'camera':row[0],'seconds':row[1],**({'condition':row[2]} if len(row)>2 else {})} for row in BLOCKS[name]])
 def fingerprint(config):return hashlib.sha256(config.model_dump_json().encode()).hexdigest()
 def presets():return json.loads((Path(__file__).parent/'static/rundown-presets.json').read_text())
 class FormatWrite(StrictModel):
@@ -50,6 +55,10 @@ def apply(data,rundown,clock,library,body):
                 ClockRule(id='short-weather',playlist_id=ids['Short local forecast'],every_minutes=10,priority=10),
                 ClockRule(id='extended-weather',playlist_id=ids['Extended local weather'],every_minutes=20,priority=20,include_alerts=True),
                 ClockRule(id='power-outages',playlist_id=ids['Power outage update'],every_minutes=15,offset_minutes=13,priority=5,condition='power-outages'),
+                ClockRule(id='morning-briefing',playlist_id=ids['Morning briefing'],every_minutes=60,offset_minutes=0,priority=30,hours=[6,7,8,9]),
+                ClockRule(id='evening-briefing',playlist_id=ids['Evening briefing'],every_minutes=60,offset_minutes=0,priority=30,hours=[17,18,19,20,21]),
+                ClockRule(id='travel-exceptions',playlist_id=ids['Travel exceptions'],every_minutes=15,offset_minutes=7,priority=8,condition='travel-exceptions'),
+                ClockRule(id='community-calendar',playlist_id=ids['Community calendar'],every_minutes=60,offset_minutes=25,priority=2,hours=[8,12,16,20]),
                 ClockRule(id='local-information',playlist_id=ids['Local information'],every_minutes=30,offset_minutes=5,priority=1),
             ])))
             rundown.save(config);rundown.action('start')

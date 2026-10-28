@@ -27,6 +27,12 @@
         "scene": "standard"
       },
       {
+        "camera": "weather-timeline",
+        "seconds": 38,
+        "scene": "standard",
+        "condition": "auto"
+      },
+      {
         "camera": "cam3",
         "seconds": 35,
         "scene": "standard"
@@ -42,6 +48,12 @@
         "scene": "standard"
       },
       {
+        "camera": "harbour-watch",
+        "seconds": 35,
+        "scene": "standard",
+        "condition": "auto"
+      },
+      {
         "camera": "cam4",
         "seconds": 35,
         "scene": "standard"
@@ -55,6 +67,12 @@
         "camera": "quad2",
         "seconds": 20,
         "scene": "standard"
+      },
+      {
+        "camera": "community-calendar",
+        "seconds": 35,
+        "scene": "standard",
+        "condition": "auto"
       },
       {
         "camera": "ntv-cam1",
@@ -121,9 +139,21 @@
         "scene": "standard"
       },
       {
+        "camera": "nl-travel",
+        "seconds": 30,
+        "scene": "standard",
+        "condition": "auto"
+      },
+      {
         "camera": "radar-east",
         "seconds": 35,
         "scene": "standard"
+      },
+      {
+        "camera": "weather-timeline",
+        "seconds": 40,
+        "scene": "standard",
+        "condition": "auto"
       },
       {
         "camera": "cam4",
@@ -139,6 +169,12 @@
         "camera": "quad2",
         "seconds": 20,
         "scene": "standard"
+      },
+      {
+        "camera": "last-hour",
+        "seconds": 30,
+        "scene": "standard",
+        "condition": "auto"
       },
       {
         "camera": "ntv-cam1",
@@ -164,6 +200,12 @@
         "camera": "radar-island",
         "seconds": 35,
         "scene": "standard"
+      },
+      {
+        "camera": "tonights-sky",
+        "seconds": 35,
+        "scene": "standard",
+        "condition": "auto"
       }
     ]
   },
@@ -195,6 +237,12 @@
         "scene": "standard"
       },
       {
+        "camera": "weather-timeline",
+        "seconds": 40,
+        "scene": "standard",
+        "condition": "auto"
+      },
+      {
         "camera": "cam3",
         "seconds": 60,
         "scene": "standard"
@@ -210,6 +258,12 @@
         "scene": "standard"
       },
       {
+        "camera": "harbour-watch",
+        "seconds": 40,
+        "scene": "standard",
+        "condition": "auto"
+      },
+      {
         "camera": "cam4",
         "seconds": 60,
         "scene": "standard"
@@ -223,6 +277,12 @@
         "camera": "quad2",
         "seconds": 25,
         "scene": "standard"
+      },
+      {
+        "camera": "last-hour",
+        "seconds": 35,
+        "scene": "standard",
+        "condition": "auto"
       },
       {
         "camera": "ntv-cam1",

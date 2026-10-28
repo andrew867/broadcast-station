@@ -9,6 +9,14 @@ MAP_SCENES={
 }
 
 DIRECT_SCENES={
+ "morning-briefing":{"name":"Morning briefing","location":"LOCAL BRIEFING","kind":"card","reference":"weather-card.svg","family":"Briefings"},
+ "evening-briefing":{"name":"Evening briefing","location":"LOCAL BRIEFING","kind":"card","reference":"daylight-card.svg","family":"Briefings"},
+ "weather-timeline":{"name":"Weather timeline","location":"OFFICIAL LOCAL FORECAST","kind":"card","reference":"weather-card.svg","family":"Weather"},
+ "nl-travel":{"name":"NL Travel Now","location":"ROADS, FERRIES & ADVISORIES","kind":"card","reference":"station-card.svg","family":"Information"},
+ "harbour-watch":{"name":"Harbour Watch","location":"VESSELS, TIDES & MARINE","kind":"card","reference":"station-card.svg","family":"Marine"},
+ "tonights-sky":{"name":"Tonight's Sky","location":"LOCAL NIGHT SKY","kind":"card","reference":"daylight-card.svg","family":"Weather"},
+ "last-hour":{"name":"Last Hour","location":"RECENT CAMERA PICTURES","kind":"card","reference":"station-card.svg","family":"Replay"},
+ "community-calendar":{"name":"Community calendar","location":"LOCAL COMMUNITY","kind":"card","reference":"station-card.svg","family":"Community"},
  "power-history":{"name":"Electricity / daily peak history","location":"ISLAND INTERCONNECTED SYSTEM","kind":"card","reference":"station-card.svg"},
  "power-report":{"name":"Electricity / daily report and outlook","location":"ISLAND INTERCONNECTED SYSTEM","kind":"card","reference":"station-card.svg"},
  "power-supply":{"name":"Electricity / demand and generation","location":"NEWFOUNDLAND & LABRADOR","kind":"card","reference":"station-card.svg"},
@@ -39,3 +47,11 @@ if CONFIG.regional_preset=='none':
     MAP_SCENES['map'].update(name='2D airspace / Local area',location='LOCAL AIRSPACE')
     MAP_SCENES['map-island'].update(name='2D airspace / Regional',location='REGIONAL AIRSPACE')
     DIRECT_SCENES['map-ocean'].update(name='Wide area / aircraft and boats',location='WIDE AREA AIRSPACE')
+
+for _scene,_meta in MAP_SCENES.items():
+    _meta.setdefault('family','Weather' if _scene=='weather' else 'Maps')
+for _scene,_meta in DIRECT_SCENES.items():
+    if 'family' not in _meta:
+        _meta['family']=('Weather' if _scene in {'marine','moon','power-outages','tides','daylight','weather-alerts','emergency-alerts'} else
+                         'Air and sea' if _scene in {'map-ocean','flight-spotlight','radar-history-east','radar-history-island','camera-timelapse','yyt-arrivals','yyt-departures'} else
+                         'Community' if _scene in {'advertisement','community-notices','station-info'} else 'Information')

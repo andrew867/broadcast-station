@@ -9,10 +9,12 @@ A self-hosted television channel for Linux, built around CasparCG and a browser-
 ## What it does
 
 - Runs camera and information scenes through scheduled rundowns, timed segments and manual takes.
+- Uses conditional cues and local-hour clock rules for briefings, weather, travel, harbour, sky, calendar and replay screens.
 - Keeps camera acquisition and recovery separate from programme switching, with fallback graphics for unavailable sources.
 - Renders aircraft and vessel maps, weather and radar, tides, daylight, markets, news and power-system information through optional providers.
 - Plays local music or generated Strudel music, with track selection, levels and variation controls.
 - Provides operator pages for live output, rundowns, graphics, music, news, system health and setup.
+- Provides a key-protected Director remote for program and rundown control on a trusted private LAN.
 - Supports headless GPU playout, optional local display and encoded network output.
 - Preserves station settings separately from application images, with migration, diagnostic and rollback tools.
 
@@ -66,6 +68,7 @@ See [acceptance records](docs/ACCEPTANCE-STATUS.md) for exact workloads, revisio
 
 - [Screenshots](docs/SCREENSHOTS.md): programme graphics and operator pages.
 - [Operator guide](docs/STUDIO-GUIDE.md): scenes, scheduling, music and recovery.
+- [Information screens](docs/INFORMATION-SCREENS.md): conditional programming, briefings, travel, calendar and Director remote.
 - [Configuration](docs/STATION-CONFIGURATION.md) and [branding](docs/BRANDING.md).
 - [Installation](docs/LINUX-DEPLOYMENT.md), [headless operation](docs/HEADLESS.md) and [standby operation](docs/STANDBY.md).
 - [Release checklist](docs/RELEASE-CHECKLIST.md), [support](SUPPORT.md) and [security policy](SECURITY.md).

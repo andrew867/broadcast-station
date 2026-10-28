@@ -6,7 +6,7 @@ import json
 import re
 
 ROOT=Path(__file__).resolve().parents[1]
-SKIP={'.git','.venv','__pycache__','node_modules','.pytest_cache','.test-state','data','evidence'}
+SKIP={'.git','.venv','__pycache__','node_modules','.pytest_cache','.test-state','data','evidence','output','.playwright-cli'}
 
 def verify(root=ROOT):
     errors=[];files=0

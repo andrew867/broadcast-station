@@ -33,3 +33,20 @@ Generated music settings from the generic station test, with mood, seed and phra
 The configured station's running desk, captured without changing playout. Saved rundowns and presets can be edited before being put on air.
 
 ![Rundown editor](screenshots/rundown.png)
+
+
+## Information programming
+
+Tonight's Sky combines local solar and lunar calculations with optional current space-weather data. Missing provider data remains visibly unavailable rather than being guessed.
+
+![Tonight's Sky](screenshots/tonights-sky.png)
+
+Conditional cues in the rundown editor can follow data confidence or exception state while manual takes remain available.
+
+![Conditional rundown editor](screenshots/conditional-rundown.png)
+
+## Director remote
+
+The compact Director page exposes program, rundown and safe map controls on a private network. It requires the station-local Director key and stores that key only for the browser session.
+
+![Director remote](screenshots/director.png)

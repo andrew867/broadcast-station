@@ -48,6 +48,33 @@ part of the full-stack storage worker, not an implication of this JSON file.
 
 Set `output.headless` to true for EGL rendering without a desktop. It cannot be combined with `output.hdmi` or `output.desktop_audio`. Encoded audio remains available. See [headless operation](HEADLESS.md) for startup and hardware requirements. The machine-readable contract is [station.schema.json](../examples/station.schema.json).
 
+## Information providers and director access
+
+The `providers` object enables adapters independently. Newfoundland weather, travel, marine, tides, outages, power, radar and space weather require `regional_preset` to be `newfoundland`. Preview configurations leave every provider disabled.
+
+Provider credentials are file references under `secrets_directory`:
+
+| Secret role | Used by | Requirement |
+|---|---|---|
+| `nl511` | NL Travel Now | Newfoundland and Labrador 511 developer key |
+| `aisstream` | Harbour and vessel maps | AISStream API key |
+| `finnhub` | Optional market quotes | Finnhub API key |
+| `aeroapi` | Optional paid flight enrichment | FlightAware AeroAPI key, with local spending policy |
+| `publish_url` | Encoded output | Destination URL when it is not present in station.json |
+| `director_token` | Private Director page | Random token of at least 20 characters |
+
+Create the director token without writing it to terminal history:
+
+```sh
+umask 077
+python -c 'import secrets; print(secrets.token_urlsafe(24))' > /srv/station/secrets/director.key
+chmod 600 /srv/station/secrets/director.key
+```
+
+Reference the filename as `"director_token": "director.key"`, restart the controller, then open `/director` from a private-network client. The controller also checks the client address. The Director page is unsupported on a public interface and has no multi-user account model.
+
+Travel performs five documented NL511 requests every five minutes. Space weather uses the official Natural Resources Canada short-range table and needs no key. Each adapter keeps its own timestamp and unavailable state; enabling an adapter does not make its upstream data reliable.
+
 ## Validate and generate the engine configuration
 
 Run from the repository root:

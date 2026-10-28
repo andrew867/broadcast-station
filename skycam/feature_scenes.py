@@ -9,13 +9,14 @@ from pydantic import Field
 from .models import StrictModel
 from .picture_history import PictureHistory,enforce_budget
 from .flight_features import Spotlight,altitude_color
+from .map_renderer import draw_aircraft_symbol
 from .community_cards import heading,MUTED
 from .graphics import brand,font,fit,PAPER,ORANGE
 from .daylight import TZ
 from . import playout
 from .sources import CAMERAS,QUADS
 
-SCENES=('map-ocean','flight-spotlight','radar-history-east','radar-history-island','camera-timelapse')
+SCENES=('map-ocean','flight-spotlight','radar-history-east','radar-history-island','camera-timelapse','last-hour')
 
 class FeatureConfig(StrictModel):
     spotlight_hex:str|None=Field(default=None,pattern=r'^[a-zA-Z0-9]{1,16}$')
@@ -161,6 +162,28 @@ class FeatureScenes:
         d.text((192,1830),'2-MINUTE TRAIL',font=font(40),fill=MUTED)
         return im
 
+    def last_hour_image(self):
+        camera=self.config.timelapse_camera
+        im,d=heading('LAST HOUR',CAMERAS.get(camera,{}).get('name','CAMERA').upper()+' / RECEIVED CAMERA PICTURES')
+        history=self.history(camera) if camera in CAMERAS else None
+        rows=history.entries() if history else []
+        if not rows:
+            d.text((240,850),'RECENT PICTURES UNAVAILABLE',font=font(118),fill=PAPER)
+            return im
+        picks=sorted(set(round(i*(len(rows)-1)/3) for i in range(4)))
+        while len(picks)<4:picks.append(picks[-1])
+        for n,row_index in enumerate(picks[:4]):
+            source,row=history.frame(row_index)
+            if source is None:continue
+            picture=ImageOps.fit(source,(1580,665),Image.Resampling.LANCZOS)
+            x=192+(n%2)*1728;y=620+(n//2)*760
+            im.paste(picture,(x,y));d=ImageDraw.Draw(im)
+            d.rectangle((x,y+605,x+1580,y+665),fill='#0e1e29')
+            label=local_time(row['at']).upper()
+            d.text((x+24,y+614),label,font=font(34),fill=PAPER)
+        first,last=rows[0]['at'],rows[-1]['at']
+        d.text((192,2070),'RECEIVED '+local_time(first).upper()+' TO '+local_time(last).upper()+' / GAPS REFLECT SOURCE AVAILABILITY',font=font(32,False),fill=MUTED)
+        return im
     def replay_image(self,scene,index):
         radar=scene.startswith('radar-history-')
         camera=self.config.timelapse_camera
@@ -176,11 +199,26 @@ class FeatureScenes:
         if source is None:
             d.text((240,850),'REPLAY UNAVAILABLE',font=font(130),fill=PAPER)
             return im
-        picture=ImageOps.contain(source,(2304,1296),Image.Resampling.LANCZOS);im.paste(picture,(192,600))
-        d=ImageDraw.Draw(im);x=2610
+        picture=ImageOps.contain(source,(2304,1296),Image.Resampling.LANCZOS)
+        metadata=row.get('metadata') if radar else None
+        if isinstance(metadata,dict):
+            pd=ImageDraw.Draw(picture);scale=picture.width/960
+            for plane in (metadata.get('aircraft') or [])[:12]:
+                try:
+                    px=float(plane['x'])*scale;py=float(plane['y'])*scale;color='#94a7b3' if plane.get('stale') else altitude_color(plane)
+                    draw_aircraft_symbol(pd,px,py,float(plane.get('angle') or 0),plane.get('category'),color,'#101c25',3)
+                    label=str(plane.get('callsign') or '')[:16]
+                    if label:
+                        width=pd.textlength(label,font=font(30))+18;lx=min(max(0,px+35),picture.width-width);ly=min(max(0,py-18),picture.height-44)
+                        pd.rectangle((lx,ly,lx+width,ly+42),fill='#101c25');pd.text((lx+9,ly+3),label,font=font(30),fill=PAPER)
+                except (KeyError,TypeError,ValueError,OverflowError):continue
+        im.paste(picture,(192,600));d=ImageDraw.Draw(im);x=2610
         d.text((x,650),'REPLAY',font=font(108),fill=ORANGE)
-        d.text((x,825),'FIRST RECEIVED' if radar else 'SNAPSHOT SAVED',font=font(44),fill=MUTED)
+        d.text((x,825),'RADAR FILE RECEIVED' if radar else 'SNAPSHOT SAVED',font=font(44),fill=MUTED)
         d.text((x,905),local_time(row['at']),font=fit(d,local_time(row['at']),65,1038),fill=PAPER)
+        if radar:
+            count=len((metadata or {}).get('aircraft') or [])
+            d.text((x,1015),f'{count} SAVED AIRCRAFT REPORT'+('S' if count!=1 else ''),font=fit(d,f'{count} SAVED AIRCRAFT REPORTS',38,1038),fill='#ffb578')
         selected=next(i for i,r in enumerate(rows) if r['file']==row['file'])
         d.text((x,1120),'RECEIVED RANGE' if radar else 'CAPTURE RANGE',font=font(44),fill=MUTED)
         d.text((x,1200),local_time(rows[0]['at']),font=fit(d,local_time(rows[0]['at']),52,1038),fill=PAPER)
@@ -192,6 +230,7 @@ class FeatureScenes:
         if note:d.text((x,1460),note,font=font(54),fill=MUTED)
         credit='RADAR COURTESY SHEERR WEATHER' if radar else CAMERAS.get(camera,{}).get('attribution_text','') if CAMERAS.get(camera,{}).get('attribution_enabled') else ''
         d.text((x,1625),credit,font=fit(d,credit,40,1038),fill=MUTED)
+        if radar:d.text((x,1690),'AIRCRAFT SAVED AT RADAR FILE RECEIPT',font=fit(d,'AIRCRAFT SAVED AT RADAR FILE RECEIPT',30,1038),fill=MUTED)
         return im
 
     def path(self,scene,index=0):
@@ -201,7 +240,7 @@ class FeatureScenes:
                 if self.ocean.base is None or time.time()-self.ocean.built_at>7*86400:self.ocean.basemap()
                 im,_=self.ocean.draw(self.get_map())
                 d=ImageDraw.Draw(im);d.rectangle((172,92,872,258),fill="#101c25");brand(d)
-            else:im=self.spotlight_image() if scene=='flight-spotlight' else self.replay_image(scene,index)
+            else:im=self.spotlight_image() if scene=='flight-spotlight' else self.last_hour_image() if scene=='last-hour' else self.replay_image(scene,index)
             path=self.folder/f'{scene}-{time.time_ns()}.png';temp=path.with_suffix('.tmp')
             im.resize((1920,1080),Image.Resampling.LANCZOS).save(temp,format='PNG',compress_level=1);temp.replace(path)
             preview=self.folder/(scene+'.jpg');temp=preview.with_suffix('.tmp');im.resize((960,540)).convert('RGB').save(temp,format='JPEG',quality=85);temp.replace(preview)

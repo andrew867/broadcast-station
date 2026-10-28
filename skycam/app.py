@@ -1,5 +1,5 @@
 from .bounded_http import bounded_get
-from .station_config import bootstrap, CONFIG, provider_enabled, clock_label
+from .station_config import bootstrap, CONFIG, provider_enabled, clock_label, secret
 from .public_errors import public_error
 bootstrap()
 from .network_policy import install_offline_guard
@@ -13,6 +13,8 @@ import re
 import socket
 import time
 import uuid
+import hmac
+import ipaddress
 import httpx
 import numpy as np
 from fastapi import FastAPI, HTTPException, Request, Query
@@ -66,6 +68,9 @@ from .program_clock import ProgramClock,ClockWrite,ClockConfig,ClockRule
 from .dayparts import Dayparts,DaypartWrite
 from .aircraft_metadata import AircraftMetadata
 from .rendered_preview import RenderedPreview,SnapshotBusy
+from .travel import Travel
+from .space_weather import SpaceWeather
+from .scene_policy import ScenePolicy
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = Path(os.environ.get('SKYCAM_DATA', ROOT/'data'))
@@ -125,13 +130,18 @@ tides=Tides(DATA)
 outages=Outages(DATA,enabled=provider_enabled('outages') and os.environ.get('STATION_OFFLINE','1')=='0')
 power_system=PowerSystem(DATA)
 power_reports=PowerReports(DATA)
-program_clock.eligible=lambda condition:condition=='always' or (condition=='power-outages' and outages.eligible())
+travel=Travel(DATA,enabled=provider_enabled('travel') and os.environ.get('STATION_OFFLINE','1')=='0')
+space_weather=SpaceWeather(DATA,enabled=provider_enabled('spaceweather') and os.environ.get('STATION_OFFLINE','1')=='0')
 community_cards=CommunityCards(DATA,flights,notices,markets,tides,outages)
 community_cards.marine=marine
 community_cards.power_system=power_system
 community_cards.power_reports=power_reports
 community_cards.market_timing=lambda:rundown.scene_timing('markets')
 community_cards.outage_map=MapRenderer(DATA,lambda:{},'outage-map',center=(49,-56),zoom=7,view_scale=1.2)
+community_cards.weather=weather
+community_cards.travel=travel
+community_cards.ais=ais
+community_cards.space_weather=space_weather
 outages.warm_map=community_cards.warm_outage_map
 for card in CARD_SCENES:playout.DIRECT_MEDIA[card]=lambda card=card:community_cards.prepare_media(card)
 def take_alert_followup(cue):
@@ -150,6 +160,9 @@ map_renderers={'map':map_renderer,
 playout.MAP_REFRESH.update({id:renderer.ensure for id,renderer in map_renderers.items()})
 features=FeatureScenes(DATA,lambda:map_data(),map_renderers)
 for feature in FEATURE_SCENES:playout.DIRECT_MEDIA[feature]=lambda feature=feature:features.media(feature)
+scene_policy=ScenePolicy(weather=weather,travel=travel,marine=marine,tides=tides,ais=ais,notices=notices,outages=outages,alerts=alerts,features=features)
+rundown.condition_eligible=scene_policy.cue_eligible
+program_clock.eligible=scene_policy.clock_eligible
 
 alert_audio=AlertAudio(DATA,music)
 alert_presentation=AlertPresentation(DATA,lambda:alerts.public(include_resources=True),outages.public,alert_audio)
@@ -203,6 +216,8 @@ async def lifespan(app):
     outages_task=asyncio.create_task(outages.watch()) if provider_enabled('outages') else None
     power_task=asyncio.create_task(power_system.watch()) if provider_enabled('power') else None
     report_task=asyncio.create_task(power_reports.watch()) if provider_enabled('power_reports') else None
+    travel_task=asyncio.create_task(travel.watch()) if provider_enabled('travel') else None
+    space_weather_task=asyncio.create_task(space_weather.watch()) if provider_enabled('spaceweather') else None
     commercial_task=asyncio.create_task(commercial.watch())
     alerts_task=asyncio.create_task(alerts.watch()) if playout.ENABLED and provider_enabled('alerts') else None
     emergency_pages_task=asyncio.create_task(emergency_pages.watch()) if playout.ENABLED else None
@@ -231,6 +246,8 @@ async def lifespan(app):
     if outages_task:outages_task.cancel()
     if power_task:power_task.cancel()
     if report_task:report_task.cancel()
+    if travel_task:travel_task.cancel()
+    if space_weather_task:space_weather_task.cancel()
     commercial_task.cancel()
     if alerts_task:alerts_task.cancel()
     for map_task in map_tasks:map_task.cancel()
@@ -254,6 +271,8 @@ from .branding import BRAND, branded_html
 app = FastAPI(title=BRAND.product_name, lifespan=lifespan)
 from .request_limits import RequestLimits
 app.add_middleware(RequestLimits)
+director_key=secret('director_token')
+if director_key and len(director_key)<20:director_key=''
 from .source_delivery import router as source_router
 app.include_router(source_router)
 
@@ -435,6 +454,45 @@ def operator_guide():return branded_html(ROOT/'skycam/static/guide.html')
 
 @app.get('/cameras')
 def camera_manager():return branded_html(ROOT/'skycam/static/cameras.html')
+
+def require_director(request):
+    if not director_key:raise HTTPException(503,'Director remote is not configured')
+    try:
+        address=ipaddress.ip_address(request.client.host)
+        if not (address.is_private or address.is_loopback):raise HTTPException(403,'Director remote is limited to the private operator network')
+    except ValueError:raise HTTPException(403,'Director client address is unavailable') from None
+    supplied=request.headers.get('x-director-key','')
+    if not hmac.compare_digest(supplied,director_key):raise HTTPException(401,'Director key rejected')
+
+
+@app.get('/director')
+def director_page():return branded_html(ROOT/'skycam/static/director.html')
+
+
+@app.get('/api/director/status')
+def director_status(request:Request):
+    require_director(request)
+    return {'station':BRAND.station_name,'program':broadcast.state.model_dump(),'playout':playout.STATUS,
+            'rundown':rundown.public(),'scenes':scene_rows(),'confidence':scene_policy.public([row['id'] for row in scene_rows()])}
+
+
+@app.post('/api/director/take/{camera}')
+def director_take(camera:str,request:Request):
+    require_director(request)
+    return program_take(camera)
+
+
+@app.post('/api/director/rundown/{action}')
+async def director_rundown(action:str,request:Request):
+    require_director(request)
+    return await rundown_action(action)
+
+
+@app.post('/api/director/safe')
+def director_safe(request:Request):
+    require_director(request)
+    return program_take('map')
+
 
 @app.get('/studio')
 @app.get('/studio/{page}')
@@ -669,6 +727,15 @@ def markets_get():return markets.public()
 
 @app.get('/api/marine')
 def marine_get():return marine.public()
+
+@app.get('/api/travel')
+def travel_get():return travel.public()
+
+@app.get('/api/space-weather')
+def space_weather_get():return space_weather.public()
+
+@app.get('/api/scene-confidence')
+def scene_confidence_get():return scene_policy.public([row['id'] for row in scene_rows()])
 
 @app.get('/ais')
 def ais_page():return branded_html(ROOT/'skycam/static/ais.html')
